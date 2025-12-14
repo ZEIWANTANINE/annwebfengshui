@@ -4,11 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { allProducts } from "@/app/data/products";
+import { useI18n } from "@/app/i18n/context";
 
 const ITEMS_PER_PAGE = 9;
 
 export default function ProductsPage() {
   const [currentPage, setCurrentPage] = useState(1);
+  const { t } = useI18n();
   
   const totalPages = Math.ceil(allProducts.length / ITEMS_PER_PAGE);
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
@@ -26,11 +28,10 @@ export default function ProductsPage() {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-5xl font-serif font-bold text-ann-dark mb-4">
-            Sản phẩm năng lượng
+            {t.products.productsTitle}
           </h1>
           <p className="text-lg text-ann-stone max-w-2xl mx-auto">
-            Khám phá bộ sưu tập các vật phẩm phong thủy được chế tác tinh xảo, 
-            mỗi sản phẩm là một nguồn năng lượng độc đáo cho cuộc sống của bạn.
+            {t.products.productsSubtitle}
           </p>
         </div>
 
@@ -60,14 +61,19 @@ export default function ProductsPage() {
                   {product.description}
                 </p>
                 <div className="flex items-center justify-between">
-                  <span className="text-2xl font-bold text-ann-gold">
-                    {product.price} đ
-                  </span>
+                  <div className="flex flex-col">
+                    <span className="text-lg font-bold text-ann-gold line-through">
+                      {product.retailPrice} đ
+                    </span>
+                    <span className="text-2xl font-bold text-ann-dark">
+                      {product.marketPrice} đ
+                    </span>
+                  </div>
                   <Link 
                     href={`/products/${product.id}`}
                     className="bg-ann-dark text-white px-6 py-2 rounded-md hover:bg-ann-stone transition-colors duration-300 inline-block text-center"
                   >
-                    Xem chi tiết
+                    {t.products.viewDetails}
                   </Link>
                 </div>
               </div>
@@ -83,7 +89,7 @@ export default function ProductsPage() {
               disabled={currentPage === 1}
               className="px-4 py-2 rounded-md bg-white border border-ann-stone text-ann-dark disabled:opacity-50 disabled:cursor-not-allowed hover:bg-ann-ivory transition-colors duration-300"
             >
-              Trước
+              {t.products.previous}
             </button>
             
             {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
@@ -105,14 +111,14 @@ export default function ProductsPage() {
               disabled={currentPage === totalPages}
               className="px-4 py-2 rounded-md bg-white border border-ann-stone text-ann-dark disabled:opacity-50 disabled:cursor-not-allowed hover:bg-ann-ivory transition-colors duration-300"
             >
-              Sau
+              {t.products.next}
             </button>
           </div>
         )}
 
         {/* Info text */}
         <div className="text-center mt-8 text-ann-stone text-sm">
-          Hiển thị {startIndex + 1}-{Math.min(endIndex, allProducts.length)} trong tổng số {allProducts.length} sản phẩm
+          {t.products.showing} {startIndex + 1}-{Math.min(endIndex, allProducts.length)} {t.products.of} {allProducts.length} {t.products.products}
         </div>
       </div>
     </div>

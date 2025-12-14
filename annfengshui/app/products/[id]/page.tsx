@@ -5,11 +5,13 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import { getProductById, allProducts } from "@/app/data/products";
 import { useEffect, useState } from "react";
+import { useI18n } from "@/app/i18n/context";
 
 export default function ProductDetailPage() {
   const params = useParams();
   const id = params?.id as string;
   const [product, setProduct] = useState(getProductById(parseInt(id || "0")));
+  const { t } = useI18n();
 
   useEffect(() => {
     if (id) {
@@ -20,69 +22,24 @@ export default function ProductDetailPage() {
 
   // Hàm tạo ý nghĩa phong thủy dựa trên category
   const getFengShuiMeaning = (category: string) => {
-    const meanings: { [key: string]: { title: string; description: string; elements: string[] } } = {
-      'Vòng tay': {
-        title: 'Ý nghĩa phong thủy của vòng tay đá quý',
-        description: 'Vòng tay đá quý không chỉ là món trang sức mà còn là vật phẩm phong thủy mạnh mẽ, mang năng lượng tích cực bên mình mỗi ngày. Khi đeo trên tay, năng lượng của đá sẽ tác động trực tiếp đến cơ thể và tinh thần của người đeo.',
-        elements: [
-          'Tăng cường năng lượng cá nhân',
-          'Bảo vệ khỏi tà khí và năng lượng tiêu cực',
-          'Mang lại may mắn trong công việc và cuộc sống',
-          'Cân bằng âm dương trong cơ thể',
-        ],
-      },
-      'Tranh phong thủy': {
-        title: 'Ý nghĩa phong thủy của tranh đá quý',
-        description: 'Tranh phong thủy đá quý là vật phẩm trang trí cao cấp, không chỉ làm đẹp không gian mà còn điều hòa năng lượng trong nhà. Mỗi bức tranh được sắp xếp theo nguyên lý phong thủy để mang lại tài lộc, bình an và thịnh vượng.',
-        elements: [
-          'Điều hòa năng lượng trong không gian sống',
-          'Thu hút tài lộc và may mắn',
-          'Tăng cường sự hòa thuận trong gia đình',
-          'Bảo vệ ngôi nhà khỏi năng lượng tiêu cực',
-        ],
-      },
-      'Vật phẩm phong thủy': {
-        title: 'Ý nghĩa phong thủy của vật phẩm năng lượng',
-        description: 'Vật phẩm phong thủy được chế tác từ đá quý tự nhiên, mang trong mình năng lượng mạnh mẽ của đất trời. Khi đặt đúng vị trí trong nhà, chúng sẽ phát huy tối đa khả năng điều hòa và tăng cường năng lượng tích cực.',
-        elements: [
-          'Thanh lọc không gian và năng lượng',
-          'Tăng cường sức khỏe và tinh thần',
-          'Mang lại bình an và hạnh phúc',
-          'Hỗ trợ thiền định và chữa lành',
-        ],
-      },
-      'Vật phẩm năng lượng': {
-        title: 'Ý nghĩa phong thủy của vật phẩm năng lượng',
-        description: 'Vật phẩm năng lượng được chế tác từ các loại đá quý có tần số rung động cao, có khả năng khuếch đại và thanh lọc năng lượng. Chúng là công cụ mạnh mẽ trong việc cải thiện môi trường sống và làm việc.',
-        elements: [
-          'Khuếch đại năng lượng tích cực',
-          'Thanh lọc năng lượng tiêu cực',
-          'Tăng cường sự tập trung và sáng suốt',
-          'Mang lại cảm giác bình yên và thư giãn',
-        ],
-      },
-      'Tượng phong thủy': {
-        title: 'Ý nghĩa phong thủy của tượng đá quý',
-        description: 'Tượng phong thủy không chỉ là tác phẩm nghệ thuật mà còn mang ý nghĩa tâm linh sâu sắc. Mỗi bức tượng được chế tác với sự tôn kính và tâm huyết, mang lại sự bảo vệ và phước lành cho gia đình.',
-        elements: [
-          'Mang lại phước lành và bảo vệ',
-          'Tăng cường tài lộc và thịnh vượng',
-          'Tạo không gian tâm linh trong nhà',
-          'Mang lại sự bình an và hạnh phúc',
-        ],
-      },
-      'Designer Collection': {
-        title: 'Ý nghĩa phong thủy của bộ sưu tập Designer',
-        description: 'Bộ sưu tập Designer là những tác phẩm độc bản, được thiết kế riêng với sự kết hợp tinh tế giữa nghệ thuật và phong thủy. Mỗi sản phẩm là một tác phẩm nghệ thuật độc đáo, mang lại giá trị cả về mặt thẩm mỹ lẫn năng lượng.',
-        elements: [
-          'Tác phẩm độc bản, không trùng lặp',
-          'Thiết kế theo nguyên lý phong thủy cổ truyền',
-          'Mang lại giá trị sưu tầm cao',
-          'Tăng cường năng lượng và phong cách cá nhân',
-        ],
-      },
+    const categoryMap: { [key: string]: keyof typeof t.productDetail.fengshuiMeaning } = {
+      'Vòng tay': 'bracelet',
+      'Tranh phong thủy': 'painting',
+      'Vật phẩm phong thủy': 'item',
+      'Vật phẩm năng lượng': 'energy',
+      'Tượng phong thủy': 'statue',
+      'Designer Collection': 'designer',
     };
-    return meanings[category] || meanings['Vật phẩm phong thủy'];
+    
+    const key = categoryMap[category] || 'item';
+    const meaning = t.productDetail.fengshuiMeaning[key];
+    
+    // Đảm bảo luôn trả về object hợp lệ
+    if (!meaning || !meaning.elements) {
+      return t.productDetail.fengshuiMeaning.item;
+    }
+    
+    return meaning;
   };
 
   if (!product) {
@@ -93,23 +50,23 @@ export default function ProductDetailPage() {
             404
           </h1>
           <h2 className="text-3xl font-serif font-bold text-ann-dark mb-4">
-            Không tìm thấy sản phẩm
+            {t.products.notFound}
           </h2>
           <p className="text-lg text-ann-stone mb-8 max-w-md mx-auto">
-            Sản phẩm bạn đang tìm kiếm không tồn tại hoặc đã bị xóa.
+            {t.products.notFoundDesc}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/products"
               className="bg-ann-dark text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-ann-stone transition-all duration-300 shadow-lg hover:shadow-xl inline-block"
             >
-              Xem tất cả sản phẩm
+              {t.products.viewAllProducts}
             </Link>
             <Link
               href="/"
               className="bg-white border-2 border-ann-dark text-ann-dark px-8 py-4 rounded-lg text-lg font-semibold hover:bg-ann-ivory transition-all duration-300 shadow-lg hover:shadow-xl inline-block"
             >
-              Về trang chủ
+              {t.products.backToHome}
             </Link>
           </div>
         </div>
@@ -169,9 +126,9 @@ export default function ProductDetailPage() {
             <div className="space-y-6 sticky top-24">
               {/* Breadcrumb */}
               <div className="flex items-center gap-2 text-sm text-ann-stone mb-4">
-                <Link href="/" className="hover:text-ann-gold transition-colors">Trang chủ</Link>
+                <Link href="/" className="hover:text-ann-gold transition-colors">{t.productDetail.home}</Link>
                 <span>/</span>
-                <Link href="/products" className="hover:text-ann-gold transition-colors">Sản phẩm</Link>
+                <Link href="/products" className="hover:text-ann-gold transition-colors">{t.productDetail.products}</Link>
                 <span>/</span>
                 <span className="text-ann-dark font-medium">{product.name}</span>
               </div>
@@ -188,16 +145,21 @@ export default function ProductDetailPage() {
               {/* Price with urgency */}
               <div className="bg-gradient-to-r from-ann-gold/10 to-ann-green/10 p-6 rounded-xl border-2 border-ann-gold/20">
                 <div className="flex items-baseline justify-between mb-2">
-                  <span className="text-sm text-ann-stone">Giá sản phẩm</span>
-                  <span className="text-xs bg-red-500 text-white px-2 py-1 rounded">Còn hàng</span>
+                  <span className="text-sm text-ann-stone">{t.productDetail.price}</span>
+                  <span className="text-xs bg-red-500 text-white px-2 py-1 rounded">{t.productDetail.inStock}</span>
+                </div>
+                <div className="flex items-baseline space-x-3 mb-2">
+                  <span className="text-3xl font-bold text-ann-stone line-through">
+                    {product.retailPrice} đ
+                  </span>
                 </div>
                 <div className="flex items-baseline space-x-3">
                   <span className="text-5xl font-bold text-ann-gold">
-                    {product.price}
+                    {product.marketPrice}
                   </span>
                   <span className="text-xl text-ann-stone">đ</span>
                 </div>
-                <p className="text-sm text-ann-stone mt-2">💰 Giá đã bao gồm VAT và vận chuyển</p>
+                <p className="text-sm text-ann-stone mt-2">{t.productDetail.priceIncludes}</p>
               </div>
 
               {/* Key Features */}
@@ -207,7 +169,7 @@ export default function ProductDetailPage() {
                     <svg className="w-5 h-5 text-ann-gold" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
-                    <p className="text-sm font-semibold text-ann-dark">Đá tự nhiên 100%</p>
+                    <p className="text-sm font-semibold text-ann-dark">{t.productDetail.naturalStone}</p>
                   </div>
                 </div>
                 <div className="bg-white p-4 rounded-lg shadow-md border border-ann-stone/10">
@@ -215,7 +177,7 @@ export default function ProductDetailPage() {
                     <svg className="w-5 h-5 text-ann-gold" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
-                    <p className="text-sm font-semibold text-ann-dark">Bảo hành 1 năm</p>
+                    <p className="text-sm font-semibold text-ann-dark">{t.productDetail.warranty}</p>
                   </div>
                 </div>
                 <div className="bg-white p-4 rounded-lg shadow-md border border-ann-stone/10">
@@ -223,7 +185,7 @@ export default function ProductDetailPage() {
                     <svg className="w-5 h-5 text-ann-gold" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
-                    <p className="text-sm font-semibold text-ann-dark">Miễn phí vận chuyển</p>
+                    <p className="text-sm font-semibold text-ann-dark">{t.productDetail.freeShipping}</p>
                   </div>
                 </div>
                 <div className="bg-white p-4 rounded-lg shadow-md border border-ann-stone/10">
@@ -231,7 +193,7 @@ export default function ProductDetailPage() {
                     <svg className="w-5 h-5 text-ann-gold" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
-                    <p className="text-sm font-semibold text-ann-dark">Tư vấn miễn phí</p>
+                    <p className="text-sm font-semibold text-ann-dark">{t.productDetail.freeConsultation}</p>
                   </div>
                 </div>
               </div>
@@ -242,29 +204,29 @@ export default function ProductDetailPage() {
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                   </svg>
-                  Đặt hàng ngay - Tư vấn miễn phí
+                  {t.productDetail.orderNow}
                 </button>
                 <div className="grid grid-cols-2 gap-4">
                   <button className="bg-white border-2 border-ann-dark text-ann-dark px-6 py-4 rounded-xl font-semibold hover:bg-ann-ivory transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2">
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                     </svg>
-                    Yêu thích
+                    {t.productDetail.favorite}
                   </button>
                   <button className="bg-white border-2 border-ann-dark text-ann-dark px-6 py-4 rounded-xl font-semibold hover:bg-ann-ivory transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2">
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
                     </svg>
-                    Chia sẻ
+                    {t.productDetail.share}
                   </button>
                 </div>
               </div>
 
               {/* Contact Info */}
               <div className="bg-gradient-to-r from-ann-green/10 to-ann-gold/10 p-6 rounded-xl border border-ann-gold/20">
-                <p className="text-sm text-ann-stone mb-3">📞 Hotline tư vấn 24/7:</p>
+                <p className="text-sm text-ann-stone mb-3">{t.productDetail.hotline}</p>
                 <p className="text-2xl font-bold text-ann-dark mb-2">0909.123.456</p>
-                <p className="text-sm text-ann-stone">Hoặc nhắn tin Zalo/Facebook để được tư vấn nhanh nhất</p>
+                <p className="text-sm text-ann-stone">{t.productDetail.hotlineDesc}</p>
               </div>
             </div>
           </div>
@@ -288,22 +250,24 @@ export default function ProductDetailPage() {
             
             <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 mb-8 border border-ann-stone/10">
               <p className="text-lg text-ann-stone leading-relaxed mb-8 text-center">
-                {fengShuiInfo.description}
+                {fengShuiInfo?.description || ''}
               </p>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {fengShuiInfo.elements.map((element, index) => (
-                  <div
-                    key={index}
-                    className="flex items-start gap-4 p-4 bg-ann-ivory rounded-lg hover:bg-ann-gold/10 transition-colors"
-                  >
-                    <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-ann-gold to-ann-green rounded-full flex items-center justify-center">
-                      <span className="text-white font-bold">{index + 1}</span>
+              {fengShuiInfo?.elements && fengShuiInfo.elements.length > 0 && (
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {fengShuiInfo.elements.map((element, index) => (
+                    <div
+                      key={index}
+                      className="flex items-start gap-4 p-4 bg-ann-ivory rounded-lg hover:bg-ann-gold/10 transition-colors"
+                    >
+                      <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-ann-gold to-ann-green rounded-full flex items-center justify-center">
+                        <span className="text-white font-bold">{index + 1}</span>
+                      </div>
+                      <p className="text-ann-dark font-medium pt-2">{element}</p>
                     </div>
-                    <p className="text-ann-dark font-medium pt-2">{element}</p>
-                  </div>
-                ))}
-              </div>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -316,7 +280,7 @@ export default function ProductDetailPage() {
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-12">
                 <h2 className="text-4xl font-serif font-bold text-ann-dark mb-4">
-                  Về sản phẩm này
+                  {t.productDetail.aboutProduct}
                 </h2>
                 <div className="w-24 h-1 bg-gradient-to-r from-ann-gold to-ann-green mx-auto rounded-full"></div>
               </div>
@@ -337,10 +301,10 @@ export default function ProductDetailPage() {
             <div className="max-w-5xl mx-auto">
               <div className="text-center mb-12">
                 <h2 className="text-4xl font-serif font-bold text-ann-dark mb-4">
-                  Lợi ích khi sở hữu sản phẩm
+                  {t.productDetail.benefits}
                 </h2>
                 <p className="text-lg text-ann-stone max-w-2xl mx-auto">
-                  Mỗi sản phẩm của chúng tôi đều được chọn lọc kỹ càng để mang lại những giá trị tốt nhất cho bạn
+                  {t.productDetail.benefitsSubtitle}
                 </p>
                 <div className="w-24 h-1 bg-gradient-to-r from-ann-gold to-ann-green mx-auto rounded-full mt-4"></div>
               </div>
@@ -384,7 +348,7 @@ export default function ProductDetailPage() {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-4xl font-serif font-bold text-ann-dark mb-4">
-                Cách sử dụng và bảo quản
+                {t.productDetail.howToUse}
               </h2>
               <div className="w-24 h-1 bg-gradient-to-r from-ann-gold to-ann-green mx-auto rounded-full"></div>
             </div>
@@ -395,21 +359,15 @@ export default function ProductDetailPage() {
                   <div className="w-10 h-10 bg-ann-gold rounded-full flex items-center justify-center">
                     <span className="text-white font-bold">1</span>
                   </div>
-                  <h3 className="text-xl font-serif font-bold text-ann-dark">Cách sử dụng</h3>
+                  <h3 className="text-xl font-serif font-bold text-ann-dark">{t.productDetail.usage}</h3>
                 </div>
                 <ul className="space-y-2 text-ann-stone">
-                  <li className="flex items-start gap-2">
-                    <span className="text-ann-gold mt-1">•</span>
-                    <span>Đặt sản phẩm ở vị trí phù hợp theo hướng dẫn phong thủy</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-ann-gold mt-1">•</span>
-                    <span>Thường xuyên tiếp xúc với sản phẩm để tăng cường năng lượng</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-ann-gold mt-1">•</span>
-                    <span>Nên để sản phẩm ở nơi sạch sẽ, tránh bụi bẩn</span>
-                  </li>
+                  {t.productDetail.usageItems.map((item, index) => (
+                    <li key={index} className="flex items-start gap-2">
+                      <span className="text-ann-gold mt-1">•</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
               
@@ -418,21 +376,15 @@ export default function ProductDetailPage() {
                   <div className="w-10 h-10 bg-ann-green rounded-full flex items-center justify-center">
                     <span className="text-white font-bold">2</span>
                   </div>
-                  <h3 className="text-xl font-serif font-bold text-ann-dark">Bảo quản</h3>
+                  <h3 className="text-xl font-serif font-bold text-ann-dark">{t.productDetail.care}</h3>
                 </div>
                 <ul className="space-y-2 text-ann-stone">
-                  <li className="flex items-start gap-2">
-                    <span className="text-ann-green mt-1">•</span>
-                    <span>Lau chùi nhẹ nhàng bằng vải mềm, tránh hóa chất mạnh</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-ann-green mt-1">•</span>
-                    <span>Phơi nắng nhẹ định kỳ để nạp năng lượng tự nhiên</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-ann-green mt-1">•</span>
-                    <span>Bảo quản trong hộp mềm khi không sử dụng</span>
-                  </li>
+                  {t.productDetail.careItems.map((item, index) => (
+                    <li key={index} className="flex items-start gap-2">
+                      <span className="text-ann-green mt-1">•</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -447,7 +399,7 @@ export default function ProductDetailPage() {
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-12">
                 <h2 className="text-4xl font-serif font-bold text-ann-dark mb-4">
-                  Thông số kỹ thuật
+                  {t.productDetail.specifications}
                 </h2>
                 <div className="w-24 h-1 bg-gradient-to-r from-ann-gold to-ann-green mx-auto rounded-full"></div>
               </div>
@@ -461,7 +413,7 @@ export default function ProductDetailPage() {
                         </svg>
                       </div>
                       <div>
-                        <p className="text-sm text-ann-stone mb-1">Chất liệu</p>
+                        <p className="text-sm text-ann-stone mb-1">{t.productDetail.material}</p>
                         <p className="text-lg font-bold text-ann-dark">
                           {product.specifications.material}
                         </p>
@@ -476,7 +428,7 @@ export default function ProductDetailPage() {
                         </svg>
                       </div>
                       <div>
-                        <p className="text-sm text-ann-stone mb-1">Kích thước</p>
+                        <p className="text-sm text-ann-stone mb-1">{t.productDetail.size}</p>
                         <p className="text-lg font-bold text-ann-dark">
                           {product.specifications.size}
                         </p>
@@ -491,7 +443,7 @@ export default function ProductDetailPage() {
                         </svg>
                       </div>
                       <div>
-                        <p className="text-sm text-ann-stone mb-1">Trọng lượng</p>
+                        <p className="text-sm text-ann-stone mb-1">{t.productDetail.weight}</p>
                         <p className="text-lg font-bold text-ann-dark">
                           {product.specifications.weight}
                         </p>
@@ -506,7 +458,7 @@ export default function ProductDetailPage() {
                         </svg>
                       </div>
                       <div>
-                        <p className="text-sm text-ann-stone mb-1">Xuất xứ</p>
+                        <p className="text-sm text-ann-stone mb-1">{t.productDetail.origin}</p>
                         <p className="text-lg font-bold text-ann-dark">
                           {product.specifications.origin}
                         </p>
@@ -526,25 +478,25 @@ export default function ProductDetailPage() {
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-4xl font-serif font-bold text-ann-dark mb-4">
-                Cam kết và bảo hành
+                {t.productDetail.guarantee}
               </h2>
               <div className="w-24 h-1 bg-gradient-to-r from-ann-gold to-ann-green mx-auto rounded-full"></div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-gradient-to-br from-ann-gold/10 to-ann-gold/5 rounded-xl p-6 text-center border border-ann-gold/20">
                 <div className="text-4xl mb-4">✅</div>
-                <h3 className="font-bold text-ann-dark mb-2">100% Đá tự nhiên</h3>
-                <p className="text-sm text-ann-stone">Cam kết đá quý tự nhiên 100%, có giấy chứng nhận</p>
+                <h3 className="font-bold text-ann-dark mb-2">{t.productDetail.guaranteeItems.natural}</h3>
+                <p className="text-sm text-ann-stone">{t.productDetail.guaranteeItems.naturalDesc}</p>
               </div>
               <div className="bg-gradient-to-br from-ann-green/10 to-ann-green/5 rounded-xl p-6 text-center border border-ann-green/20">
                 <div className="text-4xl mb-4">🛡️</div>
-                <h3 className="font-bold text-ann-dark mb-2">Bảo hành 1 năm</h3>
-                <p className="text-sm text-ann-stone">Bảo hành chất lượng và hỗ trợ bảo quản miễn phí</p>
+                <h3 className="font-bold text-ann-dark mb-2">{t.productDetail.guaranteeItems.warranty}</h3>
+                <p className="text-sm text-ann-stone">{t.productDetail.guaranteeItems.warrantyDesc}</p>
               </div>
               <div className="bg-gradient-to-br from-ann-gold/10 to-ann-green/10 rounded-xl p-6 text-center border border-ann-gold/20">
                 <div className="text-4xl mb-4">🚚</div>
-                <h3 className="font-bold text-ann-dark mb-2">Giao hàng nhanh</h3>
-                <p className="text-sm text-ann-stone">Miễn phí vận chuyển toàn quốc, đóng gói cẩn thận</p>
+                <h3 className="font-bold text-ann-dark mb-2">{t.productDetail.guaranteeItems.shipping}</h3>
+                <p className="text-sm text-ann-stone">{t.productDetail.guaranteeItems.shippingDesc}</p>
               </div>
             </div>
           </div>
@@ -557,10 +509,10 @@ export default function ProductDetailPage() {
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-4xl font-serif font-bold text-ann-dark mb-4">
-                Quy trình đặt hàng
+                {t.productDetail.orderProcess}
               </h2>
               <p className="text-lg text-ann-stone max-w-2xl mx-auto">
-                Đơn giản, nhanh chóng và an toàn - Chỉ 3 bước để sở hữu sản phẩm
+                {t.productDetail.orderProcessSubtitle}
               </p>
               <div className="w-24 h-1 bg-gradient-to-r from-ann-gold to-ann-green mx-auto rounded-full mt-4"></div>
             </div>
@@ -570,22 +522,22 @@ export default function ProductDetailPage() {
                 <div className="w-20 h-20 bg-gradient-to-br from-ann-gold to-ann-gold/80 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                   <span className="text-3xl font-bold text-white">1</span>
                 </div>
-                <h3 className="text-xl font-bold text-ann-dark mb-2">Liên hệ tư vấn</h3>
-                <p className="text-ann-stone">Gọi hotline hoặc nhắn tin để được tư vấn về sản phẩm phù hợp nhất</p>
+                <h3 className="text-xl font-bold text-ann-dark mb-2">{t.productDetail.step1}</h3>
+                <p className="text-ann-stone">{t.productDetail.step1Desc}</p>
               </div>
               <div className="text-center">
                 <div className="w-20 h-20 bg-gradient-to-br from-ann-green to-ann-green/80 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                   <span className="text-3xl font-bold text-white">2</span>
                 </div>
-                <h3 className="text-xl font-bold text-ann-dark mb-2">Xác nhận đơn hàng</h3>
-                <p className="text-ann-stone">Xác nhận thông tin và địa chỉ giao hàng, thanh toán an toàn</p>
+                <h3 className="text-xl font-bold text-ann-dark mb-2">{t.productDetail.step2}</h3>
+                <p className="text-ann-stone">{t.productDetail.step2Desc}</p>
               </div>
               <div className="text-center">
                 <div className="w-20 h-20 bg-gradient-to-br from-ann-gold to-ann-green rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                   <span className="text-3xl font-bold text-white">3</span>
                 </div>
-                <h3 className="text-xl font-bold text-ann-dark mb-2">Nhận hàng</h3>
-                <p className="text-ann-stone">Nhận hàng tại nhà, kiểm tra và tận hưởng năng lượng tích cực</p>
+                <h3 className="text-xl font-bold text-ann-dark mb-2">{t.productDetail.step3}</h3>
+                <p className="text-ann-stone">{t.productDetail.step3Desc}</p>
               </div>
             </div>
           </div>
@@ -604,10 +556,10 @@ export default function ProductDetailPage() {
               <span className="text-6xl">✨</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">
-              Sẵn sàng mang năng lượng tích cực về nhà?
+              {t.productDetail.finalCta}
             </h2>
             <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-              Đừng bỏ lỡ cơ hội sở hữu {product.name} - Vật phẩm phong thủy cao cấp mang lại may mắn và thịnh vượng cho bạn và gia đình
+              {t.productDetail.finalCtaDesc.replace('{productName}', product.name)}
             </p>
             
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-8 border border-white/20">
@@ -619,7 +571,7 @@ export default function ProductDetailPage() {
                     </svg>
                   </div>
                   <div>
-                    <p className="font-semibold text-lg">Hotline 24/7</p>
+                    <p className="font-semibold text-lg">{t.productDetail.finalCtaHotline}</p>
                     <p className="text-ann-gold text-xl font-bold">0909.123.456</p>
                   </div>
                 </div>
@@ -630,7 +582,7 @@ export default function ProductDetailPage() {
                     </svg>
                   </div>
                   <div>
-                    <p className="font-semibold text-lg">Zalo / Facebook</p>
+                    <p className="font-semibold text-lg">{t.productDetail.finalCtaMessage}</p>
                     <p className="text-ann-gold">Nhắn tin để được tư vấn nhanh</p>
                   </div>
                 </div>
@@ -642,18 +594,18 @@ export default function ProductDetailPage() {
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                 </svg>
-                Đặt hàng ngay - Tư vấn miễn phí
+                {t.productDetail.orderNowButton}
               </button>
               <Link
                 href="/products"
                 className="bg-white/10 backdrop-blur-sm border-2 border-white text-white px-10 py-5 rounded-xl text-xl font-bold hover:bg-white/20 transition-all duration-300 shadow-lg hover:shadow-xl inline-block text-center"
               >
-                Xem thêm sản phẩm
+                {t.productDetail.viewMoreProducts}
               </Link>
             </div>
             
             <p className="mt-6 text-sm opacity-75">
-              ⚡ Đặt hàng ngay hôm nay để nhận ưu đãi đặc biệt và tư vấn phong thủy miễn phí
+              {t.productDetail.specialOffer}
             </p>
           </div>
         </div>
@@ -665,10 +617,10 @@ export default function ProductDetailPage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-4xl font-serif font-bold text-ann-dark mb-4">
-                Sản phẩm liên quan
+                {t.productDetail.relatedProducts}
               </h2>
               <p className="text-lg text-ann-stone max-w-2xl mx-auto">
-                Khám phá thêm các sản phẩm cùng danh mục để tìm được vật phẩm phong thủy phù hợp nhất với bạn
+                {t.productDetail.relatedProductsSubtitle}
               </p>
               <div className="w-24 h-1 bg-gradient-to-r from-ann-gold to-ann-green mx-auto rounded-full mt-4"></div>
             </div>
@@ -702,7 +654,7 @@ export default function ProductDetailPage() {
                     </p>
                     <div className="flex items-center justify-between pt-4 border-t border-ann-stone/10">
                       <span className="text-2xl font-bold text-ann-gold">
-                        {relatedProduct.price}
+                        {relatedProduct.marketPrice}
                       </span>
                       <span className="text-sm text-ann-stone">đ</span>
                     </div>
@@ -715,7 +667,7 @@ export default function ProductDetailPage() {
                 href="/products"
                 className="inline-block bg-ann-dark text-white px-8 py-4 rounded-xl font-semibold hover:bg-ann-stone transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               >
-                Xem tất cả sản phẩm →
+                {t.productDetail.viewAllProducts}
               </Link>
             </div>
           </div>

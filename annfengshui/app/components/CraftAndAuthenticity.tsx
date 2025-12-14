@@ -1,14 +1,17 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useI18n } from '@/app/i18n/context';
 
 const CraftAndAuthenticity = () => {
+  const { t } = useI18n();
+  
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 max-w-3xl mx-auto">
-          <h2 className="text-4xl font-serif font-bold text-ann-dark leading-snug">Năng lượng chỉ thật khi được tạo bằng đôi tay chân thật.</h2>
-          <p className="text-lg text-ann-stone mt-4">Từ khối đá thô đến viên ngọc sáng, mọi sản phẩm của Ann Gem & Fengshui đều trải qua quá trình tẩy tịnh – niêm phong năng lượng – chứng nhận độc bản. Mỗi vật phẩm đi kèm tem VOID 3 lớp, mã QR xác thực, và phiếu chứng nhận năng lượng song ngữ.</p>
+          <h2 className="text-4xl font-serif font-bold text-ann-dark leading-snug">{t.craft.title}</h2>
+          <p className="text-lg text-ann-stone mt-4">{t.craft.description}</p>
         </div>
         <motion.div
           initial="hidden"

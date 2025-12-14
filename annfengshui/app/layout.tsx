@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
+import { I18nProvider } from "@/app/i18n/context";
 import "./globals.css";
 
 const inter = Inter({
@@ -27,9 +28,11 @@ export default function RootLayout({
   return (
     <html lang="vi" className="!scroll-smooth">
       <body className={`${inter.variable} ${playfair.variable} font-sans bg-white text-ann-dark antialiased`}>
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
+        <I18nProvider>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+        </I18nProvider>
       </body>
     </html>
   );

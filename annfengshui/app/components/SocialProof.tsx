@@ -1,24 +1,30 @@
-const reviews = [
-  {
-    quote: 'Tôi không chỉ mua vòng, mà là mua lại sự bình an trong tâm mình.',
-    author: 'Thu Trang, Hà Nội',
-  },
-  {
-    quote: 'Tranh đá phong thủy của Ann khiến căn phòng tôi sáng bừng mỗi sáng.',
-    author: 'Nguyễn Minh, Đà Nẵng',
-  },
-  {
-    quote: 'Dịch vụ tư vấn rất chuyên nghiệp, tôi đã tìm được vật phẩm hợp mệnh.',
-    author: 'Lê An, TP.HCM',
-  },
-];
+'use client';
+
+import { useI18n } from '@/app/i18n/context';
 
 const SocialProof = () => {
+  const { t } = useI18n();
+  
+  const reviews = [
+    {
+      quote: t.socialProof.review1,
+      author: t.socialProof.review1Author,
+    },
+    {
+      quote: t.socialProof.review2,
+      author: t.socialProof.review2Author,
+    },
+    {
+      quote: t.socialProof.review3,
+      author: t.socialProof.review3Author,
+    },
+  ];
+
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-serif font-bold text-ann-dark">Khách hàng nói gì về Ann Gem & Fengshui</h2>
+          <h2 className="text-4xl font-serif font-bold text-ann-dark">{t.socialProof.title}</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {reviews.map((review) => (

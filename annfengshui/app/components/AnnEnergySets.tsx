@@ -1,39 +1,44 @@
-import Image from "next/image";
+'use client';
 
-const sets = [
-  {
-    name: '🌞 Energy & Vitality Set',
-    description: 'Khơi dậy sức sống và sự tự tin nội tại',
-    image: '/product1.jpg',
-    color: 'bg-ann-gold',
-  },
-  {
-    name: '🌙 Peace & Sleep Set',
-    description: 'Ngủ sâu – tĩnh tâm – an nhiên',
-    image: '/product2.jpg',
-    color: 'bg-ann-green',
-  },
-  {
-    name: '🌸 Beauty & Glow Set',
-    description: 'Tỏa sáng từ năng lượng yêu thương',
-    image: '/product3.jpg',
-    color: 'bg-ann-green', // Replaced pink with a brand color
-  },
-  {
-    name: '💼 Success & Focus Set',
-    description: 'Tập trung và thu hút vận khí may mắn',
-    image: '/product5.jpg',
-    color: 'bg-ann-stone',
-  },
-];
+import Image from "next/image";
+import { useI18n } from '@/app/i18n/context';
 
 const AnnEnergySets = () => {
+  const { t } = useI18n();
+  
+  const sets = [
+    {
+      name: t.energySets.energyVitality,
+      description: t.energySets.energyVitalityDesc,
+      image: '/product1.jpg',
+      color: 'bg-ann-gold',
+    },
+    {
+      name: t.energySets.peaceSleep,
+      description: t.energySets.peaceSleepDesc,
+      image: '/product2.jpg',
+      color: 'bg-ann-green',
+    },
+    {
+      name: t.energySets.beautyGlow,
+      description: t.energySets.beautyGlowDesc,
+      image: '/product3.jpg',
+      color: 'bg-ann-green', // Replaced pink with a brand color
+    },
+    {
+      name: t.energySets.successFocus,
+      description: t.energySets.successFocusDesc,
+      image: '/product5.jpg',
+      color: 'bg-ann-stone',
+    },
+  ];
+
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-serif font-bold text-ann-dark">Ann Energy Collection</h2>
-          <p className="text-lg text-ann-stone mt-4 max-w-2xl mx-auto">Các bộ sản phẩm được thiết kế đặc biệt để cân bằng và nâng cao các khía cạnh khác nhau trong cuộc sống của bạn.</p>
+          <h2 className="text-4xl font-serif font-bold text-ann-dark">{t.energySets.title}</h2>
+          <p className="text-lg text-ann-stone mt-4 max-w-2xl mx-auto">{t.energySets.subtitle}</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {sets.map((set) => (
@@ -43,7 +48,7 @@ const AnnEnergySets = () => {
               </div>
               <h3 className="text-xl font-serif font-bold mb-2 text-ann-dark">{set.name}</h3>
               <p className="text-ann-stone mb-6 text-sm flex-grow">{set.description}</p>
-              <button className="bg-ann-dark text-white font-bold py-2 px-6 rounded-full hover:bg-ann-gold hover:text-ann-dark transition-colors duration-300 mt-auto">Mua ngay</button>
+              <button className="bg-ann-dark text-white font-bold py-2 px-6 rounded-full hover:bg-ann-gold hover:text-ann-dark transition-colors duration-300 mt-auto">{t.energySets.buyNow}</button>
             </div>
           ))}
         </div>

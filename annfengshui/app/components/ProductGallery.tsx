@@ -1,40 +1,45 @@
-import Image from "next/image";
+'use client';
 
-const products = [
-  {
-    name: 'Vòng đá phong thủy',
-    message: 'Mang năng lượng bên mình mỗi ngày.',
-    image: '/product1.jpg',
-  },
-  {
-    name: 'Tranh đá quý',
-    message: 'Tác phẩm phong thủy cho không gian sống.',
-    image: '/product2.jpg',
-  },
-  {
-    name: 'Lọ ước phong thủy',
-    message: 'Lời chúc an lành trong chiếc lọ nhỏ.',
-    image: '/product3.jpg',
-  },
-  {
-    name: 'Vật phẩm năng lượng',
-    message: 'Tăng tần số năng lượng cho ngôi nhà bạn.',
-    image: '/product4.jpg',
-  },
-  {
-    name: 'Dòng Designer độc bản',
-    message: 'Tác phẩm độc bản – dành cho người sưu tầm năng lượng.',
-    image: '/product5.jpg',
-  },
-];
+import Image from "next/image";
+import { useI18n } from '@/app/i18n/context';
 
 const ProductGallery = () => {
+  const { t } = useI18n();
+  
+  const products = [
+    {
+      name: t.productItems.fengshuiBracelet,
+      message: t.productItems.fengshuiBraceletDesc,
+      image: '/product1.jpg',
+    },
+    {
+      name: t.productItems.gemstonePainting,
+      message: t.productItems.gemstonePaintingDesc,
+      image: '/product2.jpg',
+    },
+    {
+      name: t.productItems.fengshuiWishJar,
+      message: t.productItems.fengshuiWishJarDesc,
+      image: '/product3.jpg',
+    },
+    {
+      name: t.productItems.energyItem,
+      message: t.productItems.energyItemDesc,
+      image: '/product4.jpg',
+    },
+    {
+      name: t.productItems.designerCollection,
+      message: t.productItems.designerCollectionDesc,
+      image: '/product5.jpg',
+    },
+  ];
+
   return (
     <section id="products" className="py-20 bg-ann-ivory">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-serif font-bold text-ann-dark">Sản phẩm năng lượng</h2>
-          <p className="text-lg text-ann-stone mt-4 max-w-2xl mx-auto">Khám phá bộ sưu tập các vật phẩm phong thủy được chế tác tinh xảo, mỗi sản phẩm là một nguồn năng lượng độc đáo cho cuộc sống của bạn.</p>
+          <h2 className="text-4xl font-serif font-bold text-ann-dark">{t.products.title}</h2>
+          <p className="text-lg text-ann-stone mt-4 max-w-2xl mx-auto">{t.products.subtitle}</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {products.map((product) => (
