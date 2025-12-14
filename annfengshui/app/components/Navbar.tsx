@@ -48,7 +48,7 @@ const Navbar = () => {
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-1">
                 <NavLink href="#story" scrolled={scrolled}>Our Story</NavLink>
-                <NavLink href="#products" scrolled={scrolled}>Products</NavLink>
+                <NavLink href="/products" scrolled={scrolled}>Products</NavLink>
                 <NavLink href="#finder" scrolled={scrolled}>Energy Finder</NavLink>
                 <NavLink href="#contact" scrolled={scrolled}>Contact</NavLink>
               </div>
@@ -80,7 +80,7 @@ const Navbar = () => {
         <div className={clsx("md:hidden", { 'block': isOpen, 'hidden': !isOpen })} id="mobile-menu">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <NavLink href="#story" scrolled={true} onClick={() => setIsOpen(false)}>Our Story</NavLink>
-            <NavLink href="#products" scrolled={true} onClick={() => setIsOpen(false)}>Products</NavLink>
+            <NavLink href="/products" scrolled={true} onClick={() => setIsOpen(false)}>Products</NavLink>
             <NavLink href="#finder" scrolled={true} onClick={() => setIsOpen(false)}>Energy Finder</NavLink>
             <NavLink href="#contact" scrolled={true} onClick={() => setIsOpen(false)}>Contact</NavLink>
           </div>
