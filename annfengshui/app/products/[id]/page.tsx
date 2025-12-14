@@ -35,7 +35,7 @@ export default function ProductDetailPage() {
     const meaning = t.productDetail.fengshuiMeaning[key];
     
     // Đảm bảo luôn trả về object hợp lệ
-    if (!meaning || !meaning.elements) {
+    if (!meaning || !meaning.title || !meaning.description) {
       return t.productDetail.fengshuiMeaning.item;
     }
     
@@ -253,21 +253,7 @@ export default function ProductDetailPage() {
                 {fengShuiInfo?.description || ''}
               </p>
               
-              {fengShuiInfo?.elements && fengShuiInfo.elements.length > 0 && (
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {fengShuiInfo.elements.map((element, index) => (
-                    <div
-                      key={index}
-                      className="flex items-start gap-4 p-4 bg-ann-ivory rounded-lg hover:bg-ann-gold/10 transition-colors"
-                    >
-                      <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-ann-gold to-ann-green rounded-full flex items-center justify-center">
-                        <span className="text-white font-bold">{index + 1}</span>
-                      </div>
-                      <p className="text-ann-dark font-medium pt-2">{element}</p>
-                    </div>
-                  ))}
-                </div>
-              )}
+              
             </div>
           </div>
         </div>
