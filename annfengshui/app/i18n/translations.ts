@@ -58,6 +58,8 @@ export interface Translations {
     energyItemDesc: string;
     designerCollection: string;
     designerCollectionDesc: string;
+    fengshuiStatue: string;
+    fengshuiStatueDesc: string;
   };
   
   // Ann Energy Sets
@@ -261,8 +263,10 @@ export const translations: Record<Language, Translations> = {
       fengshuiWishJarDesc: 'Lời chúc an lành trong chiếc lọ nhỏ.',
       energyItem: 'Vật phẩm năng lượng',
       energyItemDesc: 'Tăng tần số năng lượng cho ngôi nhà bạn.',
-      designerCollection: 'Dòng Designer độc bản',
+      designerCollection: 'Dòng thiết kế độc bản',
       designerCollectionDesc: 'Tác phẩm độc bản – dành cho người sưu tầm năng lượng.',
+      fengshuiStatue: 'Tượng phong thủy',
+      fengshuiStatueDesc: 'Tượng thần tài và các linh vật phong thủy.',
     },
     energySets: {
       title: 'Ann Energy Collection',
@@ -492,6 +496,8 @@ export const translations: Record<Language, Translations> = {
       energyItemDesc: 'Increase energy frequency for your home.',
       designerCollection: 'Designer Exclusive Collection',
       designerCollectionDesc: 'Unique pieces – for energy collectors.',
+      fengshuiStatue: 'Feng Shui Statue',
+      fengshuiStatueDesc: 'Wealth gods and feng shui spiritual figures.',
     },
     energySets: {
       title: 'Ann Energy Collection',

@@ -10,33 +10,34 @@ const ProductGallery = () => {
     {
       name: t.productItems.fengshuiBracelet,
       message: t.productItems.fengshuiBraceletDesc,
-      image: '/product1.jpg',
+      image: '/product/Vòng tay thạch anh đỏ (3).jpg',
     },
     {
       name: t.productItems.gemstonePainting,
       message: t.productItems.gemstonePaintingDesc,
-      image: '/product2.jpg',
+      image: '/product/Long phụng.jpg',
     },
     {
       name: t.productItems.fengshuiWishJar,
       message: t.productItems.fengshuiWishJarDesc,
-      image: '/product3.jpg',
+      image: '/product/Hộp giấy đựng lọ ước phong thủy (4).jpg',
     },
     {
       name: t.productItems.energyItem,
       message: t.productItems.energyItemDesc,
-      image: '/product4.jpg',
+      image: '/product/Mặt ngọc hồ ly mã não tự nhiên (1).jpg',
     },
     {
       name: t.productItems.designerCollection,
       message: t.productItems.designerCollectionDesc,
-      image: '/product5.jpg',
+      image: '/product/Mặt phật quan âm mã não đỏ tự nhiên (2).jpg',
     },
     {
-      name: t.productItems.designerCollection,
-      message: t.productItems.designerCollectionDesc,
-      image: '/product5.jpg',
+      name: t.productItems.fengshuiStatue,
+      message: t.productItems.fengshuiStatueDesc,
+      image: '/product/Long quy ngọc hoàng Long tự nhiên (2).jpg',
     },
+    
   ];
 
   return (

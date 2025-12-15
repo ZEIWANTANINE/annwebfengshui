@@ -14,9 +14,15 @@ const BrandStory = () => {
         </div>
         <div className="flex justify-center">
           <div className="w-full md:w-2/3 lg:w-1/2">
-            {/* Placeholder for a brand video or a beautiful image */}
-            <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-2xl bg-gray-200 flex items-center justify-center">
-              <p className="text-gray-500">Brand Video/Image Coming Soon</p>
+            <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-2xl">
+              <video 
+                className="w-full h-full object-cover"
+                controls
+                poster="/product/Long quy ngọc hoàng Long tự nhiên (2).jpg"
+              >
+                <source src="/product/Clip về Long quy.mp4" type="video/mp4" />
+                Trình duyệt của bạn không hỗ trợ thẻ video.
+              </video>
             </div>
           </div>
         </div>

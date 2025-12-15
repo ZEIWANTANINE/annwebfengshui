@@ -10,25 +10,25 @@ const AnnEnergySets = () => {
     {
       name: t.energySets.energyVitality,
       description: t.energySets.energyVitalityDesc,
-      image: '/product1.jpg',
+      image: '/product/Đá may mắn (3).jpg',
       color: 'bg-ann-gold',
     },
     {
       name: t.energySets.peaceSleep,
       description: t.energySets.peaceSleepDesc,
-      image: '/product2.jpg',
+      image: '/product/ddcdce2c6843e41dbd52.jpg',
       color: 'bg-ann-green',
     },
     {
       name: t.energySets.beautyGlow,
       description: t.energySets.beautyGlowDesc,
-      image: '/product3.jpg',
+      image: '/product/Vòng tay bản liền thạch anh dâu tây (3).jpg',
       color: 'bg-ann-green', // Replaced pink with a brand color
     },
     {
       name: t.energySets.successFocus,
       description: t.energySets.successFocusDesc,
-      image: '/product5.jpg',
+      image: '/product/Saphir Ánh sao (8).jpg',
       color: 'bg-ann-stone',
     },
   ];
@@ -48,7 +48,7 @@ const AnnEnergySets = () => {
               </div>
               <h3 className="text-xl font-serif font-bold mb-2 text-ann-dark">{set.name}</h3>
               <p className="text-ann-stone mb-6 text-sm flex-grow">{set.description}</p>
-              <button className="bg-ann-dark text-white font-bold py-2 px-6 rounded-full hover:bg-ann-gold hover:text-ann-dark transition-colors duration-300 mt-auto">{t.energySets.buyNow}</button>
+              
             </div>
           ))}
         </div>
