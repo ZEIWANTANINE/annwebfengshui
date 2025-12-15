@@ -303,7 +303,7 @@ export default function ProductDetailPage() {
                 <div className="w-24 h-1 bg-gradient-to-r from-ann-gold to-ann-green mx-auto rounded-full mt-4"></div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {(getLocalizedField(product, 'benefits', language) || product.benefits).map((benefit, index) => (
+                {(getLocalizedField(product, 'benefits', language) || product.benefits).map((benefit: string, index: number) => (
                   <div
                     key={index}
                     className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-ann-stone/10 hover:border-ann-gold/50 group"
