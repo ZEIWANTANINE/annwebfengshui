@@ -1,15 +1,26 @@
 export interface Product {
   id: number;
   name: string;
+  nameEn?: string;
   description: string;
+  descriptionEn?: string;
   fullDescription?: string;
+  fullDescriptionEn?: string;
   price: string;
   retailPrice?: string;
   marketPrice?: string;
   image: string;
   category: string;
+  categoryEn?: string;
   benefits?: string[];
+  benefitsEn?: string[];
   specifications?: {
+    material?: string;
+    size?: string;
+    weight?: string;
+    origin?: string;
+  };
+  specificationsEn?: {
     material?: string;
     size?: string;
     weight?: string;
@@ -17,21 +28,33 @@ export interface Product {
   };
 }
 
-export const allProducts: Product[] = [
+export const allProducts: Product[] = 
+[
   {
     id: 1,
     name: 'Vòng thạch anh',
+    nameEn: 'Ruby Quartz Bracelet',
     description: 'Mang năng lượng bên mình mỗi ngày. Vòng tay đá Ruby tự nhiên, mang lại may mắn và tài lộc.',
+    descriptionEn: 'Carry energy with you every day. Natural Ruby stone bracelet, brings luck and fortune.',
     fullDescription: 'Vòng tay Thạch Anh Ruby Tự Nhiên\n🪷 THÔNG TIN SẢN PHẨM\n•	Tên sản phẩm: Vòng tay Thạch Anh Ruby Tự Nhiên\n•	Tên tiếng Anh: Natural Ruby Quartz Bracelet\n•	Nguồn gốc: Mỏ đá quý Myanmar\n•	Gia công & hoàn thiện: Xưởng hợp tác Ann Gem & Fengshui tại Việt Nam\n•	Thương hiệu phân phối: Ann Gem & Fengshui – Recharge Your Energy, Restore Your Balance\n•	Kích thước: Đường kính 6-7cm (có thể điều chỉnh)\n•	Chất liệu: Đá Ruby tự nhiên 100%, độ bóng cao, màu đỏ ruby đặc trưng\n________________________________________\n💰 GIÁ BÁN / PRICING\nHạng mục	Mức giá (VNĐ)	Mã sản phẩm	Ghi chú\nGiá niêm yết (Retail List Price)	2.900.000 (giá chưa có phiếu kiểm định riêng)	AGFS001	Đã bao gồm 10% VAT, chưa bao gồm phí vận chuyển\nGiá bán (Market Price)	2.500.000 (giá chưa có phiếu kiểm định riêng)	AGFS001	Bao gồm VAT, chưa có phí vận chuyển\n________________________________________\n🌈 Ý NGHĨA PHONG THỦY\n🔹 Đặc tính:\nRuby là viên đá của tình yêu, đam mê và quyền lực, thuộc hành Hỏa, mang năng lượng mạnh mẽ và tích cực.\n🔹 Phân tích phong thủy:\nTrong ngũ hành, Ruby thuộc hành Hỏa, tượng trưng cho sự nhiệt huyết, quyết đoán và thành công. Đá giúp cân bằng năng lượng, tăng cường sự tự tin và thu hút may mắn.\n🔹 Công dụng:\n•	Mang lại may mắn và tài lộc\n•	Tăng cường sự tự tin và quyền lực\n•	Bảo vệ khỏi năng lượng tiêu cực\n•	Tăng cường tình yêu và đam mê\n🔹 Ý nghĩa biểu tượng:\nBiểu tượng của tình yêu vĩnh cửu và sức mạnh nội tâm.\n🔹 Hợp mệnh:\n•	Mệnh Hỏa đặc biệt tương sinh\n•	Mệnh Thủy, Mộc, Thổ có thể phối hợp để cân bằng\n________________________________________\n💎 GIẢI NGHĨA CHUYÊN GIA PHONG THỦY\n1. Về năng lượng học:\nRuby phát ra tần số năng lượng cao, kích thích luân xa tim và luân xa mặt trời, giúp tăng cường lòng tự trọng và sự sáng tạo.\n2. Về phong thủy trấn trạch:\nĐặt vòng Ruby trong phòng khách hoặc đeo bên người để tăng cường năng lượng tích cực, thu hút tài vận.\n3. Về ứng dụng trong không gian sống:\nCó thể đặt trên bàn làm việc hoặc đeo hàng ngày để duy trì năng lượng tích cực.\n________________________________________\n🪶 HỒ SƠ PHONG THỦY SẢN PHẨM\n1. Mô tả sản phẩm / Product Description\nVòng tay gồm các hạt Ruby tự nhiên, xâu bằng dây da hoặc cao su bền.\n2. Thành phần & Đặc trưng cấu tạo\n100% Ruby tự nhiên, độ cứng Mohs 9, màu đỏ ruby rực rỡ.\n3. Quy trình chế tác\nChọn lọc đá thô – cắt mài – đánh bóng – xâu chuỗi.\n4. Công dụng chính / Key Functions\n•	Tăng cường tình yêu và đam mê\n•	Mang lại may mắn và tài lộc\n•	Bảo vệ năng lượng\n5. Điểm khác biệt / USP\n•	Đá tự nhiên 100%\n•	Năng lượng mạnh mẽ\n•	Thiết kế tinh tế\n6. Đối tượng sử dụng / Recommended Users\n•	Người cần tăng cường sự tự tin\n•	Người yêu thích đá quý\n•	Người làm kinh doanh\n7. Cảnh báo / Precautions\nTránh va đập mạnh, bảo quản nơi khô ráo.\n8. Tại sao nên chọn sản phẩm này\nRuby là viên đá cổ điển, mang lại năng lượng tích cực và may mắn.\n________________________________________\n💬 CÂU HỎI THƯỜNG GẶP (FAQ)\nQ: Ruby khác gì đá Ruby nhân tạo?\nA: Ruby tự nhiên có độ tinh khiết và năng lượng cao hơn.\nQ: Có thể đeo hàng ngày không?\nA: Có, nhưng nên tháo ra khi làm việc nặng.\nQ: Làm sao bảo dưỡng?\nA: Lau bằng vải mềm, tránh hóa chất.\n________________________________________\n🧭 HƯỚNG DẪN KIỂM TRA THẬT – GIẢ\n1.	Độ bóng: Ruby thật có độ bóng cao, phản sáng mạnh.\n2.	Màu sắc: Đỏ ruby tự nhiên, không quá sáng hoặc tối.\n3.	Cảm giác: Nặng, mát lạnh.\n4.	Kiểm định: Có giấy chứng nhận nếu cần.',
+    fullDescriptionEn: 'Natural Ruby Quartz Bracelet\n🪷 PRODUCT INFORMATION\n•	Product Name: Natural Ruby Quartz Bracelet\n•	English Name: Natural Ruby Quartz Bracelet\n•	Origin: Myanmar gem mines\n•	Processing & Finishing: Ann Gem & Fengshui cooperative workshop in Vietnam\n•	Distribution Brand: Ann Gem & Fengshui – Recharge Your Energy, Restore Your Balance\n•	Size: Diameter 6-7cm (adjustable)\n•	Material: 100% natural Ruby, high gloss, characteristic ruby red color\n________________________________________\n💰 PRICING\nCategory	Price (VND)	Product Code	Note\nRetail List Price	2,900,000 (price without separate certification)	AGFS001	Includes 10% VAT, excludes shipping\nMarket Price	2,500,000 (price without separate certification)	AGFS001	Includes VAT, excludes shipping\n________________________________________\n🌈 FENG SHUI MEANING\n🔹 Characteristics:\nRuby is the stone of love, passion and power, belongs to Fire element, brings strong and positive energy.\n🔹 Feng Shui Analysis:\nIn the five elements, Ruby belongs to Fire, symbolizes enthusiasm, decisiveness and success. The stone helps balance energy, boost confidence and attract luck.\n🔹 Uses:\n•	Brings luck and fortune\n•	Enhances confidence and power\n•	Protects from negative energy\n•	Enhances love and passion\n🔹 Symbolic Meaning:\nSymbol of eternal love and inner strength.\n🔹 Compatible Elements:\n•	Fire element especially compatible\n•	Water, Wood, Earth elements can combine for balance\n________________________________________\n💎 EXPERT FENG SHUI INTERPRETATION\n1. Energy Science:\nRuby emits high frequency energy, stimulates heart chakra and solar plexus chakra, helps enhance self-esteem and creativity.\n2. Feng Shui House Protection:\nPlace Ruby bracelet in living room or wear on body to enhance positive energy, attract wealth.\n3. Application in Living Space:\nCan be placed on desk or worn daily to maintain positive energy.\n________________________________________\n🪶 FENG SHUI PRODUCT PROFILE\n1. Product Description\nBracelet consists of natural Ruby beads, strung with durable leather or rubber cord.\n2. Composition & Structure\n100% natural Ruby, Mohs hardness 9, brilliant ruby red color.\n3. Manufacturing Process\nSelect raw stone – cut and polish – string beads.\n4. Key Functions\n•	Enhance love and passion\n•	Bring luck and fortune\n•	Protect energy\n5. USP\n•	100% natural stone\n•	Strong energy\n•	Elegant design\n6. Recommended Users\n•	People needing confidence boost\n•	Gem lovers\n•	Business people\n7. Precautions\nAvoid strong impacts, store in dry place.\n8. Why choose this product\nRuby is a classic stone, brings positive energy and luck.\n________________________________________\n💬 FREQUENTLY ASKED QUESTIONS (FAQ)\nQ: How is Ruby different from synthetic Ruby?\nA: Natural Ruby has higher purity and energy.\nQ: Can it be worn daily?\nA: Yes, but remove when doing heavy work.\nQ: How to maintain?\nA: Wipe with soft cloth, avoid chemicals.\n________________________________________\n🧭 AUTHENTICITY CHECK GUIDE\n1.	Gloss: Real Ruby has high gloss, strong reflection.\n2.	Color: Natural ruby red, not too bright or dull.\n3.	Feel: Heavy, cool.\n4.	Certification: Certificate available if needed.',
     retailPrice: '2,900,000',
     marketPrice: '2,500,000',
+    price:'2,500,000',
     image: '/product/Vòng thạch anh các loại (6).jpg',
     category: 'Vòng tay',
+    categoryEn: 'Bracelet',
     benefits: [
       'Mang lại may mắn và tài lộc',
       'Tăng cường sự tự tin và quyền lực',
       'Bảo vệ khỏi năng lượng tiêu cực',
       'Tăng cường tình yêu và đam mê',
+    ],
+    benefitsEn: [
+      'Brings luck and fortune',
+      'Enhances confidence and power',
+      'Protects from negative energy',
+      'Enhances love and passion',
     ],
     specifications: {
       material: 'Đá Ruby tự nhiên 100%',
@@ -39,24 +62,47 @@ export const allProducts: Product[] = [
       weight: '15-20g',
       origin: 'Myanmar',
     },
+    specificationsEn: {
+      material: '100% Natural Ruby',
+      size: 'Diameter 6-7cm (adjustable)',
+      weight: '15-20g',
+      origin: 'Myanmar',
+    },
   },
   {
     id: 2,
     name: 'Đá may mắn',
+    nameEn: 'Lucky Stone',
     description: 'Tác phẩm phong thủy cho không gian sống. Tranh được làm từ đá thạch anh tự nhiên, tăng cường năng lượng tích cực.',
+    descriptionEn: 'Feng Shui artwork for living space. Painting made from natural quartz stone, enhances positive energy.',
     fullDescription: 'Đá May Mắn  Three Gorges Stone\n🪷 THÔNG TIN SẢN PHẨM\n•	Tên sản phẩm: Đá May Mắn – Three Gorges Stone\n•	Tên tiếng Anh: Three Gorges Gemstone\n•	Nguồn gốc: Hình thành tự nhiên tại vùng Tam Hiệp, Trường Giang – nơi hội tụ dòng nước từ cao nguyên Thanh Hải – Tây Tạng\n•	Gia công & hoàn thiện: Xưởng hợp tác Ann Gem & Fengshui tại Việt Nam\n•	Thương hiệu phân phối: Ann Gem & Fengshui – Recharge Your Energy, Restore Your Balance\n•	Kích thước: 1.2 – 1.8 cm (đá tự nhiên mài nhẵn)\n•	Chất liệu: Đá tự nhiên chứa tinh thể pha lê, mã não, thạch anh và selen – khoáng chất quý giúp cân bằng năng lượng và tăng cường sinh khí\n________________________________________\n💰 GIÁ BÁN / PRICING\nHạng mục	Mức giá (VNĐ)	Mã sản phẩm	Ghi chú\nGiá niêm yết (Retail List Price)	6.500.000 (giá chưa có phiếu kiểm định riêng)	AGFS002	Đã bao gồm 10% VAT, chưa bao gồm phí vận chuyển\nGiá bán (Market Price)	5.800.000 (giá chưa có phiếu kiểm định riêng)	AGFS002	Bao gồm VAT, chưa có phí vận chuyển\n________________________________________\n🌈 Ý NGHĨA PHONG THỦY\n🔹 Đặc tính:\nĐá tự nhiên từ vùng đất linh thiêng, chứa nhiều khoáng chất quý.\n🔹 Phân tích phong thủy:\nThuộc hành Thủy, tượng trưng cho sự hội tụ năng lượng từ thiên nhiên.\n🔹 Công dụng:\n•	Tăng cường năng lượng tích cực\n•	Cân bằng sinh khí\n•	Mang lại may mắn\n•	Thanh lọc không gian\n🔹 Ý nghĩa biểu tượng:\nBiểu tượng của sự hội tụ và cân bằng.\n🔹 Hợp mệnh:\n•	Mệnh Thủy, Mộc\n•	Cân bằng cho các mệnh khác\n________________________________________\n💎 GIẢI NGHĨA CHUYÊN GIA PHONG THỦY\n1. Về năng lượng học:\nChứa selen và khoáng chất quý, giúp cân bằng năng lượng.\n2. Về phong thủy trấn trạch:\nĐặt trong nhà để tăng sinh khí.\n3. Về ứng dụng trong không gian sống:\nTrang trí bàn hoặc kệ.\n________________________________________\n🪶 HỒ SƠ PHONG THỦY SẢN PHẨM\n1. Mô tả sản phẩm / Product Description\nĐá tự nhiên mài nhẵn từ Three Gorges.\n2. Thành phần & Đặc trưng cấu tạo\nPha lê, mã não, thạch anh, selen.\n3. Quy trình chế tác\nThu thập – mài nhẵn – kiểm định.\n4. Công dụng chính / Key Functions\n•	Cân bằng năng lượng\n•	Tăng cường sinh khí\n5. Điểm khác biệt / USP\n•	Tự nhiên 100%\n•	Nguồn gốc quý hiếm\n6. Đối tượng sử dụng / Recommended Users\n•	Người yêu thiên nhiên\n•	Người cần năng lượng cân bằng\n7. Cảnh báo / Precautions\nBảo quản khô ráo.\n8. Tại sao nên chọn sản phẩm này\nĐá quý từ vùng đất linh thiêng.\n________________________________________\n💬 CÂU HỎI THƯỜNG GẶP (FAQ)\nQ: Đá này khác gì đá thông thường?\nA: Chứa khoáng chất quý, năng lượng cao.\nQ: Có thể đặt ở đâu?\nA: Bàn làm việc, phòng khách.\nQ: Bảo dưỡng như thế nào?\nA: Lau bụi nhẹ.\n________________________________________\n🧭 HƯỚNG DẪN KIỂM TRA THẬT – GIẢ\n1.	Nguồn gốc: Kiểm tra xuất xứ.\n2.	Chất liệu: Đá thật nặng.\n3.	Màu sắc: Tự nhiên.\n4.	Năng lượng: Cảm nhận tích cực.',
-    retailPrice: '219.000',
-    marketPrice: '149.000',
+    fullDescriptionEn: 'Lucky Stone Three Gorges Stone\n🪷 PRODUCT INFORMATION\n•	Product Name: Lucky Stone – Three Gorges Stone\n•	English Name: Three Gorges Gemstone\n•	Origin: Naturally formed in the Three Gorges region, Yangtze River – where water from the Qinghai-Tibet Plateau converges\n•	Processing & Finishing: Ann Gem & Fengshui cooperative workshop in Vietnam\n•	Distribution Brand: Ann Gem & Fengshui – Recharge Your Energy, Restore Your Balance\n•	Size: 1.2 – 1.8 cm (natural stone polished smooth)\n•	Material: Natural stone containing crystal, agate, quartz and selenium – precious minerals that help balance energy and enhance vitality\n________________________________________\n💰 PRICING\nCategory	Price (VND)	Product Code	Note\nRetail List Price	6,500,000 (price without separate certification)	AGFS002	Includes 10% VAT, excludes shipping\nMarket Price	5,800,000 (price without separate certification)	AGFS002	Includes VAT, excludes shipping\n________________________________________\n🌈 FENG SHUI MEANING\n🔹 Characteristics:\nNatural stone from sacred land, contains many precious minerals.\n🔹 Feng Shui Analysis:\nBelongs to Water element, symbolizes convergence of energy from nature.\n🔹 Uses:\n•	Enhances positive energy\n•	Balances vitality\n•	Brings luck\n•	Purifies space\n🔹 Symbolic Meaning:\nSymbol of convergence and balance.\n🔹 Compatible Elements:\n•	Water, Wood elements\n•	Balance for other elements\n________________________________________\n💎 EXPERT FENG SHUI INTERPRETATION\n1. Energy Science:\nContains selenium and precious minerals, helps balance energy.\n2. Feng Shui House Protection:\nPlace in house to enhance vitality.\n3. Application in Living Space:\nDecorate table or shelf.\n________________________________________\n🪶 FENG SHUI PRODUCT PROFILE\n1. Product Description\nNatural stone polished smooth from Three Gorges.\n2. Composition & Structure\nCrystal, agate, quartz, selenium.\n3. Manufacturing Process\nCollect – polish smooth – certify.\n4. Key Functions\n•	Balance energy\n•	Enhance vitality\n5. USP\n•	100% natural\n•	Rare origin\n6. Recommended Users\n•	Nature lovers\n•	People needing energy balance\n7. Precautions\nStore dry.\n8. Why choose this product\nPrecious stone from sacred land.\n________________________________________\n💬 FREQUENTLY ASKED QUESTIONS (FAQ)\nQ: How is this stone different from ordinary stones?\nA: Contains precious minerals, high energy.\nQ: Where can it be placed?\nA: Desk, living room.\nQ: How to maintain?\nA: Light dust wipe.\n________________________________________\n🧭 AUTHENTICITY CHECK GUIDE\n1.	Origin: Check source.\n2.	Material: Real stone is heavy.\n3.	Color: Natural.\n4.	Energy: Feel positive.',
+    retailPrice: '6,500,000',
+    marketPrice: '5,800,000',
+    price:'5,800,000',
     image: '/product/Đá may mắn (4).jpg',
     category: 'Tranh phong thủy',
+    categoryEn: 'Feng Shui Painting',
     benefits: [
       'Tăng cường năng lượng tích cực cho ngôi nhà',
       'Thanh lọc không khí và không gian',
       'Mang lại sự bình yên và thư giãn',
       'Tác phẩm nghệ thuật độc đáo',
     ],
+    benefitsEn: [
+      'Enhances positive energy for the home',
+      'Purifies air and space',
+      'Brings peace and relaxation',
+      'Unique artwork',
+    ],
     specifications: {
       material: 'Đá thạch anh tự nhiên',
+      size: '60x40cm',
+      weight: '8-10kg',
+      origin: 'Brazil',
+    },
+    specificationsEn: {
+      material: 'Natural quartz stone',
       size: '60x40cm',
       weight: '8-10kg',
       origin: 'Brazil',
@@ -65,16 +111,26 @@ export const allProducts: Product[] = [
   {
     "id": 3,
     "name": "VÒNG TAY THẠCH ANH ĐỎ TỰ NHIÊN 8MM",
+    "nameEn": "NATURAL RED QUARTZ BRACELET 8MM",
     "description": "Lò Ước Phong Thủy – Vòng tay Thạch anh đỏ tự nhiên 8mm (Natural Red Quartz Bracelet 8mm – The Stone of Vitality & Passion).",
+    "descriptionEn": "Feng Shui Wish Jar – Natural Red Quartz Bracelet 8mm (Natural Red Quartz Bracelet 8mm – The Stone of Vitality & Passion).",
     "fullDescription": "VÒNG TAY THẠCH ANH ĐỎ TỰ NHIÊN 8MM (Natural Red Quartz Bracelet 8mm – The Stone of Vitality & Passion)\n🪷 THÔNG TIN SẢN PHẨM\n• Tên sản phẩm: Vòng tay Thạch anh đỏ tự nhiên 8mm\n• Tên tiếng Anh: Natural Red Quartz Bracelet 8mm\n• Nguồn gốc: Brazil – Gia công tại Việt Nam\n• Gia công & hoàn thiện: Xưởng hợp tác Ann Gem & Fengshui tại Việt Nam\n• Thương hiệu phân phối: Ann Gem & Fengshui – Recharge Your Energy, Restore Your Balance\n• Kích thước: 8mm (phù hợp cổ tay 14–17cm)\n• Chất liệu: 100% Thạch anh đỏ tự nhiên, không nhuộm, không ép màu – sắc đỏ tươi ánh hồng, năng lượng dương mạnh mẽ.\n________________________________________\n💰 GIÁ BÁN / PRICING\nHạng mục Mức giá (VNĐ) Mã hàng Ghi chú\nGiá niêm yết (Retail List Price) 1.550.000 (chưa có phiếu kiểm định riêng) AGFS038 Đã bao gồm 10% VAT, chưa bao gồm phí vận chuyển\nGiá bán (Market Price) 1.190.000 (chưa có phiếu kiểm định riêng) AGFS038 Bao gồm VAT & chưa có phí vận chuyển\n________________________________________\n🌈 Ý NGHĨA PHONG THỦY\n🔹 Đặc tính:\nThạch anh đỏ là viên đá mang năng lượng dương mạnh nhất trong họ Thạch anh, biểu trưng cho nhiệt huyết, sức sống và sự bảo vệ năng lượng. Màu đỏ gắn liền với hành Hỏa, tượng trưng cho sức mạnh, đam mê và khát vọng – giúp người đeo thu hút năng lượng tích cực và tự tin hơn trong giao tiếp.\n🔹 Phân tích phong thủy:\nTrong Ngũ hành, Thạch anh đỏ thuộc Hỏa, tương sinh với Thổ và tương khắc với Thủy. Đây là loại đá kích hoạt trường năng lượng sinh khí, hóa giải trì trệ và tăng cường sinh lực cho người đeo – đặc biệt tốt với người làm việc trong môi trường áp lực, dễ mất năng lượng.\n🔹 Công dụng:\n• Tăng năng lượng cơ thể và sự tự tin.\n• Cải thiện sức khỏe, điều hòa khí huyết.\n• Tăng cường khả năng thuyết phục, sức hút cá nhân.\n• Giúp khơi dậy nhiệt huyết trong công việc và tình cảm.\n🔹 Ý nghĩa biểu tượng:\nThạch anh đỏ biểu trưng cho “ngọn lửa nội tâm” – sức mạnh, đam mê và tình yêu bất diệt. Nó giúp người đeo lan tỏa năng lượng sống tích cực, củng cố niềm tin và sự can đảm để đạt được mục tiêu.\n🔹 Hợp mệnh:\nHợp Hỏa, Thổ, Mộc. Người mệnh Kim hoặc Thủy có thể đeo kết hợp với Thạch anh trắng hoặc đen để cân bằng năng lượng.\n________________________________________\n💎 GIẢI NGHĨA CHUYÊN GIA PHONG THỦY\n1. Về năng lượng học:\nThạch anh đỏ dao động ở tần số năng lượng cao (7–8 Hz) với tính “dương” mạnh, giúp kích hoạt Luân xa số 1 (Root Chakra) – trung tâm của sự ổn định và sức sống. Khi năng lượng luân xa này mạnh, người đeo cảm thấy vững vàng, tự tin và tràn đầy sinh lực.\n2. Về phong thủy trấn trạch:\nKhi đặt Thạch anh đỏ trong phòng khách, phòng làm việc hoặc khu vực phía Nam của ngôi nhà, năng lượng Hỏa của đá giúp tăng cường danh vọng, uy tín và tài khí.\n3. Về ứng dụng trong không gian sống:\nVòng tay có thể được đặt gần nguồn sáng hoặc nến đỏ để khuếch đại năng lượng – giúp thanh lọc khí trệ và hấp thu dương khí vào không gian.\n________________________________________\n🪶 HỒ SƠ PHONG THỦY SẢN PHẨM\n1. Mô tả sản phẩm / Product Description\nVòng gồm 18–20 hạt tròn 8mm, màu đỏ hồng ánh lửa, bề mặt bóng nhẹ, năng lượng ấm và rực rỡ.\n2. Thành phần & Đặc trưng cấu tạo\n100% Thạch anh đỏ tự nhiên – không xử lý nhân tạo. Độ cứng Mohs 7, năng lượng ổn định, không bay màu theo thời gian.\n3. Quy trình chế tác\nĐá thô được chọn lọc từ Brazil → Mài tròn – Đánh bóng nước → Tẩy năng lượng bằng trầm hương → Xâu chuỗi thủ công tại xưởng Ann Gem & Fengshui.\n4. Công dụng chính / Key Functions\n• Tăng sinh khí, mang lại năng lượng mạnh mẽ.\n• Thu hút tình yêu và may mắn.\n• Củng cố tự tin, giúp phát huy sức hút cá nhân.\n5. Điểm khác biệt / Unique Selling Points (USP)\n• Đá thật 100% – năng lượng dương ổn định.\n• Tẩy năng lượng thủ công bằng trầm hương tự nhiên.\n• Bao bì thương hiệu Ann Gem & Fengshui – kèm thẻ năng lượng.\n6. Đối tượng sử dụng / Recommended Users\nPhù hợp với người làm kinh doanh, nghệ thuật, lãnh đạo, người thiếu năng lượng hoặc đang cần tăng sinh lực tinh thần.\n7. Cảnh báo / Precautions\nTránh ánh nắng mạnh liên tục và va đập mạnh. Khi không sử dụng, nên cất trong hộp nhung hoặc lụa, tránh nhiệt độ cao.\n8. Tại sao nên chọn sản phẩm này\n✅ Đá tự nhiên thật, năng lượng dương mạnh.\n✅ Giúp tái tạo năng lượng, thu hút may mắn và tình yêu.\n✅ Biểu tượng của sự tự tin, mạnh mẽ và đam mê.\n✅ Phù hợp cả nam và nữ, dễ phối trang phục.\n________________________________________\n💬 CÂU HỎI THƯỜNG GẶP (FAQ)\nQ: Thạch anh đỏ có giúp cải thiện tinh thần không?\n→ Có. Đá này giúp giải tỏa căng thẳng, tăng sự tự tin và kích thích năng lượng tích cực.\nQ: Có nên đeo hàng ngày không?\n→ Nên đeo thường xuyên để duy trì năng lượng Hỏa ổn định, đặc biệt trong công việc và giao tiếp.\nQ: Khi nào nên tẩy năng lượng vòng?\n→ Khoảng 30–45 ngày/lần, bằng ánh trăng, trầm hương hoặc ánh sáng ban mai.\nQ: Có thể kết hợp với loại đá nào khác?\n→ Nên phối cùng Thạch anh trắng (tăng thanh lọc) hoặc đen (tăng bảo vệ) để cân bằng năng lượng.\n________________________________________\n🧭 HƯỚNG DẪN KIỂM TRA THẬT – GIẢ\nBước Cách kiểm tra Đặc điểm đá thật Đặc điểm hàng giả\n1️⃣ Quan sát màu Đỏ ánh hồng tự nhiên, không đều tuyệt đối Màu đỏ phẳng, đồng nhất như nhựa\n2️⃣ Cảm nhận Mát, nặng tay Nhẹ, ấm nhanh\n3️⃣ Gõ nhẹ Âm vang trong, dày Âm đục, ngắn\n4️⃣ Ánh sáng Có độ sâu, phản chiếu ánh cam nhẹ Quá bóng, không có chiều sâu",
+    "fullDescriptionEn": "NATURAL RED QUARTZ BRACELET 8MM (The Stone of Vitality & Passion)\n🪷 PRODUCT INFORMATION\n• Product Name: Natural Red Quartz Bracelet 8mm\n• English Name: Natural Red Quartz Bracelet 8mm\n• Origin: Brazil – Processed in Vietnam\n• Processing & Finishing: Ann Gem & Fengshui cooperative workshop in Vietnam\n• Distribution Brand: Ann Gem & Fengshui – Recharge Your Energy, Restore Your Balance\n• Size: 8mm (suitable for wrist 14–17cm)\n• Material: 100% Natural Red Quartz, undyed, uncolored – bright red with a pink sheen, strong Yang (Dương) energy.\n________________________________________\n💰 PRICING\nCategory Price (VND) Product Code Note\nRetail List Price 1,550,000 (without separate certification) AGFS038 Includes 10% VAT, excludes shipping\nMarket Price 1,190,000 (without separate certification) AGFS038 Includes VAT, excludes shipping\n________________________________________\n🌈 FENG SHUI MEANING\n🔹 Characteristics:\nRed Quartz is the stone with the strongest Yang energy in the Quartz family, symbolizing passion, vitality, and energy protection. The red color is linked to the Fire element, representing strength, passion, and ambition – helping the wearer attract positive energy and gain confidence in communication.\n🔹 Feng Shui Analysis:\nIn the Five Elements, Red Quartz belongs to Fire, which generates Earth and is countered by Water. This stone activates the vital energy field (Sinh Khí), resolves stagnation, and enhances vitality for the wearer – especially good for those working in high-pressure environments, where energy loss is common.\n🔹 Uses:\n• Increases body energy and confidence.\n• Improves health, regulates blood flow (Khí Huyết).\n• Enhances persuasion ability, personal charm/appeal.\n• Helps ignite passion in work and relationships.\n🔹 Symbolic Meaning:\nRed Quartz symbolizes the “inner flame” – strength, passion, and eternal love. It helps the wearer radiate positive life energy, reinforcing belief and courage to achieve goals.\n🔹 Compatible Elements:\nSuitable for Fire, Earth, Wood. People with Metal or Water elements can wear it combined with White or Black Quartz to balance energy.\n________________________________________\n💎 EXPERT FENG SHUI INTERPRETATION\n1. Energy Science:\nRed Quartz vibrates at a high energy frequency (7–8 Hz) with strong “Yang” properties, helping activate Chakra number 1 (Root Chakra) – the center of stability and vitality. When this chakra's energy is strong, the wearer feels grounded, confident, and full of life force.\n2. Feng Shui House Protection (Trấn Trạch):\nWhen placed in the living room, office, or Southern area of the house, the Fire energy of the stone helps enhance fame, reputation, and wealth chi (Tài Khí).\n3. Application in Living Space:\nThe bracelet can be placed near a light source or a red candle to amplify energy – helping purify stagnant chi and absorb Yang energy into the space.\n________________________________________\n🪶 FENG SHUI PRODUCT PROFILE\n1. Product Description:\nThe bracelet consists of 18–20 round 8mm beads, with a fiery red-pink color, slightly polished surface, warm and vibrant energy.\n2. Composition & Structure:\n100% Natural Red Quartz – untreated. Mohs hardness 7, stable energy, does not fade over time.\n3. Manufacturing Process:\nRough stones selected from Brazil → Round cut – Water polished → Energy cleansing with incense → Hand-strung at Ann Gem & Fengshui workshop.\n4. Key Functions:\n• Increases vital energy (Sinh Khí), provides powerful energy.\n• Attracts love and luck.\n• Boosts confidence, helps unleash personal charm.\n5. Unique Selling Points (USP):\n• 100% real stone – stable Yang energy.\n• Manual energy cleansing with natural incense.\n• Ann Gem & Fengshui branded packaging – includes energy card.\n6. Recommended Users:\nSuitable for people in business, arts, leadership, those lacking energy or needing a spiritual vitality boost.\n7. Precautions:\nAvoid continuous strong sunlight and hard impacts. When not in use, store in a velvet or silk box, away from high temperatures.\n8. Why choose this product:\n✅ Real natural stone, strong Yang energy.\n✅ Helps regenerate energy, attracts luck and love.\n✅ Symbol of confidence, strength, and passion.\n✅ Suitable for both men and women, easy to match outfits.\n________________________________________\n💬 FREQUENTLY ASKED QUESTIONS (FAQ)\nQ: Does Red Quartz help improve the spirit?\n→ Yes. This stone helps relieve stress, increases confidence, and stimulates positive energy.\nQ: Should it be worn daily?\n→ It should be worn regularly to maintain stable Fire energy, especially in work and communication.\nQ: When should the bracelet's energy be cleansed?\n→ Approximately every 30–45 days, using moonlight, incense smoke, or early morning sunlight.\nQ: Can it be combined with other stones?\n→ It should be paired with White Quartz (for purification) or Black Quartz (for protection) to balance energy.\n________________________________________\n🧭 AUTHENTICITY CHECK GUIDE\nStep Check Method Real Stone Characteristics Fake Item Characteristics\n1️⃣ Color Observation Natural red-pink sheen, not perfectly uniform Flat red color, uniform like plastic\n2️⃣ Feel Cool, heavy in hand Light, warms up quickly\n3️⃣ Light Tap Clear, rich reverberating sound Dull, short sound\n4️⃣ Light Deep depth, reflects a gentle orange light Too shiny, lacks depth",
     "price": "1,190,000",
     "image": "/product/Vòng tay thạch anh đỏ (3).jpg",
     "category": "Vật phẩm phong thủy",
+    "categoryEn": "Feng Shui Item",
     "benefits": [
         "Tăng năng lượng cơ thể và sự tự tin",
         "Cải thiện sức khỏe, điều hòa khí huyết",
         "Tăng cường khả năng thuyết phục, sức hút cá nhân",
         "Giúp khơi dậy nhiệt huyết trong công việc và tình cảm"
+    ],
+    "benefitsEn": [
+        "Increases body energy and confidence",
+        "Improves health, regulates blood flow",
+        "Enhances persuasion ability, personal charm",
+        "Helps ignite passion in work and relationships"
     ],
     "specifications": {
         "material": "100% Thạch anh đỏ tự nhiên",
@@ -82,22 +138,38 @@ export const allProducts: Product[] = [
         "weight": "500g",
         "origin": "Brazil – Gia công tại Việt Nam"
     },
+    "specificationsEn": {
+        "material": "100% Natural Red Quartz",
+        "size": "8mm (suitable for wrist 14–17cm)",
+        "weight": "500g",
+        "origin": "Brazil – Processed in Vietnam"
+    },
     "retailPrice": "1,550,000",
     "marketPrice": "1,190,000"
 },
   {
     id: 4,
     "name": "VÒNG TAY THẠCH ANH XANH NHẠT TỰ NHIÊN 8MM",
+    "nameEn": "NATURAL LIGHT GREEN QUARTZ BRACELET 8MM",
     "description": "Natural Green Quartz Bracelet 8mm (Aventurine Quartz) – Viên đá của May mắn & Tăng trưởng.",
+    "descriptionEn": "Natural Green Quartz Bracelet 8mm (Aventurine Quartz) – Stone of Luck & Growth.",
     "fullDescription": "💚 VÒNG TAY THẠCH ANH XANH NHẠT TỰ NHIÊN 8MM (Natural Green Quartz Bracelet 8mm – Stone of Luck & Growth)\n\n\n🪷 THÔNG TIN SẢN PHẨM\n\n• Tên sản phẩm: Vòng tay Thạch anh xanh nhạt tự nhiên 8mm\n\n• Tên tiếng Anh: Natural Green Quartz Bracelet 8mm (Aventurine Quartz)\n\n• Nguồn gốc: Ấn Độ, Brazil – Gia công tại Việt Nam\n\n• Gia công & hoàn thiện: Xưởng hợp tác Ann Gem & Fengshui tại Việt Nam\n\n• Thương hiệu phân phối: Ann Gem & Fengshui – Recharge Your Energy, Restore Your Balance\n\n• Kích thước: 8mm (phù hợp cổ tay 14–17cm)\n\n• Chất liệu: 100% Thạch anh xanh tự nhiên (Aventurine Quartz), bề mặt bóng mịn, ánh xanh lục đặc trưng, không nhuộm – không xử lý nhiệt.\n\n\n________________________________________\n💰 GIÁ BÁN / PRICING\n\n| Hạng mục | Mức giá (VNĐ) | Ghi chú |\n| :--- | :--- | :--- |\n| Giá niêm yết (Retail List Price) | 1.490.000 (không có giấy kiểm định riêng) Code AGFS 032\\n1.890.000 (có giấy kiểm định riêng) Code AGFS 033 | Đã bao gồm 10% VAT, chưa bao gồm phí vận chuyển |\n| Giá bán (Market Price) | 1.090.000 (không có giấy kiểm định riêng) Code AGFS 032\\n1.490.000 (có giấy kiểm định riêng) Code AGFS 033 | Bao gồm VAT & chưa có phí vận chuyển |\n\n________________________________________\n🌈 Ý NGHĨA PHONG THỦY\n🔹 Đặc tính:\nThạch anh xanh là viên đá của may mắn, sức khỏe và cơ hội mới. Với năng lượng dương nhẹ, ổn định và mát lành, nó giúp làm dịu cảm xúc, cân bằng tâm trí, đồng thời kích hoạt vận khí thịnh vượng.\n🔹 Phân tích phong thủy:\nTrong Ngũ hành, thạch anh xanh thuộc hành Mộc, tượng trưng cho sự sinh sôi, phát triển và cân bằng tự nhiên. Khi đeo thường xuyên, năng lượng Mộc giúp nuôi dưỡng tinh thần, cải thiện vận tài lộc, và tăng sức hút cá nhân.\n🔹 Công dụng:\n\n• Thu hút may mắn, tiền tài, quý nhân.\n\n• Hỗ trợ sự nghiệp, đặc biệt với người làm kinh doanh hoặc khởi nghiệp.\n\n• Tăng sức khỏe, giảm stress, điều hòa khí huyết.\n\n• Kích thích sự sáng tạo và tinh thần tích cực.\n🔹 Ý nghĩa biểu tượng:\nThạch anh xanh tượng trưng cho “Sự hồi sinh và niềm hy vọng”— viên đá của những khởi đầu mới và năng lượng tăng trưởng.\n🔹 Hợp mệnh:\nHợp nhất với Mệnh Mộc, Hỏa, Thủy.\n\nNgười mệnh Thổ hoặc Kim có thể kết hợp cùng thạch anh trắng để cân bằng năng lượng.\n\n________________________________________\n💎 GIẢI NGHĨA CHUYÊN GIA PHONG THỦY\n1. Về năng lượng học:\nThạch anh xanh phát ra tần số năng lượng ôn hòa, hỗ trợ luân xa tim (Heart Chakra), giúp giải tỏa năng lượng tiêu cực, làm dịu nhịp tim và ổn định cảm xúc.\n\nTheo năng lượng học phương Tây, đây là loại đá giúp “tái lập tần số tích cực” cho người hay căng thẳng, lo lắng hoặc mất ngủ.\n2. Về phong thủy trấn trạch:\nĐặt thạch anh xanh ở góc Đông hoặc Đông Nam trong nhà giúp kích hoạt vận khí về Sức khỏe và Tài Lộc.\n\nTrong công việc, đặt một viên thạch anh xanh nhỏ trên bàn làm việc giúp hóa giải cạnh tranh, củng cố mối quan hệ hợp tác và mang lại bình an.\n3. Về ứng dụng trong không gian sống:\nKhi không đeo, nên đặt vòng trong hộp gỗ hoặc trên đế lụa, gần chậu cây xanh để cộng hưởng năng lượng Mộc.\n\n________________________________________\n🪶 HỒ SƠ PHONG THỦY SẢN PHẨM\n1. Mô tả sản phẩm / Product Description\nVòng gồm 18–20 hạt tròn đều 8mm, màu xanh ngọc trong mát, độ bóng tự nhiên cao, xâu trên dây đàn hồi bền chắc.\n2. Thành phần & Đặc trưng cấu tạo\n100% Thạch anh xanh tự nhiên (Aventurine Quartz), không xử lý màu, độ cứng Mohs 7.\n\nMàu xanh ánh lục – biểu tượng của thiên nhiên, tăng sinh khí.\n3. Quy trình chế tác\nĐá thô chọn lọc tại Ấn Độ / Brazil → Cắt lát → Mài tròn → Đánh bóng nước → Tẩy tịnh năng lượng bằng trầm hương → Xâu chuỗi thủ công tại Ann Gem & Fengshui.\n4. Công dụng chính / Key Functions\n\n• Thu hút may mắn, tài lộc.\n\n• Tăng sức khỏe và cân bằng năng lượng cơ thể.\n\n• Cải thiện tâm trạng, nuôi dưỡng cảm xúc tích cực.\n5. Điểm khác biệt / USP\n\n• 100% đá tự nhiên, không qua xử lý nhân tạo.\n\n• Được tẩy năng lượng bằng phương pháp truyền thống.\n\n• Bao bì kèm chứng thư năng lượng Ann Gem & Fengshui.\n6. Đối tượng sử dụng / Recommended Users\nPhù hợp với doanh nhân, người khởi nghiệp, học sinh – sinh viên, hoặc những ai cần phục hồi năng lượng tinh thần.\n7. Cảnh báo / Precautions\nKhông ngâm nước muối hoặc hóa chất mạnh.\n\nTránh va đập, tránh để nơi có nhiệt cao.\n\nKhi không sử dụng, nên đặt nơi sáng dịu hoặc gần cây xanh.\n8. Tại sao nên chọn sản phẩm này\n✅ Mang lại năng lượng tích cực, may mắn và bình an.\n✅ Biểu tượng của sự tăng trưởng và tái sinh.\n✅ 100% đá thật, kiểm định rõ ràng.\n✅ Phù hợp với mọi giới tính và độ tuổi.\n\n________________________________________\n💬 CÂU HỎI THƯỜNG GẶP (FAQ)\nQ: Vòng thạch anh xanh khác gì thạch anh trắng hoặc tím?\n\n→ Thạch anh xanh mang năng lượng Mộc – tăng may mắn và tài lộc, trong khi thạch anh trắng thiên về thanh lọc, thạch anh tím thiên về trí tuệ.\nQ: Có nên đeo thường xuyên không?\n\n→ Có, đeo càng lâu năng lượng càng cộng hưởng, giúp cơ thể hấp thu tốt hơn.\nQ: Khi nào nên tẩy năng lượng?\n\n→ Mỗi 30–45 ngày, bằng ánh trăng, khói trầm hoặc ánh sáng tự nhiên buổi sáng sớm.\n\n________________________________________\n🧭 HƯỚNG DẪN KIỂM TRA THẬT – GIẢ\n\n| Bước | Cách kiểm tra | Đặc điểm đá thật | Đặc điểm giả |\n| :--- | :--- | :--- | :--- |\n| 1️⃣ | Quan sát dưới ánh sáng | Vân tự nhiên, màu không đồng nhất hoàn toàn | Màu phẳng, đồng đều, thiếu chiều sâu |\n| 2️⃣ | Sờ tay | Đá thật mát lạnh, nặng tay | Nhựa nhẹ, ấm nhanh |\n| 3️⃣ | Gõ nhẹ 2 hạt | Âm vang trong, đều | Âm đục, nông |\n| 4️⃣ | Nhìn bằng kính lúp | Có vết nứt tự nhiên nhỏ | Bề mặt trơn bóng bất thường |",
+    "fullDescriptionEn": "💚 NATURAL LIGHT GREEN QUARTZ BRACELET 8MM (Stone of Luck & Growth)\n\n\n🪷 PRODUCT INFORMATION\n\n• Product Name: Natural Light Green Quartz Bracelet 8mm\n\n• English Name: Natural Green Quartz Bracelet 8mm (Aventurine Quartz)\n\n• Origin: India, Brazil – Processed in Vietnam\n\n• Processing & Finishing: Ann Gem & Fengshui cooperative workshop in Vietnam\n\n• Distribution Brand: Ann Gem & Fengshui – Recharge Your Energy, Restore Your Balance\n\n• Size: 8mm (suitable for wrist 14–17cm)\n\n• Material: 100% Natural Green Quartz (Aventurine Quartz), smooth polished surface, characteristic green sheen, undyed – unheat-treated.\n\n\n________________________________________\n💰 PRICING\n\n| Category | Price (VND) | Note |\n| :--- | :--- | :--- |\n| Retail List Price | 1,490,000 (without separate certification) Code AGFS 032\\n1,890,000 (with separate certification) Code AGFS 033 | Includes 10% VAT, excludes shipping |\n| Market Price | 1,090,000 (without separate certification) Code AGFS 032\\n1,490,000 (with separate certification) Code AGFS 033 | Includes VAT, excludes shipping |\n\n________________________________________\n🌈 FENG SHUI MEANING\n🔹 Characteristics:\nGreen Quartz is the stone of luck, health, and new opportunities. With light, stable, and cooling Yang energy, it helps soothe emotions, balance the mind, and activate prosperity chi (Vận Khí).\n🔹 Feng Shui Analysis:\nIn the Five Elements, Green Quartz belongs to the Wood element, symbolizing growth, development, and natural balance. Regular wearing helps nurture the spirit, improve wealth fortune (Tài Lộc), and increase personal appeal.\n🔹 Uses:\n\n• Attracts luck, wealth, and benefactors (Qúy Nhân).\n\n• Supports career, especially for business people or entrepreneurs.\n\n• Increases health, reduces stress, regulates blood flow (Khí Huyết).\n\n• Stimulates creativity and a positive spirit.\n🔹 Symbolic Meaning:\nGreen Quartz symbolizes “Rebirth and Hope”— the stone of new beginnings and growth energy.\n🔹 Compatible Elements:\nCompatible with Wood, Fire, Water elements.\n\nPeople with Earth or Metal elements can combine it with White Quartz to balance energy.\n\n________________________________________\n💎 EXPERT FENG SHUI INTERPRETATION\n1. Energy Science:\nGreen Quartz emits gentle energy frequencies, supporting the Heart Chakra, helping relieve negative energy, calm the heart rate, and stabilize emotions.\n\nAccording to Western energy science, this stone helps “reset positive frequency” for those who are often stressed, anxious, or suffer from insomnia.\n2. Feng Shui House Protection (Trấn Trạch):\nPlacing Green Quartz in the East or Southeast corner of the house helps activate fortune related to Health and Wealth (Tài Lộc).\n\nAt work, placing a small Green Quartz stone on the desk helps resolve competition, strengthen collaborative relationships, and bring peace.\n3. Application in Living Space:\nWhen not worn, the bracelet should be placed in a wooden box or on a silk mat, near green plants to resonate with Wood energy.\n\n________________________________________\n🪶 FENG SHUI PRODUCT PROFILE\n1. Product Description:\nThe bracelet consists of 18–20 smooth round 8mm beads, with a cool jade green color, high natural polish, strung on a durable elastic cord.\n2. Composition & Structure:\n100% Natural Green Quartz (Aventurine Quartz), undyed, Mohs hardness 7.\n\nGreen-tinged color – symbol of nature, increases vital energy (Sinh Khí).\n3. Manufacturing Process:\nRough stones selected from India / Brazil → Slice cut → Round polished → Water polished → Energy cleansing with incense → Hand-strung at Ann Gem & Fengshui.\n4. Key Functions:\n\n• Attracts luck, wealth/fortune.\n\n• Increases health and balances body energy.\n\n• Improves mood, nurtures positive emotions.\n5. Unique Selling Points (USP):\n\n• 100% natural stone, untreated.\n\n• Energy cleansed using traditional methods.\n\n• Includes Ann Gem & Fengshui energy certificate.\n6. Recommended Users:\nSuitable for entrepreneurs, start-ups, students, or anyone needing mental energy recovery.\n7. Precautions:\nDo not soak in salt water or strong chemicals.\n\nAvoid impact, avoid placing in high-heat areas.\n\nWhen not used, place in a gently lit area or near green plants.\n8. Why choose this product:\n✅ Brings positive energy, luck, and peace.\n✅ Symbol of growth and rebirth.\n✅ 100% real stone, clearly certified.\n✅ Suitable for all genders and ages.\n\n________________________________________\n💬 FREQUENTLY ASKED QUESTIONS (FAQ)\nQ: How is Green Quartz different from White or Amethyst Quartz?\n\n→ Green Quartz carries Wood energy – increasing luck and wealth, while White Quartz focuses on purification, and Amethyst focuses on intellect.\nQ: Should it be worn regularly?\n\n→ Yes, the longer it is worn, the more the energy resonates, helping the body absorb better.\nQ: When should the energy be cleansed?\n\n→ Approximately every 30–45 days, using moonlight, incense smoke, or natural early morning light.\n\n________________________________________\n🧭 AUTHENTICITY CHECK GUIDE\n\n| Step | Check Method | Real Stone Characteristics | Fake Item Characteristics |\n| :--- | :--- | :--- | :--- |\n| 1️⃣ | Visual Observation under light | Natural veins, color not perfectly uniform | Flat, uniform color, lacks depth |\n| 2️⃣ | Touch | Real stone is cool to the touch, heavy | Light plastic, warms up quickly |\n| 3️⃣ | Light Tap (2 beads) | Clear, rich reverberating sound | Dull, shallow sound |\n| 4️⃣ | Magnifying glass | Small natural cracks may be visible | Abnormally smooth surface |",
     "price": "1,090,000",
     "image": "/product/Vòng thạch anh xanh nhạt (4).jpg",
     "category": "Vật phẩm phong thủy",
+    "categoryEn": "Feng Shui Item",
     "benefits": [
         "Thu hút may mắn, tiền tài, quý nhân",
         "Hỗ trợ sự nghiệp, đặc biệt với người làm kinh doanh hoặc khởi nghiệp",
         "Tăng sức khỏe, giảm stress, điều hòa khí huyết",
         "Kích thích sự sáng tạo và tinh thần tích cực"
+    ],
+    "benefitsEn": [
+        "Attracts luck, wealth, noble people",
+        "Supports career, especially for business people or entrepreneurs",
+        "Increases health, reduces stress, regulates blood flow",
+        "Stimulates creativity and positive spirit"
     ],
     "specifications": {
         "material": "100% Thạch anh xanh tự nhiên (Aventurine Quartz)",
@@ -105,22 +177,37 @@ export const allProducts: Product[] = [
         "weight": "500g",
         "origin": "Ấn Độ, Brazil – Gia công tại Việt Nam"
     },
+    "specificationsEn": {
+        "material": "100% Natural Green Quartz (Aventurine Quartz)",
+        "size": "8mm (suitable for wrist 14–17cm)",
+        "weight": "500g",
+        "origin": "India, Brazil – Processed in Vietnam"
+    },
     "retailPrice": "1,490,000",
     "marketPrice": "1,090,000"
   },
   {
     id: 5,
     "name": "MẶT QUAN ÂM NGỌC MÃ NÃO TỰ NHIÊN",
+    "nameEn": "NATURAL AGATE GUANYIN PENDANT",
     "description": "Natural Agate Guanyin Pendant – Tượng trưng cho Từ Bi, Trí Tuệ và Bình An. Có giấy kiểm định VDG.",
+    "descriptionEn": "Natural Agate Guanyin Pendant – Symbolizes Compassion, Wisdom and Peace. Comes with VDG certification.",
     "fullDescription": "💎 SẢN PHẨM: MẶT QUAN ÂM NGỌC MÃ NÃO TỰ NHIÊN\nMã sản phẩm: AGFS020\nCó giấy kiểm định riêng\n\n\n🪷 THÔNG TIN SẢN PHẨM\n\n• Tên sản phẩm: Mặt Quan Âm Ngọc Mã Não Tự Nhiên\n\n• Tên tiếng Anh: Natural Agate Guanyin Pendant\n\n• Nguồn gốc: Mã não tự nhiên (Natural Agate) – Myanmar, Brazil, Việt Nam\n\n• Gia công & hoàn thiện: Xưởng hợp tác Ann Gem & Fengshui tại Việt Nam\n\n• Thương hiệu phân phối: Ann Gem & Fengshui – Recharge Your Energy, Restore Your Balance\n• Kích thước: 39,2 × 25,4 × 3,1 mm\n• Chất liệu: Ngọc mã não tự nhiên, chứng thư kiểm định VDG (Gemstone Report)\n\n\n________________________________________\n💰 GIÁ BÁN / PRICING\n\n| Hạng mục | Mức giá (VNĐ) | Ghi chú |\n| :--- | :--- | :--- |\n| Giá niêm yết (Retail List Price) | 1.599.000 | Đã gồm 10% VAT, chưa gồm vận chuyển |\n| Giá bán (Market Price) | 1.099.000 | Đã gồm VAT, chưa gồm vận chuyển |\n\n________________________________________\n🌈 Ý NGHĨA PHONG THỦY\n\n| Đặc tính | Phân tích phong thủy |\n| :--- | :--- |\n| Ngọc mã não đỏ – cam – vàng | Là biến thể quý hiếm, hội tụ năng lượng của Hỏa và Thổ. Sóng năng lượng dao động ở tần số 8–14 Hz giúp cân bằng trường khí và tạo cảm giác an yên. |\n| Tượng Quan Âm | Biểu trưng của Từ Bi – Trí Tuệ – Cứu Khổ. Quan Âm đem năng lượng nữ tính nhẹ nhàng, xoa dịu và bảo hộ. Sắc đỏ cam tạo nên trường dương khí ổn định, dung hòa cảm xúc và lan tỏa bình an. |\n\nCông dụng:\n\n• Giúp tâm an, trí tĩnh – giảm stress, lo âu.\n\n• Bảo vệ thân chủ khỏi nguồn năng lượng tiêu cực.\n\n• Chiêu cảm duyên lành, tăng trực giác và lòng từ bi.\n\n• Hỗ trợ thiền định, dưỡng sinh, ổn định cảm xúc.\nÝ nghĩa biểu tượng:\n“Nơi tâm an, mọi điều lành sẽ đến.”\nHợp mệnh: Hỏa – Thổ – Mộc. Đặc biệt thích hợp cho nữ giới, người làm việc trong môi trường năng lượng cao hoặc dễ chịu áp lực cảm xúc.\n\n\n________________________________________\n💎 GIẢI NGHĨA CHUYÊN GIA PHONG THỦY\n1. Về năng lượng học:\nMã não là đá biến chất có khả năng tích và phát năng lượng ổn định. Khi chạm vào da, đá giúp điều hòa khí huyết, giảm dao động điện từ cơ thể, tạo “hiệu ứng từ trường mềm” giúp tăng tập trung và bình tâm.\n2. Về phong thủy trấn trạch:\nTượng Quan Âm phù hộ bình an, trấn giữ năng lượng âm – hóa giải trầm khí trong nhà. Đặt tại bàn thiền, phòng ngủ, bàn học hoặc mang bên người đều tốt.\n3. Về ứng dụng trong không gian sống:\n\n• Treo hướng Tây Nam (tình cảm, gia đạo) hoặc Chính Bắc (sự nghiệp – trí tuệ).\n\n• Có thể đặt cạnh nến, lọ đá phong thủy hoặc cây xanh để tăng cộng hưởng năng lượng.\n\n\n________________________________________\n🪶 HỒ SƠ PHONG THỦY SẢN PHẨM\n1. Mô tả sản phẩm / Product Description:\nMặt Quan Âm chế tác thủ công từ ngọc mã não tự nhiên, sắc đỏ cam loang tầng tự nhiên. Mỗi chi tiết khắc đều mềm mại, thể hiện thần thái từ bi, an lạc.\n2. Thành phần & Đặc trưng cấu tạo:\n100% ngọc mã não tự nhiên – kiểm định VDG, không nhuộm, không xử lý màu.\n3. Quy trình chế tác:\nChọn đá đạt chuẩn – khắc hình Quan Âm – đánh bóng tự nhiên – tẩy tịnh bằng trầm hương – niêm năng lượng Ann Fengshui.\n4. Công dụng chính / Key Functions:\n\n• Thanh lọc năng lượng – an thần – dưỡng tâm.\n\n• Tăng trực giác và khả năng cảm nhận năng lượng tích cực.\n\n• Giúp cân bằng cảm xúc và thu hút vận khí.\n\n5. USP / Điểm khác biệt:\n\n• Sắc đá chuyển tầng tự nhiên hiếm (vàng – cam – đỏ).\n\n• Kiểm định & chứng thư năng lượng.\n\n• Mỗi sản phẩm độc bản, khắc tay – không sản xuất hàng loạt.\n\n6. Đối tượng sử dụng / Recommended Users:\n\n• Người hành thiền, tập yoga, làm việc trong lĩnh vực chăm sóc – sáng tạo – y học.\n\n• Người cần an tâm, ngủ ngon, giảm căng thẳng hoặc tìm cân bằng nội tâm.\n\n7. Cảnh báo / Precautions:\n\n• Không để dưới ánh nắng mạnh.\n\n• Tránh hóa chất, nước muối và va đập mạnh.\n\n• Khi không dùng, nên đặt trong hộp gỗ hoặc vải mềm.\n\n8. Tại sao nên chọn sản phẩm này:\n“Vì không chỉ là đá, mà là một thực thể năng lượng nuôi dưỡng bình an bên trong.”\n\n\n________________________________________\n💬 FAQ\nQ1. Mặt Quan Âm có cần khai quang không?\n\n→ Sản phẩm đã được tẩy tịnh và niêm năng lượng; có thể thiền niệm trước khi đeo để kết nối cá nhân.\nQ2. Có thể kết hợp với vòng phong thủy không?\n\n→ Rất tốt. Khi đeo cùng vòng mã não hoặc thạch anh hồng, năng lượng cộng hưởng mạnh mẽ hơn.\nQ3. Có phù hợp làm quà tặng không?\n\n→ Phù hợp làm quà tri ân, sinh nhật, lễ Vu Lan, khai trương hoặc tặng người cần bình an.\n\n\n________________________________________\n🧭 HƯỚNG DẪN KIỂM TRA THẬT – GIẢ\n\n| Bước | Kiểm tra | Đá thật | Hàng giả |\n| :--- | :--- | :--- | :--- |\n| 1 | Quan sát dưới sáng | Vân loang tự nhiên, chuyển tầng màu | Màu phẳng, bóng nhựa |\n| 2 | Cảm nhận nhiệt độ | Mát tay lâu, nặng | Nóng nhanh, nhẹ |\n| 3 | Âm thanh khi gõ | Âm trong, vang nhẹ | Âm đục, rỗng |\n| 4 | Giấy kiểm định | Có mã phiếu VDG duy nhất | Không có, in mờ |",
     "price": "1,099,000",
     "image": "/product/Mặt phật quan âm mã não đỏ tự nhiên (2).jpg",
     "category": "Vật phẩm phong thủy",
+    "categoryEn": "Feng Shui Item",
     "benefits": [
         "Giúp tâm an, trí tĩnh – giảm stress, lo âu",
         "Bảo vệ thân chủ khỏi nguồn năng lượng tiêu cực",
         "Chiêu cảm duyên lành, tăng trực giác và lòng từ bi",
         "Hỗ trợ thiền định, dưỡng sinh, ổn định cảm xúc"
+    ],
+    "benefitsEn": [
+        "Helps calm mind, reduce stress, anxiety",
+        "Protects wearer from negative energy sources",
+        "Attracts good relationships, increases intuition and compassion",
+        "Supports meditation, health cultivation, emotional stability"
     ],
     "specifications": {
         "material": "Ngọc mã não tự nhiên (Natural Agate), có kiểm định VDG",
@@ -128,27 +215,47 @@ export const allProducts: Product[] = [
         "weight": "500g",
         "origin": "Myanmar, Brazil, Việt Nam"
     },
+    "specificationsEn": {
+        "material": "Natural Agate, with VDG certification",
+        "size": "39.2 × 25.4 × 3.1 mm",
+        "weight": "500g",
+        "origin": "Myanmar, Brazil, Vietnam"
+    },
     "retailPrice": "1,599,000",
     "marketPrice": "1,099,000"
   },
   {
     id: 6,
     "name": "MẶT QUAN CÔNG NGỌC MÃ NÃO TỰ NHIÊN",
+    "nameEn": "NATURAL AGATE GUAN YU PENDANT",
     "description": "Natural Agate Guan Yu Pendant – Biểu tượng của Chính trực, Trung nghĩa và Hộ thân. Có giấy kiểm định VDG.",
+    "descriptionEn": "Natural Agate Guan Yu Pendant – Symbol of Integrity, Loyalty and Protection. Comes with VDG certification.",
     "fullDescription": "💎 SẢN PHẨM: MẶT QUAN CÔNG NGỌC MÃ NÃO TỰ NHIÊN\nMã sản phẩm: AGFS019\nĐã có giấy kiểm định\n\n\n🪷 THÔNG TIN SẢN PHẨM\n\n• Tên sản phẩm: Mặt Quan Công Ngọc Mã Não Tự Nhiên\n\n• Tên tiếng Anh: Natural Agate Guan Yu Pendant\n\n• Nguồn gốc: Mã não tự nhiên (Natural Agate) – Myanmar, Brazil, Việt Nam\n\n• Gia công & hoàn thiện: Xưởng hợp tác Ann Gem & Fengshui tại Việt Nam\n\n• Thương hiệu phân phối: Ann Gem & Fengshui – Recharge Your Energy, Restore Your Balance\n• Kích thước: 42,7mm × 26,9mm × 2 mm\n• Chất liệu: Ngọc mã não tự nhiên – kiểm định VDG (Gemstone Report)\n\n\n________________________________________\n💰 GIÁ BÁN / PRICING\n\n| Hạng mục | Mức giá (VNĐ) | Ghi chú |\n| :--- | :--- | :--- |\n| Giá niêm yết (Retail List Price) | 1.499.000 | Đã gồm 10% VAT, chưa gồm vận chuyển |\n| Giá bán (Market Price) | 999.000 | Đã gồm VAT, chưa gồm vận chuyển |\n\n________________________________________\n🌈 Ý NGHĨA PHONG THỦY\n\n| Đặc tính | Phân tích phong thủy |\n| :--- | :--- |\n| Ngọc mã não đỏ – Agate Red | Thuộc hành Hỏa, tượng trưng cho dương khí mạnh mẽ, sức sống, danh vọng và bảo vệ chính nghĩa. Màu đỏ cam chuyển sắc tự nhiên thể hiện năng lượng lưu thông, hóa giải trầm khí. |\n| Hình tượng Quan Công | Biểu tượng của Chính trực – Trung nghĩa – Trấn trạch – Hộ thân. Trong dân gian, Quan Công là vị thần hộ mệnh trừ tà, mang lại dũng khí và bảo hộ công danh. |\n\nCông dụng:\n\n• Hóa giải sát khí, trấn trạch – bảo vệ gia chủ.\n\n• Chiêu tài, giữ vững uy tín – thăng tiến trong sự nghiệp.\n\n• Hỗ trợ tăng năng lượng cá nhân, giúp tâm an, trí sáng, hành sự minh bạch.\nÝ nghĩa biểu tượng:\n“Chính khí hóa hung khí – Dũng tâm sinh phúc khí.”\nHợp mệnh: Hỏa – Thổ – Mộc (các mệnh dương khí mạnh hoặc cần tăng năng lượng bảo vệ).\n\n\n________________________________________\n💎 GIẢI NGHĨA CHUYÊN GIA PHONG THỦY\n1. Về năng lượng học:\nMã não tự nhiên mang tần số cộng hưởng thấp nhưng ổn định, giúp cân bằng trường năng lượng của cơ thể. Sắc đỏ cam khuếch đại vùng tần số tim – khí – huyết, giúp tăng cường sinh lực và tập trung.\n2. Về phong thủy trấn trạch:\nĐặt tại cửa chính, bàn làm việc, hoặc mang bên người sẽ giúp “tụ dương khí, trừ âm sát”, đặc biệt hữu ích cho người hay di chuyển, kinh doanh, đàm phán.\n3. Về ứng dụng trong không gian sống:\n\n• Đặt hướng Chính Bắc (Sự nghiệp), Đông Nam (Tài lộc).\n\n• Tránh đặt đối diện gương hoặc nơi tối ẩm.\n\n• Có thể kết hợp cùng lọ phong thủy hoặc vòng tay mã não đỏ để tăng cộng hưởng năng lượng.\n\n\n________________________________________\n🪶 HỒ SƠ PHONG THỦY SẢN PHẨM\n1. Mô tả / Product Description:\nMặt Quan Công khắc tay từ ngọc mã não tự nhiên, sắc đỏ – cam chuyển tầng, bóng mờ tự nhiên, tẩy tịnh bằng trầm hương và niêm năng lượng theo nghi thức Ann Fengshui.\n2. Thành phần & Đặc trưng:\n100% ngọc mã não tự nhiên – không nhuộm, kiểm định bởi VDG.\n3. Quy trình chế tác:\nChọn đá thô đạt chuẩn – cắt, khắc Quan Công – tẩy tịnh năng lượng – kiểm định & niêm ấn.\n4. Công dụng chính:\n\n• Trấn trạch, hộ thân, chiêu tài.\n\n• Tăng dương khí, ổn định tâm lý và sức khỏe năng lượng.\n\n5. USP – Điểm khác biệt:\n\n• Có chứng thư năng lượng & kiểm định VDG.\n\n• Sắc đá chuyển tầng tự nhiên – mỗi sản phẩm độc bản.\n\n• Thiết kế biểu tượng Quan Công chuẩn văn hóa Á Đông.\n\n6. Đối tượng sử dụng:\n\n• Doanh nhân, lãnh đạo, người làm việc trong lĩnh vực quản lý – thương thuyết.\n\n• Gia chủ cần vật phẩm bảo hộ và tăng vận khí.\n\n7. Cảnh báo:\n\n• Không để dưới nắng gắt lâu.\n\n• Tránh hóa chất và va đập mạnh.\n\n8. Tại sao chọn sản phẩm này:\n“Bởi trong thời vận nhiều biến động, năng lượng bảo hộ chính trực là tấm khiên mạnh nhất.”\n\n\n________________________________________\n💬 FAQ\nQ1. Có thể mang bên người không?\n\n→ Có, tốt nhất đeo gần tim hoặc trong túi áo ngực – vị trí “chính khí bảo thân”.\nQ2. Có cần khai quang không?\n\n→ Đã được khai quang năng lượng, tuy nhiên nên “tẩy trầm” mỗi 3 tháng.\nQ3. Có thể tặng cho ai?\n\n→ Rất phù hợp tặng cho nam giới, người khởi nghiệp, hoặc làm lãnh đạo – mang ý nghĩa “chính tâm hành đạo”.\n\n\n________________________________________\n🧭 HƯỚNG DẪN KIỂM TRA THẬT – GIẢ\n\n| Bước | Kiểm tra | Đá thật | Hàng giả |\n| :--- | :--- | :--- | :--- |\n| 1 | Quan sát | Vân loang tự nhiên, không đồng nhất | Màu phẳng, bóng nhựa |\n| 2 | Sờ cảm | Mát lạnh lâu | Nóng nhanh, nhẹ |\n| 3 | Gõ nhẹ | Âm vang, đanh trong | Âm đục |\n| 4 | Giấy kiểm định | Có phiếu VDG và mã số riêng | Không có hoặc sao chép |",
     "price": "999,000",
     "image": "/product/e94bcc3c6a53e60dbf42.jpg",
     "category": "Vật phẩm phong thủy",
+    "categoryEn": "Feng Shui Item",
     "benefits": [
         "Hóa giải sát khí, trấn trạch – bảo vệ gia chủ",
         "Chiêu tài, giữ vững uy tín – thăng tiến trong sự nghiệp",
         "Hỗ trợ tăng năng lượng cá nhân, giúp tâm an, trí sáng, hành sự minh bạch"
+    ],
+    "benefitsEn": [
+        "Dissolves evil spirits, protects household",
+        "Attracts wealth, maintains reputation – career advancement",
+        "Supports increasing personal energy, helps calm mind, bright intellect, act transparently"
     ],
     "specifications": {
         "material": "Ngọc mã não tự nhiên (Natural Agate), có kiểm định VDG",
         "size": "42,7mm × 26,9mm × 2 mm",
         "weight": "500g",
         "origin": "Myanmar, Brazil, Việt Nam"
+    },
+    "specificationsEn": {
+        "material": "Natural Agate, with VDG certification",
+        "size": "42.7mm × 26.9mm × 2 mm",
+        "weight": "500g",
+        "origin": "Myanmar, Brazil, Vietnam"
     },
     "retailPrice": "1,499,000",
     "marketPrice": "999,000"
@@ -161,16 +268,30 @@ export const allProducts: Product[] = [
     "price": "799,000",
     "image": "/product/Mặt ngọc hồ ly mã não tự nhiên (1).jpg",
     "category": "Vật phẩm phong thủy",
+    "nameEn": "NATURAL AGATE FOX PENDANT",
+    "descriptionEn": "Natural Agate Fox Pendant – Charm of love, wisdom, and grace. Comes with a separate certificate.",
+    "categoryEn": "Feng Shui Items",
     "benefits": [
         "Tăng duyên lành và khả năng giao tiếp",
         "Thu hút năng lượng tình cảm, nhân duyên và quý nhân",
         "Cân bằng cảm xúc, giúp tinh thần thư giãn, an tĩnh"
+    ],
+    "benefitsEn": [
+        "Enhances good fortune and communication skills",
+        "Attracts emotional energy, relationships, and noble people",
+        "Balances emotions, helps relax the mind and spirit"
     ],
     "specifications": {
         "material": "Mã não tự nhiên 100%, có kiểm định riêng",
         "size": "29,3 mm × 22,6 mm",
         "weight": "500g",
         "origin": "Ấn Độ và Brazil – Gia công tại Việt Nam"
+    },
+    "specificationsEn": {
+        "material": "100% natural agate, with separate certification",
+        "size": "29.3 mm × 22.6 mm",
+        "weight": "500g",
+        "origin": "India and Brazil – Processed in Vietnam"
     },
     "retailPrice": "1,199,000",
     "marketPrice": "799,000"
@@ -183,16 +304,30 @@ export const allProducts: Product[] = [
     "price": "5,199,000",
     "image": "/product/Thiềm thừ tài lộc ngọc Hoàng Long (2).jpg",
     "category": "Vật phẩm phong thủy",
+    "nameEn": "NATURAL YELLOW ONYX MARBLE MONEY TOAD",
+    "descriptionEn": "Natural Yellow Onyx Marble Money Toad – Charm for attracting wealth, gathering fortune, symbol of wealth and prosperity.",
+    "categoryEn": "Feng Shui Items",
     "benefits": [
         "Chiêu tài – Tụ lộc – Giữ vững tài vận",
         "Hóa giải thất thoát tài chính, cân bằng năng lượng đất trong nhà",
         "Mang lại may mắn trong kinh doanh, đầu tư, công việc"
+    ],
+    "benefitsEn": [
+        "Attracts wealth – gathers fortune – maintains financial luck",
+        "Resolves financial losses, balances earth energy in the house",
+        "Brings luck in business, investment, work"
     ],
     "specifications": {
         "material": "Ngọc Hoàng Long tự nhiên, có kiểm định VDG",
         "size": "20 × 10 cm (cao khoảng 15 cm)",
         "weight": "500g",
         "origin": "Myanmar, Pakistan, Việt Nam"
+    },
+    "specificationsEn": {
+        "material": "Natural Yellow Onyx, with VDG certification",
+        "size": "20 × 10 cm (height approx. 15 cm)",
+        "weight": "500g",
+        "origin": "Myanmar, Pakistan, Vietnam"
     },
     "retailPrice": "7,399,000",
     "marketPrice": "5,199,000"
@@ -205,16 +340,30 @@ export const allProducts: Product[] = [
     "price": "5,199,000",
     "image": "/product/Thiềm thừ ngọc Onyx (1).jpg",
     "category": "Vật phẩm phong thủy",
+    "nameEn": "NATURAL ONYX MONEY TOAD",
+    "descriptionEn": "Natural Onyx Money Toad – Charm for attracting wealth, gathering fortune, symbol of wealth and prosperity.",
+    "categoryEn": "Feng Shui Items",
     "benefits": [
         "Chiêu tài – tụ lộc – bảo vệ tài sản",
         "Giữ vận khí ổn định, ngăn hao tài tán lộc",
         "Kích hoạt năng lượng thịnh vượng, giúp kinh doanh thuận lợi"
+    ],
+    "benefitsEn": [
+        "Attracts wealth – gathers fortune – protects assets",
+        "Maintains stable luck, prevents financial loss",
+        "Activates prosperity energy, helps business success"
     ],
     "specifications": {
         "material": "Ngọc Onyx tự nhiên, có kiểm định VDG",
         "size": "21 × 12 × 8 cm (cả đế 21 × 15 cm)",
         "weight": "500g",
         "origin": "Myanmar, Pakistan, Việt Nam"
+    },
+    "specificationsEn": {
+        "material": "Natural Onyx, with VDG certification",
+        "size": "21 × 12 × 8 cm (with base 21 × 15 cm)",
+        "weight": "500g",
+        "origin": "Myanmar, Pakistan, Vietnam"
     },
     "retailPrice": "7,399,000",
     "marketPrice": "5,199,000"
@@ -227,17 +376,32 @@ export const allProducts: Product[] = [
     "price": "1,050,000",
     "image": "/product/Vòng mã não đỏ (1).jpg",
     "category": "Vật phẩm phong thủy",
+    "nameEn": "NATURAL RED AGATE BRACELET 8MM",
+    "descriptionEn": "Natural Red Agate Bracelet 8mm – Symbol of vitality, courage, and enduring love. Comes with certification.",
+    "categoryEn": "Feng Shui Items",
     "benefits": [
         "Kích hoạt năng lượng tích cực, giúp cơ thể khỏe mạnh, tinh thần phấn chấn",
         "Thu hút may mắn, tài lộc, tình duyên và cơ hội mới",
         "Giúp người đeo giữ bình tĩnh, sáng suốt và kiên định trước áp lực",
         "Tăng khả năng thấu hiểu và kết nối trong các mối quan hệ"
     ],
+    "benefitsEn": [
+        "Activates positive energy, helps body health, spirited mind",
+        "Attracts luck, wealth, love, and new opportunities",
+        "Helps wearer stay calm, clear-headed, and steadfast under pressure",
+        "Increases understanding and connection in relationships"
+    ],
     "specifications": {
         "material": "100% Mã não đỏ tự nhiên (Natural Agate), có chứng thư kiểm định",
         "size": "Hạt tròn 8mm (phù hợp cổ tay 14–17cm)",
         "weight": "500g",
         "origin": "Brazil / Ấn Độ – Gia công và hoàn thiện tại Việt Nam"
+    },
+    "specificationsEn": {
+        "material": "100% natural red agate, with certification",
+        "size": "8mm round beads (fits wrist 14–17cm)",
+        "weight": "500g",
+        "origin": "Brazil / India – Processed and finished in Vietnam"
     },
     "retailPrice": "1,350,000",
     "marketPrice": "1,050,000"
@@ -250,17 +414,32 @@ export const allProducts: Product[] = [
     "price": "5,900,000",
     "image": "/product/Vòng tay ngọc phỉ thúy loại A (4).jpg",
     "category": "Vật phẩm phong thủy",
+    "nameEn": "NATURAL JADEITE BANGLE TYPE A – 58MM",
+    "descriptionEn": "Natural Jadeite Bangle Type A – Stone of good fortune, prosperity, and longevity. Type A untreated color.",
+    "categoryEn": "Feng Shui Items",
     "benefits": [
         "Thu hút tài lộc và may mắn bền vững",
         "Tăng khả năng phục hồi năng lượng cơ thể và tinh thần",
         "Bảo vệ chủ nhân khỏi tà khí, năng lượng xấu, và sự hao tổn sinh khí",
         "Mang lại cảm giác bình an, thư thái, giúp tâm trí ổn định"
     ],
+    "benefitsEn": [
+        "Attracts wealth and lasting luck",
+        "Increases ability to recover body and mental energy",
+        "Protects owner from evil spirits, bad energy, and vital energy loss",
+        "Brings a sense of peace, relaxation, helps stabilize the mind"
+    ],
     "specifications": {
         "material": "100% Ngọc Phỉ Thúy tự nhiên (Jadeite Type A), có chứng thư kiểm định",
         "size": "58mm (đường kính trong) – bản liền, bo tròn toàn khối",
         "weight": "500g",
         "origin": "Myanmar (Burma) – Gia công và hoàn thiện tại Việt Nam"
+    },
+    "specificationsEn": {
+        "material": "100% natural jadeite (Type A), with certification",
+        "size": "58mm (inner diameter) – solid bangle, fully rounded",
+        "weight": "500g",
+        "origin": "Myanmar (Burma) – Processed and finished in Vietnam"
     },
     "retailPrice": "7,500,000",
     "marketPrice": "5,900,000"
@@ -273,17 +452,32 @@ export const allProducts: Product[] = [
     "price": "890,000",
     "image": "/product/Vòng tay ngọc phỉ thúy loại A (4).jpg",
     "category": "Vật phẩm phong thủy",
+    "nameEn": "NATURAL CALCITE BRACELET 6MM",
+    "descriptionEn": "Natural Calcite Bracelet 6mm – Stone of purification, enlightenment, and stabilizing inner energy.",
+    "categoryEn": "Feng Shui Items",
     "benefits": [
         "Thanh lọc năng lượng xấu, giúp đầu óc minh mẫn, sáng suốt",
         "Tăng khả năng tập trung, ghi nhớ và tư duy logic",
         "Giúp cân bằng cảm xúc, giảm căng thẳng, lo âu",
         "Hỗ trợ thiền định, giúp dễ đi vào trạng thái tĩnh tâm sâu"
     ],
+    "benefitsEn": [
+        "Purifies negative energy, helps clear mind, insightful",
+        "Increases concentration, memory, and logical thinking",
+        "Helps balance emotions, reduce stress, anxiety",
+        "Supports meditation, helps enter deep calm state"
+    ],
     "specifications": {
         "material": "100% Calcite tự nhiên, có kiểm định (Gemstone Report)",
         "size": "Hạt tròn 6mm (phù hợp cổ tay 13–15cm)",
         "weight": "500g",
         "origin": "Brazil – Gia công và hoàn thiện tại Việt Nam"
+    },
+    "specificationsEn": {
+        "material": "100% natural calcite, with certification (Gemstone Report)",
+        "size": "6mm round beads (fits wrist 13–15cm)",
+        "weight": "500g",
+        "origin": "Brazil – Processed and finished in Vietnam"
     },
     "retailPrice": "1,150,000",
     "marketPrice": "890,000"
@@ -296,17 +490,32 @@ export const allProducts: Product[] = [
     "price": "3,490,000",
     "image": "/product/Vòng tay bản liền thạch anh dâu tây (4).jpg",
     "category": "Vật phẩm phong thủy",
+    "nameEn": "NATURAL STRAWBERRY QUARTZ BANGLE – 57.8MM",
+    "descriptionEn": "Natural Strawberry Quartz Bangle – Heart healing stone, symbol of love and inner happiness.",
+    "categoryEn": "Feng Shui Items",
     "benefits": [
         "Tăng nhân duyên và thu hút tình yêu chân thành",
         "Cân bằng cảm xúc, giảm lo âu, giúp tâm hồn nhẹ nhàng, thư thái",
         "Giúp hồi phục năng lượng sau stress hoặc tổn thương tinh thần",
         "Tăng sức hấp dẫn, sự tự tin và khả năng giao tiếp"
     ],
+    "benefitsEn": [
+        "Increases relationships and attracts genuine love",
+        "Balances emotions, reduces anxiety, helps soul relax, calm",
+        "Helps recover energy after stress or mental injury",
+        "Increases attractiveness, confidence, and communication skills"
+    ],
     "specifications": {
         "material": "100% Thạch anh Dâu Tây tự nhiên (Natural Strawberry Quartz), có kiểm định",
         "size": "57.8mm (đường kính trong), bản liền tròn khối",
         "weight": "500g",
         "origin": "Brazil – Gia công và hoàn thiện tại Việt Nam"
+    },
+    "specificationsEn": {
+        "material": "100% natural strawberry quartz, with certification",
+        "size": "57.8mm (inner diameter), solid round bangle",
+        "weight": "500g",
+        "origin": "Brazil – Processed and finished in Vietnam"
     },
     "retailPrice": "4,350,000",
     "marketPrice": "3,490,000"
@@ -319,17 +528,32 @@ export const allProducts: Product[] = [
     "price": "1,150,000",
     "image": "/product/Vòng tay thạch anh mắt hổ nâu đỏ tự nhiên (1).jpg",
     "category": "Vật phẩm phong thủy",
+    "nameEn": "NATURAL RED TIGER’S EYE QUARTZ BRACELET 8MM",
+    "descriptionEn": "Natural Red Tiger’s Eye Quartz – Stone of courage, determination, and protection. With clear tiger eye effect.",
+    "categoryEn": "Feng Shui Items",
     "benefits": [
         "Tăng sức mạnh nội tâm, khả năng quyết đoán và lãnh đạo",
         "Giúp tập trung tư duy, cải thiện trí nhớ và sự kiên định",
         "Bảo vệ khỏi năng lượng tiêu cực và “tà khí” trong môi trường",
         "Mang lại may mắn và tự tin trong công việc, đặc biệt với người kinh doanh"
     ],
+    "benefitsEn": [
+        "Increases inner strength, decisiveness, and leadership",
+        "Helps focus thinking, improve memory, and steadfastness",
+        "Protects from negative energy and evil spirits in environment",
+        "Brings luck and confidence in work, especially for businessmen"
+    ],
     "specifications": {
         "material": "100% Thạch anh mắt hổ nâu đỏ tự nhiên, có kiểm định (Gemstone Report)",
         "size": "8mm (phù hợp cổ tay 14–17cm)",
         "weight": "500g",
         "origin": "Nam Phi / Brazil – Gia công & hoàn thiện tại Việt Nam"
+    },
+    "specificationsEn": {
+        "material": "100% natural red tiger’s eye quartz, with certification (Gemstone Report)",
+        "size": "8mm (fits wrist 14–17cm)",
+        "weight": "500g",
+        "origin": "South Africa / Brazil – Processed & finished in Vietnam"
     },
     "retailPrice": "1,490,000",
     "marketPrice": "1,150,000"
@@ -342,17 +566,32 @@ export const allProducts: Product[] = [
     "price": "1,150,000",
     "image": "/product/Vòng tay thạch anh mắt hổ nâu vàng tự nhiên (2).jpg",
     "category": "Vật phẩm phong thủy",
+    "nameEn": "NATURAL GOLDEN TIGER’S EYE QUARTZ BRACELET 8MM",
+    "descriptionEn": "Natural Golden Tiger’s Eye Quartz – Stone of courage, prosperity, and willpower. With strong moving tiger eye effect.",
+    "categoryEn": "Feng Shui Items",
     "benefits": [
         "Tăng sức mạnh ý chí, sự quyết đoán và lòng tự tin",
         "Hóa giải cảm xúc tiêu cực, giúp tinh thần tỉnh táo, cân bằng",
         "Thu hút tài lộc, hỗ trợ công việc và sự nghiệp hanh thông",
         "Bảo vệ người đeo khỏi năng lượng xấu, tà khí và rủi ro trong di chuyển"
     ],
+    "benefitsEn": [
+        "Increases willpower strength, decisiveness, and confidence",
+        "Resolves negative emotions, helps spirit clear, balanced",
+        "Attracts wealth, supports work and career success",
+        "Protects wearer from bad energy, evil spirits, and risks in travel"
+    ],
     "specifications": {
         "material": "100% Thạch anh mắt hổ nâu vàng tự nhiên, có kiểm định (Gemstone Report)",
         "size": "8mm (phù hợp cổ tay 14–17cm)",
         "weight": "500g",
         "origin": "Nam Phi / Brazil – Gia công và hoàn thiện tại Việt Nam"
+    },
+    "specificationsEn": {
+        "material": "100% natural golden tiger’s eye quartz, with certification (Gemstone Report)",
+        "size": "8mm (fits wrist 14–17cm)",
+        "weight": "500g",
+        "origin": "South Africa / Brazil – Processed and finished in Vietnam"
     },
     "retailPrice": "1,490,000",
     "marketPrice": "1,150,000"
@@ -365,6 +604,9 @@ export const allProducts: Product[] = [
     "price": "999,000",
     "image": "/product/Vòng thạch anh hồng1 (2).jpg",
     "category": "Vật phẩm phong thủy",
+    "nameEn": "NATURAL ROSE QUARTZ BRACELET 8MM",
+    "descriptionEn": "Natural Rose Quartz Bracelet 8mm – Stone of love, emotional healing, and inner peace. Activates Heart Chakra.",
+    "categoryEn": "Feng Shui Items",
     "benefits": [
         "Kích hoạt năng lượng tình yêu, giúp các mối quan hệ thuận hòa",
         "Làm dịu cảm xúc, giảm stress, tăng cảm giác an yên",
@@ -388,17 +630,32 @@ export const allProducts: Product[] = [
     "price": "999,000",
     "image": "/product/Vòng tay thạch anh hồng nhạt (1).jpg",
     "category": "Vật phẩm phong thủy",
+    "nameEn": "NATURAL LIGHT ROSE QUARTZ BRACELET 8MM",
+    "descriptionEn": "Natural Rose Quartz Bracelet 8mm – Stone of love, emotional healing, and inner peace. With optional certification.",
+    "categoryEn": "Feng Shui Items",
     "benefits": [
         "Kích hoạt năng lượng tình yêu, giúp các mối quan hệ thuận hòa",
         "Làm dịu cảm xúc, giảm stress, tăng cảm giác an yên",
         "Tăng cường sức khỏe tim mạch, hỗ trợ ngủ sâu",
         "Giúp người đeo toát ra năng lượng thân thiện và tự tin"
     ],
+    "benefitsEn": [
+        "Activates love energy, helps relationships harmonious",
+        "Soothes emotions, reduces stress, increases sense of peace",
+        "Strengthens cardiovascular health, supports deep sleep",
+        "Helps wearer radiate friendly and confident energy"
+    ],
     "specifications": {
         "material": "100% Thạch anh hồng tự nhiên (Rose Quartz)",
         "size": "8mm (phù hợp cổ tay 14–17cm)",
         "weight": "500g",
         "origin": "Madagascar, Nam Phi – gia công tại Việt Nam"
+    },
+    "specificationsEn": {
+        "material": "100% natural rose quartz",
+        "size": "8mm (fits wrist 14–17cm)",
+        "weight": "500g",
+        "origin": "Madagascar, South Africa – processed in Vietnam"
     },
     "retailPrice": "1,399,000",
     "marketPrice": "999,000"
@@ -411,17 +668,32 @@ export const allProducts: Product[] = [
     "price": "1,370,000",
     "image": "/product/Vòng thạch anh tím (7).jpg",
     "category": "Vật phẩm phong thủy",
+    "nameEn": "NATURAL AMETHYST BRACELET 8MM",
+    "descriptionEn": "Natural Amethyst Bracelet 8mm – Stone of wisdom, peace, and enlightenment. Activates Third Eye and Crown Chakras.",
+    "categoryEn": "Feng Shui Items",
     "benefits": [
         "Giúp tâm trí sáng suốt, tăng khả năng tập trung",
         "Hỗ trợ giấc ngủ sâu, giảm stress và lo âu",
         "Thanh lọc trường năng lượng quanh cơ thể",
         "Thu hút năng lượng bình an và quý nhân phù trợ"
     ],
+    "benefitsEn": [
+        "Helps mind clear, increases concentration",
+        "Supports deep sleep, reduces stress and anxiety",
+        "Purifies energy field around body",
+        "Attracts peace energy and noble people support"
+    ],
     "specifications": {
         "material": "100% Thạch anh tím tự nhiên (Amethyst Quartz), có kiểm định",
         "size": "8mm (phù hợp cổ tay 14–17cm)",
         "weight": "500g",
         "origin": "Brazil – Gia công tại Việt Nam"
+    },
+    "specificationsEn": {
+        "material": "100% natural amethyst quartz, with certification",
+        "size": "8mm (fits wrist 14–17cm)",
+        "weight": "500g",
+        "origin": "Brazil – Processed in Vietnam"
     },
     "retailPrice": "1,750,000",
     "marketPrice": "1,370,000"
@@ -432,13 +704,22 @@ export const allProducts: Product[] = [
     "description": "Natural Black Quartz Bracelet 8mm (Morion Quartz) – Lá chắn năng lượng, biểu tượng của Sức mạnh nội tâm và Bảo hộ.",
     "fullDescription": "VÒNG TAY THẠCH ANH ĐEN TỰ NHIÊN 8MM\n(Natural Black Quartz Bracelet 8mm (Morion Quartz))\n\n\n🪷 THÔNG TIN SẢN PHẨM\n\n• Tên sản phẩm: Vòng tay Thạch anh đen tự nhiên 8mm\n\n• Tên tiếng Anh: Natural Black Quartz Bracelet 8mm (Morion Quartz)\n\n• Nguồn gốc: Mỏ Brazil – Gia công tại Việt Nam\n\n• Gia công & hoàn thiện: Xưởng hợp tác Ann Gem & Fengshui tại Việt Nam\n\n• Thương hiệu phân phối: Ann Gem & Fengshui – Recharge Your Energy, Restore Your Balance\n\n• Kích thước: 8mm (chuẩn cổ tay nữ hoặc cổ tay nhỏ nam)\n\n• Chất liệu: 100% Thạch anh đen tự nhiên (Morion Quartz), độ bóng và độ trong mờ sâu đặc trưng\n\n\n________________________________________\n💰 GIÁ BÁN / PRICING\n\n| Hạng mục | Mức giá (VNĐ) | Mã sản phẩm | Ghi chú |\n| :--- | :--- | :--- | :--- |\n| Giá niêm yết (Retail List Price) | 1.499.000 (giá chưa có phiếu kiểm định riêng) | AGFS027 | Đã bao gồm 10% VAT, chưa bao gồm phí vận chuyển |\n| Giá bán (Market Price) | 1.099.000 (giá chưa có phiếu kiểm định riêng) | AGFS027 | Bao gồm VAT, chưa có phí vận chuyển |\n\n\n________________________________________\n🌈 Ý NGHĨA PHONG THỦY\n🔹 Đặc tính:\nThạch anh đen (Morion Quartz) thuộc nhóm thạch anh năng lượng mạnh, có độ rung tần số thấp nhưng ổn định, hấp thụ năng lượng xấu, chống nhiễu từ trường và trấn an tâm trí.\n🔹 Phân tích phong thủy:\nTrong ngũ hành, thạch anh đen thuộc hành Thủy, năng lượng hướng trầm – tĩnh – hấp thu. Đá có khả năng hút năng lượng tiêu cực từ môi trường, giúp người đeo duy trì trạng thái cân bằng.\n🔹 Công dụng:\n\n• Trấn an tinh thần, giúp ngủ sâu, giảm lo âu.\n\n• Hỗ trợ thiền định, nâng cao trực giác.\n\n• Bảo vệ khỏi năng lượng xấu, đặc biệt khi di chuyển hoặc làm việc nơi đông người.\n\n• Hỗ trợ người làm nghề đối diện nhiều áp lực hoặc thị phi.\n🔹 Ý nghĩa biểu tượng:\nBiểu tượng của sức mạnh nội tâm – bảo hộ – tĩnh tại. Trong văn hóa Á Đông, thạch anh đen được xem như “lá chắn năng lượng”, tượng trưng cho sự vững vàng, kiên định và khả năng vượt qua thử thách.\n🔹 Hợp mệnh:\n\n• Mệnh Thủy, Mộc, Kim đặc biệt tương sinh.\n\n• Người mệnh Hỏa hoặc Thổ nên phối hợp cùng vòng thạch anh trắng hoặc vàng để trung hòa năng lượng.\n\n\n________________________________________\n💎 GIẢI NGHĨA CHUYÊN GIA PHONG THỦY\n1. Về năng lượng học:\nThạch anh đen phát ra tần số thấp, ổn định, tạo trường năng lượng giúp cân bằng các luân xa thấp (1–3). Đây là nhóm đá có tác dụng “điều hòa năng lượng trầm”, giữ cho người đeo không bị dao động tâm trí hay cảm xúc tiêu cực.\n2. Về phong thủy trấn trạch:\nĐặt vòng hoặc viên thạch anh đen gần cửa chính, góc làm việc hoặc phòng ngủ giúp hóa giải tà khí, giảm năng lượng âm, nhất là trong môi trường làm việc có nhiều người ra vào hoặc nơi có trường khí hỗn tạp.\n3. Về ứng dụng trong không gian sống:\nKhi không đeo, có thể đặt vòng trên đế gỗ hoặc thảm lụa trong phòng thiền, nơi làm việc hoặc đầu giường — giúp tạo vùng năng lượng an hòa, thanh lọc trường khí.\n\n\n________________________________________\n🪶 HỒ SƠ PHONG THỦY SẢN PHẨM\n1. Mô tả sản phẩm / Product Description\nVòng tay gồm 18 hạt tròn 8mm, màu đen ánh gương sâu, được xâu bằng dây cao su bền, co giãn, thích hợp cho cổ tay 15–17cm.\n2. Thành phần & Đặc trưng cấu tạo\n100% Thạch anh đen tự nhiên, không nhuộm, không xử lý nhiệt. Độ bóng cao, phản xạ ánh sáng mạnh, độ cứng Mohs 7.0.\n3. Quy trình chế tác\nChọn lọc nguyên khối đá thô tại mỏ Brazil, cắt lát – mài tròn – đánh bóng – kiểm định năng lượng – xâu chuỗi bằng tay tại xưởng Ann Gem & Fengshui (Việt Nam).\n4. Công dụng chính / Key Functions\n\n• Hộ thân, trấn trạch, tránh tà.\n\n• Tăng sức tập trung, tỉnh táo, kiên định, tốt cho công việc hanh thông.\n\n• Cân bằng năng lượng âm – dương.\n\n5. Điểm khác biệt / USP\n\n• Độ bóng gương sâu hiếm có, không xử lý nhân tạo.\n\n• Được kiểm định năng lượng bằng máy đo từ trường tại Việt Nam.\n\n• Bao bì chuyên biệt Ann Gem & Fengshui, kèm sổ hướng dẫn bảo quản & sử dụng phong thủy.\n\n6. Đối tượng sử dụng / Recommended Users\n\n• Người làm việc áp lực, ngành tài chính, y tế, tâm lý, luật.\n\n• Người thường xuyên di chuyển, làm việc nơi đông người.\n\n• Thiền sinh, người tập yoga, hành giả tâm linh.\n\n7. Cảnh báo / Precautions\nKhông nên đeo khi tắm biển, ngâm nước muối hoặc tiếp xúc với hóa chất tẩy rửa mạnh để tránh ảnh hưởng dây xâu.\n8. Tại sao nên chọn sản phẩm này\nĐây là vòng phong thủy cân bằng năng lượng cơ bản nhưng hiệu quả nhất, phù hợp với mọi lứa tuổi, vừa là vật hộ thân, vừa là biểu tượng thẩm mỹ hiện đại.\n\n\n________________________________________\n💬 CÂU HỎI THƯỜNG GẶP (FAQ)\nQ: Vòng thạch anh đen khác gì Obsidian (núi lửa)?\nA: Obsidian là thủy tinh núi lửa, năng lượng nóng và mạnh; còn thạch anh đen (Morion) là tinh thể thạch anh thật, năng lượng trầm và bền hơn.\nQ: Có thể đeo cùng vòng khác không?\nA: Có, đặc biệt khi kết hợp với thạch anh trắng hoặc mã não đỏ sẽ tạo trường năng lượng bảo vệ và kích hoạt vận khí.\nQ: Khi nào nên tẩy năng lượng vòng?\nA: Mỗi 30–45 ngày. Dùng ánh trăng, khói trầm hoặc đặt trên thạch anh trắng.\n\n\n________________________________________\n🧭 HƯỚNG DẪN KIỂM TRA THẬT – GIẢ\n\n• Độ bóng: Thạch anh đen thật có độ bóng gương, không bị “mờ nhựa” hay quá nhẹ.\n\n• Cảm giác khi chạm: Đá thật mát lạnh dù trong môi trường nóng.\n\n• Độ cứng: Không xước khi cà nhẹ với kim loại.\n\n• Bong bóng khí: Không có bọt hoặc khe rỗng trong hạt.",
     "price": "1,099,000",
-    "image": "/product3.jpg",
+    "image": "/product/Vòng thạch anh đen (1).jpg",
     "category": "Vật phẩm phong thủy",
+    "nameEn": "NATURAL BLACK QUARTZ BRACELET 8MM",
+    "descriptionEn": "Natural Black Quartz Bracelet 8mm (Morion Quartz) – An energy shield, symbolizing inner strength and protection.",
+    "categoryEn": "Feng Shui Items",
     "benefits": [
         "Trấn an tinh thần, giúp ngủ sâu, giảm lo âu",
         "Hỗ trợ thiền định, nâng cao trực giác",
         "Bảo vệ khỏi năng lượng xấu, đặc biệt khi di chuyển hoặc làm việc nơi đông người",
         "Hỗ trợ người làm nghề đối diện nhiều áp lực hoặc thị phi"
+    ],
+    "benefitsEn": [
+        "Calms spirit, helps deep sleep, reduces anxiety",
+        "Supports meditation, enhances intuition",
+        "Protects from negative energy, especially when traveling or working in crowded places",
+        "Supports people in professions facing much pressure or criticism"
     ],
     "specifications": {
         "material": "100% Thạch anh đen tự nhiên (Morion Quartz)",
@@ -446,22 +727,37 @@ export const allProducts: Product[] = [
         "weight": "500g",
         "origin": "Mỏ Brazil – Gia công tại Việt Nam"
     },
+    "specificationsEn": {
+        "material": "100% natural black quartz (Morion Quartz)",
+        "size": "8mm (standard female wrist or small male wrist)",
+        "weight": "500g",
+        "origin": "Brazil mines – Processed in Vietnam"
+    },
     "retailPrice": "1,499,000",
     "marketPrice": "1,099,000"
   },
   {
-    id: 20,
+    "id": 20,
     "name": "VÒNG TAY THẠCH ANH TRẮNG TỰ NHIÊN 8MM",
     "description": "Natural White Quartz Bracelet 8mm – Viên đá Thanh lọc, Trí tuệ và Cân bằng năng lượng cơ bản. Hợp Kim, Thủy, Thổ.",
     "fullDescription": "🤍 VÒNG TAY THẠCH ANH TRẮNG TỰ NHIÊN 8MM\n(Natural White Quartz Bracelet 8mm – The Stone of Purity & Balance)\n\n\n🪷 THÔNG TIN SẢN PHẨM\n\n• Tên sản phẩm: Vòng tay Thạch anh trắng tự nhiên 8mm\n\n• Tên tiếng Anh: Natural White Quartz Bracelet 8mm\n\n• Nguồn gốc: Brazil – Gia công và hoàn thiện tại Việt Nam\n\n• Gia công & hoàn thiện: Xưởng hợp tác Ann Gem & Fengshui tại Việt Nam\n\n• Thương hiệu phân phối: Ann Gem & Fengshui – Recharge Your Energy, Restore Your Balance\n\n• Kích thước: 8mm (phù hợp cổ tay 14–17cm)\n\n• Chất liệu: 100% Thạch anh trắng tự nhiên, không xử lý, độ trong mờ sương, ánh phản quang nhẹ.\n\n\n________________________________________\n💰 GIÁ BÁN / PRICING\n\n| Hạng mục | Mức giá (VNĐ) | Mã sản phẩm | Ghi chú |\n| :--- | :--- | :--- | :--- |\n| Giá niêm yết (Retail List Price) | 1.499.000 (giá chưa có phiếu kiểm định riêng) | AGFS 036 | Đã bao gồm 10% VAT, chưa bao gồm phí vận chuyển |\n| Giá bán (Market Price) | 1.099.000 (giá chưa có phiếu kiểm định riêng) | AGFS 036 | Bao gồm VAT & chưa có phí vận chuyển |\n\n\n________________________________________\n🌈 Ý NGHĨA PHONG THỦY\n🔹 Đặc tính:\nThạch anh trắng là loại đá có năng lượng thanh khiết, mạnh và ổn định, được coi là “viên đá của trí tuệ và ánh sáng”. Nó giúp thanh lọc năng lượng tiêu cực, cân bằng cảm xúc và tăng khả năng tập trung.\n🔹 Phân tích phong thủy:\nTrong Ngũ hành, Thạch anh trắng thuộc hành Kim, mang năng lượng của sự minh triết, logic và tĩnh tại. Kim sinh Thủy – do đó, nó giúp kích hoạt tài vận, mở rộng cơ hội và mang lại bình an nội tâm.\n\nĐá cũng đại diện cho sự tái sinh và thanh lọc, giúp con người kết nối với năng lượng tự nhiên trong sáng.\n🔹 Công dụng:\n\n• Thanh lọc trường năng lượng cá nhân và không gian sống.\n\n• Giảm stress, tăng tập trung và sáng suốt trong tư duy.\n\n• Hỗ trợ giấc ngủ, làm dịu hệ thần kinh.\n\n• Hóa giải xung đột trong giao tiếp, tăng sự an hòa.\n🔹 Ý nghĩa biểu tượng:\nLà viên đá của sự thuần khiết, trí tuệ và cân bằng. Trong phong thủy, Thạch anh trắng tượng trưng cho “Ánh sáng khai tâm” – giúp con người giữ tâm sáng, trí tĩnh và hướng thiện.\n🔹 Hợp mệnh:\nHợp Kim, Thủy, Thổ.\n\nNgười mệnh Hỏa và Mộc nên kết hợp thêm Thạch anh hồng hoặc xanh để cân bằng năng lượng.\n\n\n________________________________________\n💎 GIẢI NGHĨA CHUYÊN GIA PHONG THỦY\n1. Về năng lượng học:\nThạch anh trắng phát ra dao động năng lượng cao (7–8 Hz) giúp điều hòa sóng não, cải thiện tập trung và tăng tần số năng lượng dương quanh cơ thể.\n\nĐây là loại đá dùng để “reset năng lượng” – tái lập sự cân bằng cho người thường xuyên chịu áp lực hoặc mệt mỏi tinh thần.\n2. Về phong thủy trấn trạch:\nKhi đặt Thạch anh trắng ở phòng khách hoặc phòng làm việc, năng lượng của đá giúp trấn tĩnh không gian, hóa giải năng lượng xấu và tăng sinh khí.\n\nTrong truyền thống Á Đông, nó được xem là “bảo thạch của ánh sáng”, thu hút năng lượng may mắn, quý nhân và trí tuệ.\n3. Về ứng dụng trong không gian sống:\nKhi không đeo, nên đặt vòng Thạch anh trắng gần cửa sổ, nơi có ánh sáng tự nhiên – giúp nạp năng lượng và duy trì độ thanh khiết của đá.\n\n\n________________________________________\n🪶 HỒ SƠ PHONG THỦY SẢN PHẨM\n1. Mô tả sản phẩm / Product Description\nVòng gồm 18–20 hạt tròn 8mm, màu trắng mờ tự nhiên, bề mặt bóng nhẹ, tạo cảm giác tinh khiết và thanh thoát.\n2. Thành phần & Đặc trưng cấu tạo\n100% Thạch anh trắng tự nhiên, không nhuộm – độ cứng Mohs 7, năng lượng ổn định và thuần khiết.\n3. Quy trình chế tác\nĐá thô được chọn lọc tại mỏ Brazil → Mài tròn – Đánh bóng nước → Tẩy tịnh năng lượng bằng trầm hương và ánh trăng → Xâu chuỗi thủ công tại xưởng Ann Gem & Fengshui.\n4. Công dụng chính / Key Functions\n\n• Thanh lọc năng lượng và môi trường xung quanh.\n\n• Tăng tập trung, trí nhớ và khả năng ra quyết định.\n\n• Đem lại cảm giác an yên và minh mẫn.\n\n5. Điểm khác biệt / USP\n\n• 100% đá tự nhiên, chưa xử lý nhân tạo.\n\n• Được tẩy năng lượng bằng trầm hương tự nhiên.\n\n• Bao bì Ann Gem & Fengshui kèm thẻ năng lượng riêng.\n\n6. Đối tượng sử dụng / Recommended Users\nPhù hợp cho học sinh – sinh viên, người làm việc trí óc, doanh nhân hoặc người cần cân bằng cảm xúc, xua tan mệt mỏi.\n7. Cảnh báo / Precautions\nKhông để va đập mạnh, không ngâm trong nước muối.\n\nKhi không sử dụng, nên cất trong hộp lụa hoặc túi nhung.\n8. Tại sao nên chọn sản phẩm này\n✅ Đá thật 100% – năng lượng thanh khiết và bền vững.\n✅ Tăng sự tập trung, tỉnh thức và bình an.\n✅ Là vật phẩm cân bằng năng lượng cơ bản cho mọi mệnh.\n✅ Phù hợp cả nam và nữ, dễ phối với các loại vòng khác.\n\n\n________________________________________\n💬 CÂU HỎI THƯỜNG GẶP (FAQ)\nQ: Thạch anh trắng có thể kết hợp với vòng khác không?\n\n→ Có, đặc biệt phù hợp với Thạch anh hồng, tím hoặc đen để cân bằng năng lượng.\nQ: Nên tẩy năng lượng bao lâu một lần?\n\n→ Khoảng 30–45 ngày, bằng ánh trăng, khói trầm hoặc đặt gần tinh thể thạch anh trắng lớn.\nQ: Có nên đeo khi ngủ không?\n\n→ Có, vì năng lượng của Thạch anh trắng giúp ổn định sóng não, hỗ trợ giấc ngủ sâu.\n\n\n________________________________________\n🧭 HƯỚNG DẪN KIỂM TRA THẬT – GIẢ\n\n| Bước | Cách kiểm tra | Đặc điểm đá thật | Đặc điểm hàng giả |\n| :--- | :--- | :--- | :--- |\n| 1️⃣ | Quan sát bằng mắt | Màu trắng sương, có vân mờ tự nhiên | Màu trắng đục đều, thiếu chiều sâu |\n| 2️⃣ | Sờ cảm giác | Mát lạnh, đằm tay | Nhẹ, nóng nhanh |\n| 3️⃣ | Gõ nhẹ | Âm vang trong, dày | Âm đục, nông |\n| 4️⃣ | Kiểm tra dưới ánh sáng | Có ánh lung linh, không hoàn toàn trong suốt | Trắng đục hoặc bóng như nhựa |",
     "price": "1,099,000",
     "image": "/product/Vòng tay thạch anh trắng (3).jpg",
     "category": "Vật phẩm phong thủy",
+    "nameEn": "NATURAL WHITE QUARTZ BRACELET 8MM",
+    "descriptionEn": "Natural White Quartz Bracelet 8mm – Stone of purification, wisdom, and basic energy balance. Suitable for Metal, Water, Earth elements.",
+    "categoryEn": "Feng Shui Items",
     "benefits": [
         "Thanh lọc trường năng lượng cá nhân và không gian sống",
         "Giảm stress, tăng tập trung và sáng suốt trong tư duy",
         "Hỗ trợ giấc ngủ, làm dịu hệ thần kinh",
         "Hóa giải xung đột trong giao tiếp, tăng sự an hòa"
+    ],
+    "benefitsEn": [
+        "Purifies personal and living space energy fields",
+        "Reduces stress, increases concentration and clarity of thought",
+        "Supports sleep, soothes the nervous system",
+        "Resolves communication conflicts, promotes harmony"
     ],
     "specifications": {
         "material": "100% Thạch anh trắng tự nhiên, không xử lý",
@@ -469,9 +765,15 @@ export const allProducts: Product[] = [
         "weight": "500g",
         "origin": "Brazil – Gia công và hoàn thiện tại Việt Nam"
     },
+    "specificationsEn": {
+        "material": "100% natural white quartz, untreated",
+        "size": "8mm (fits 14–17cm wrist)",
+        "weight": "500g",
+        "origin": "Brazil – Processed and finished in Vietnam"
+    },
     "retailPrice": "1,499,000",
     "marketPrice": "1,099,000"
-  },
+},
   {
     id: 21,
     "name": "VÒNG TAY THẠCH ANH VÀNG TỰ NHIÊN 8MM",
@@ -480,17 +782,32 @@ export const allProducts: Product[] = [
     "price": "1,250,000",
     "image": "/product/Vòng tay thạch anh vàng (3).jpg",
     "category": "Vật phẩm phong thủy",
+    "nameEn": "NATURAL YELLOW QUARTZ BRACELET 8MM",
+    "descriptionEn": "Natural Yellow Quartz Bracelet 8mm (Citrine Quartz) – The Stone of Prosperity, Wealth, and Confidence. Activates the Solar Plexus Chakra (3rd Chakra).",
+    "categoryEn": "Feng Shui Items",
     "benefits": [
         "Thu hút tài lộc và cơ hội mới trong công việc, kinh doanh",
         "Giúp tinh thần sáng suốt, tăng tự tin, giảm lo âu",
         "Tăng cường khả năng giao tiếp và sáng tạo",
         "Cân bằng năng lượng, mang lại cảm giác ấm áp và an toàn"
     ],
+    "benefitsEn": [
+        "Attracts wealth and new opportunities in work and business",
+        "Promotes clear thinking, increases confidence, reduces anxiety",
+        "Enhances communication and creativity",
+        "Balances energy, brings a feeling of warmth and security"
+    ],
     "specifications": {
         "material": "100% Thạch anh vàng tự nhiên",
         "size": "8mm (phù hợp cổ tay 14–17cm)",
         "weight": "500g",
         "origin": "Brazil – Gia công tại Việt Nam"
+    },
+    "specificationsEn": {
+        "material": "100% natural yellow quartz",
+        "size": "8mm (fits 14–17cm wrist)",
+        "weight": "500g",
+        "origin": "Brazil – Processed in Vietnam"
     },
     "retailPrice": "1,650,000",
     "marketPrice": "1,250,000"
@@ -503,11 +820,20 @@ export const allProducts: Product[] = [
     "price": "1,090,000",
     "image": "/product/Vòng thạch anh xanh (3).jpg",
     "category": "Vật phẩm phong thủy",
+    "nameEn": "NATURAL GREEN QUARTZ BRACELET 8MM",
+    "descriptionEn": "Natural Green Quartz Bracelet 8mm (Aventurine Quartz) – The Stone of Luck, Health, and Growth. Activates the Heart Chakra.",
+    "categoryEn": "Feng Shui Items",
     "benefits": [
         "Thu hút may mắn, tiền tài, quý nhân.",
         "Hỗ trợ sự nghiệp, đặc biệt với người làm kinh doanh hoặc khởi nghiệp.",
         "Tăng sức khỏe, giảm stress, điều hòa khí huyết.",
         "Kích thích sự sáng tạo và tinh thần tích cực."
+    ],
+    "benefitsEn": [
+        "Attracts luck, wealth, and benefactors (helpful people).",
+        "Supports career, especially for business people or start-ups.",
+        "Boosts health, reduces stress, regulates blood circulation (vital energy).",
+        "Stimulates creativity and positive mindset."
     ],
     "specifications": {
         "material": "100% Thạch anh xanh tự nhiên (Aventurine Quartz), không nhuộm – không xử lý nhiệt.",
@@ -515,51 +841,53 @@ export const allProducts: Product[] = [
         "weight": "500g",
         "origin": "Ấn Độ, Brazil – Gia công tại Việt Nam"
     },
+    "specificationsEn": {
+        "material": "100% natural green quartz (Aventurine Quartz), undyed – unheat-treated.",
+        "size": "8mm (fits 14–17cm wrist)",
+        "weight": "500g",
+        "origin": "India, Brazil – Processed in Vietnam"
+    },
     "retailPrice": "1,490,000",
     "marketPrice": "1,090,000"
-  },
-  {
-    id: 23,
-    "name": "VÒNG TAY THẠCH ANH TRẮNG TỰ NHIÊN 8MM",
-    "description": "Natural White Quartz Bracelet 8mm – Viên đá Thanh lọc, Trí tuệ và Cân bằng năng lượng cơ bản. Hợp Kim, Thủy, Thổ.",
-    "fullDescription": "🤍 VÒNG TAY THẠCH ANH TRẮNG TỰ NHIÊN 8MM\n(Natural White Quartz Bracelet 8mm – The Stone of Purity & Balance)\n\n\n🪷 THÔNG TIN SẢN PHẨM\n\n• Tên sản phẩm: Vòng tay Thạch anh trắng tự nhiên 8mm\n\n• Tên tiếng Anh: Natural White Quartz Bracelet 8mm\n\n• Nguồn gốc: Brazil – Gia công và hoàn thiện tại Việt Nam\n\n• Gia công & hoàn thiện: Xưởng hợp tác Ann Gem & Fengshui tại Việt Nam\n\n• Thương hiệu phân phối: Ann Gem & Fengshui – Recharge Your Energy, Restore Your Balance\n\n• Kích thước: 8mm (phù hợp cổ tay 14–17cm)\n\n• Chất liệu: 100% Thạch anh trắng tự nhiên, không xử lý, độ trong mờ sương, ánh phản quang nhẹ.\n\n\n________________________________________\n💰 GIÁ BÁN / PRICING\n\n| Hạng mục | Mức giá (VNĐ) | Mã sản phẩm | Ghi chú |\n| :--- | :--- | :--- | :--- |\n| Giá niêm yết (Retail List Price) | 1.499.000 (giá chưa có phiếu kiểm định riêng) | AGFS 036 | Đã bao gồm 10% VAT, chưa bao gồm phí vận chuyển |\n| Giá bán (Market Price) | 1.099.000 (giá chưa có phiếu kiểm định riêng) | AGFS 036 | Bao gồm VAT & chưa có phí vận chuyển |\n\n\n________________________________________\n🌈 Ý NGHĨA PHONG THỦY\n🔹 Đặc tính:\nThạch anh trắng là loại đá có năng lượng thanh khiết, mạnh và ổn định, được coi là “viên đá của trí tuệ và ánh sáng”. Nó giúp thanh lọc năng lượng tiêu cực, cân bằng cảm xúc và tăng khả năng tập trung.\n🔹 Phân tích phong thủy:\nTrong Ngũ hành, Thạch anh trắng thuộc hành Kim, mang năng lượng của sự minh triết, logic và tĩnh tại. Kim sinh Thủy – do đó, nó giúp kích hoạt tài vận, mở rộng cơ hội và mang lại bình an nội tâm.\n\nĐá cũng đại diện cho sự tái sinh và thanh lọc, giúp con người kết nối với năng lượng tự nhiên trong sáng.\n🔹 Công dụng:\n\n• Thanh lọc trường năng lượng cá nhân và không gian sống.\n\n• Giảm stress, tăng tập trung và sáng suốt trong tư duy.\n\n• Hỗ trợ giấc ngủ, làm dịu hệ thần kinh.\n\n• Hóa giải xung đột trong giao tiếp, tăng sự an hòa.\n🔹 Ý nghĩa biểu tượng:\nLà viên đá của sự thuần khiết, trí tuệ và cân bằng. Trong phong thủy, Thạch anh trắng tượng trưng cho “Ánh sáng khai tâm” – giúp con người giữ tâm sáng, trí tĩnh và hướng thiện.\n🔹 Hợp mệnh:\nHợp Kim, Thủy, Thổ.\n\nNgười mệnh Hỏa và Mộc nên kết hợp thêm Thạch anh hồng hoặc xanh để cân bằng năng lượng.\n\n\n________________________________________\n💎 GIẢI NGHĨA CHUYÊN GIA PHONG THỦY\n1. Về năng lượng học:\nThạch anh trắng phát ra dao động năng lượng cao (7–8 Hz) giúp điều hòa sóng não, cải thiện tập trung và tăng tần số năng lượng dương quanh cơ thể.\n\nĐây là loại đá dùng để “reset năng lượng” – tái lập sự cân bằng cho người thường xuyên chịu áp lực hoặc mệt mỏi tinh thần.\n2. Về phong thủy trấn trạch:\nKhi đặt Thạch anh trắng ở phòng khách hoặc phòng làm việc, năng lượng của đá giúp trấn tĩnh không gian, hóa giải năng lượng xấu và tăng sinh khí.\n\nTrong truyền thống Á Đông, nó được xem là “bảo thạch của ánh sáng”, thu hút năng lượng may mắn, quý nhân và trí tuệ.\n3. Về ứng dụng trong không gian sống:\nKhi không đeo, nên đặt vòng Thạch anh trắng gần cửa sổ, nơi có ánh sáng tự nhiên – giúp nạp năng lượng và duy trì độ thanh khiết của đá.\n\n\n________________________________________\n🪶 HỒ SƠ PHONG THỦY SẢN PHẨM\n1. Mô tả sản phẩm / Product Description\nVòng gồm 18–20 hạt tròn 8mm, màu trắng mờ tự nhiên, bề mặt bóng nhẹ, tạo cảm giác tinh khiết và thanh thoát.\n2. Thành phần & Đặc trưng cấu tạo\n100% Thạch anh trắng tự nhiên, không nhuộm – độ cứng Mohs 7, năng lượng ổn định và thuần khiết.\n3. Quy trình chế tác\nĐá thô được chọn lọc tại mỏ Brazil → Mài tròn – Đánh bóng nước → Tẩy tịnh năng lượng bằng trầm hương và ánh trăng → Xâu chuỗi thủ công tại xưởng Ann Gem & Fengshui.\n4. Công dụng chính / Key Functions\n\n• Thanh lọc năng lượng và môi trường xung quanh.\n\n• Tăng tập trung, trí nhớ và khả năng ra quyết định.\n\n• Đem lại cảm giác an yên và minh mẫn.\n\n5. Điểm khác biệt / USP\n\n• 100% đá tự nhiên, chưa xử lý nhân tạo.\n\n• Được tẩy năng lượng bằng trầm hương tự nhiên.\n\n• Bao bì Ann Gem & Fengshui kèm thẻ năng lượng riêng.\n\n6. Đối tượng sử dụng / Recommended Users\nPhù hợp cho học sinh – sinh viên, người làm việc trí óc, doanh nhân hoặc người cần cân bằng cảm xúc, xua tan mệt mỏi.\n7. Cảnh báo / Precautions\nKhông để va đập mạnh, không ngâm trong nước muối.\n\nKhi không sử dụng, nên cất trong hộp lụa hoặc túi nhung.\n8. Tại sao nên chọn sản phẩm này\n✅ Đá thật 100% – năng lượng thanh khiết và bền vững.\n✅ Tăng sự tập trung, tỉnh thức và bình an.\n✅ Là vật phẩm cân bằng năng lượng cơ bản cho mọi mệnh.\n✅ Phù hợp cả nam và nữ, dễ phối với các loại vòng khác.\n\n\n________________________________________\n💬 CÂU HỎI THƯỜNG GẶP (FAQ)\nQ: Thạch anh trắng có thể kết hợp với vòng khác không?\n\n→ Có, đặc biệt phù hợp với Thạch anh hồng, tím hoặc đen để cân bằng năng lượng.\nQ: Nên tẩy năng lượng bao lâu một lần?\n\n→ Khoảng 30–45 ngày, bằng ánh trăng, khói trầm hoặc đặt gần tinh thể thạch anh trắng lớn.\nQ: Có nên đeo khi ngủ không?\n\n→ Có, vì năng lượng của Thạch anh trắng giúp ổn định sóng não, hỗ trợ giấc ngủ sâu.\n\n\n________________________________________\n🧭 HƯỚNG DẪN KIỂM TRA THẬT – GIẢ\n\n| Bước | Cách kiểm tra | Đặc điểm đá thật | Đặc điểm hàng giả |\n| :--- | :--- | :--- | :--- |\n| 1️⃣ | Quan sát bằng mắt | Màu trắng sương, có vân mờ tự nhiên | Màu trắng đục đều, thiếu chiều sâu |\n| 2️⃣ | Sờ cảm giác | Mát lạnh, đằm tay | Nhẹ, nóng nhanh |\n| 3️⃣ | Gõ nhẹ | Âm vang trong, dày | Âm đục, nông |\n| 4️⃣ | Kiểm tra dưới ánh sáng | Có ánh lung linh, không hoàn toàn trong suốt | Trắng đục hoặc bóng như nhựa |",
-    "price": "1,099,000",
-    "image": "/product3.jpg",
-    "category": "Vật phẩm phong thủy",
-    "benefits": [
-        "Thanh lọc trường năng lượng cá nhân và không gian sống",
-        "Giảm stress, tăng tập trung và sáng suốt trong tư duy",
-        "Hỗ trợ giấc ngủ, làm dịu hệ thần kinh",
-        "Hóa giải xung đột trong giao tiếp, tăng sự an hòa"
-    ],
-    "specifications": {
-        "material": "100% Thạch anh trắng tự nhiên, không xử lý",
-        "size": "8mm (phù hợp cổ tay 14–17cm)",
-        "weight": "500g",
-        "origin": "Brazil – Gia công và hoàn thiện tại Việt Nam"
-    },
-    "retailPrice": "1,499,000",
-    "marketPrice": "1,099,000"
   },
   {
     id: 24,
     "name": "BỘ SẢN PHẨM “HŨ TRÀ + XÔNG TRẦM NGỌC ONYX XANH”",
     "description": "Green Onyx Tea & Incense Burner Set – Bộ đôi Tĩnh & Tịnh, biểu tượng Mộc Khí Sinh Tài, làm từ Ngọc Onyx Xanh tự nhiên.",
-    "fullDescription": "BỘ SẢN PHẨM “HŨ TRÀ + XÔNG TRẦM NGỌC ONYX XANH”\n(Green Onyx Tea & Incense Burner Set)\nhttps://youtube.com/shorts/IPG3eLZaIBw?feature=share\n\n\n🪷 THÔNG TIN SẢN PHẨM\n\n• Tên sản phẩm: Hũ Trà + Xông Trầm Ngọc Onyx Xanh\n\n• Tên tiếng Anh: Green Onyx Tea Jar & Incense Burner Set\n\n• Nguồn gốc: Khai thác tại vùng Balochistan – Pakistan, trung tâm ngọc Onyx tự nhiên lớn nhất thế giới.\n\n• Gia công & hoàn thiện: Xưởng hợp tác Ann Gem & Fengshui tại Việt Nam.\n\n• Thương hiệu phân phối: Ann Gem & Fengshui – Recharge Your Energy, Restore Your Balance.\n• Kích thước:\n\n• Hũ trà: 15,5 cm × 9 cm\n\n• Xông trầm: 9 cm × 12 cm\n• Chất liệu:\n\n• 100% ngọc Onyx xanh tự nhiên, không pha tạp, không ép nhựa.\n\n• Nắp hợp kim đồng khảm hoa văn thủ công, bề mặt đánh bóng nước tự nhiên – giữ trọn vân xoáy của đá, biểu trưng cho dòng chảy năng lượng sinh tài.\n\n\n________________________________________\n💰 GIÁ BÁN / PRICING\n\n| Hạng mục | Mức giá (VNĐ) | Ghi chú |\n| :--- | :--- | :--- |\n| Giá niêm yết (Retail List Price) | 4.299.000 (chưa có giấy kiểm định) Code: AGFS 017\\n5.299.000 (có giấy kiểm định) Code: AGFS 018 | Đã bao gồm 10% VAT, chưa bao gồm phí vận chuyển |\n| Giá bán (Market Price) | 2.999.000 (chưa có giấy kiểm định) Code: AGFS 017\\n3.599.000 (có giấy kiểm định) Code: AGFS 018 | Giá bán lẻ bao gồm VAT & phí vận chuyển |\n\n\n________________________________________\n🌈 Ý NGHĨA PHONG THỦY\n\n| Đặc tính | Phân tích phong thủy |\n| :--- | :--- |\n| Màu xanh ngọc (Green Onyx) | Màu của sự an lành, cân bằng và hồi phục năng lượng – tượng trưng cho “Mộc khí sinh tài”. |\n| Năng lượng đá | Onyx xanh mang năng lượng mát, giúp thanh lọc không khí, xua tan tà khí, ổn định cảm xúc và hỗ trợ giấc ngủ. |\n| Công dụng khi dùng làm hũ trà | Giữ trà khô, hấp thụ ẩm tự nhiên, bảo toàn hương vị và thu hút năng lượng dương vào không gian trà đạo. |\n| Công dụng khi dùng làm xông trầm | Khi kết hợp trầm hương, Onyx khuếch tán năng lượng mạnh, giúp thanh tẩy không gian, tĩnh tâm và tăng khí vận cho gia chủ. |\n| Ý nghĩa biểu tượng | Bộ đôi trà – trầm tượng trưng cho “Tĩnh” và “Tịnh”: tĩnh tâm trong thiền trà, tịnh khí trong hương trầm – cân bằng Thân, Tâm, Khí. |\n| Hợp mệnh | Hợp mệnh Mộc, Hỏa, Thổ. Đặc biệt tốt cho người mệnh Mộc (ngọc xanh sinh tài khí) và mệnh Hỏa (Mộc sinh Hỏa, tăng vận quý nhân). |\n\n\n💎 GIẢI NGHĨA CHUYÊN GIA PHONG THỦY\n1. Về năng lượng học\n\n• Onyx xanh thuộc nhóm đá “âm – tĩnh – dưỡng”, có khả năng hấp thụ năng lượng tiêu cực và chuyển hóa thành từ trường ổn định.\n\n• Khi đặt trong không gian thiền, phòng khách hoặc bàn trà, Onyx giúp “giữ khí” – duy trì năng lượng dương lưu thông, đem lại cảm giác an hòa.\n2. Về phong thủy trấn trạch\n\n• Hũ trà tượng trưng cho “tàng khí” – cất giữ phúc lộc.\n\n• Xông trầm tượng trưng cho “thông khí” – lan tỏa năng lượng lành.\n\n→ Sự kết hợp giữa hai vật phẩm này tạo thành biểu tượng tụ – tán, giữ – truyền, giúp gia đạo bình an, công việc hanh thông.\n3. Về ứng dụng trong không gian sống\n\n• Đặt tại phòng trà, phòng khách, không gian thiền hoặc văn phòng làm việc.\n\n• Khi xông trầm, nên sử dụng trầm nụ hoặc trầm miếng thiên nhiên để phát huy tối đa năng lượng “tịnh hóa”.\n\n\n🪶 HỒ SƠ PHONG THỦY SẢN PHẨM\n1. Mô tả sản phẩm / Product Description\nBộ sản phẩm gồm 1 hũ trà và 1 bát xông trầm, chế tác hoàn toàn thủ công từ ngọc Onyx xanh tự nhiên, kết hợp hài hòa giữa năng lượng tàng khí (giữ tài khí) và tịnh khí (thanh lọc không gian).\n\nVân đá được mài bóng tinh tế, ánh xanh ngọc xen trắng và vàng nhạt tạo nên vẻ thanh khiết – sang trọng – tĩnh tại cho không gian sống và thiền trà.\n\n\n2. Thành phần & Đặc trưng cấu tạo\n\n• Ngọc Onyx xanh tự nhiên 100%, khai thác chọn lọc.\n\n• Nắp hợp kim đồng khảm hoa văn thủ công, biểu trưng cho năng lượng Kim – Hỏa hài hòa.\n\n• Đá nguyên khối, không ghép, đánh bóng nước, không phủ hóa chất.\n\n\n3. Quy trình chế tác\n\n• Chọn khối ngọc đạt chuẩn năng lượng (vân rõ, không tạp chất).\n\n• Tiện tạo hình thủ công theo tỷ lệ vàng (Golden Ratio).\n\n• Đánh bóng nhiều cấp độ bằng nước, không sử dụng hóa chất.\n\n• Gắn nắp đồng khảm hoa văn bằng tay.\n\n• Tẩy tịnh bằng trầm hương và ánh nến – nghi thức “tịnh hóa năng lượng” trước khi đóng gói.\n\n\n4. Công dụng chính / Key Functions\n\n• Giữ trà khô, hấp ẩm tự nhiên, bảo toàn hương vị.\n\n• Khuếch tán năng lượng dương khi đốt trầm, thanh lọc không khí.\n\n• Hóa giải khí xấu, thu hút tài khí, an thần định tâm.\n\n• Dùng như phụ kiện phong thủy, vật phẩm trấn an, quà tặng cao cấp.\n\n\n5. Điểm khác biệt / Unique Selling Points (USP)\n\n• 100% đá tự nhiên, không xử lý màu, không nhân tạo.\n\n• Kết hợp Trà & Trầm – biểu tượng duy nhất cho “tụ khí – tịnh khí”.\n\n• Mỗi sản phẩm có vân ngọc độc bản, không viên nào giống viên nào.\n\n• Gia công thủ công, không sản xuất hàng loạt – mỗi bộ là một tác phẩm nghệ thuật phong thủy.\n\n\n6. Đối tượng sử dụng / Recommended Users\n\n• Người yêu trà đạo, thiền định, phong thủy, nghệ thuật sống tinh tế.\n\n• Gia chủ cần kích hoạt năng lượng Mộc – Hỏa (tài lộc, quý nhân, thịnh vượng).\n\n• Văn phòng, spa, homestay, showroom cao cấp muốn tạo năng lượng an hòa.\n\n• Quà tặng tân gia, khai trương, lễ Tết, hoặc vật phẩm trưng bày bàn làm việc.\n\n\n7. Cảnh báo / Chống chỉ định (Precautions)\n\n• Tránh rơi vỡ, thay đổi nhiệt độ đột ngột (vì Onyx là đá mát).\n\n• Không đốt trực tiếp lửa hoặc dầu trong lòng bát – nên dùng đế gốm hoặc trầm nụ.\n\n• Lau bằng khăn mềm, tránh dung dịch tẩy mạnh.\n\n\n8. Tại sao nên chọn sản phẩm này\n✅ Kết hợp năng lượng âm – dương hoàn hảo: Hũ trà giữ khí, bát trầm tịnh khí.\n✅ Vật phẩm vừa thẩm mỹ, vừa phong thủy, nâng tầm không gian sống.\n✅ Chất liệu Onyx xanh quý hiếm, biểu tượng cho bình an, thanh khiết, thịnh vượng.\n✅ Quà tặng sang trọng, mang ý nghĩa tụ tài – an gia – vượng khí bền lâu.\n\n\n________________________________________\n💬 CÂU HỎI THƯỜNG GẶP (FAQ)\nQ1. Onyx có thể thay thế bằng đá khác không?\n\n→ Không nên. Onyx xanh mang năng lượng riêng, trung hòa Mộc – Kim, tạo “khí sinh tài” đặc trưng.\nQ2. Có thể đốt nến thơm trong bát xông trầm không?\n\n→ Có thể, nếu có đế lót gốm hoặc thủy tinh, tránh tiếp xúc trực tiếp với lửa.\nQ3. Đặt sản phẩm ở đâu tốt nhất?\n\n→ Phòng trà, phòng khách, hướng Đông Nam (cung Tài Lộc) hoặc Tây Nam (cung Quý Nhân).\nQ4. Bao lâu nên xông trầm một lần?\n\n→ 2–3 lần mỗi tuần để thanh lọc và duy trì năng lượng tích cực.\nQ5. Có thể dùng làm quà tặng doanh nghiệp không?\n\n→ Rất phù hợp, đặc biệt khi in logo hoặc khắc tên thương hiệu trên nắp đồng hoặc hộp gỗ – biểu trưng cho may mắn & hợp tác bền lâu.\n\n\n________________________________________\n🧭 HƯỚNG DẪN KIỂM TRA THẬT – GIẢ (Chuẩn Sheet “Kiểm định”)\n\n| Bước | Cách kiểm tra | Đặc điểm đá thật | Đặc điểm hàng giả / nhựa ép |\n| :--- | :--- | :--- | :--- |\n| 1️⃣ Quan sát vân | Dưới ánh đèn vàng | Vân xoáy tự nhiên, xen mờ – đậm không đều | Màu phẳng, vân đều, nhân tạo |\n| 2️⃣ Thử lạnh tay | Cầm trong 15 giây | Đá thật vẫn mát | Đá giả ấm nhanh |\n| 3️⃣ Thử trọng lượng | So sánh cùng kích thước | Nặng tay, đầm chắc | Nhẹ, rỗng |\n| 4️⃣ Thử ánh sáng | Soi đèn LED | Có độ trong mờ, ánh xanh dịu | Đục, không trong |\n| 5️⃣ Âm thanh | Gõ nhẹ vào kim loại | Âm trong, vang | Âm đục, nông |",
+    "fullDescription": "BỘ SẢN PHẨM “HŨ TRÀ + XÔNG TRẦM NGỌC ONYX XANH”\n(Green Onyx Tea & Incense Burner Set)\nhttps://youtube.com/shorts/IPG3eLZaIBw?feature=share\n\n\n🪷 THÔNG TIN SẢN PHẨM\n\n• Tên sản phẩm: Hũ Trà + Xông Trầm Ngọc Onyx Xanh\n\n• Tên tiếng Anh: Green Onyx Tea Jar & Incense Burner Set\n\n• Nguồn gốc: Khai thác tại vùng Balochistan – Pakistan, trung tâm ngọc Onyx tự nhiên lớn nhất thế giới.\n\n• Gia công & hoàn thiện: Xưởng hợp tác Ann Gem & Fengshui tại Việt Nam.\n\n• Thương hiệu phân phối: Ann Gem & Fengshui – Recharge Your Energy, Restore Your Balance.\n• Kích thước:\n\n• Hũ trà: 15,5 cm × 9 cm\n\n• Xông trầm: 9 cm × 12 cm\n• Chất liệu:\n\n• 100% ngọc Onyx xanh tự nhiên, không pha tạp, không ép nhựa.\n\n• Nắp hợp kim đồng khảm hoa văn thủ công, bề mặt đánh bóng nước tự nhiên – giữ trọn vân xoáy của đá, biểu trưng cho dòng chảy năng lượng sinh tài.\n\n\n________________________________________\n💰 GIÁ BÁN / PRICING\n\n| Hạng mục | Mức giá (VNĐ) | Ghi chú |\n| :--- | :--- | :--- |\n| Giá niêm yết (Retail List Price) | 4.299.000 (chưa có giấy kiểm định) Code: AGFS 017\\n5.299.000 (có giấy kiểm định) Code: AGFS 018 | Đã bao gồm 10% VAT, chưa bao gồm phí vận chuyển |\n| Giá bán (Market Price) | 2.999.000 (chưa có giấy kiểm định) Code: AGFS 017\\n3.599.000 (có giấy kiểm định) Code: AGFS 018 | Giá bán lẻ bao gồm VAT & phí vận chuyển |\n\n\n________________________________________\n🌈 Ý NGHĨA PHONG THỦY\n\n| Đặc tính | Phân tích phong thủy |\n| :--- | :--- |\n| Màu xanh ngọc (Green Onyx) | Màu của sự an lành, cân bằng và hồi phục năng lượng – tượng trưng cho “Mộc khí sinh tài”. |\n| Năng lượng đá | Onyx xanh mang năng lượng mát, giúp thanh lọc không khí, xua tan tà khí, ổn định cảm xúc và hỗ trợ giấc ngủ. |\n| Công dụng khi dùng làm hũ trà | Giữ trà khô, hấp thụ ẩm tự nhiên, bảo toàn hương vị và thu hút năng lượng dương vào không gian trà đạo. |\n| Công dụng khi dùng làm xông trầm | Khi kết hợp trầm hương, Onyx khuếch tán năng lượng mạnh, giúp thanh tẩy không gian, tĩnh tâm và tăng khí vận cho gia chủ. |\n| Ý nghĩa biểu tượng | Bộ đôi trà – trầm tượng trưng cho “Tĩnh” và “Tịnh”: tĩnh tâm trong thiền trà, tịnh khí trong hương trầm – cân bằng Thân, Tâm, Khí. |\n| Hợp mệnh | Hợp mệnh Mộc, Hỏa, Thổ. Đặc biệt tốt cho người mệnh Mộc (ngọc xanh sinh tài khí) và mệnh Hỏa (Mộc sinh Hỏa, tăng vận quý nhân). |\n\n\n💎 GIẢI NGHĨA CHUYÊN GIA PHONG THỦY\n1. Về năng lượng học\n\n• Onyx xanh thuộc nhóm đá “âm – tĩnh – dưỡng”, có khả năng hấp thụ năng lượng tiêu cực và chuyển hóa thành từ trường ổn định.\n\n• Khi đặt trong không gian thiền, phòng khách hoặc bàn trà, Onyx giúp “giữ khí” – duy trì năng lượng dương lưu thông, đem lại cảm giác an hòa.\n2. Về phong thủy trấn trạch\n\n• Hũ trà tượng trưng cho “tàng khí” – cất giữ phúc lộc.\n\n• Xông trầm tượng trưng cho “thông khí” – lan tỏa năng lượng lành.\n\n→ Sự kết hợp giữa hai vật phẩm này tạo thành biểu tượng tụ – tán, giữ – truyền, giúp gia đạo bình an, công việc hanh thông.\n3. Về ứng dụng trong không gian sống\n\n• Đặt tại phòng trà, phòng khách, không gian thiền hoặc văn phòng làm việc.\n\n• Khi xông trầm, nên sử dụng trầm nụ hoặc trầm miếng thiên nhiên để phát huy tối đa năng lượng “tịnh hóa”.\n\n\n🪶 HỒ SƠ PHONG THỦY SẢN PHẨM\n1. Mô tả sản phẩm / Product Description\nBộ sản phẩm gồm 1 hũ trà và 1 bát xông trầm, chế tác hoàn toàn thủ công từ ngọc Onyx xanh tự nhiên, kết hợp hài hòa giữa năng lượng tàng khí (giữ tài khí) và tịnh khí (thanh lọc không gian).\n\nVân đá được mài bóng tinh tế, ánh xanh ngọc xen trắng và vàng nhạt tạo nên vẻ thanh khiết – sang trọng – tĩnh tại cho không gian sống và thiền trà.\n\n\n2. Thành phần & Đặc trưng cấu tạo\n\n• Ngọc Onyx xanh tự nhiên 100%, khai thác chọn lọc.\n\n• Nắp hợp kim đồng khảm hoa văn thủ công, biểu trưng cho năng lượng Kim – Hỏa hài hòa.\n\n• Đá nguyên khối, không ghép, đánh bóng nước, không phủ hóa chất.\n\n\n3. Quy trình chế tác\n\n• Chọn khối ngọc đạt chuẩn năng lượng (vân rõ, không tạp chất).\n\n• Tiện tạo hình thủ công theo tỷ lệ vàng (Golden Ratio).\n\n• Đánh bóng nhiều cấp độ bằng nước, không sử dụng hóa chất.\n\n• Gắn nắp đồng khảm hoa văn bằng tay.\n\n• Tẩy tịnh bằng trầm hương và ánh nến – nghi thức “tịnh hóa năng lượng” trước khi đóng gói.\n\n\n4. Công dụng chính / Key Functions\n\n• Giữ trà khô, hấp ẩm tự nhiên, bảo toàn hương vị.\n\n• Khuếch tán năng lượng dương khi đốt trầm, thanh lọc không khí.\n\n• Hóa giải khí xấu, thu hút tài khí, an thần định tâm.\n\n• Dùng như phụ kiện phong thủy, vật phẩm trấn an, quà tặng cao cấp.\n\n\n5. Điểm khác biệt / Unique Selling Points (USP)\n\n• 100% đá tự nhiên, không xử lý màu, không nhân tạo.\n\n• Kết hợp Trà & Trầm – biểu tượng duy nhất cho “tụ khí – tịnh khí”.\n\n• Mỗi sản phẩm có vân ngọc độc bản, không viên nào giống viên nào.\n\n• Gia công thủ công, không sản xuất hàng loạt – mỗi bộ là một tác phẩm nghệ thuật phong thủy.\n\n\n6. Đối tượng sử dụng / Recommended Users\n\n• Người yêu trà đạo, thiền định, phong thủy, nghệ thuật sống tinh tế.\n\n• Gia chủ cần kích hoạt năng lượng Mộc – Hỏa (tài lộc, quý nhân, thịnh vượng).\n\n• Văn phòng, spa, homestay, showroom cao cấp muốn tạo năng lượng an hòa.\n\n• Quà tặng tân gia, khai trương, lễ Tết, hoặc vật phẩm trưng bày bàn làm việc.\n\n\n7. Cảnh báo / Chống chỉ định (Precautions)\n\n• Tránh rơi vỡ, thay đổi nhiệt độ đột ngột (vì Onyx là đá mát).\n\n• Không đốt trực tiếp lửa hoặc dầu trong lòng bát – nên dùng đế gốm hoặc trầm nụ.\n\n• Lau bằng khăn mềm, tránh dung dịch tẩy mạnh.\n\n\n8. Tại sao nên chọn sản phẩm này\n✅ Kết hợp năng lượng âm – dương hoàn hảo: Hũ trà giữ khí, bát trầm tịnh khí.\n✅ Vật phẩm vừa thẩm mỹ, vừa phong thủy, nâng tầm không gian sống.\n✅ Chất liệu Onyx xanh quý hiếm, biểu tượng cho bình an, thanh khiết, thịnh vượng.\n✅ Quà tặng sang trọng, mang ý nghĩa tụ tài – an gia – vượng khí bền lâu.\n\n\n________________________________________\n💬 CÂU HỎI THƯỜNG GẶP (FAQ)\nQ1. Onyx có thể thay thế bằng đá khác không?\n\n→ Không nên. Onyx xanh mang năng lượng riêng, trung hòa Mộc – Kim, tạo “khí sinh tài” đặc trưng.\nQ2. Có thể đốt nến thơm trong bát xông trầm không?\n\n→ Có thể, nếu có đế lót gốm hoặc thủy tinh, tránh tiếp xúc trực tiếp với lửa.\nQ3. Đặt sản phẩm ở đâu tốt nhất?\n\n→ Phòng trà, phòng khách, hướng Đông Nam (cung Tài Lộc) hoặc Tây Nam (cung Quý Nhân).\nQ4. Bao lâu nên xông trầm một lần?\n\n→ 2–3 lần mỗi tuần để thanh lọc và duy trì năng lượng tích cực.\nQ5. Có thể dùng làm quà tặng doanh nghiệp không?\n\n→ Rất phù hợp, đặc biệt khi in logo hoặc khắc tên thương hiệu trên nắp đồng hoặc hộp gỗ – biểu trưng cho may mắn & hợp tác bền lâu.\n\n\n________________________________________\n🧭 HƯỚNG DẪN KIỂM TRA THẬT – GIẢ (Chuẩn Sheet “Kiểm định”)\n\n| Bước | Cách kiểm tra | Đặc điểm đá thật | Đặc điểm hàng giả / nhựa ép |\n| :--- | :--- | :--- | :--- |\
+| 1️⃣ Quan sát vân | Dưới ánh đèn vàng | Vân xoáy tự nhiên, xen mờ – đậm không đều | Màu phẳng, vân đều, nhân tạo |\
+| 2️⃣ Thử lạnh tay | Cầm trong 15 giây | Đá thật vẫn mát | Đá giả ấm nhanh |\
+| 3️⃣ Thử trọng lượng | So sánh cùng kích thước | Nặng tay, đầm chắc | Nhẹ, rỗng |\
+| 4️⃣ Thử ánh sáng | Soi đèn LED | Có độ trong mờ, ánh xanh dịu | Đục, không trong |\
+| 5️⃣ Âm thanh | Gõ nhẹ vào kim loại | Âm trong, vang | Âm đục, nông |",
     "price": "2,999,000",
     "image": "/product/Hũ trà và xông trầm ngọc Onyx xanh (4).jpg",
     "category": "Vật phẩm phong thủy",
+    "nameEn": "GREEN ONYX TEA JAR & INCENSE BURNER SET",
+    "descriptionEn": "Green Onyx Tea & Incense Burner Set – The duo of Stillness & Purity, symbol of Wood Energy generating Wealth, made from natural Green Onyx.",
+    "categoryEn": "Feng Shui Items",
     "benefits": [
         "Giữ trà khô, hấp ẩm tự nhiên, bảo toàn hương vị.",
         "Khuếch tán năng lượng dương khi đốt trầm, thanh lọc không khí.",
         "Hóa giải khí xấu, thu hút tài khí, an thần định tâm.",
         "Dùng như phụ kiện phong thủy, vật phẩm trấn an, quà tặng cao cấp."
     ],
+    "benefitsEn": [
+        "Keeps tea dry, absorbs moisture naturally, preserves flavor.",
+        "Diffuses positive energy when burning incense, purifies the air.",
+        "Neutralizes negative chi, attracts wealth, calms the mind and spirit.",
+        "Used as a Feng Shui accessory, calming item, high-end gift."
+    ],
     "specifications": {
         "material": "100% ngọc Onyx xanh tự nhiên, nắp hợp kim đồng",
         "size": "Hũ trà: 15,5 cm × 9 cm / Xông trầm: 9 cm × 12 cm",
         "weight": "500g",
         "origin": "Balochistan – Pakistan, gia công tại Việt Nam"
+    },
+    "specificationsEn": {
+        "material": "100% natural Green Onyx marble, copper alloy lid",
+        "size": "Tea Jar: 15.5 cm × 9 cm / Incense Burner: 9 cm × 12 cm",
+        "origin": "Balochistan – Pakistan, processed in Vietnam"
     },
     "retailPrice": "4,299,000",
     "marketPrice": "2,999,000"
@@ -568,20 +896,37 @@ export const allProducts: Product[] = [
     id: 25,
     "name": "LONG QUY NGỌC HOÀNG LONG TỰ NHIÊN",
     "description": "Natural Yellow Onyx Dragon Turtle – Linh vật Chiêu Tài, Hóa Sát, biểu tượng của Quyền Uy, Thăng Tiến và Trường Thọ.",
-    "fullDescription": "💎 SẢN PHẨM: LONG QUY NGỌC HOÀNG LONG TỰ NHIÊN\nhttps://youtube.com/shorts/IWdtLeUAMII?feature=share\n\n\n🪷 THÔNG TIN SẢN PHẨM\n\n• Tên sản phẩm: Long Quy Ngọc Hoàng Long Tự Nhiên\n\n• Tên tiếng Anh: Natural Yellow Onyx Dragon Turtle – Prosperity & Longevity Symbol\n\n• Nguồn gốc: Ngọc Hoàng Long tự nhiên (Natural Yellow Onyx Marble) – Pakistan, Myanmar, Việt Nam\n\n• Gia công & hoàn thiện: Xưởng hợp tác Ann Gem & Fengshui tại Việt Nam\n\n• Thương hiệu phân phối: Ann Gem & Fengshui – Recharge Your Energy, Restore Your Balance\n• Kích thước: 16 × 11 × 10 cm\n• Chất liệu: Ngọc Hoàng Long tự nhiên – kiểm định bởi VDG (Gemstone Report)\n\n\n________________________________________\n💰 GIÁ BÁN / PRICING\n\n| Hạng mục | Mức giá (VNĐ) | Ghi chú |\n| :--- | :--- | :--- |\n| Giá niêm yết (Retail List Price) | 6.199.000 (giá chưa có phiếu kiểm định riêng) Code: AGFS 025\\n7.099.000 (giá có phiếu kiểm định riêng) Code AGFS 026 | Đã gồm 10% VAT, chưa gồm vận chuyển |\n| Giá bán (Market Price) | 4.299.000 (giá chưa có phiếu kiểm định riêng) AGFS 025\\n4.999.000 (giá có phiếu kiểm định riêng) AGFS 026 | Bao gồm VAT, chưa gồm vận chuyển |\n\n\n________________________________________\n🌈 Ý NGHĨA PHONG THỦY\n\n| Đặc tính | Phân tích phong thủy |\n| :--- | :--- |\n| Ngọc Hoàng Long | Thuộc hành Thổ, mang năng lượng dương mạnh, tượng trưng cho sự ổn định, bền vững và thịnh vượng. Màu vàng kim biểu trưng cho tài phú, danh vọng và phúc lộc lâu bền. |\n| Hình tượng Long Quy (rồng – rùa) | Kết hợp năng lượng của hai linh vật quyền lực nhất: rồng – biểu trưng cho quyền uy, thăng tiến; rùa – biểu tượng của trường thọ, bền vững. Long Quy vừa hộ trạch, vừa chiêu tài, hóa sát. |\n\nCông dụng:\n\n• Chiêu tài, thăng tiến, hóa giải sát khí và tai ương.\n\n• Củng cố nền tảng sự nghiệp – tăng cường quý nhân phù trợ.\n\n• Bảo hộ gia trạch, giúp gia đạo yên ổn, trường thọ.\nÝ nghĩa biểu tượng:\n“Long Quy xuất thủy – vượng khí sinh tài, bền vững muôn đời.”\nHợp mệnh: Kim – Thổ – Hỏa (đặc biệt hợp người lãnh đạo, doanh nhân, người hướng ngoại hoặc hay di chuyển).\n\n\n________________________________________\n💎 GIẢI NGHĨA CHUYÊN GIA PHONG THỦY\n1. Về năng lượng học:\nNgọc Hoàng Long là biến thể cao cấp của Onyx Marble, phát năng lượng từ trường ổn định và lan tỏa đều. Sắc vàng thiên kim giúp kích hoạt trường năng lượng vùng Tỳ – Vị, giúp người sử dụng vững tâm – sáng trí – thu hút thịnh vượng.\n2. Về phong thủy trấn trạch:\nLong Quy vừa mang linh khí của rồng (dương khí mạnh, điều tiết vận khí), vừa có tính bảo hộ của rùa (ổn định, trường thọ). Đặt Long Quy ở hướng Chính Bắc giúp tăng cường sự nghiệp; đặt ở Đông Nam giúp chiêu tài; đặt gần cửa hoặc phòng làm việc giúp hóa giải thế xấu, chống tiểu nhân.\n3. Về ứng dụng trong không gian sống:\n\n• Vị trí tốt: Chính Bắc (Sự nghiệp), Đông Nam (Tài lộc), hoặc gần cửa chính.\n\n• Có thể đặt cạnh hồ cá, bể nước, hoặc gần cây xanh để kích hoạt “thủy khí sinh tài”.\n\n• Không đặt Long Quy đối diện phòng tắm hoặc bếp.\n\n\n________________________________________\n🪶 HỒ SƠ PHONG THỦY SẢN PHẨM\n1. Mô tả sản phẩm / Product Description:\nLinh vật Long Quy chạm khắc thủ công từ ngọc Hoàng Long tự nhiên, thân rồng, mai rùa, miệng há hút khí, biểu trưng cho tài lộc và bảo hộ trường thọ.\n\n2. Thành phần & Đặc trưng cấu tạo:\n\n• 100% Ngọc Hoàng Long tự nhiên, kiểm định VDG.\n\n• Sắc vàng óng ánh, vân mịn, phản sáng tự nhiên – không tẩm nhuộm.\n\n3. Quy trình chế tác:\nChọn khối ngọc đạt chuẩn – điêu khắc thủ công – đánh bóng tự nhiên – tẩy tịnh bằng trầm – niêm năng lượng Ann Fengshui.\n4. Công dụng chính / Key Functions:\n\n• Chiêu tài, thăng tiến, tăng quý nhân.\n\n• Trấn trạch, hóa sát, bảo vệ gia đạo.\n\n• Kích hoạt năng lượng thịnh vượng và trường thọ.\n\n5. USP / Điểm khác biệt:\n\n• Đá tự nhiên nguyên khối – kiểm định thật.\n\n• Sắc vàng trong, vân mịn, ánh phản quang hiếm.\n\n• Thiết kế cân bằng giữa quyền lực và an lành – biểu tượng “hòa long quy khí”.\n\n6. Đối tượng sử dụng / Recommended Users:\n\n• Doanh nhân, lãnh đạo, nhà đầu tư, chính trị gia.\n\n• Gia chủ muốn ổn định sự nghiệp và kích hoạt tài vận lâu dài.\n\n7. Cảnh báo / Precautions:\n\n• Không đặt nơi ẩm thấp hoặc đối diện nhà vệ sinh.\n\n• Lau bằng khăn mềm, tránh hóa chất.\n\n• Có thể tẩy năng lượng định kỳ bằng khói trầm, nến, hoặc ánh trăng non.\n\n8. Tại sao nên chọn sản phẩm này:\n“Vì Long Quy không chỉ là linh vật quyền uy, mà là biểu tượng của sự trường tồn – nơi rồng và rùa cùng giữ mạch thịnh vượng cho gia đạo.”\n\n\n________________________________________\n💬 FAQ – CÂU HỎI THƯỜNG GẶP\nQ1. Nên đặt Long Quy ở đâu để chiêu tài mạnh nhất?\n\n→ Đặt hướng Đông Nam (Tài lộc) hoặc Chính Bắc (Sự nghiệp).\nQ2. Có thể đặt trên bàn làm việc không?\n\n→ Có, nên đặt phía bên tay phải (Bạch Hổ vị) hoặc gần chậu cây phong thủy.\nQ3. Có cần khai quang không?\n\n→ Đã được khai quang và niêm năng lượng tại xưởng Ann Fengshui. Gia chủ có thể đọc tâm nguyện trước khi đặt để kết nối năng lượng cá nhân.\n\n\n________________________________________\n🧭 HƯỚNG DẪN KIỂM TRA THẬT – GIẢ\n\n| Bước | Cách kiểm tra | Đặc điểm đá thật | Hàng giả |\n| :--- | :--- | :--- | :--- |\n| 1 | Quan sát | Vân tự nhiên, không đồng nhất, phản sáng nhẹ | Màu phẳng, bóng nhựa |\n| 2 | Cảm nhận tay | Mát lạnh, nặng | Nhẹ, ấm nhanh |\n| 3 | Gõ nhẹ | Âm trong, đanh | Âm đục |\n| 4 | Kiểm định | Có chứng thư VDG riêng | Không có hoặc in mờ |",
+    "fullDescription": "💎 SẢN PHẨM: LONG QUY NGỌC HOÀNG LONG TỰ NHIÊN\nhttps://youtube.com/shorts/IWdtLeUAMII?feature=share\n\n\n🪷 THÔNG TIN SẢN PHẨM\n\n• Tên sản phẩm: Long Quy Ngọc Hoàng Long Tự Nhiên\n\n• Tên tiếng Anh: Natural Yellow Onyx Dragon Turtle – Prosperity & Longevity Symbol\n\n• Nguồn gốc: Ngọc Hoàng Long tự nhiên (Natural Yellow Onyx Marble) – Pakistan, Myanmar, Việt Nam\n\n• Gia công & hoàn thiện: Xưởng hợp tác Ann Gem & Fengshui tại Việt Nam\n\n• Thương hiệu phân phối: Ann Gem & Fengshui – Recharge Your Energy, Restore Your Balance\n• Kích thước: 16 × 11 × 10 cm\n• Chất liệu: Ngọc Hoàng Long tự nhiên – kiểm định bởi VDG (Gemstone Report)\n\n\n________________________________________\n💰 GIÁ BÁN / PRICING\n\n| Hạng mục | Mức giá (VNĐ) | Ghi chú |\n| :--- | :--- | :--- |\n| Giá niêm yết (Retail List Price) | 6.199.000 (giá chưa có phiếu kiểm định riêng) Code: AGFS 025\\n7.099.000 (giá có phiếu kiểm định riêng) Code AGFS 026 | Đã gồm 10% VAT, chưa gồm vận chuyển |\n| Giá bán (Market Price) | 4.299.000 (giá chưa có phiếu kiểm định riêng) AGFS 025\\n4.999.000 (giá có phiếu kiểm định riêng) AGFS 026 | Bao gồm VAT, chưa gồm vận chuyển |\n\n\n________________________________________\n🌈 Ý NGHĨA PHONG THỦY\n\n| Đặc tính | Phân tích phong thủy |\n| :--- | :--- |\n| Ngọc Hoàng Long | Thuộc hành Thổ, mang năng lượng dương mạnh, tượng trưng cho sự ổn định, bền vững và thịnh vượng. Màu vàng kim biểu trưng cho tài phú, danh vọng và phúc lộc lâu bền. |\n| Hình tượng Long Quy (rồng – rùa) | Kết hợp năng lượng của hai linh vật quyền lực nhất: rồng – biểu trưng cho quyền uy, thăng tiến; rùa – biểu tượng của trường thọ, bền vững. Long Quy vừa hộ trạch, vừa chiêu tài, hóa sát. |\n\nCông dụng:\n\n• Chiêu tài, thăng tiến, hóa giải sát khí và tai ương.\n\n• Củng cố nền tảng sự nghiệp – tăng cường quý nhân phù trợ.\n\n• Bảo hộ gia trạch, giúp gia đạo yên ổn, trường thọ.\nÝ nghĩa biểu tượng:\n“Long Quy xuất thủy – vượng khí sinh tài, bền vững muôn đời.”\nHợp mệnh: Kim – Thổ – Hỏa (đặc biệt hợp người lãnh đạo, doanh nhân, người hướng ngoại hoặc hay di chuyển).\n\n\n________________________________________\n💎 GIẢI NGHĨA CHUYÊN GIA PHONG THỦY\n1. Về năng lượng học:\nNgọc Hoàng Long là biến thể cao cấp của Onyx Marble, phát năng lượng từ trường ổn định và lan tỏa đều. Sắc vàng thiên kim giúp kích hoạt trường năng lượng vùng Tỳ – Vị, giúp người sử dụng vững tâm – sáng trí – thu hút thịnh vượng.\n2. Về phong thủy trấn trạch:\nLong Quy vừa mang linh khí của rồng (dương khí mạnh, điều tiết vận khí), vừa có tính bảo hộ của rùa (ổn định, trường thọ). Đặt Long Quy ở hướng Chính Bắc giúp tăng cường sự nghiệp; đặt ở Đông Nam giúp chiêu tài; đặt gần cửa hoặc phòng làm việc giúp hóa giải thế xấu, chống tiểu nhân.\n3. Về ứng dụng trong không gian sống:\n\n• Vị trí tốt: Chính Bắc (Sự nghiệp), Đông Nam (Tài lộc), hoặc gần cửa chính.\n\n• Có thể đặt cạnh hồ cá, bể nước, hoặc gần cây xanh để kích hoạt “thủy khí sinh tài”.\n\n• Không đặt Long Quy đối diện phòng tắm hoặc bếp.\n\n\n________________________________________\n🪶 HỒ SƠ PHONG THỦY SẢN PHẨM\n1. Mô tả sản phẩm / Product Description:\nLinh vật Long Quy chạm khắc thủ công từ ngọc Hoàng Long tự nhiên, thân rồng, mai rùa, miệng há hút khí, biểu trưng cho tài lộc và bảo hộ trường thọ.\n\n2. Thành phần & Đặc trưng cấu tạo:\n\n• 100% Ngọc Hoàng Long tự nhiên, kiểm định VDG.\n\n• Sắc vàng óng ánh, vân mịn, phản sáng tự nhiên – không tẩm nhuộm.\n\n3. Quy trình chế tác:\nChọn khối ngọc đạt chuẩn – điêu khắc thủ công – đánh bóng tự nhiên – tẩy tịnh bằng trầm – niêm năng lượng Ann Fengshui.\n4. Công dụng chính / Key Functions:\n\n• Chiêu tài, thăng tiến, tăng quý nhân.\n\n• Trấn trạch, hóa sát, bảo vệ gia đạo.\n\n• Kích hoạt năng lượng thịnh vượng và trường thọ.\n\n5. USP / Điểm khác biệt:\n\n• Đá tự nhiên nguyên khối – kiểm định thật.\n\n• Sắc vàng trong, vân mịn, ánh phản quang hiếm.\n\n• Thiết kế cân bằng giữa quyền lực và an lành – biểu tượng “hòa long quy khí”.\n\n6. Đối tượng sử dụng / Recommended Users:\n\n• Doanh nhân, lãnh đạo, nhà đầu tư, chính trị gia.\n\n• Gia chủ muốn ổn định sự nghiệp và kích hoạt tài vận lâu dài.\n\n7. Cảnh báo / Precautions:\n\n• Không đặt nơi ẩm thấp hoặc đối diện nhà vệ sinh.\n\n• Lau bằng khăn mềm, tránh hóa chất.\n\n• Có thể tẩy năng lượng định kỳ bằng khói trầm, nến, hoặc ánh trăng non.\n\n8. Tại sao nên chọn sản phẩm này:\n“Vì Long Quy không chỉ là linh vật quyền uy, mà là biểu tượng của sự trường tồn – nơi rồng và rùa cùng giữ mạch thịnh vượng cho gia đạo.”\n\n\n________________________________________\n💬 FAQ – CÂU HỎI THƯỜNG GẶP\nQ1. Nên đặt Long Quy ở đâu để chiêu tài mạnh nhất?\n\n→ Đặt hướng Đông Nam (Tài lộc) hoặc Chính Bắc (Sự nghiệp).\nQ2. Có thể đặt trên bàn làm việc không?\n\n→ Có, nên đặt phía bên tay phải (Bạch Hổ vị) hoặc gần chậu cây phong thủy.\nQ3. Có cần khai quang không?\n\n→ Đã được khai quang và niêm năng lượng tại xưởng Ann Fengshui. Gia chủ có thể đọc tâm nguyện trước khi đặt để kết nối năng lượng cá nhân.\n\n\n________________________________________\n🧭 HƯỚNG DẪN KIỂM TRA THẬT – GIẢ\n\n| Bước | Cách kiểm tra | Đặc điểm đá thật | Hàng giả |\n| :--- | :--- | :--- | :--- |\
+| 1 | Quan sát | Vân tự nhiên, không đồng nhất, phản sáng nhẹ | Màu phẳng, bóng nhựa |\
+| 2 | Cảm nhận tay | Mát lạnh, nặng | Nhẹ, ấm nhanh |\
+| 3 | Gõ nhẹ | Âm trong, đanh | Âm đục |\
+| 4 | Kiểm định | Có chứng thư VDG riêng | Không có hoặc in mờ |",
     "price": "4,299,000",
     "image": "/product/Long quy ngọc hoàng Long tự nhiên (2).jpg",
     "category": "Vật phẩm phong thủy",
+    "nameEn": "NATURAL YELLOW ONYX DRAGON TURTLE",
+    "descriptionEn": "Natural Yellow Onyx Dragon Turtle – A spirit animal for Attracting Wealth and Neutralizing Negative Chi, symbolizing Authority, Advancement, and Longevity.",
+    "categoryEn": "Feng Shui Items",
     "benefits": [
         "Chiêu tài, thăng tiến, hóa giải sát khí và tai ương.",
         "Củng cố nền tảng sự nghiệp – tăng cường quý nhân phù trợ.",
         "Bảo hộ gia trạch, giúp gia đạo yên ổn, trường thọ."
+    ],
+    "benefitsEn": [
+        "Attracts wealth, promotes career advancement, neutralizes negative chi (Sha Qi) and misfortunes.",
+        "Strengthens career foundation – enhances the support of benefactors.",
+        "Protects the household, promotes family harmony and longevity."
     ],
     "specifications": {
         "material": "Ngọc Hoàng Long tự nhiên, kiểm định bởi VDG",
         "size": "16 × 11 × 10 cm",
         "weight": "500g",
         "origin": "Pakistan, Myanmar, Việt Nam"
+    },
+    "specificationsEn": {
+        "material": "Natural Yellow Onyx Marble, certified by VDG",
+        "size": "16 × 11 × 10 cm",
+        "origin": "Pakistan, Myanmar, Vietnam"
     },
     "retailPrice": "6,199,000",
     "marketPrice": "4,299,000"
@@ -590,20 +935,38 @@ export const allProducts: Product[] = [
     id: 26,
     "name": "DÒNG SẢN PHẨM LỌ ƯỚC PHONG THỦY (WISHING JAR) - ĐA CẤP ĐỘ",
     "description": "Wishing Jar – Energy in a Bottle. Lọ ước chứa thạch anh tự nhiên (Hồng, Tím, Vàng, Xanh) với các cấu hình đá đơn (1 Đá), đá mix (2, 3, 4 Đá) và 3 kích cỡ (S, M, L).",
-    "fullDescription": "SẢN PHẨM: LỌ ƯỚC PHONG THỦY (WISHING JAR)\n\nAGFS006X: Lọ ước 1 Đá size S, thạch anh Xanh\nAGFS006H: Lọ ước 1 Đá size S, thạch anh Hồng\nAGFS006T: Lọ ước 1 Đá size S, thạch anh Tím\nAGFS006V: Lọ ước 1 Đá size S, thạch anh  Vàng\nAGFS007X: Lọ ước 1 Đá size M, thạch anh Xanh\nAGFS007H: Lọ ước 1 Đá size M, thạch anh Hồng\nAGFS007T: Lọ ước 1 Đá size M, thạch anh Tím\nAGFS007V: Lọ ước 1 Đá size M, thạch anh Vàng\nAGFS008X: Lọ ước 1 Đá size L, thạch anh Xanh\nAGFS008H: Lọ ước 1 Đá size L, thạch anh Hồng\nAGFS008T: Lọ ước 1 Đá size L, thạch anh Tím\nAGFS008V: Lọ ước 1 Đá size L, thạch anh Vàng\nAGFS009VX: Lọ ước 2 Đá size S, thạch anh Vàng và thạch anh Xanh\nAGFS009HT: Lọ ước 2 Đá size S, thạch anh Hồng và thạch anh Tím\nAGFS009HX: Lọ ước 2 Đá size S, thạch anh Hồng và thạch anh Xanh\nAGFS009HV: Lọ ước 2 Đá size S, thạch anh Hồng và thạch anh Vàng\nAGFS009XT: Lọ ước 2 Đá size S, thạch anh Xanh và thạch anh Tím\nAGFS010VX: Lọ ước 2 Đá size M, thạch anh Vàng và thạch anh Xanh\nAGFS010VH: Lọ ước 2 Đá size M, thạch anh Vàng và thạch anh Hồng\nAGFS010HT: Lọ ước 2 Đá size M, thạch anh Hồng và thạch anh Tím\nAGFS010HX: Lọ ước 2 Đá size M, thạch anh Hồng và thạch anh Xanh\nAGFS010XT: Lọ ước 2 Đá size M, thạch anh Xanh và thạch anh Tím\nAGFS011VX: Lọ ước 2 Đá size L, thạch anh Vàng và thạch anh Xanh\nAGFS011VH: Lọ ước 2 Đá size L, thạch anh Vàng và thạch anh Hồng\nAGFS011HT: Lọ ước 2 Đá size L, thạch anh Hồng và thạch anh Tím\nAGFS011HX: Lọ ước 2 Đá size L, thạch anh Hồng và thạch anh Xanh\nAGFS011XT: Lọ ước 2 Đá size L, thạch anh Xanh và thạch anh Tím\nAGFS012HVT: Lọ ước 3 Đá size M, thạch anh Hồng và thạch anh Vàng, thạch anh Tím\nAGFS012THX: Lọ ước 3 Đá size M, thạch anh Tím, thạch anh Hồng và thạch anh Xanh\nAGFS013HVT: Lọ ước 3 Đá size L, thạch anh Hồng và thạch anh Vàng, thạch anh Tím\nAGFS013THX: Lọ ước 3 Đá size L, thạch anh Tím, thạch anh Hồng và thạch anh Xanh\nAGFS014: Lọ ước 4 Đá size M\nAGFS015: : Lọ ước 4 Đá size L\n\n[Mã VIP (VIP Codes for all configurations are also available)]\n\n\n🪷 THÔNG TIN SẢN PHẨM\n\n• Tên sản phẩm: Lọ Ước Phong Thủy\n\n• Tên tiếng Anh: Wishing Jar – Energy in a Bottle\n\n• Nguồn gốc: Đá thạch anh tự nhiên – Brazil, Madagascar, Việt Nam\n\n• Gia công & hoàn thiện: Xưởng hợp tác Ann Gem & Fengshui tại Việt Nam\n\n• Thương hiệu phân phối: Ann Gem & Fengshui – Recharge Your Energy, Restore Your Balance\n\n• Kích thước:\n  • Size S: 30 ml (3 × 7 cm)\n  • Size M: 50 ml (3 × 10 cm)\n  • Size L: 150 ml (4,7 × 12 cm)\n\n• Chất liệu: Đá thạch anh tự nhiên (Rose Quartz – hồng, Citrine – vàng, Amethyst – tím, Aventurine – xanh); lọ thủy tinh dày; nắp gỗ; hộp giấy kèm thiệp; phiếu chứng nhận năng lượng.\n\n\n________________________________________\n💰 GIÁ BÁN / PRICING\n\n| Hạng mục | Mức giá (VNĐ) | Ghi chú |\n| :--- | :--- | :--- |\n| Giá niêm yết (Retail List Price) | 215.000 – 499.000 | Đã bao gồm 10% VAT, chưa bao gồm phí vận chuyển |\n| Giá bán (Market Price) | 150.000 – 350.000 | Bao gồm VAT & chưa gồm phí vận chuyển |\n\nLưu ý: Bảng giá chi tiết theo cấu hình đá ở phần dưới.\n\n\n________________________________________\n🌈 Ý NGHĨA PHONG THỦY (4 ĐÁ ĐÁ CHỦ LỰC)\n\n| Đặc tính đá | Phân tích phong thủy & công dụng chính |\n| :--- | :--- |\n| 💗 Thạch anh hồng (Rose Quartz) | Năng lượng yêu thương – chữa lành cảm xúc – tăng duyên lành – dễ ngủ. |\n| 💛 Thạch anh vàng (Citrine) | “Đá thương nhân”: chiêu tài – tự tin – thúc đẩy hành động – danh vọng. |\n| 💜 Thạch anh tím (Amethyst) | Trí tuệ – bình an – thiền định – ngủ sâu – cân bằng tâm trí. |\n| 💚 Thạch anh xanh (Aventurine) | Sức khỏe – may mắn – cơ hội mới – mở rộng trái tim – phục hồi. |\n\nÝ nghĩa biểu tượng: “Lọ ước nhỏ chứa năng lượng lớn – lan tỏa an lành và niềm tin.”\nHợp mệnh: tùy Đá; bản mix 3–4 cân bằng toàn mệnh (ngũ hành).\n\n\n________________________________________\n💎 GIẢI NGHĨA CHUYÊN GIA PHONG THỦY\n\n• Năng lượng học: Thạch anh phát tần số cộng hưởng ổn định, giúp ổn định từ trường cơ thể – không gian; mix đa sắc → hiệu ứng cộng hưởng.\n\n• Phong thủy trấn trạch: Đặt tại Đông Nam (Tài Lộc), Tây Nam (Tình Duyên), đầu giường/bàn làm việc → tụ khí – hóa giải trầm khí.\n\n• Ứng dụng: Phòng khách, bàn trà, phòng ngủ, góc thiền; phù hợp cả decor & quà tặng.\n\n\n________________________________________\n🪶 HỒ SƠ PHONG THỦY SẢN PHẨM\n\n• Mô tả / Product Description: Vật phẩm năng lượng nhỏ gọn chứa mảnh thạch anh tự nhiên; tẩy tịnh bằng trầm & nến, niêm ấn và chứng nhận năng lượng.\n\n• Thành phần / Cấu tạo: 100% thạch anh tự nhiên (hồng, vàng, tím, xanh) + lọ thủy tinh dày + nắp gỗ + hộp giấy + thiệp + chứng thư năng lượng Mandala.\n\n• Quy trình chế tác: Chọn đá đạt chuẩn → tẩy tịnh → đóng lọ thủ công → dán tem & niêm ấn → gắn chứng nhận.\n\n• Công dụng chính: Thanh lọc năng lượng; giữ bình an; chiêu tài – tình duyên – phục hồi; quà tặng phong thủy tinh tế.\n\n• USP: 100% đá tự nhiên không nhuộm + chứng nhận; thiết kế nhỏ gọn – thẩm mỹ; giá tiếp cận; sản phẩm phễu dẫn sang dòng cao cấp. Mỗi lọ có phiếu chứng nhận năng lượng Ann Gem & Fengshui.\n\n• Là “vật phẩm mở phễu” trong hệ sinh thái Ann Wellness (kết nối đến vòng tay, decor, tranh đá quý).\n\n• Đối tượng: Mọi giới tính; dân văn phòng/wellness; quà tặng khai trương, tân gia, sinh nhật, doanh nghiệp.\n\n• Cảnh báo: Không đốt/đổ nước; tránh nắng gắt – va đập; giữ khô ráo.\n\n• Tại sao chọn: Năng lượng thật – giá hợp lý – ý nghĩa phong thủy – tăng trải nghiệm thương hiệu.\n\n\n________________________________________\n💬 FAQ\n\n• Q1. Lọ ước có thể mở ra được không?\n→ Có, nhưng khuyến nghị không đổ ra vì đã niêm phong năng lượng.\n\n• Q2. Dùng cho ai?\n→ Mọi giới tính, mọi mệnh. Đặc biệt phù hợp dân văn phòng, phụ nữ, người thích phong thủy nhẹ nhàng.\n\n• Q3. Bảo quản thế nào?\n→ Tránh ánh nắng trực tiếp, nên đặt nơi sáng và khô.\n\n• Q4. Có thể mang đi du lịch hoặc tặng quà được không?\n→ Rất phù hợp làm quà tặng bình an, may mắn, khai trương hoặc tân gia. Có thiệp & chứng nhận năng lượng.\n\n• Q5. Đặt ở đâu tốt nhất? Đông Nam (Tài Lộc), Tây Nam (Tình Duyên), bàn làm việc, đầu giường.\n\n• Q6. Mix nhiều Đá có tốt không? Có; mix 2–4 cân bằng ngũ hành, hợp đa mệnh.\n\n\n________________________________________\n🧭 HƯỚNG DẪN KIỂM TRA THẬT – GIẢ\n\n| Bước | Cách kiểm tra | Đá thật | Hàng giả/nhựa ép |\n| :--- | :--- | :--- | :--- |\n| 1 | Quan sát dưới ánh sáng | Vân loang tự nhiên, xuyên sáng nhẹ | Màu phẳng, đồng nhất|\n| 2 | Cầm 15s | Vẫn mát tay | Ấm nhanh, nhẹ|\n| 3 | Gõ nhẹ | Âm vang trong | Âm đục|\n| 4 | Chứng nhận năng lượng | Mỗi lọ 1 chứng thư năng lượng | Không có|\n",
+    "fullDescription": "SẢN PHẨM: LỌ ƯỚC PHONG THỦY (WISHING JAR)\n\nAGFS006X: Lọ ước 1 Đá size S, thạch anh Xanh\nAGFS006H: Lọ ước 1 Đá size S, thạch anh Hồng\nAGFS006T: Lọ ước 1 Đá size S, thạch anh Tím\nAGFS006V: Lọ ước 1 Đá size S, thạch anh  Vàng\nAGFS007X: Lọ ước 1 Đá size M, thạch anh Xanh\nAGFS007H: Lọ ước 1 Đá size M, thạch anh Hồng\nAGFS007T: Lọ ước 1 Đá size M, thạch anh Tím\nAGFS007V: Lọ ước 1 Đá size M, thạch anh Vàng\nAGFS008X: Lọ ước 1 Đá size L, thạch anh Xanh\nAGFS008H: Lọ ước 1 Đá size L, thạch anh Hồng\nAGFS008T: Lọ ước 1 Đá size L, thạch anh Tím\nAGFS008V: Lọ ước 1 Đá size L, thạch anh Vàng\nAGFS009VX: Lọ ước 2 Đá size S, thạch anh Vàng và thạch anh Xanh\nAGFS009HT: Lọ ước 2 Đá size S, thạch anh Hồng và thạch anh Tím\nAGFS009HX: Lọ ước 2 Đá size S, thạch anh Hồng và thạch anh Xanh\nAGFS009HV: Lọ ước 2 Đá size S, thạch anh Hồng và thạch anh Vàng\nAGFS009XT: Lọ ước 2 Đá size S, thạch anh Xanh và thạch anh Tím\nAGFS010VX: Lọ ước 2 Đá size M, thạch anh Vàng và thạch anh Xanh\nAGFS010VH: Lọ ước 2 Đá size M, thạch anh Vàng và thạch anh Hồng\nAGFS010HT: Lọ ước 2 Đá size M, thạch anh Hồng và thạch anh Tím\nAGFS010HX: Lọ ước 2 Đá size M, thạch anh Hồng và thạch anh Xanh\nAGFS010XT: Lọ ước 2 Đá size M, thạch anh Xanh và thạch anh Tím\nAGFS011VX: Lọ ước 2 Đá size L, thạch anh Vàng và thạch anh Xanh\nAGFS011VH: Lọ ước 2 Đá size L, thạch anh Vàng và thạch anh Hồng\nAGFS011HT: Lọ ước 2 Đá size L, thạch anh Hồng và thạch anh Tím\nAGFS011HX: Lọ ước 2 Đá size L, thạch anh Hồng và thạch anh Xanh\nAGFS011XT: Lọ ước 2 Đá size L, thạch anh Xanh và thạch anh Tím\nAGFS012HVT: Lọ ước 3 Đá size M, thạch anh Hồng và thạch anh Vàng, thạch anh Tím\nAGFS012THX: Lọ ước 3 Đá size M, thạch anh Tím, thạch anh Hồng và thạch anh Xanh\nAGFS013HVT: Lọ ước 3 Đá size L, thạch anh Hồng và thạch anh Vàng, thạch anh Tím\nAGFS013THX: Lọ ước 3 Đá size L, thạch anh Tím, thạch anh Hồng và thạch anh Xanh\nAGFS014: Lọ ước 4 Đá size M\nAGFS015: : Lọ ước 4 Đá size L\n\n[Mã VIP (VIP Codes for all configurations are also available)]\n\n\n🪷 THÔNG TIN SẢN PHẨM\n\n• Tên sản phẩm: Lọ Ước Phong Thủy\n\n• Tên tiếng Anh: Wishing Jar – Energy in a Bottle\n\n• Nguồn gốc: Đá thạch anh tự nhiên – Brazil, Madagascar, Việt Nam\n\n• Gia công & hoàn thiện: Xưởng hợp tác Ann Gem & Fengshui tại Việt Nam\n\n• Thương hiệu phân phối: Ann Gem & Fengshui – Recharge Your Energy, Restore Your Balance\n\n• Kích thước:\n  • Size S: 30 ml (3 × 7 cm)\n  • Size M: 50 ml (3 × 10 cm)\n  • Size L: 150 ml (4,7 × 12 cm)\n\n• Chất liệu: Đá thạch anh tự nhiên (Rose Quartz – hồng, Citrine – vàng, Amethyst – tím, Aventurine – xanh); lọ thủy tinh dày; nắp gỗ; hộp giấy kèm thiệp; phiếu chứng nhận năng lượng.\n\n\n________________________________________\n💰 GIÁ BÁN / PRICING\n\n| Hạng mục | Mức giá (VNĐ) | Ghi chú |\n| :--- | :--- | :--- |\n| Giá niêm yết (Retail List Price) | 215.000 – 499.000 | Đã bao gồm 10% VAT, chưa bao gồm phí vận chuyển |\n| Giá bán (Market Price) | 150.000 – 350.000 | Bao gồm VAT & chưa gồm phí vận chuyển |\n\nLưu ý: Bảng giá chi tiết theo cấu hình đá ở phần dưới.\n\n\n________________________________________\n🌈 Ý NGHĨA PHONG THỦY (4 ĐÁ ĐÁ CHỦ LỰC)\n\n| Đặc tính đá | Phân tích phong thủy & công dụng chính |\n| :--- | :--- |\n| 💗 Thạch anh hồng (Rose Quartz) | Năng lượng yêu thương – chữa lành cảm xúc – tăng duyên lành – dễ ngủ. |\n| 💛 Thạch anh vàng (Citrine) | “Đá thương nhân”: chiêu tài – tự tin – thúc đẩy hành động – danh vọng. |\n| 💜 Thạch anh tím (Amethyst) | Trí tuệ – bình an – thiền định – ngủ sâu – cân bằng tâm trí. |\n| 💚 Thạch anh xanh (Aventurine) | Sức khỏe – may mắn – cơ hội mới – mở rộng trái tim – phục hồi. |\n\nÝ nghĩa biểu tượng: “Lọ ước nhỏ chứa năng lượng lớn – lan tỏa an lành và niềm tin.”\nHợp mệnh: tùy Đá; bản mix 3–4 cân bằng toàn mệnh (ngũ hành).\n\n\n________________________________________\n💎 GIẢI NGHĨA CHUYÊN GIA PHONG THỦY\n\n• Năng lượng học: Thạch anh phát tần số cộng hưởng ổn định, giúp ổn định từ trường cơ thể – không gian; mix đa sắc → hiệu ứng cộng hưởng.\n\n• Phong thủy trấn trạch: Đặt tại Đông Nam (Tài Lộc), Tây Nam (Tình Duyên), đầu giường/bàn làm việc → tụ khí – hóa giải trầm khí.\n\n• Ứng dụng: Phòng khách, bàn trà, phòng ngủ, góc thiền; phù hợp cả decor & quà tặng.\n\n\n________________________________________\n🪶 HỒ SƠ PHONG THỦY SẢN PHẨM\n\n• Mô tả / Product Description: Vật phẩm năng lượng nhỏ gọn chứa mảnh thạch anh tự nhiên; tẩy tịnh bằng trầm & nến, niêm ấn và chứng nhận năng lượng.\n\n• Thành phần / Cấu tạo: 100% thạch anh tự nhiên (hồng, vàng, tím, xanh) + lọ thủy tinh dày + nắp gỗ + hộp giấy + thiệp + chứng thư năng lượng Mandala.\n\n• Quy trình chế tác: Chọn đá đạt chuẩn → tẩy tịnh → đóng lọ thủ công → dán tem & niêm ấn → gắn chứng nhận.\n\n• Công dụng chính: Thanh lọc năng lượng; giữ bình an; chiêu tài – tình duyên – phục hồi; quà tặng phong thủy tinh tế.\n\n• USP: 100% đá tự nhiên không nhuộm + chứng nhận; thiết kế nhỏ gọn – thẩm mỹ; giá tiếp cận; sản phẩm phễu dẫn sang dòng cao cấp. Mỗi lọ có phiếu chứng nhận năng lượng Ann Gem & Fengshui.\n\n• Là “vật phẩm mở phễu” trong hệ sinh thái Ann Wellness (kết nối đến vòng tay, decor, tranh đá quý).\n\n• Đối tượng: Mọi giới tính; dân văn phòng/wellness; quà tặng khai trương, tân gia, sinh nhật, doanh nghiệp.\n\n• Cảnh báo: Không đốt/đổ nước; tránh nắng gắt – va đập; giữ khô ráo.\n\n• Tại sao chọn: Năng lượng thật – giá hợp lý – ý nghĩa phong thủy – tăng trải nghiệm thương hiệu.\n\n\n________________________________________\n💬 FAQ\n\n• Q1. Lọ ước có thể mở ra được không?\n→ Có, nhưng khuyến nghị không đổ ra vì đã niêm phong năng lượng.\n\n• Q2. Dùng cho ai?\n→ Mọi giới tính, mọi mệnh. Đặc biệt phù hợp dân văn phòng, phụ nữ, người thích phong thủy nhẹ nhàng.\n\n• Q3. Bảo quản thế nào?\n→ Tránh ánh nắng trực tiếp, nên đặt nơi sáng và khô.\n\n• Q4. Có thể mang đi du lịch hoặc tặng quà được không?\n→ Rất phù hợp làm quà tặng bình an, may mắn, khai trương hoặc tân gia. Có thiệp & chứng nhận năng lượng.\n\n• Q5. Đặt ở đâu tốt nhất? Đông Nam (Tài Lộc), Tây Nam (Tình Duyên), bàn làm việc, đầu giường.\n\n• Q6. Mix nhiều Đá có tốt không? Có; mix 2–4 cân bằng ngũ hành, hợp đa mệnh.\n\n\n________________________________________\n🧭 HƯỚNG DẪN KIỂM TRA THẬT – GIẢ\n\n| Bước | Cách kiểm tra | Đá thật | Hàng giả/nhựa ép |\n| :--- | :--- | :--- | :--- |\
+| 1 | Quan sát dưới ánh sáng | Vân loang tự nhiên, xuyên sáng nhẹ | Màu phẳng, đồng nhất|\
+| 2 | Cầm 15s | Vẫn mát tay | Ấm nhanh, nhẹ|\
+| 3 | Gõ nhẹ | Âm vang trong | Âm đục|\
+| 4 | Chứng nhận năng lượng | Mỗi lọ 1 chứng thư năng lượng | Không có|\n",
     "price": "150,000 – 350,000",
     "image": "/product/Hộp giấy đựng lọ ước phong thủy (4).jpg",
     "category": "Vật phẩm phong thủy",
+    "nameEn": "WISHING JAR - MULTI-LEVEL FENG SHUI JARS",
+    "descriptionEn": "Wishing Jar – Energy in a Bottle. Jars containing natural quartz (Rose, Amethyst, Citrine, Aventurine) with single-stone (1 Stone), mixed-stone (2, 3, 4 Stones) configurations and 3 sizes (S, M, L).",
+    "categoryEn": "Feng Shui Items",
     "benefits": [
         "Thanh lọc năng lượng; giữ bình an; chiêu tài – tình duyên – phục hồi (tùy loại đá)",
         "Tạo “điểm neo năng lượng” nhỏ gọn, mạnh mẽ",
         "Phù hợp cả decor & quà tặng tinh tế"
+    ],
+    "benefitsEn": [
+        "Purifies energy; maintains peace; attracts wealth – love – restoration (depending on the stone type)",
+        "Creates a compact, powerful “energy anchor point”",
+        "Suitable for both decor and sophisticated gifts"
     ],
     "specifications": {
         "material": "100% Thạch anh tự nhiên (Hồng, Tím, Vàng, Xanh), lọ thủy tinh dày, nắp gỗ",
         "size": "Size S (30ml) đến Size L (150ml)",
         "weight": "120g – 400g (tùy size)",
         "origin": "Brazil, Madagascar, Việt Nam"
+    },
+    "specificationsEn": {
+        "material": "100% natural quartz (Rose, Amethyst, Citrine, Aventurine), thick glass jar, wooden lid",
+        "size": "Size S (30ml) to Size L (150ml)",
+        "weight": "120g – 400g (depending on size)",
+        "origin": "Brazil, Madagascar, Vietnam"
     },
     "retailPrice": "215,000 – 499,000",
     "marketPrice": "150,000 – 350,000"
@@ -612,21 +975,40 @@ export const allProducts: Product[] = [
     id: 27,
     "name": "SAPHIR ĐEN ÁNH SAO TỰ NHIÊN",
     "description": "Natural Black Star Sapphire – Bảo thạch hộ mệnh của Trí tuệ & Bảo hộ, mang hiệu ứng quang học sao sáu cánh hiếm có. Hợp Thủy, Mộc, Kim.",
-    "fullDescription": "SẢN PHẨM: SAPHIR ĐEN ÁNH SAO TỰ NHIÊN\nTrong thế giới đá quý, rất hiếm có loại đá nào mang trong mình một “ngôi sao biết chuyển động” như Saphir Đen Ánh Sao.\nNgười xưa tin rằng: “Khi bầu trời khuyết một vì sao, đất sẽ sinh ra một viên đá có thể tự phát sáng để dẫn đường cho người xứng đáng.”\nSaphir ánh sao được xem là bảo thạch hộ mệnh của vua chúa. Các thiền sư Tây Tạng dùng nó để định tâm, các nhà lãnh đạo châu Á dùng để khai tuệ – nhìn thấu sự việc – đưa ra quyết định chuẩn xác.\nĐiều đặc biệt nhất:\n✨Ánh sao chỉ xuất hiện khi có ánh sáng chiếu vào – cũng giống như trí tuệ chỉ sáng lên trong tâm tĩnh lặng.\n✨Khi đổi góc chiếu, ngôi sao dịch chuyển theo – tượng trưng cho việc vạn sự xoay chuyển đúng hướng khi tâm sáng.\nSaphir đen hấp thụ toàn bộ “tạp khí”, giữ lại cho chủ nhân bình an – bản lĩnh – trí tuệ – may mắn, giúp:\n\n• Tránh thị phi – hóa giải xung đột\n\n• Tăng sự tỉnh táo, tập trung, sáng suốt\n\n• Hộ thân cực mạnh, đặc biệt khi đi đêm, đi xa\n\n• Thu hút vận quý nhân – nâng tần số rung của tâm\nĐặt viên đá dưới ánh đèn, bạn sẽ thấy sao sáu cánh bừng sáng – như nhận được “điềm lành của vũ trụ”.\n\n\n🪷 THÔNG TIN SẢN PHẨM\n\n• Tên sản phẩm: Saphir đen ánh sao tự nhiên\n\n• Tên tiếng Anh: Natural Black Star Sapphire – The Stone of Wisdom & Protection\n\n• Nguồn gốc: Mỏ đá quý Sri Lanka, Madagascar, Thái Lan\n\n• Gia công & hoàn thiện: Xưởng hợp tác Ann Gem & Fengshui tại Việt Nam\n\n• Thương hiệu phân phối: Ann Gem & Fengshui – Recharge Your Energy, Restore Your Balance\nKích thước: 15.36 × 12 × 5.62 mm\nChất liệu: Saphir tự nhiên ánh sao (Natural Star Sapphire) – cắt cabochon, đánh bóng thủ công\n\n\n________________________________________\n💰 GIÁ BÁN / PRICING\n\n| Hạng mục | Mức giá (VNĐ) | Ghi chú |\n| :--- | :--- | :--- |\n| Giá niêm yết (Retail List Price) | 12.599.000 VND (giấy kiểm định chung) code AGFS 051\\n12.999.000 VND (giấy kiểm định riêng) code AGFS 052 | Đã bao gồm 10% VAT, chưa gồm phí vận chuyển |\n| Giá bán (Market Price) | 10.099.000 VND (giấy kiểm định chung) code AGFS 051\\n11.059.000 VND (giấy kiểm định riêng) code AGFS 052 | Bao gồm VAT, chưa có phí vận chuyển |\n\n\n________________________________________\n🌈 Ý NGHĨA PHONG THỦY\n\n| Đặc tính | Phân tích phong thủy |\n| :--- | :--- |\n| Saphir ánh sao (Star Sapphire) | Là biến thể hiếm của corundum, phát quang tự nhiên tạo hình “sao sáu cánh” tượng trưng cho Lục Đại Bảo Hộ: Trí tuệ – Bình an – Tài vận – Tình duyên – Sức khỏe – May mắn. |\n| Sắc đen ánh lam tự nhiên | Thuộc hành Thủy, tượng trưng cho chiều sâu trí tuệ, bản lĩnh và sự kiên định. Màu đen trong phong thủy đại diện cho “Năng lượng bảo hộ và hấp thu tà khí”. |\n\nCông dụng:\n\n• Tăng sự tập trung, sáng suốt và bình tĩnh trong quyết định.\n\n• Bảo vệ trường năng lượng cá nhân khỏi năng lượng xấu.\n\n• Hóa giải trầm khí, giúp tâm trí sáng rõ và tỉnh thức.\nÝ nghĩa biểu tượng:\n“Ngôi sao trong bóng tối – ánh sáng của trí tuệ nội tâm.”\nHợp mệnh: Thủy – Mộc – Kim. Phù hợp với người cần năng lượng tĩnh tại, làm việc trí óc, quản lý, đầu tư hoặc thiền định.\n\n\n________________________________________\n💎 GIẢI NGHĨA CHUYÊN GIA PHONG THỦY\n1. Về năng lượng học:\nSaphir phát sóng năng lượng dao động ở tần số cao (20–25 MHz), tương thích mạnh với vùng năng lượng đầu và tim – giúp làm dịu lo âu, tập trung và cân bằng khí huyết. Hiệu ứng “sao sáu cánh” xuất hiện do hiện tượng quang học asterism, biểu thị cho sự khai mở tâm trí và trí tuệ sâu sắc.\n2. Về phong thủy trấn trạch:\nSaphir đen là “bảo thạch hộ thân”, thường được đặt trong két, bàn làm việc hoặc đeo bên người để hóa giải khí xấu, tránh thị phi, tiểu nhân và tà khí. Đặc biệt hiệu quả khi kết hợp cùng đá thạch anh trắng hoặc obsidian.\n3. Về ứng dụng trong không gian sống:\n\n• Đặt trên bàn làm việc, phòng thiền, phòng học hoặc gần cửa sổ có ánh sáng tự nhiên.\n\n• Có thể làm vật hộ thân, nhẫn phong thủy, hoặc đặt trong lọ năng lượng (Lucky Stone Jar) để tăng hiệu ứng cộng hưởng.\n\n\n________________________________________\n🪶 HỒ SƠ PHONG THỦY SẢN PHẨM\n1. Mô tả sản phẩm / Product Description:\nViên Saphir đen ánh sao tự nhiên, cắt cabochon hình oval, bề mặt bóng gương, xuất hiện hiệu ứng “sao sáu cánh” khi chiếu sáng. Mỗi viên độc bản, được lựa chọn và nạp năng lượng bằng khói trầm tự nhiên.\n2. Thành phần & Đặc trưng cấu tạo:\n100% Saphir tự nhiên thuộc nhóm corundum, độ cứng 9/10 Mohs, ánh thủy tinh tự nhiên, không xử lý màu.\n3. Quy trình chế tác:\nTuyển chọn đá thô – cắt thủ công theo tỉ lệ ánh sao chuẩn – mài bóng – tẩy tịnh và niêm năng lượng.\n4. Công dụng chính / Key Functions:\n\n• Hộ thân – khai tuệ – tăng cường trực giác.\n\n• Ổn định cảm xúc, giảm stress, giúp giấc ngủ sâu.\n\n• Tạo năng lượng “bảo hộ” quanh không gian làm việc.\n\n5. USP / Điểm khác biệt:\n\n• Hiệu ứng ánh sao sáu cánh rõ nét, hiếm gặp.\n\n• Độ trong & phản sáng cao, chứng nhận kiểm định năng lượng.\n\n• Độc bản tự nhiên – không xử lý nhân tạo.\n\n6. Đối tượng sử dụng / Recommended Users:\n\n• Nhà lãnh đạo, chuyên gia, người thiền định, sáng tạo.\n\n• Người cần cân bằng năng lượng, tăng bảo hộ tâm linh.\n\n7. Cảnh báo / Precautions:\n\n• Không để dưới nắng gắt hoặc nhiệt độ cao.\n\n• Lau nhẹ bằng vải mềm, tránh hóa chất.\n\n• Khi không sử dụng, nên đặt trong hộp gỗ hoặc lụa.\n\n8. Tại sao nên chọn sản phẩm này:\n“Vì ánh sao chỉ hiện trong bóng tối – cũng như trí tuệ thật chỉ tỏa sáng khi tâm tĩnh tại.”\n\n\n________________________________________\n💬 FAQ – CÂU HỎI THƯỜNG GẶP\nQ1. Saphir ánh sao có phải đá quý thật không?\n\n→ Có, là khoáng chất corundum tự nhiên, được kiểm định bằng phổ quang học và quang học phân cực.\nQ2. Có thể mang hàng ngày không?\n\n→ Có. Khi tiếp xúc lâu, năng lượng Saphir đồng pha với từ trường cơ thể, tăng hiệu quả bảo hộ.\nQ3. Làm sao để bảo dưỡng tốt nhất?\n\n→ Lau bằng khăn ẩm mềm, tránh xà phòng hoặc dung dịch tẩy.\n\n\n________________________________________\n🧭 HƯỚNG DẪN KIỂM TRA THẬT – GIẢ\n\n| Bước | Kiểm tra | Đá thật | Hàng giả |\n| :--- | :--- | :--- | :--- |\n| 1 | Quan sát ánh sao | Hiện rõ sao 6 cánh, di chuyển khi đổi góc sáng | Không có hoặc sao mờ |\n| 2 | Cảm nhận | Mát, nặng, phản sáng nhẹ | Nhẹ, nóng nhanh |\n| 3 | Gõ nhẹ | Âm vang trong | Âm đục |\n| 4 | Kiểm định | Có giấy kiểm định năng lượng | Không có |\n\n🌌 “Khi tâm bạn sáng, vũ trụ sẽ trao cho bạn một ngôi sao.”\nSaphir ánh sao không chỉ đẹp – mà còn bảo hộ mạnh mẽ, giúp chủ nhân tránh thị phi, tăng trí tuệ, giữ bình an.\nNếu bạn cảm thấy thời gian gần đây tâm bất an, quyết định khó khăn, năng lượng xuống… ➡️ Đây chính là viên đá bạn cần để lấy lại sự cân bằng & bản lĩnh.",
+    "fullDescription": "SẢN PHẨM: SAPHIR ĐEN ÁNH SAO TỰ NHIÊN\nTrong thế giới đá quý, rất hiếm có loại đá nào mang trong mình một “ngôi sao biết chuyển động” như Saphir Đen Ánh Sao.\nNgười xưa tin rằng: “Khi bầu trời khuyết một vì sao, đất sẽ sinh ra một viên đá có thể tự phát sáng để dẫn đường cho người xứng đáng.”\nSaphir ánh sao được xem là bảo thạch hộ mệnh của vua chúa. Các thiền sư Tây Tạng dùng nó để định tâm, các nhà lãnh đạo châu Á dùng để khai tuệ – nhìn thấu sự việc – đưa ra quyết định chuẩn xác.\nĐiều đặc biệt nhất:\n✨Ánh sao chỉ xuất hiện khi có ánh sáng chiếu vào – cũng giống như trí tuệ chỉ sáng lên trong tâm tĩnh lặng.\n✨Khi đổi góc chiếu, ngôi sao dịch chuyển theo – tượng trưng cho việc vạn sự xoay chuyển đúng hướng khi tâm sáng.\nSaphir đen hấp thụ toàn bộ “tạp khí”, giữ lại cho chủ nhân bình an – bản lĩnh – trí tuệ – may mắn, giúp:\n\n• Tránh thị phi – hóa giải xung đột\n\n• Tăng sự tỉnh táo, tập trung, sáng suốt\n\n• Hộ thân cực mạnh, đặc biệt khi đi đêm, đi xa\n\n• Thu hút vận quý nhân – nâng tần số rung của tâm\nĐặt viên đá dưới ánh đèn, bạn sẽ thấy sao sáu cánh bừng sáng – như nhận được “điềm lành của vũ trụ”.\n\n\n🪷 THÔNG TIN SẢN PHẨM\n\n• Tên sản phẩm: Saphir đen ánh sao tự nhiên\n\n• Tên tiếng Anh: Natural Black Star Sapphire – The Stone of Wisdom & Protection\n\n• Nguồn gốc: Mỏ đá quý Sri Lanka, Madagascar, Thái Lan\n\n• Gia công & hoàn thiện: Xưởng hợp tác Ann Gem & Fengshui tại Việt Nam\n\n• Thương hiệu phân phối: Ann Gem & Fengshui – Recharge Your Energy, Restore Your Balance\nKích thước: 15.36 × 12 × 5.62 mm\nChất liệu: Saphir tự nhiên ánh sao (Natural Star Sapphire) – cắt cabochon, đánh bóng thủ công\n\n\n________________________________________\n💰 GIÁ BÁN / PRICING\n\n| Hạng mục | Mức giá (VNĐ) | Ghi chú |\n| :--- | :--- | :--- |\n| Giá niêm yết (Retail List Price) | 12.599.000 VND (giấy kiểm định chung) code AGFS 051\\n12.999.000 VND (giấy kiểm định riêng) code AGFS 052 | Đã bao gồm 10% VAT, chưa gồm phí vận chuyển |\n| Giá bán (Market Price) | 10.099.000 VND (giấy kiểm định chung) code AGFS 051\\n11.059.000 VND (giấy kiểm định riêng) code AGFS 052 | Bao gồm VAT, chưa có phí vận chuyển |\n\n\n________________________________________\n🌈 Ý NGHĨA PHONG THỦY\n\n| Đặc tính | Phân tích phong thủy |\n| :--- | :--- |\n| Saphir ánh sao (Star Sapphire) | Là biến thể hiếm của corundum, phát quang tự nhiên tạo hình “sao sáu cánh” tượng trưng cho Lục Đại Bảo Hộ: Trí tuệ – Bình an – Tài vận – Tình duyên – Sức khỏe – May mắn. |\n| Sắc đen ánh lam tự nhiên | Thuộc hành Thủy, tượng trưng cho chiều sâu trí tuệ, bản lĩnh và sự kiên định. Màu đen trong phong thủy đại diện cho “Năng lượng bảo hộ và hấp thu tà khí”. |\n\nCông dụng:\n\n• Tăng sự tập trung, sáng suốt và bình tĩnh trong quyết định.\n\n• Bảo vệ trường năng lượng cá nhân khỏi năng lượng xấu.\n\n• Hóa giải trầm khí, giúp tâm trí sáng rõ và tỉnh thức.\nÝ nghĩa biểu tượng:\n“Ngôi sao trong bóng tối – ánh sáng của trí tuệ nội tâm.”\nHợp mệnh: Thủy – Mộc – Kim. Phù hợp với người cần năng lượng tĩnh tại, làm việc trí óc, quản lý, đầu tư hoặc thiền định.\n\n\n________________________________________\n💎 GIẢI NGHĨA CHUYÊN GIA PHONG THỦY\n1. Về năng lượng học:\nSaphir phát sóng năng lượng dao động ở tần số cao (20–25 MHz), tương thích mạnh với vùng năng lượng đầu và tim – giúp làm dịu lo âu, tập trung và cân bằng khí huyết. Hiệu ứng “sao sáu cánh” xuất hiện do hiện tượng quang học asterism, biểu thị cho sự khai mở tâm trí và trí tuệ sâu sắc.\n2. Về phong thủy trấn trạch:\nSaphir đen là “bảo thạch hộ thân”, thường được đặt trong két, bàn làm việc hoặc đeo bên người để hóa giải khí xấu, tránh thị phi, tiểu nhân và tà khí. Đặc biệt hiệu quả khi kết hợp cùng đá thạch anh trắng hoặc obsidian.\n3. Về ứng dụng trong không gian sống:\n\n• Đặt trên bàn làm việc, phòng thiền, phòng học hoặc gần cửa sổ có ánh sáng tự nhiên.\n\n• Có thể làm vật hộ thân, nhẫn phong thủy, hoặc đặt trong lọ năng lượng (Lucky Stone Jar) để tăng hiệu ứng cộng hưởng.\n\n\n________________________________________\n🪶 HỒ SƠ PHONG THỦY SẢN PHẨM\n1. Mô tả sản phẩm / Product Description:\nViên Saphir đen ánh sao tự nhiên, cắt cabochon hình oval, bề mặt bóng gương, xuất hiện hiệu ứng “sao sáu cánh” khi chiếu sáng. Mỗi viên độc bản, được lựa chọn và nạp năng lượng bằng khói trầm tự nhiên.\n2. Thành phần & Đặc trưng cấu tạo:\n100% Saphir tự nhiên thuộc nhóm corundum, độ cứng 9/10 Mohs, ánh thủy tinh tự nhiên, không xử lý màu.\n3. Quy trình chế tác:\nTuyển chọn đá thô – cắt thủ công theo tỉ lệ ánh sao chuẩn – mài bóng – tẩy tịnh và niêm năng lượng.\n4. Công dụng chính / Key Functions:\n\n• Hộ thân – khai tuệ – tăng cường trực giác.\n\n• Ổn định cảm xúc, giảm stress, giúp giấc ngủ sâu.\n\n• Tạo năng lượng “bảo hộ” quanh không gian làm việc.\n\n5. USP / Điểm khác biệt:\n\n• Hiệu ứng ánh sao sáu cánh rõ nét, hiếm gặp.\n\n• Độ trong & phản sáng cao, chứng nhận kiểm định năng lượng.\n\n• Độc bản tự nhiên – không xử lý nhân tạo.\n\n6. Đối tượng sử dụng / Recommended Users:\n\n• Nhà lãnh đạo, chuyên gia, người thiền định, sáng tạo.\n\n• Người cần cân bằng năng lượng, tăng bảo hộ tâm linh.\n\n7. Cảnh báo / Precautions:\n\n• Không để dưới nắng gắt hoặc nhiệt độ cao.\n\n• Lau nhẹ bằng vải mềm, tránh hóa chất.\n\n• Khi không sử dụng, nên đặt trong hộp gỗ hoặc lụa.\n\n8. Tại sao nên chọn sản phẩm này:\n“Vì ánh sao chỉ hiện trong bóng tối – cũng như trí tuệ thật chỉ tỏa sáng khi tâm tĩnh tại.”\n\n\n________________________________________\n💬 FAQ – CÂU HỎI THƯỜNG GẶP\nQ1. Saphir ánh sao có phải đá quý thật không?\n\n→ Có, là khoáng chất corundum tự nhiên, được kiểm định bằng phổ quang học và quang học phân cực.\nQ2. Có thể mang hàng ngày không?\n\n→ Có. Khi tiếp xúc lâu, năng lượng Saphir đồng pha với từ trường cơ thể, tăng hiệu quả bảo hộ.\nQ3. Làm sao để bảo dưỡng tốt nhất?\n\n→ Lau bằng khăn ẩm mềm, tránh xà phòng hoặc dung dịch tẩy.\n\n\n________________________________________\n🧭 HƯỚNG DẪN KIỂM TRA THẬT – GIẢ\n\n| Bước | Kiểm tra | Đá thật | Hàng giả |\n| :--- | :--- | :--- | :--- |\
+| 1 | Quan sát ánh sao | Hiện rõ sao 6 cánh, di chuyển khi đổi góc sáng | Không có hoặc sao mờ |\
+| 2 | Cảm nhận | Mát, nặng, phản sáng nhẹ | Nhẹ, nóng nhanh |\
+| 3 | Gõ nhẹ | Âm vang trong | Âm đục |\
+| 4 | Kiểm định | Có giấy kiểm định năng lượng | Không có |\n\n🌌 “Khi tâm bạn sáng, vũ trụ sẽ trao cho bạn một ngôi sao.”\nSaphir ánh sao không chỉ đẹp – mà còn bảo hộ mạnh mẽ, giúp chủ nhân tránh thị phi, tăng trí tuệ, giữ bình an.\nNếu bạn cảm thấy thời gian gần đây tâm bất an, quyết định khó khăn, năng lượng xuống… ➡️ Đây chính là viên đá bạn cần để lấy lại sự cân bằng & bản lĩnh.",
     "price": "10,099,000",
     "image": "/product/Saphir Ánh sao (7).jpg",
     "category": "Vật phẩm phong thủy",
+    "nameEn": "NATURAL BLACK STAR SAPPHIRE",
+    "descriptionEn": "Natural Black Star Sapphire – A Protective Gem of Wisdom & Protection, featuring a rare six-rayed star optical effect. Suitable for Water, Wood, and Metal elements.",
+    "categoryEn": "Feng Shui Items",
     "benefits": [
         "Tăng sự tỉnh táo, tập trung, sáng suốt",
         "Hộ thân cực mạnh, tránh thị phi – hóa giải xung đột",
         "Thu hút vận quý nhân – khai tuệ (trí tuệ)",
         "Ổn định cảm xúc, giảm stress, giúp giấc ngủ sâu"
     ],
+    "benefitsEn": [
+        "Increases alertness, concentration, and clarity of thought",
+        "Extremely powerful personal protection, avoids gossip/disputes – resolves conflicts",
+        "Attracts benefactors – opens wisdom (intuition)",
+        "Stabilizes emotions, reduces stress, aids deep sleep"
+    ],
     "specifications": {
         "material": "Saphir đen ánh sao tự nhiên (Natural Star Sapphire), độ cứng 9/10 Mohs",
         "size": "15.36 × 12 × 5.62 mm",
         "weight": "500g",
         "origin": "Sri Lanka, Madagascar, Thái Lan"
+    },
+    "specificationsEn": {
+        "material": "Natural Black Star Sapphire, Mohs hardness 9/10",
+        "size": "15.36 × 12 × 5.62 mm",
+        "weight": "500g",
+        "origin": "Sri Lanka, Madagascar, Thailand"
     },
     "retailPrice": "12,599,000",
     "marketPrice": "10,099,000"
@@ -635,21 +1017,40 @@ export const allProducts: Product[] = [
     id: 28,
     "name": "SET NGỌC BÍCH – VÒNG CỔ + NHẪN NỚI + 2 KHUYÊN TAI",
     "description": "Nephrite Jade Jewelry Set – Bộ trang sức 4 món Hoa Bốn Cánh May Mắn (Faith – Hope – Love – Luck), biểu tượng của phúc khí, sức khỏe và thịnh vượng.",
-    "fullDescription": "💎 SẢN PHẨM: SET NGỌC BÍCH – VÒNG CỔ + NHẪN NỚI + 2 KHUYÊN TAI\nTrong văn hóa Á Đông, Ngọc Bích luôn được gọi là “Ngọc của Trời” – dòng đá mang năng lượng của sự sống, được xem như báu vật của hoàng tộc và bậc quân tử.\nTương truyền rằng: “Ngọc Bích hấp thụ khí mộc của đất – ánh sáng của trời, ai đeo lâu sẽ được bảo hộ an lành.”\nNgày xưa, các hoàng hậu và phi tần trong cung đình luôn mang trang sức Ngọc Bích để thuận hòa – dưỡng tâm – gìn giữ phúc khí. Còn các học giả thì dùng Ngọc Bích như lá bùa hộ thân, giúp tăng trí tuệ, sáng suốt và nhân cách thanh cao.\nTrong phong thủy hiện đại, Ngọc Bích là viên đá của:\n\n• May mắn – tượng trưng cho Mộc khí sinh sôi, thu hút cơ hội mới.\n\n• Tình duyên & hòa hợp – vì màu xanh nuôi dưỡng năng lượng yêu thương.\n\n• Sức khỏe & bình an – giúp giảm stress, làm dịu tâm trí, cân bằng cảm xúc.\n\n• Quý nhân phù trợ – mang lại vận khí tốt trong công việc và cuộc sống.\nKhi kết hợp họa tiết hoa bốn cánh may mắn (Four Leaf Clover) – biểu tượng quốc tế của Faith – Hope – Love – Luck — bộ trang sức trở thành một bùa hộ mệnh thời trang, vừa đẹp, vừa mang ý nghĩa phong thủy sâu sắc.\nĐó là lý do vì sao Set Ngọc Bích luôn được xem là món quà hoàn hảo, dành cho người bạn yêu thương hoặc chính bạn — để mỗi ngày tràn đầy may mắn và bình an.\n\n\n🪷 THÔNG TIN SẢN PHẨM\n\n• Tên sản phẩm: Set Trang Sức Ngọc Bích – Hoa Bốn Cánh May Mắn\n\n• Tên tiếng Anh: Nephrite Jade Jewelry Set – Four-Leaf Clover Collection\n\n• Nguồn gốc: Ngọc Bích tự nhiên (Natural Nephrite Jade) – Canada, Nga, Việt Nam\n\n• Gia công & hoàn thiện: Xưởng hợp tác Ann Gem & Fengshui tại Việt Nam\n\n• Thương hiệu phân phối: Ann Gem & Fengshui – Recharge Your Energy, Restore Your Balance\nKích thước:\n\n• Hạt Ngọc Bích: 8–10 mm tùy mẫu\n\n• Nhẫn: dạng nới linh hoạt, hợp mọi size\n\n• Dây & viền: Hợp kim titanium có màu sắc tương đương với platium (bạch kim)\nChất liệu: Ngọc Bích tự nhiên – thủ công tỉ mỉ\n\n\n________________________________________\n💰 GIÁ BÁN / PRICING\n\n| Hạng mục | Mức giá (VNĐ) | Ghi chú |\n| :--- | :--- | :--- |\n| Giá niêm yết (Retail List Price) | 5.700.000 VND code AGFS 056 (kiểm định chung) | Đã gồm 10% VAT, chưa gồm phí vận chuyển |\n| Giá bán (Market Price) | 4.850.000 code AGFS 056 ( kiểm định chung) | Bao gồm VAT, chưa gồm vận chuyển |\n\n\n________________________________________\n🌈 Ý NGHĨA PHONG THỦY\n\n| Đặc tính | Phân tích phong thủy |\n| :--- | :--- |\n| Ngọc Bích – Nephrite Jade | Thuộc hành Mộc – mang năng lượng của sự sống, may mắn và sức khỏe. Từ cổ xưa được xem là “bảo ngọc của bậc quân tử” – nuôi dưỡng tâm tính, mang lại cát khí. |\n| Biểu tượng Hoa Bốn Cánh (Four-Leaf Clover) | Biểu tượng quốc tế của may mắn – yêu thương – cơ hội – thịnh vượng. Mỗi cánh tượng trưng cho: Faith – Hope – Love – Luck. |\n| Màu xanh ngọc | Tăng trưởng, tài lộc, chữa lành cảm xúc, thu hút quý nhân. |\n\nCông dụng phong thủy:\n\n• Thu hút may mắn, cơ hội mới.\n\n• Hỗ trợ sức khỏe, giúp tinh thần ổn định.\n\n• Tăng duyên lành – cải thiện vận tình cảm.\n\n• Bảo hộ năng lượng, tránh thị phi & tiểu nhân.\nÝ nghĩa biểu tượng: “Ngọc Bích nuôi khí – Hoa bốn cánh gọi may mắn.”\nHợp mệnh: Mộc – Hỏa – Thủy (đặc biệt hợp nữ giới, doanh nhân, người làm nghệ thuật – giao tiếp).\n\n\n________________________________________\n💎 GIẢI NGHĨA CHUYÊN GIA PHONG THỦY\n1. Năng lượng học\nNgọc Bích phát tần số 5–8 MHz, giúp ổn định năng lượng cơ thể, hỗ trợ tim – huyết áp – cảm xúc. Khi đeo mỗi ngày, đá “tương thích” với từ trường cơ thể, tạo cảm giác dễ chịu, giảm hồi hộp, tăng sự tự tin.\n2. Phong thủy trấn trạch\nNgọc Bích có khả năng hóa giải tà khí nhẹ, bảo vệ trường năng lượng của người đeo; đặc biệt phù hợp khi đi xa, ra mắt, gặp gỡ đối tác hoặc làm việc trong môi trường cạnh tranh.\n3. Ứng dụng trong không gian sống\nCó thể đặt bộ trang sức bên cạnh lọ phong thủy hoặc khay trầm để tẩy tịnh định kỳ, giúp tăng cường từ trường đá.\n\n\n________________________________________\n🪶 HỒ SƠ PHONG THỦY SẢN PHẨM\n1. Mô tả sản phẩm\nSet trang sức gồm vòng cổ – nhẫn nới size – 2 khuyên tai, chế tác bằng Ngọc Bích tự nhiên, thiết kế hoa bốn cánh may mắn tinh xảo, nhẹ nhàng và sang trọng.\n2. Thành phần & cấu tạo\n\n• Ngọc Bích tự nhiên tuyển chọn\n\n• Dây nhỏ thanh lịch, phù hợp mọi outfit\n3. Quy trình chế tác\nChọn ngọc thô → cắt mài → tạo hình cánh hoa → gắn khung titanium → đánh bóng → tẩy tịnh bằng trầm → nạp năng lượng tại xưởng Ann Fengshui.\n4. Công dụng chính\n\n• Chiêu tài – tăng may mắn\n\n• Tăng năng lượng yêu thương – cải thiện nhân duyên\n\n• Tạo phong thái thanh lịch – sang trọng\n\n5. USP – Điểm khác biệt\n\n• Thiết kế 4 lá may mắn chuẩn quốc tế\n\n• Ngọc Bích xanh trong, vân mịn, độ bóng cao\n\n• Nhẫn nới linh hoạt – vừa mọi tay\n\n• Hợp trang phục hiện đại và truyền thống\n6. Đối tượng sử dụng\n\n• Nữ giới yêu thích phong thủy – thời trang\n\n• Người cần may mắn, thăng tiến, duyên lành\n\n• Quà tặng ý nghĩa cho người yêu – bạn bè – đối tác\n7. Cảnh báo\n\n• Không tiếp xúc với hóa chất mạnh\n\n• Tránh va đập mạnh\n\n• Lau nhẹ bằng khăn mềm sau khi sử dụng\n8. Tại sao nên chọn sản phẩm này\n“Một bộ trang sức đẹp mang năng lượng may mắn – là món quà hoàn hảo cho chính bạn và người thương.”\n\n\n________________________________________\n💬 FAQ – CÂU HỎI THƯỜNG GẶP\nQ1. Ngọc Bích có phai màu không?\n\n→ Không. Ngọc Bích tự nhiên giữ màu vĩnh viễn, càng đeo càng bóng.\nQ2. Nhẫn nới có bền không?\n\n→ Nhẫn rất chắc chắn, uốn vừa tay nhưng không biến dạng.\nQ3. Có phù hợp làm quà tặng?\n\n→ Rất phù hợp! Tượng trưng cho may mắn – yêu thương – thịnh vượng.\n\n\n________________________________________\n🧭 HƯỚNG DẪN KIỂM TRA THẬT – GIẢ\n\n| Bước | Kiểm tra | Ngọc Bích thật | Hàng giả |\n| :--- | :--- | :--- | :--- |\n| 1 | Quan sát | Vân tự nhiên, không đồng nhất | Màu phẳng, giả nhựa |\n| 2 | Sờ cảm | Mát lạnh lâu | Ấm nhanh |\n| 3 | Gõ nhẹ | Âm vang – đanh | Âm đục |\n| 4 | Cân nặng | Đầm tay | Nhẹ bất thường |\n\n💚 Ngọc Bích càng đeo càng sáng – người đeo càng thêm may mắn.\nBộ 4 món: vòng cổ + nhẫn nới + 2 khuyên tai – cực hợp làm quà tặng.\n🔥 Deal ưu đãi riêng trong hôm nay. 👉 Nhắn ngay để chốt đơn – đừng bỏ lỡ!",
+    "fullDescription": "💎 SẢN PHẨM: SET NGỌC BÍCH – VÒNG CỔ + NHẪN NỚI + 2 KHUYÊN TAI\nTrong văn hóa Á Đông, Ngọc Bích luôn được gọi là “Ngọc của Trời” – dòng đá mang năng lượng của sự sống, được xem như báu vật của hoàng tộc và bậc quân tử.\nTương truyền rằng: “Ngọc Bích hấp thụ khí mộc của đất – ánh sáng của trời, ai đeo lâu sẽ được bảo hộ an lành.”\nNgày xưa, các hoàng hậu và phi tần trong cung đình luôn mang trang sức Ngọc Bích để thuận hòa – dưỡng tâm – gìn giữ phúc khí. Còn các học giả thì dùng Ngọc Bích như lá bùa hộ thân, giúp tăng trí tuệ, sáng suốt và nhân cách thanh cao.\nTrong phong thủy hiện đại, Ngọc Bích là viên đá của:\n\n• May mắn – tượng trưng cho Mộc khí sinh sôi, thu hút cơ hội mới.\n\n• Tình duyên & hòa hợp – vì màu xanh nuôi dưỡng năng lượng yêu thương.\n\n• Sức khỏe & bình an – giúp giảm stress, làm dịu tâm trí, cân bằng cảm xúc.\n\n• Quý nhân phù trợ – mang lại vận khí tốt trong công việc và cuộc sống.\nKhi kết hợp họa tiết hoa bốn cánh may mắn (Four Leaf Clover) – biểu tượng quốc tế của Faith – Hope – Love – Luck — bộ trang sức trở thành một bùa hộ mệnh thời trang, vừa đẹp, vừa mang ý nghĩa phong thủy sâu sắc.\nĐó là lý do vì sao Set Ngọc Bích luôn được xem là món quà hoàn hảo, dành cho người bạn yêu thương hoặc chính bạn — để mỗi ngày tràn đầy may mắn và bình an.\n\n\n🪷 THÔNG TIN SẢN PHẨM\n\n• Tên sản phẩm: Set Trang Sức Ngọc Bích – Hoa Bốn Cánh May Mắn\n\n• Tên tiếng Anh: Nephrite Jade Jewelry Set – Four-Leaf Clover Collection\n\n• Nguồn gốc: Ngọc Bích tự nhiên (Natural Nephrite Jade) – Canada, Nga, Việt Nam\n\n• Gia công & hoàn thiện: Xưởng hợp tác Ann Gem & Fengshui tại Việt Nam\n\n• Thương hiệu phân phối: Ann Gem & Fengshui – Recharge Your Energy, Restore Your Balance\nKích thước:\n\n• Hạt Ngọc Bích: 8–10 mm tùy mẫu\n\n• Nhẫn: dạng nới linh hoạt, hợp mọi size\n\n• Dây & viền: Hợp kim titanium có màu sắc tương đương với platium (bạch kim)\nChất liệu: Ngọc Bích tự nhiên – thủ công tỉ mỉ\n\n\n________________________________________\n💰 GIÁ BÁN / PRICING\n\n| Hạng mục | Mức giá (VNĐ) | Ghi chú |\n| :--- | :--- | :--- |\n| Giá niêm yết (Retail List Price) | 5.700.000 VND code AGFS 056 (kiểm định chung) | Đã gồm 10% VAT, chưa gồm phí vận chuyển |\n| Giá bán (Market Price) | 4.850.000 code AGFS 056 ( kiểm định chung) | Bao gồm VAT, chưa gồm vận chuyển |\n\n\n________________________________________\n🌈 Ý NGHĨA PHONG THỦY\n\n| Đặc tính | Phân tích phong thủy |\n| :--- | :--- |\n| Ngọc Bích – Nephrite Jade | Thuộc hành Mộc – mang năng lượng của sự sống, may mắn và sức khỏe. Từ cổ xưa được xem là “bảo ngọc của bậc quân tử” – nuôi dưỡng tâm tính, mang lại cát khí. |\n| Biểu tượng Hoa Bốn Cánh (Four-Leaf Clover) | Biểu tượng quốc tế của may mắn – yêu thương – cơ hội – thịnh vượng. Mỗi cánh tượng trưng cho: Faith – Hope – Love – Luck. |\n| Màu xanh ngọc | Tăng trưởng, tài lộc, chữa lành cảm xúc, thu hút quý nhân. |\n\nCông dụng phong thủy:\n\n• Thu hút may mắn, cơ hội mới.\n\n• Hỗ trợ sức khỏe, giúp tinh thần ổn định.\n\n• Tăng duyên lành – cải thiện vận tình cảm.\n\n• Bảo hộ năng lượng, tránh thị phi & tiểu nhân.\nÝ nghĩa biểu tượng: “Ngọc Bích nuôi khí – Hoa bốn cánh gọi may mắn.”\nHợp mệnh: Mộc – Hỏa – Thủy (đặc biệt hợp nữ giới, doanh nhân, người làm nghệ thuật – giao tiếp).\n\n\n________________________________________\n💎 GIẢI NGHĨA CHUYÊN GIA PHONG THỦY\n1. Năng lượng học\nNgọc Bích phát tần số 5–8 MHz, giúp ổn định năng lượng cơ thể, hỗ trợ tim – huyết áp – cảm xúc. Khi đeo mỗi ngày, đá “tương thích” với từ trường cơ thể, tạo cảm giác dễ chịu, giảm hồi hộp, tăng sự tự tin.\n2. Phong thủy trấn trạch\nNgọc Bích có khả năng hóa giải tà khí nhẹ, bảo vệ trường năng lượng của người đeo; đặc biệt phù hợp khi đi xa, ra mắt, gặp gỡ đối tác hoặc làm việc trong môi trường cạnh tranh.\n3. Ứng dụng trong không gian sống\nCó thể đặt bộ trang sức bên cạnh lọ phong thủy hoặc khay trầm để tẩy tịnh định kỳ, giúp tăng cường từ trường đá.\n\n\n________________________________________\n🪶 HỒ SƠ PHONG THỦY SẢN PHẨM\n1. Mô tả sản phẩm\nSet trang sức gồm vòng cổ – nhẫn nới size – 2 khuyên tai, chế tác bằng Ngọc Bích tự nhiên, thiết kế hoa bốn cánh may mắn tinh xảo, nhẹ nhàng và sang trọng.\n2. Thành phần & cấu tạo\n\n• Ngọc Bích tự nhiên tuyển chọn\n\n• Dây nhỏ thanh lịch, phù hợp mọi outfit\n3. Quy trình chế tác\nChọn ngọc thô → cắt mài → tạo hình cánh hoa → gắn khung titanium → đánh bóng → tẩy tịnh bằng trầm → nạp năng lượng tại xưởng Ann Fengshui.\n4. Công dụng chính\n\n• Chiêu tài – tăng may mắn\n\n• Tăng năng lượng yêu thương – cải thiện nhân duyên\n\n• Tạo phong thái thanh lịch – sang trọng\n\n5. USP – Điểm khác biệt\n\n• Thiết kế 4 lá may mắn chuẩn quốc tế\n\n• Ngọc Bích xanh trong, vân mịn, độ bóng cao\n\n• Nhẫn nới linh hoạt – vừa mọi tay\n\n• Hợp trang phục hiện đại và truyền thống\n6. Đối tượng sử dụng\n\n• Nữ giới yêu thích phong thủy – thời trang\n\n• Người cần may mắn, thăng tiến, duyên lành\n\n• Quà tặng ý nghĩa cho người yêu – bạn bè – đối tác\n7. Cảnh báo\n\n• Không tiếp xúc với hóa chất mạnh\n\n• Tránh va đập mạnh\n\n• Lau nhẹ bằng khăn mềm sau khi sử dụng\n8. Tại sao nên chọn sản phẩm này\n“Một bộ trang sức đẹp mang năng lượng may mắn – là món quà hoàn hảo cho chính bạn và người thương.”\n\n\n________________________________________\n💬 FAQ – CÂU HỎI THƯỜNG GẶP\nQ1. Ngọc Bích có phai màu không?\n\n→ Không. Ngọc Bích tự nhiên giữ màu vĩnh viễn, càng đeo càng bóng.\nQ2. Nhẫn nới có bền không?\n\n→ Nhẫn rất chắc chắn, uốn vừa tay nhưng không biến dạng.\nQ3. Có phù hợp làm quà tặng?\n\n→ Rất phù hợp! Tượng trưng cho may mắn – yêu thương – thịnh vượng.\n\n\n________________________________________\n🧭 HƯỚNG DẪN KIỂM TRA THẬT – GIẢ\n\n| Bước | Kiểm tra | Ngọc Bích thật | Hàng giả |\n| :--- | :--- | :--- | :--- |\
+| 1 | Quan sát | Vân tự nhiên, không đồng nhất | Màu phẳng, giả nhựa |\
+| 2 | Sờ cảm | Mát lạnh lâu | Ấm nhanh |\
+| 3 | Gõ nhẹ | Âm vang – đanh | Âm đục |\
+| 4 | Cân nặng | Đầm tay | Nhẹ bất thường |\n\n💚 Ngọc Bích càng đeo càng sáng – người đeo càng thêm may mắn.\nBộ 4 món: vòng cổ + nhẫn nới + 2 khuyên tai – cực hợp làm quà tặng.\n🔥 Deal ưu đãi riêng trong hôm nay. 👉 Nhắn ngay để chốt đơn – đừng bỏ lỡ!",
     "price": "4,850,000",
     "image": "/product/Set Ngọc Bích.jpg",
     "category": "Vật phẩm phong thủy",
+    "nameEn": "NEPHRITE JADE JEWELRY SET",
+    "descriptionEn": "Nephrite Jade Jewelry Set – 4-piece Four-Leaf Clover Jewelry (Faith – Hope – Love – Luck), symbolizing blessings, health, and prosperity.",
+    "categoryEn": "Feng Shui Items",
     "benefits": [
         "Thu hút may mắn, cơ hội mới",
         "Hỗ trợ sức khỏe, giúp tinh thần ổn định",
         "Tăng duyên lành – cải thiện vận tình cảm",
         "Bảo hộ năng lượng, tránh thị phi & tiểu nhân"
     ],
+    "benefitsEn": [
+        "Attracts luck and new opportunities",
+        "Supports health, helps stabilize the spirit",
+        "Increases harmonious relationships – improves emotional fortune",
+        "Protects energy, avoids gossip and petty people"
+    ],
     "specifications": {
         "material": "Ngọc Bích tự nhiên (Natural Nephrite Jade), Dây & viền hợp kim titanium",
         "size": "Hạt Ngọc Bích: 8–10 mm tùy mẫu, Nhẫn: dạng nới linh hoạt",
         "weight": "500g",
         "origin": "Canada, Nga, Việt Nam"
+    },
+    "specificationsEn": {
+        "material": "Natural Nephrite Jade, Titanium alloy chain & settings",
+        "size": "Jade bead: 8–10 mm (varies), Ring: flexible adjustable size",
+        "weight": "500g",
+        "origin": "Canada, Russia, Vietnam"
     },
     "retailPrice": "5,700,000",
     "marketPrice": "4,850,000"
@@ -658,21 +1059,36 @@ export const allProducts: Product[] = [
     id: 29,
     "name": "TRANH ĐÁ QUÝ THUẬN BUỒM XUÔI GIÓ",
     "description": "Prosperous Sailing Gemstone Painting (80 × 110 cm) – Lời chúc mạnh nhất về Tài lộc, Thịnh vượng và Sự nghiệp hanh thông. Buồm hồng Hỏa Vượng độc đáo.",
-    "fullDescription": "TRANH ĐÁ QUÝ THUẬN BUỒM XUÔI GIÓ\nKích thước: 80 × 110 cm\nTừ hàng nghìn năm trước, khi những con thuyền gỗ đầu tiên rời cảng để ra khơi đánh bắt, giao thương, mở đất… người Á Đông đã tin rằng mỗi chuyến hải trình là một lời thách thức và cũng là một lời cầu nguyện. Cầu cho gió thuận, nước êm, sóng hiền – để con thuyền trở về mang theo đầy ắp lộc trời và thành quả.\nTừ niềm tin ấy, biểu tượng “Thuận Buồm Xuôi Gió” ra đời, trở thành lời chúc mạnh nhất trong phong thủy dành cho những ai bước vào thương trường hay hành trình mới của cuộc đời.\n\n\n1. Con thuyền – biểu tượng của sự nghiệp & tài vận\nTrong phong thủy, con thuyền đại diện cho:\n\n• Sự dịch chuyển của tài khí\n\n• Dòng chảy của cơ hội\n\n• Năng lượng tiến về phía trước\nNgười làm ăn ngày xưa tin rằng: \"Muốn tài lộc về nhà, phải để con thuyền ra biển lớn trước.\"\nTranh Thuận Buồm Xuôi Gió chính là dạng mô phỏng năng lượng của một cuộc hành trình thành công:\n\n• Thuyền lớn → Mệnh lớn, chí lớn\n\n• Buồm căng → Có gió, tức có thiên thời\n\n• Sóng êm → Địa lợi\n\n• Thủy – Hỏa cân bằng → Nhân hòa\nKhi ba yếu tố hội tụ → vận trình sẽ thuận, công việc sẽ xuôi, tài lộc sẽ đến.\n\n\n2. Cánh buồm hồng – bí mật phong thủy mà ít người biết\nTrong tranh này, điểm đặc biệt nhất chính là màu buồm.\nBuồm màu hồng = HỎA VƯỢNG + TÀI VƯỢNG\nTrong phong thủy:\n\n• Hỏa → Danh tiếng, sự thăng tiến, sự nổi bật\n\n• Hồng → Hỷ khí, may mắn, phú quý\nCánh buồm hồng tượng trưng cho:\n\n• Dễ gặp quý nhân\n\n• Khởi sự có lợi\n\n• Cơ hội mới liên tục đến\n\n• Danh tiếng – uy tín được nâng cao\nĐây là lý do tranh này thường treo trong:\n\n• Văn phòng giám đốc\n\n• Công ty startup\n\n• Cửa hàng kinh doanh\n\n• Nhà doanh nhân trẻ muốn “bật” vận nhanh\n\n\n3. Con thuyền hướng ra biển lớn – thông điệp của người bản lĩnh\nKhông phải là thuyền quay về bờ, mà là thuyền đang ra khơi.\nPhong thủy gọi đây là thế: ✨“Hành trình mở vận – tài lộc khai thông”\nHình tượng này mang năng lượng:\n\n• Mở rộng thị trường\n\n• Làm ăn xa phát tài\n\n• Buôn bán vững bền\n\n• Vượt sóng gió – đứng vững – đi tiếp\nĐặc biệt phù hợp cho người:\n\n• Chuẩn bị khởi nghiệp\n\n• Đang muốn đầu tư\n\n• Muốn đổi việc – chuyển hướng\n\n• Đang gặp bế tắc và cần “gió mới”\n\n\n4. Vì sao tranh đá quý Thuận Buồm Xuôi Gió mạnh hơn tranh thường?\nBởi đá quý khóa lại năng lượng, giữ được “tần số thịnh vượng” lâu bền.\n\n• Thạch anh hồng → kích hoạt thịnh vượng – hỷ khí\n\n• Aventurine → đá tài lộc, mang may mắn\n\n• Mã não → bảo hộ – trấn trạch\n\n• Serpentine → dẫn khí – tăng sự chuyển động\nKhi các lớp đá được sắp đặt theo thế “Phong – Hỏa – Thủy tương hỗ”, bức tranh trở thành một trường khí phong thủy đúng nghĩa, chứ không chỉ là một tác phẩm nghệ thuật.\n\n\n5. Thông điệp của bức tranh “ Thuận buồm xuôi gió”\nKhởi sự thuận.\n\nĐi xa xuôi.\n\nQuay về đủ đầy.\nĐó là lý do tại sao doanh nhân – nhà đầu tư – chủ cửa hàng – người khởi nghiệp luôn yêu thích biểu tượng này.\nBởi nó chính là lời chúc thành công – may mắn – thịnh vượng mạnh nhất trong phong thủy.\n\n\n________________________________________\nTHÔNG TIN SẢN PHẨM\n\n• Tên sản phẩm: Tranh Đá Quý “Thuận Buồm Xuôi Gió”\n\n• Tên tiếng Anh: Prosperous Sailing Gemstone Painting\n\n• Nguồn gốc: Đá quý tự nhiên chọn lọc từ Việt Nam, Brazil, Ấn Độ; chế tác tại xưởng hợp tác Ann Gem & Fengshui.\n\n• Gia công & hoàn thiện: Thủ công 100% tại Xưởng Ann Gem & Fengshui – Việt Nam.\n\n• Thương hiệu phân phối: Ann Gem & Fengshui – Recharge Your Energy, Restore Your Balance.\n\n• Kích thước: 80 × 110 cm – khổ lớn, mang giá trị phong thủy mạnh.\n\n• Chất liệu: Đá quý – bán quý tự nhiên: Aventurine, Thạch anh hồng (làm buồm), Mã não, Obsidian, Serpentine, đá ánh kim tự nhiên.\n\n\n________________________________________\n💰 GIÁ BÁN / PRICING\n\n| Hạng mục | Giá (VNĐ) | Ghi chú |\n| :--- | :--- | :--- |\n| Giá niêm yết | 9.000.000 VND code AGFS 066 ( kiểm định chung) | Đã bao gồm VAT 10%, chưa gồm vận chuyển |\n| Giá bán thị trường | 7.850.000 VND code AGFS 066 ( kiểm định chung) | Bao gồm VAT, chưa có phí vận chuyển |\n\n\n________________________________________\n🌈 Ý NGHĨA PHONG THỦY – GIẢI MÃ TÁC PHẨM\nĐặc tính & Phân tích phong thủy\n\n| Đặc tính | Phân tích phong thủy |\n| :--- | :--- |\n| Con thuyền ra khơi lúc bình minh | Khởi đầu may mắn – ánh sáng dẫn lối – tương lai rộng mở|\n| Cánh buồm hồng căng gió | Năng lượng HỎA mạnh → sự nghiệp thăng hoa, tài lộc bứt phá|\n| Biển êm – trời sáng | Sự thuận lợi, bình an, không sóng dữ – tượng trưng cho công việc hanh thông|\n| Thuyền hướng ra biển lớn | Tư duy lớn – tầm nhìn xa – mở rộng quan hệ & cơ hội|\n\nCÔNG DỤNG PHONG THỦY\n\n• Thu hút tài vận – thịnh vượng – quý nhân\n\n• Mang lại sự thuận lợi trong kinh doanh & sự nghiệp\n\n• Giúp gia chủ “ra biển lớn” – mở rộng thị trường – tăng cơ hội đầu tư\n\n• Trấn trạch, cân bằng năng lượng Thủy – Hỏa – Thổ\n\n• Hỗ trợ vượt qua khó khăn, sóng gió – thay đổi vận trình theo hướng tốt\n\n\nÝ nghĩa biểu tượng\n\n• “Thuận Buồm Xuôi Gió”: lời chúc mạnh nhất dành cho người khởi nghiệp, doanh nhân, thương nhân.\n\n• Buồm hồng: HỎA sinh Thổ – tượng trưng cho sức bật, thành công, danh tiếng.\n\n• Chi tiết đá quý lấp lánh: củng cố năng lượng tài lộc & trường khí dương.\n\nHợp mệnh\n\n• Mệnh Thủy – Mộc – Hỏa – Thổ đều phù hợp.\n\n• Người mệnh Kim có thể dùng khi muốn kích hoạt tài lộc – sự nghiệp.\n\n\n________________________________________\n💎 GIẢI NGHĨA CHUYÊN GIA PHONG THỦY\n1. Về năng lượng học\nCác loại đá quý trong tranh dao động ở tần số:\n\n• Thạch anh hồng: tăng năng lượng tích cực – thu hút may mắn\n\n• Aventurine: đá của tài lộc – thịnh vượng\n\n• Mã não: bền vững – trấn trạch – bảo hộ\n\n• Serpentine: dẫn khí – tăng sự chuyển động\n\n→ Khi kết hợp, trường khí tạo ra “sóng tài vận” rất mạnh trong ngôi nhà.\n\n\n2. Về phong thủy trấn trạch\nBố cục của tranh tạo nên thế:\n\n• Phong – Hỏa – Thủy tương trợ lẫn nhau\n\n• Cánh buồm căng gió → tượng trưng cho “thiên thời – địa lợi – nhân hòa”\n\n• Năng lượng HỎA từ buồm hồng → kích hoạt tài khí mạnh mẽ\n\n→ Treo trong phòng khách hoặc văn phòng sẽ giúp vượng tài – vượng vận – vượng khí.\n\n\n3. Về ứng dụng trong không gian sống\n\n• Phòng khách → Kích hoạt tài lộc – may mắn\n\n• Văn phòng → Tăng quý nhân – thu hút cơ hội\n\n• Công ty – cửa hàng → Hỗ trợ kinh doanh bán hàng thuận lợi\n\n• Sảnh đón khách → Tạo trường khí thịnh vượng – sang trọng\n\n\n________________________________________\n🪶 HỒ SƠ PHONG THỦY SẢN PHẨM\n1. Product Description\nTác phẩm tranh đá quý “Thuận Buồm Xuôi Gió” được chế tác thủ công 100%, sử dụng đá tự nhiên để tạo màu sắc lung linh. Cánh buồm hồng tượng trưng cho tài lộc – may mắn – sự nghiệp thăng hoa.\n\n2. Thành phần & Đặc trưng cấu tạo\n\n• Thạch anh hồng, Aventurine, Mã não, Obsidian, Serpentine\n\n• Đá phối đa lớp (layer) tạo hiệu ứng 3D\n\n• Khung tranh cao cấp, bo viền vàng sang trọng\n\n3. Quy trình chế tác\n\n• Tuyển đá quý theo màu – độ trong\n\n• Nghiền – sàng – chọn hạt\n\n• Phối đá theo bố cục đã định\n\n• Gắn hạt thủ công từng phần\n\n• Hoàn thiện – phủ bảo vệ – kiểm định chất lượng\n\n4. Key Functions – Công dụng chính\n\n• Thu hút tài vận\n\n• Tạo sự thuận lợi trong công việc\n\n• Tăng năng lượng hưng vượng\n\n• Trấn trạch – cân bằng trường khí\n\n5. USP – Điểm khác biệt\n\n• Đá quý tự nhiên – trường năng lượng mạnh\n\n• Buồm hồng độc đáo – hiếm trong dòng tranh phong thủy\n\n• Bố cục mạnh về tài lộc – hợp nhiều mệnh\n\n• Màu sắc sang trọng – nổi bật không gian trưng bày\n\n• Bảo hành 05 năm\n\n6. Recommended Users – Đối tượng phù hợp\n\n• Doanh nhân – chủ doanh nghiệp\n\n• Người khởi nghiệp – đầu tư\n\n• Người muốn kích hoạt tài lộc – quý nhân\n\n• Khách tặng quà cao cấp (tân gia – khai trương – sinh nhật)\n\n7. Precautions – Lưu ý\n\n• Tránh ánh nắng trực tiếp quá mạnh\n\n• Không dùng hóa chất mạnh để lau chùi\n\n• Không để nơi quá ẩm\n\n8. Tại sao nên chọn sản phẩm này?\n\n• Biểu tượng phong thủy mạnh nhất dành cho sự nghiệp & tài lộc\n\n• Tranh lớn – đẹp – sang – tác động mạnh lên trường khí\n\n• Bền đẹp theo thời gian nhờ đá quý tự nhiên\n\n• Mang năng lượng dương – thúc đẩy công việc & vận may\n\n\n________________________________________\n💬 FAQ – Câu hỏi thường gặp\n1. Tranh có bền màu không?\n\nCó. Đá quý tự nhiên bền màu vĩnh viễn.\n2. Treo hướng nào tốt nhất?\n\nĐông – Đông Nam – phòng khách – văn phòng – sảnh.\n3. Có hợp làm quà tặng không?\n\nCó. Rất hợp cho dịp tân gia, khai trương, thăng chức.\n\n\n________________________________________\n🧭 Hướng dẫn kiểm tra thật – giả\n\n• Đá thật mát tay – nặng – ánh lấp lánh tự nhiên\n\n• Hạt đá có cấu trúc tinh thể khi soi đèn\n\n• Bề mặt tranh có độ gồ nhẹ theo từng lớp đá\n\n• Không phẳng lì hoặc mịn như đá bột công nghiệp\n\n🚀 Kinh doanh muốn phát – sự nghiệp muốn lên → hãy treo Thuận Buồm Xuôi Gió!\nNăng lượng tài vận cực mạnh, hỗ trợ mở rộng thị trường – thu hút cơ hội – tăng quý nhân.\n👉 Ưu đãi đặc biệt cho khách hàng đặt hàng hôm nay.",
+    "fullDescription": "TRANH ĐÁ QUÝ THUẬN BUỒM XUÔI GIÓ\nKích thước: 80 × 110 cm\nTừ hàng nghìn năm trước, khi những con thuyền gỗ đầu tiên rời cảng để ra khơi đánh bắt, giao thương, mở đất… người Á Đông đã tin rằng mỗi chuyến hải trình là một lời thách thức và cũng là một lời cầu nguyện. Cầu cho gió thuận, nước êm, sóng hiền – để con thuyền trở về mang theo đầy ắp lộc trời và thành quả.\nTừ niềm tin ấy, biểu tượng “Thuận Buồm Xuôi Gió” ra đời, trở thành lời chúc mạnh nhất trong phong thủy dành cho những ai bước vào thương trường hay hành trình mới của cuộc đời.\n\n\n1. Con thuyền – biểu tượng của sự nghiệp & tài vận\nTrong phong thủy, con thuyền đại diện cho:\n\n• Sự dịch chuyển của tài khí\n\n• Dòng chảy của cơ hội\n\n• Năng lượng tiến về phía trước\nNgười làm ăn ngày xưa tin rằng: \"Muốn tài lộc về nhà, phải để con thuyền ra biển lớn trước.\"\nTranh Thuận Buồm Xuôi Gió chính là dạng mô phỏng năng lượng của một cuộc hành trình thành công:\n\n• Thuyền lớn → Mệnh lớn, chí lớn\n\n• Buồm căng → Có gió, tức có thiên thời\n\n• Sóng êm → Địa lợi\n\n• Thủy – Hỏa cân bằng → Nhân hòa\nKhi ba yếu tố hội tụ → vận trình sẽ thuận, công việc sẽ xuôi, tài lộc sẽ đến.\n\n\n2. Cánh buồm hồng – bí mật phong thủy mà ít người biết\nTrong tranh này, điểm đặc biệt nhất chính là màu buồm.\nBuồm màu hồng = HỎA VƯỢNG + TÀI VƯỢNG\nTrong phong thủy:\n\n• Hỏa → Danh tiếng, sự thăng tiến, sự nổi bật\n\n• Hồng → Hỷ khí, may mắn, phú quý\nCánh buồm hồng tượng trưng cho:\n\n• Dễ gặp quý nhân\n\n• Khởi sự có lợi\n\n• Cơ hội mới liên tục đến\n\n• Danh tiếng – uy tín được nâng cao\nĐây là lý do tranh này thường treo trong:\n\n• Văn phòng giám đốc\n\n• Công ty startup\n\n• Cửa hàng kinh doanh\n\n• Nhà doanh nhân trẻ muốn “bật” vận nhanh\n\n\n3. Con thuyền hướng ra biển lớn – thông điệp của người bản lĩnh\nKhông phải là thuyền quay về bờ, mà là thuyền đang ra khơi.\nPhong thủy gọi đây là thế: ✨“Hành trình mở vận – tài lộc khai thông”\nHình tượng này mang năng lượng:\n\n• Mở rộng thị trường\n\n• Làm ăn xa phát tài\n\n• Buôn bán vững bền\n\n• Vượt sóng gió – đứng vững – đi tiếp\nĐặc biệt phù hợp cho người:\n\n• Chuẩn bị khởi nghiệp\n\n• Đang muốn đầu tư\n\n• Muốn đổi việc – chuyển hướng\n\n• Đang gặp bế tắc và cần “gió mới”\n\n\n4. Vì sao tranh đá quý Thuận Buồm Xuôi Gió mạnh hơn tranh thường?\nBởi đá quý khóa lại năng lượng, giữ được “tần số thịnh vượng” lâu bền.\n\n• Thạch anh hồng → kích hoạt thịnh vượng – hỷ khí\n\n• Aventurine → đá tài lộc, mang may mắn\n\n• Mã não → bảo hộ – trấn trạch\n\n• Serpentine → dẫn khí – tăng sự chuyển động\nKhi các lớp đá được sắp đặt theo thế “Phong – Hỏa – Thủy tương hỗ”, bức tranh trở thành một trường khí phong thủy đúng nghĩa, chứ không chỉ là một tác phẩm nghệ thuật.\n\n\n5. Thông điệp của bức tranh “ Thuận buồm xuôi gió”\nKhởi sự thuận.\n\nĐi xa xuôi.\n\nQuay về đủ đầy.\nĐó là lý do tại sao doanh nhân – nhà đầu tư – chủ cửa hàng – người khởi nghiệp luôn yêu thích biểu tượng này.\nBởi nó chính là lời chúc thành công – may mắn – thịnh vượng mạnh nhất trong phong thủy.\n\n\n________________________________________\nTHÔNG TIN SẢN PHẨM\n\n• Tên sản phẩm: Tranh Đá Quý “Thuận Buồm Xuôi Gió”\n\n• Tên tiếng Anh: Prosperous Sailing Gemstone Painting\n\n• Nguồn gốc: Đá quý tự nhiên chọn lọc từ Việt Nam, Brazil, Ấn Độ; chế tác tại xưởng hợp tác Ann Gem & Fengshui.\n\n• Gia công & hoàn thiện: Thủ công 100% tại Xưởng Ann Gem & Fengshui – Việt Nam.\n\n• Thương hiệu phân phối: Ann Gem & Fengshui – Recharge Your Energy, Restore Your Balance.\n\n• Kích thước: 80 × 110 cm – khổ lớn, mang giá trị phong thủy mạnh.\n\n• Chất liệu: Đá quý – bán quý tự nhiên: Aventurine, Thạch anh hồng (làm buồm), Mã não, Obsidian, Serpentine, đá ánh kim tự nhiên.\n\n\n________________________________________\n💰 GIÁ BÁN / PRICING\n\n| Hạng mục | Giá (VNĐ) | Ghi chú |\n| :--- | :--- | :--- |\n| Giá niêm yết | 9.000.000 VND code AGFS 066 ( kiểm định chung) | Đã bao gồm VAT 10%, chưa gồm vận chuyển |\n| Giá bán thị trường | 7.850.000 VND code AGFS 066 ( kiểm định chung) | Bao gồm VAT, chưa có phí vận chuyển |\n\n\n________________________________________\n🌈 Ý NGHĨA PHONG THỦY – GIẢI MÃ TÁC PHẨM\nĐặc tính & Phân tích phong thủy\n\n| Đặc tính | Phân tích phong thủy |\n| :--- | :--- |\n| Con thuyền ra khơi lúc bình minh | Khởi đầu may mắn – ánh sáng dẫn lối – tương lai rộng mở|\n| Cánh buồm hồng căng gió | Năng lượng HỎA mạnh → sự nghiệp thăng hoa, tài lộc bứt phá|\n| Biển êm – trời sáng | Sự thuận lợi, bình an, không sóng dữ – tượng trưng cho công việc hanh thông|\n| Thuyền hướng ra biển lớn | Tư duy lớn – tầm nhìn xa – mở rộng quan hệ & cơ hội|\n\nCÔNG DỤNG PHONG THỦY\n\n• Thu hút tài vận – thịnh vượng – quý nhân\n\n• Mang lại sự thuận lợi trong kinh doanh & sự nghiệp\n\n• Giúp gia chủ “ra biển lớn” – mở rộng thị trường – tăng cơ hội đầu tư\n\n• Trấn trạch, cân bằng năng lượng Thủy – Hỏa – Thổ\n\n• Hỗ trợ vượt qua khó khăn, sóng gió – thay đổi vận trình theo hướng tốt\n\n\nÝ nghĩa biểu tượng\n\n• “Thuận Buồm Xuôi Gió”: lời chúc mạnh nhất dành cho người khởi nghiệp, doanh nhân, thương nhân.\n\n• Buồm hồng: HỎA sinh Thổ – tượng trưng cho sức bật, thành công, danh tiếng.\n\n• Chi tiết đá quý lấp lánh: củng cố năng lượng tài lộc & trường khí dương.\n\n• Hợp mệnh\n\n• Mệnh Thủy – Mộc – Hỏa – Thổ đều phù hợp.\n\n• Người mệnh Kim có thể dùng khi muốn kích hoạt tài lộc – sự nghiệp.\n\n\n________________________________________\n💎 GIẢI NGHĨA CHUYÊN GIA PHONG THỦY\n1. Về năng lượng học\nCác loại đá quý trong tranh dao động ở tần số:\n\n• Thạch anh hồng: tăng năng lượng tích cực – thu hút may mắn\n\n• Aventurine: đá của tài lộc – thịnh vượng\n\n• Mã não: bền vững – trấn trạch – bảo hộ\n\n• Serpentine: dẫn khí – tăng sự chuyển động\n\n→ Khi kết hợp, trường khí tạo ra “sóng tài vận” rất mạnh trong ngôi nhà.\n\n\n2. Về phong thủy trấn trạch\nBố cục của tranh tạo nên thế:\n\n• Phong – Hỏa – Thủy tương trợ lẫn nhau\n\n• Cánh buồm căng gió → tượng trưng cho “thiên thời – địa lợi – nhân hòa”\n\n• Năng lượng HỎA từ buồm hồng → kích hoạt tài khí mạnh mẽ\n\n→ Treo trong phòng khách hoặc văn phòng sẽ giúp vượng tài – vượng vận – vượng khí.\n\n\n3. Về ứng dụng trong không gian sống\n\n• Phòng khách → Kích hoạt tài lộc – may mắn\n\n• Văn phòng → Tăng quý nhân – thu hút cơ hội\n\n• Công ty – cửa hàng → Hỗ trợ kinh doanh bán hàng thuận lợi\n\n• Sảnh đón khách → Tạo trường khí thịnh vượng – sang trọng\n\n\n________________________________________\n🪶 HỒ SƠ PHONG THỦY SẢN PHẨM\n1. Product Description\nTác phẩm tranh đá quý “Thuận Buồm Xuôi Gió” được chế tác thủ công 100%, sử dụng đá tự nhiên để tạo màu sắc lung linh. Cánh buồm hồng tượng trưng cho tài lộc – may mắn – sự nghiệp thăng hoa.\n\n2. Thành phần & Đặc trưng cấu tạo\n\n• Thạch anh hồng, Aventurine, Mã não, Obsidian, Serpentine\n\n• Đá phối đa lớp (layer) tạo hiệu ứng 3D\n\n• Khung tranh cao cấp, bo viền vàng sang trọng\n\n3. Quy trình chế tác\n\n• Tuyển đá quý theo màu – độ trong\n\n• Nghiền – sàng – chọn hạt\n\n• Phối đá theo bố cục đã định\n\n• Gắn hạt thủ công từng phần\n\n• Hoàn thiện – phủ bảo vệ – kiểm định chất lượng\n\n4. Key Functions – Công dụng chính\n\n• Thu hút tài vận\n\n• Tạo sự thuận lợi trong công việc\n\n• Tăng năng lượng hưng vượng\n\n• Trấn trạch – cân bằng trường khí\n\n5. USP – Điểm khác biệt\n\n• Đá quý tự nhiên – trường năng lượng mạnh\n\n• Buồm hồng độc đáo – hiếm trong dòng tranh phong thủy\n\n• Bố cục mạnh về tài lộc – hợp nhiều mệnh\n\n• Màu sắc sang trọng – nổi bật không gian trưng bày\n\n• Bảo hành 05 năm\n\n6. Recommended Users – Đối tượng phù hợp\n\n• Doanh nhân – chủ doanh nghiệp\n\n• Người khởi nghiệp – đầu tư\n\n• Người muốn kích hoạt tài lộc – quý nhân\n\n• Khách tặng quà cao cấp (tân gia – khai trương – sinh nhật)\n\n7. Precautions – Lưu ý\n\n• Tránh ánh nắng trực tiếp quá mạnh\n\n• Không dùng hóa chất mạnh để lau chùi\n\n• Không để nơi quá ẩm\n\n8. Tại sao nên chọn sản phẩm này?\n\n• Biểu tượng phong thủy mạnh nhất dành cho sự nghiệp & tài lộc\n\n• Tranh lớn – đẹp – sang – tác động mạnh lên trường khí\n\n• Bền đẹp theo thời gian nhờ đá quý tự nhiên\n\n• Mang năng lượng dương – thúc đẩy công việc & vận may\n\n\n________________________________________\n💬 FAQ – Câu hỏi thường gặp\n1. Tranh có bền màu không?\n\nCó. Đá quý tự nhiên bền màu vĩnh viễn.\n2. Treo hướng nào tốt nhất?\n\nĐông – Đông Nam – phòng khách – văn phòng – sảnh.\n3. Có hợp làm quà tặng không?\n\nCó. Rất hợp cho dịp tân gia, khai trương, thăng chức.\n\n\n________________________________________\n🧭 Hướng dẫn kiểm tra thật – giả\n\n• Đá thật mát tay – nặng – ánh lấp lánh tự nhiên\n\n• Hạt đá có cấu trúc tinh thể khi soi đèn\n\n• Bề mặt tranh có độ gồ nhẹ theo từng lớp đá\n\n• Không phẳng lì hoặc mịn như đá bột công nghiệp\n\n🚀 Kinh doanh muốn phát – sự nghiệp muốn lên → hãy treo Thuận Buồm Xuôi Gió!\nNăng lượng tài vận cực mạnh, hỗ trợ mở rộng thị trường – thu hút cơ hội – tăng quý nhân.\n👉 Ưu đãi đặc biệt cho khách hàng đặt hàng hôm nay.",
     "price": "7,850,000",
     "image": "/product/Thuận buồm xuôi gió.jpg",
     "category": "Tranh đá quý phong thủy",
+    "nameEn": "PROSPEROUS SAILING GEMSTONE PAINTING",
+    "descriptionEn": "Prosperous Sailing Gemstone Painting (80 × 110 cm) – The most powerful blessing for Wealth, Prosperity, and smooth Career advancement. Unique Fire-Prosperity (Hỏa Vượng) pink sail.",
+    "categoryEn": "Feng Shui Gemstone Paintings",
     "benefits": [
         "Thu hút tài vận – thịnh vượng – quý nhân",
         "Mang lại sự thuận lợi trong kinh doanh & sự nghiệp",
         "Giúp gia chủ “ra biển lớn” – mở rộng thị trường – tăng cơ hội đầu tư",
         "Trấn trạch, cân bằng năng lượng Thủy – Hỏa – Thổ"
     ],
+    "benefitsEn": [
+        "Attracts wealth – prosperity – benefactors (Qúy Nhân)",
+        "Brings favorable conditions in business and career",
+        "Helps the owner “sail to the big sea” – expands market – increases investment opportunities",
+        "Protects the house (Trấn Trạch), balances Water – Fire – Earth energy"
+    ],
     "specifications": {
         "material": "Đá quý tự nhiên (Aventurine, Thạch anh hồng, Mã não, Obsidian, Serpentine)",
         "size": "80 × 110 cm (khổ lớn)",
         "weight": "500g",
         "origin": "Việt Nam, Brazil, Ấn Độ – chế tác thủ công 100% tại Xưởng Ann Gem & Fengshui"
+    },
+    "specificationsEn": {
+        "material": "Natural gemstones (Aventurine, Rose Quartz, Agate, Obsidian, Serpentine)",
+        "size": "80 × 110 cm (large format)",
+        "weight": "500g",
+        "origin": "Vietnam, Brazil, India – 100% handcrafted at Ann Gem & Fengshui Workshop"
     },
     "retailPrice": "9,000,000",
     "marketPrice": "7,850,000"
@@ -685,17 +1101,32 @@ export const allProducts: Product[] = [
     "price": "10,350,000",
     "image": "/product/Tranh bác Giáp 80 x 110 cm.jpg",
     "category": "Tranh đá quý phong thủy",
+    "nameEn": "GEMSTONE PORTRAIT OF A NATIONAL HERO (WISDOM AND BRAVERY)",
+    "descriptionEn": "Large-format gemstone artwork (80 × 110 cm) – Symbolizing Righteous Spirit (Chính Khí), Wisdom, Leadership Bravery, and Household Protection. Suitable for Director's Office/Workspace.",
+    "categoryEn": "Feng Shui Gemstone Paintings",
     "benefits": [
         "Trấn trạch mạnh, tạo sự bảo hộ cho gia đạo",
         "Tăng ý chí – nội lực, bản lĩnh lãnh đạo và khả năng quyết định",
         "Thu hút quý nhân phù trợ, tăng uy tín",
         "Hóa giải thị phi, giúp không gian ổn định – hài hòa"
     ],
+    "benefitsEn": [
+        "Strong house protection (Trấn Trạch), creates safeguard for the family",
+        "Increases willpower – inner strength, leadership bravery, and decision-making ability",
+        "Attracts benefactors (Qúy Nhân), boosts reputation/prestige",
+        "Neutralizes gossip (Thị Phi), promotes stable and harmonious space"
+    ],
     "specifications": {
         "material": "Đá quý tự nhiên (Thạch anh, Mã não, Đá đen, Aventurine, Serpentine)",
         "size": "80 × 110 cm (khổ lớn)",
         "weight": "500g",
         "origin": "Việt Nam, Brazil, Madagascar – chế tác thủ công 100%"
+    },
+    "specificationsEn": {
+        "material": "Natural gemstones (Quartz, Agate, Black Stone, Aventurine, Serpentine)",
+        "size": "80 × 110 cm (large format)",
+        "weight": "500g",
+        "origin": "Vietnam, Brazil, Madagascar – 100% handcrafted"
     },
     "retailPrice": "11,129,000",
     "marketPrice": "10,350,000"
@@ -708,17 +1139,32 @@ export const allProducts: Product[] = [
     "price": "10,350,000",
     "image": "/product/Tranh bác hồ 80x110 cm.jpg",
     "category": "Tranh đá quý phong thủy",
+    "nameEn": "GEMSTONE PORTRAIT OF A NATIONAL LEADER (ETHICS & WISDOM)",
+    "descriptionEn": "Large-format gemstone artwork (80 × 110 cm) – Symbolizing Righteous Spirit (Chính Khí), Wisdom, Ethics, and Household Protection. Suitable for Living Room/Corporate Office.",
+    "categoryEn": "Feng Shui Gemstone Paintings",
     "benefits": [
         "Trấn tĩnh tinh thần – tạo cảm giác bình an & hòa khí",
         "Tăng trí tuệ – minh mẫn – sự sáng suốt trong quyết định",
         "Thu hút quý nhân, nhân hòa, sự tôn trọng",
         "Nuôi dưỡng đức – nhân – nghĩa, phù hợp gia đình coi trọng truyền thống"
     ],
+    "benefitsEn": [
+        "Calms the spirit – creates a feeling of peace and harmony",
+        "Increases wisdom – clarity – and decisiveness in decisions",
+        "Attracts benefactors, human harmony, and respect",
+        "Cultivates morality – benevolence – integrity, suitable for traditional families"
+    ],
     "specifications": {
         "material": "Đá quý tự nhiên (Thạch anh, Mã não, Đá đen, Aventurine, Serpentine)",
         "size": "80 × 110 cm (khổ lớn)",
         "weight": "500g",
         "origin": "Việt Nam, Brazil, Madagascar – chế tác thủ công 100%"
+    },
+    "specificationsEn": {
+        "material": "Natural gemstones (Quartz, Agate, Black Stone, Aventurine, Serpentine)",
+        "size": "80 × 110 cm (large format)",
+        "weight": "500g",
+        "origin": "Vietnam, Brazil, Madagascar – 100% handcrafted"
     },
     "retailPrice": "11,129,000",
     "marketPrice": "10,350,000"
@@ -731,17 +1177,32 @@ export const allProducts: Product[] = [
     "price": "10,500,000",
     "image": "/product/Bình hoa cát tường.jpg",
     "category": "Tranh đá quý phong thủy",
+    "nameEn": "PROSPERITY FLORAL VASE GEMSTONE PAINTING",
+    "descriptionEn": "Natural Gemstone Floral Vase (80 x 110 cm) – A statement of Prosperity, Wealth Attraction, and Flourishing Blessings. 3D crafted from natural gemstones (Ruby, Quartz, Aventurine...).",
+    "categoryEn": "Feng Shui Gemstone Paintings",
     "benefits": [
         "Chiêu tài – chiêu phúc, thu hút vận may và cơ hội mới nở rộ.",
         "Hóa giải năng lượng xấu, tăng sinh khí và hòa khí cho gia đạo.",
         "Tăng năng lượng tích cực, hỗ trợ tinh thần tích cực, tăng cảm hứng sống.",
         "Tạo điểm nhấn nội thất sang trọng, rực rỡ."
     ],
+    "benefitsEn": [
+        "Attracts wealth and blessings, draws in good fortune and flourishing new opportunities.",
+        "Neutralizes negative energy, increases vital energy (Sinh Khí) and harmony for the household.",
+        "Boosts positive energy, supports positive mindset, increases life inspiration.",
+        "Creates a luxurious, vibrant interior highlight."
+    ],
     "specifications": {
         "material": "Đá quý tự nhiên 100% (Thạch anh, Aventurine, Ruby thô, Mã não, Tourmaline vụn...)",
         "size": "80 × 110 cm (khổ lớn)",
         "weight": "500g",
         "origin": "Chế tác thủ công tại Việt Nam"
+    },
+    "specificationsEn": {
+        "material": "100% natural gemstones (Quartz, Aventurine, rough Ruby, Agate, Tourmaline chips...)",
+        "size": "80 × 110 cm (large format)",
+        "weight": "500g",
+        "origin": "Handcrafted in Vietnam"
     },
     "retailPrice": "11,200,000",
     "marketPrice": "10,500,000"
@@ -754,17 +1215,32 @@ export const allProducts: Product[] = [
     "price": "5,900,000",
     "image": "/product/Hoa Cát Tường.jpg",
     "category": "Tranh đá quý phong thủy",
+    "nameEn": "PREMIUM PROSPERITY FLORAL GEMSTONE PAINTING (60 X 80 CM)",
+    "descriptionEn": "Premium Natural Gemstone Painting – Prosperity Floral Edition. Symbol of Wealth, Flourishing Fortune, and Accumulated Blessings. 3D crafted from Ruby, Quartz, Aventurine...",
+    "categoryEn": "Feng Shui Gemstone Paintings",
     "benefits": [
         "Thu hút tài lộc – may mắn – quý nhân",
         "Kích hoạt vượng khí cho phòng khách – sảnh – văn phòng",
         "Hóa giải năng lượng xấu, giúp không gian tươi mới – thông khí – sáng vận",
         "Giúp gia đình thuận hòa, công việc hanh thông"
     ],
+    "benefitsEn": [
+        "Attracts wealth – luck – benefactors (Qúy Nhân)",
+        "Activates prosperity energy for the living room – lobby – office",
+        "Neutralizes negative energy, revitalizes the space – promotes chi flow – brightens fortune",
+        "Promotes family harmony and smooth career progression"
+    ],
     "specifications": {
         "material": "Đá quý tự nhiên (Ruby, Thạch anh, Aventurine, Mã não, Hoàng Long, Onyx Marble)",
         "size": "60 × 80 cm (khung cao cấp)",
         "weight": "500g",
         "origin": "Việt Nam (thủ công, nghệ nhân 15-20 năm kinh nghiệm)"
+    },
+    "specificationsEn": {
+        "material": "Natural gemstones (Ruby, Quartz, Aventurine, Agate, Yellow Onyx Marble)",
+        "size": "60 × 80 cm (premium frame)",
+        "weight": "500g",
+        "origin": "Vietnam (handcrafted by artisans with 15-20 years of experience)"
     },
     "retailPrice": "6,400,000",
     "marketPrice": "5,900,000"
@@ -773,21 +1249,40 @@ export const allProducts: Product[] = [
     id: 34,
     "name": "TRANH ĐÁ QUÝ HOA NGŨ SẮC (56 X 76 CM)",
     "description": "Natural Gemstone Painting – Prosperity Flower Bouquet. Tác phẩm Lộc Hoa Khai Phú Quý, biểu tượng Vượng Khí Nở Rộ. Chế tác từ Ruby, Thạch anh, Aventurine, Mã não, Tourmaline...",
-    "fullDescription": "TRANH ĐÁ QUÝ HOA NGŨ SẮC (45 x55 CM)\nCó những bức tranh không chỉ để ngắm.\n\nChúng là dòng chảy của năng lượng, là tín hiệu để vũ trụ biết rằng gia chủ sẵn sàng đón nhận điều tốt đẹp.\nTrong phong thủy, hoa nở luôn là biểu tượng của:\n\n• Vượng khí dâng đầy\n\n• Tài lộc sinh sôi\n\n• Hạnh phúc đơm hoa kết trái\n\n• Gia đạo yên hòa – tình duyên mở lối\n\nVới tranh đá quý, từng cánh hoa không được vẽ bằng màu, mà được kết tinh từ thạch anh – ruby – aventurine – mã não, những khoáng vật hình thành sâu trong lòng đất qua hàng triệu năm.\nNăng lượng của đá quý là năng lượng thật – ổn định – bền vững – thu hút sinh khí.\n\nKhi được sắp đặt thành họa phẩm hoa nở rộ, trường khí ấy trở thành lời chúc phúc gửi đến gia chủ: “Mọi điều bạn gieo – đều sẽ nở hoa.” “Mọi hy vọng – đều có ngày đơm bông kết trái.”\n\nMột bức tranh hoa đá quý trong nhà chính là lời nhắc nhở nhẹ nhàng rằng:\n🌸 Hãy sống đẹp, sống thiện, và điều may mắn sẽ tìm đến.\n🌿 Hãy đặt bình an trong tâm – tài lộc sẽ tự tìm đúng cửa.\n\nĐó là lý do vì sao các gia đình, doanh nhân và chủ nhà mới đều lựa chọn dòng tranh này như một vật phẩm chiêu tài – chiêu phúc – chiêu duyên.\n\nHoa nở – vượng khí đến. Đá quý – tài khí tới. Nhà sáng – vận sáng.\n\n\n________________________________________\n🪷 THÔNG TIN SẢN PHẨM\n\n• Tên sản phẩm: Tranh đá quý Hoa Ngũ Sắc – Lộc Hoa Khai Phú Quý\n\n• Tên tiếng Anh: Natural Gemstone Painting – Prosperity Flower Bouquet\n\n• Nguồn gốc: Đá quý tự nhiên từ Việt Nam, Brazil, Myanmar\n\n• Gia công & hoàn thiện: Nghệ nhân đá quý – Xưởng hợp tác Ann Gem & Fengshui, Việt Nam\n\n• Thương hiệu phân phối: Ann Gem & Fengshui – Recharge Your Energy, Restore Your Balance\nKích thước: 56 × 76 cm\nChất liệu: Ruby vụn – Thạch anh hồng – Aventurine – Canxedon – Mã não – Tourmaline lá – gắn nền khoáng tự nhiên, ép kính.\n\n\n________________________________________\n💰 GIÁ BÁN / PRICING\n\n| Hạng mục | Mức giá (VNĐ) | Ghi chú |\n| :--- | :--- | :--- |\n| Giá niêm yết | 5.900.000 code AGFS 057 (kiểm định chung) | Đã gồm 10% VAT, chưa gồm vận chuyển |\n| Giá bán (Market Price) | 5.500.000 code AGFS 057 (kiểm định chung) | Bao gồm VAT, chưa có phí vận chuyển |\n\n\n________________________________________\n🌈 Ý NGHĨA PHONG THỦY\nĐặc tính\nTranh hoa đá quý thuộc hành Mộc – Thổ – Hỏa, rất tốt cho việc kích hoạt:\n\n• Tài lộc\n\n• Sức khỏe\n\n• May mắn – Quý nhân\n\n• Hòa khí gia đình\nPhân tích phong thủy\n\n• Hoa nở rộ: Vượng khí – Khai hoa nở nhụy – Mở vận may\n\n• Tông hồng – trắng – xanh lá: cân bằng ngũ hành, tạo sinh khí mềm mại và dễ chịu\n\n• Chất liệu đá quý thật → tạo tần số năng lượng ổn định, giúp thanh lọc không gian\nCông dụng\n\n• Thu hút năng lượng tốt vào phòng khách – phòng ngủ – sảnh\n\n• Tạo cảm giác tươi mới, nuôi dưỡng tinh thần\n\n• Kích hoạt cung Tài Lộc – Tình Duyên – Sức Khỏe\n\n• Làm quà tặng tân gia, khai trương, sinh nhật, tri ân doanh nghiệp\nÝ nghĩa biểu tượng\n“Hoa nở là phúc đến – đá quý là tài khí – tranh là sự thịnh vượng tròn đầy.”\nHợp mệnh\nMộc – Hỏa – Thổ – Kim đều phù hợp. Riêng người mệnh Thủy vẫn treo được nhờ yếu tố đá màu trắng – hồng trung tính.\n\n\n________________________________________\n💎 GIẢI NGHĨA CHUYÊN GIA PHONG THỦY\n1. Về năng lượng học\nĐá quý tự nhiên mang rung động 6–25 MHz, giúp:\n\n• thanh lọc trọc khí\n\n• giảm căng thẳng\n\n• harmonize (điều hòa) năng lượng trong nhà\n\n• tăng cảm giác thư giãn và tươi mới\n\nKhi sắp xếp thành đồ họa hoa, năng lượng “Mộc sinh Hỏa” tạo trường khí ấm – vượng – sống động.\n2. Về phong thủy trấn trạch\nTranh hoa đá quý có hiệu quả trấn trạch nhẹ nhưng mang tính tụ khí – dưỡng khí rất cao.\n\nĐặc biệt phù hợp đặt ở:\n\n• phòng khách\n\n• phòng ngủ\n\n• phòng làm việc\n\n• khu vực phía Đông, Đông Nam, Nam của căn nhà\n3. Ứng dụng trong không gian sống\n\n• Treo ở vị trí tầm mắt để nuôi dưỡng cảm xúc\n\n• Kết hợp đèn vàng nhẹ để tăng \"hỏa khí thịnh\"\n\n• Hợp với nội thất gỗ sáng, phong cách elegant – modern Vietnamese\n\n\n________________________________________\n🪶 HỒ SƠ PHONG THỦY SẢN PHẨM\n1. Mô tả sản phẩm\nTranh hoa đá quý thiết kế theo bố cục hoa nở rộ. Mỗi cánh hoa được ghép bằng khoáng vật tự nhiên, giữ nguyên độ thô để tạo chiều sâu ánh sáng.\n2. Thành phần & Đặc trưng cấu tạo\n\n• Ruby vụn tạo điểm sáng tâm\n\n• Thạch anh hồng tạo sắc mềm và năng lượng tình yêu\n\n• Aventurine xanh lá tượng trưng tài lộc\n\n• Lá tourmaline đen tăng bảo hộ trường khí\n\n• Nền thạch tự nhiên tăng độ bền 20–30 năm\n3. Công dụng chính\n\n• Cân bằng phong thủy\n\n• Mở vận tài – duyên – sức khỏe\n\n• Làm đẹp không gian\n\n• Tăng sinh khí và cảm xúc tươi mới\n4. USP – Điểm khác biệt\n\n• 100% đá thật, không sơn, không nhuộm\n\n• Độ bền màu vĩnh viễn\n\n• Tinh xảo – nhẹ nhàng – sang trọng\n\n• Hợp mọi không gian nội thất\n\n• Bảo hành 05 năm\n5. Đối tượng sử dụng\n\n• Gia đình\n\n• Người yêu nghệ thuật – phong thủy\n\n• Doanh nghiệp muốn trang trí văn phòng\n\n• Làm quà tặng cao cấp\n6. Cảnh báo\n\n• Tránh ánh nắng trực tiếp\n\n• Không để môi trường ẩm\n\n• Lau bằng khăn mềm, không hóa chất\n7. Tại sao nên chọn sản phẩm này\n“Vì đây không chỉ là một bức tranh – mà là một trường năng lượng từ đá quý, mang tài lộc và sự nở hoa vào không gian sống.”\n\n\n________________________________________\n💬 CÂU HỎI THƯỜNG GẶP (FAQ)\nQ1. Tranh đá quý có phai màu không?\n\n→ Không. Đá quý giữ màu vĩnh viễn.\nQ2. Có hợp phòng ngủ không?\n\n→ Có. Hoa màu pastel mang năng lượng thư giãn, rất phù hợp.\nQ3. Có thể làm quà tặng không?\n\n→ Rất thích hợp cho tân gia, khai trương, tri ân đối tác.\n\n\n________________________________________\n🧭 HƯỚNG DẪN KIỂM TRA THẬT – GIẢ\n\n| Kiểm tra | Đá thật | Giả |\n| :--- | :--- | :--- |\n| Mắt thường | Ánh lấp lánh tự nhiên – có hạt | Màu phẳng, trơn như sơn |\n| Sờ tay | Mát – nặng | Nhẹ – nóng nhanh |\n| Gõ nhẹ | Âm đanh | Âm đục |\n| Kính phóng | Thấy hạt vi tinh thể | Không thấy hạt |\n\n🌸 Tranh đá quý HOA NỞ – VƯỢNG KHÍ ĐẾN. Muốn nhà sáng – vận sáng? Đặt ngay một bức tranh đá quý vào phòng khách! ✔ Thu hút tài lộc ✔ Chiêu quý nhân – hòa khí ✔ Tăng may mắn & năng lượng tích cực ✔ Đẹp sang – hợp tặng tân gia/khai trương. 💎 Đá thật 100% – năng lượng thật. 📌 Kích thước: 56 × 76 cm (treo phòng khách cực đẹp). 🎁 Giá ưu đãi chỉ tại Ann Gem Fengshui. 👉 Nhắn tin ngay để giữ giá tốt nhất hôm nay!",
+    "fullDescription": "TRANH ĐÁ QUÝ HOA NGŨ SẮC (45 x55 CM)\nCó những bức tranh không chỉ để ngắm.\n\nChúng là dòng chảy của năng lượng, là tín hiệu để vũ trụ biết rằng gia chủ sẵn sàng đón nhận điều tốt đẹp.\nTrong phong thủy, hoa nở luôn là biểu tượng của:\n\n• Vượng khí dâng đầy\n\n• Tài lộc sinh sôi\n\n• Hạnh phúc đơm hoa kết trái\n\n• Gia đạo yên hòa – tình duyên mở lối\n\nVới tranh đá quý, từng cánh hoa không được vẽ bằng màu, mà được kết tinh từ thạch anh – ruby – aventurine – mã não, những khoáng vật hình thành sâu trong lòng đất qua hàng triệu năm.\nNăng lượng của đá quý là năng lượng thật – ổn định – bền vững – thu hút sinh khí.\n\nKhi được sắp đặt thành họa phẩm hoa nở rộ, trường khí ấy trở thành lời chúc phúc gửi đến gia chủ: “Mọi điều bạn gieo – đều sẽ nở hoa.” “Mọi hy vọng – đều có ngày đơm bông kết trái.”\n\nMột bức tranh hoa đá quý trong nhà chính là lời nhắc nhở nhẹ nhàng rằng:\n🌸 Hãy sống đẹp, sống thiện, và điều may mắn sẽ tìm đến.\n🌿 Hãy đặt bình an trong tâm – tài lộc sẽ tự tìm đúng cửa.\n\nĐó là lý do vì sao các gia đình, doanh nhân và chủ nhà mới đều lựa chọn dòng tranh này như một vật phẩm chiêu tài – chiêu phúc – chiêu duyên.\n\nHoa nở – vượng khí đến. Đá quý – tài khí tới. Nhà sáng – vận sáng.\n\n\n________________________________________\n🪷 THÔNG TIN SẢN PHẨM\n\n• Tên sản phẩm: Tranh đá quý Hoa Ngũ Sắc – Lộc Hoa Khai Phú Quý\n\n• Tên tiếng Anh: Natural Gemstone Painting – Prosperity Flower Bouquet\n\n• Nguồn gốc: Đá quý tự nhiên từ Việt Nam, Brazil, Myanmar\n\n• Gia công & hoàn thiện: Nghệ nhân đá quý – Xưởng hợp tác Ann Gem & Fengshui, Việt Nam\n\n• Thương hiệu phân phối: Ann Gem & Fengshui – Recharge Your Energy, Restore Your Balance\nKích thước: 56 × 76 cm\nChất liệu: Ruby vụn – Thạch anh hồng – Aventurine – Canxedon – Mã não – Tourmaline lá – gắn nền khoáng tự nhiên, ép kính.\n\n\n________________________________________\n💰 GIÁ BÁN / PRICING\n\n| Hạng mục | Mức giá (VNĐ) | Ghi chú |\n| :--- | :--- | :--- |\n| Giá niêm yết | 5.900.000 code AGFS 057 (kiểm định chung) | Đã gồm 10% VAT, chưa gồm vận chuyển |\n| Giá bán (Market Price) | 5.500.000 code AGFS 057 (kiểm định chung) | Bao gồm VAT, chưa có phí vận chuyển |\n\n\n________________________________________\n🌈 Ý NGHĨA PHONG THỦY\nĐặc tính\nTranh hoa đá quý thuộc hành Mộc – Thổ – Hỏa, rất tốt cho việc kích hoạt:\n\n• Tài lộc\n\n• Sức khỏe\n\n• May mắn – Quý nhân\n\n• Hòa khí gia đình\nPhân tích phong thủy\n\n• Hoa nở rộ: Vượng khí – Khai hoa nở nhụy – Mở vận may\n\n• Tông hồng – trắng – xanh lá: cân bằng ngũ hành, tạo sinh khí mềm mại và dễ chịu\n\n• Chất liệu đá quý thật → tạo tần số năng lượng ổn định, giúp thanh lọc không gian\nCông dụng\n\n• Thu hút năng lượng tốt vào phòng khách – phòng ngủ – sảnh\n\n• Tạo cảm giác tươi mới, nuôi dưỡng tinh thần\n\n• Kích hoạt cung Tài Lộc – Tình Duyên – Sức Khỏe\n\n• Làm quà tặng tân gia, khai trương, sinh nhật, tri ân doanh nghiệp\nÝ nghĩa biểu tượng\n“Hoa nở là phúc đến – đá quý là tài khí – tranh là sự thịnh vượng tròn đầy.”\nHợp mệnh\nMộc – Hỏa – Thổ – Kim đều phù hợp. Riêng người mệnh Thủy vẫn treo được nhờ yếu tố đá màu trắng – hồng trung tính.\n\n\n________________________________________\n💎 GIẢI NGHĨA CHUYÊN GIA PHONG THỦY\n1. Về năng lượng học\nĐá quý tự nhiên mang rung động 6–25 MHz, giúp:\n\n• thanh lọc trọc khí\n\n• giảm căng thẳng\n\n• harmonize (điều hòa) năng lượng trong nhà\n\n• tăng cảm giác thư giãn và tươi mới\n\nKhi sắp xếp thành đồ họa hoa, năng lượng “Mộc sinh Hỏa” tạo trường khí ấm – vượng – sống động.\n2. Về phong thủy trấn trạch\nTranh hoa đá quý có hiệu quả trấn trạch nhẹ nhưng mang tính tụ khí – dưỡng khí rất cao.\n\nĐặc biệt phù hợp đặt ở:\n\n• phòng khách\n\n• phòng ngủ\n\n• phòng làm việc\n\n• khu vực phía Đông, Đông Nam, Nam của căn nhà\n3. Ứng dụng trong không gian sống\n\n• Treo ở vị trí tầm mắt để nuôi dưỡng cảm xúc\n\n• Kết hợp đèn vàng nhẹ để tăng \"hỏa khí thịnh\"\n\n• Hợp với nội thất gỗ sáng, phong cách elegant – modern Vietnamese\n\n\n________________________________________\n🪶 HỒ SƠ PHONG THỦY SẢN PHẨM\n1. Mô tả sản phẩm\nTranh hoa đá quý thiết kế theo bố cục hoa nở rộ. Mỗi cánh hoa được ghép bằng khoáng vật tự nhiên, giữ nguyên độ thô để tạo chiều sâu ánh sáng.\n2. Thành phần & Đặc trưng cấu tạo\n\n• Ruby vụn tạo điểm sáng tâm\n\n• Thạch anh hồng tạo sắc mềm và năng lượng tình yêu\n\n• Aventurine xanh lá tượng trưng tài lộc\n\n• Lá tourmaline đen tăng bảo hộ trường khí\n\n• Nền thạch tự nhiên tăng độ bền 20–30 năm\n3. Công dụng chính\n\n• Cân bằng phong thủy\n\n• Mở vận tài – duyên – sức khỏe\n\n• Làm đẹp không gian\n\n• Tăng sinh khí và cảm xúc tươi mới\n4. USP – Điểm khác biệt\n\n• 100% đá thật, không sơn, không nhuộm\n\n• Độ bền màu vĩnh viễn\n\n• Tinh xảo – nhẹ nhàng – sang trọng\n\n• Hợp mọi không gian nội thất\n\n• Bảo hành 05 năm\n5. Đối tượng sử dụng\n\n• Gia đình\n\n• Người yêu nghệ thuật – phong thủy\n\n• Doanh nghiệp muốn trang trí văn phòng\n\n• Làm quà tặng cao cấp\n6. Cảnh báo\n\n• Tránh ánh nắng trực tiếp\n\n• Không để môi trường ẩm\n\n• Lau bằng khăn mềm, không hóa chất\n7. Tại sao nên chọn sản phẩm này\n“Vì đây không chỉ là một bức tranh – mà là một trường năng lượng từ đá quý, mang tài lộc và sự nở hoa vào không gian sống.”\n\n\n________________________________________\n💬 CÂU HỎI THƯỜNG GẶP (FAQ)\nQ1. Tranh đá quý có phai màu không?\n\n→ Không. Đá quý giữ màu vĩnh viễn.\nQ2. Có hợp phòng ngủ không?\n\n→ Có. Hoa màu pastel mang năng lượng thư giãn, rất phù hợp.\nQ3. Có thể làm quà tặng không?\n\n→ Rất thích hợp cho tân gia, khai trương, tri ân đối tác.\n\n\n________________________________________\n🧭 HƯỚNG DẪN KIỂM TRA THẬT – GIẢ\n\n| Kiểm tra | Đá thật | Giả |\n| :--- | :--- | :--- |\
+| Mắt thường | Ánh lấp lánh tự nhiên – có hạt | Màu phẳng, trơn như sơn |\
+| Sờ tay | Mát – nặng | Nhẹ – nóng nhanh |\
+| Gõ nhẹ | Âm đanh | Âm đục |\
+| Kính phóng | Thấy hạt vi tinh thể | Không thấy hạt |\n\n🌸 Tranh đá quý HOA NỞ – VƯỢNG KHÍ ĐẾN. Muốn nhà sáng – vận sáng? Đặt ngay một bức tranh đá quý vào phòng khách! ✔ Thu hút tài lộc ✔ Chiêu quý nhân – hòa khí ✔ Tăng may mắn & năng lượng tích cực ✔ Đẹp sang – hợp tặng tân gia/khai trương. 💎 Đá thật 100% – năng lượng thật. 📌 Kích thước: 56 × 76 cm (treo phòng khách cực đẹp). 🎁 Giá ưu đãi chỉ tại Ann Gem Fengshui. 👉 Nhắn tin ngay để giữ giá tốt nhất hôm nay!",
     "price": "5,500,000",
     "image": "/product/Tranh hoa ngũ sắc.jpg",
     "category": "Tranh đá quý phong thủy",
+    "nameEn": "NATURAL GEMSTONE PAINTING – PROSPERITY FLOWER BOUQUET",
+    "descriptionEn": "Natural Gemstone Painting – Prosperity Flower Bouquet. The artwork 'Wealth Flower Blooms Prosperity', symbolizing Flourishing Vitality. Crafted from Ruby, Quartz, Aventurine, Agate, Tourmaline...",
+    "categoryEn": "Feng Shui Gemstone Paintings",
     "benefits": [
         "Thu hút năng lượng tốt, kích hoạt cung Tài Lộc – Tình Duyên – Sức Khỏe.",
         "Tạo cảm giác tươi mới, nuôi dưỡng tinh thần và cảm xúc tích cực.",
         "Cân bằng phong thủy, Mở vận tài – duyên – sức khỏe.",
         "Trấn trạch nhẹ, mang tính tụ khí – dưỡng khí rất cao."
     ],
+    "benefitsEn": [
+        "Attracts good energy, activates the Wealth – Love – Health sectors.",
+        "Creates a fresh feeling, nurtures the spirit and positive emotions.",
+        "Balances Feng Shui, unlocks fortune for wealth – relationships – health.",
+        "Provides gentle house protection (Trấn Trạch), highly promotes energy accumulation and nurturing (Tụ Khí – Dưỡng Khí)."
+    ],
     "specifications": {
         "material": "Đá quý tự nhiên (Ruby vụn, Thạch anh hồng, Aventurine, Canxedon, Mã não, Tourmaline lá)",
         "size": "56 × 76 cm",
         "weight": "500g",
         "origin": "Việt Nam, Brazil, Myanmar – chế tác thủ công"
+    },
+    "specificationsEn": {
+        "material": "Natural gemstones (Ruby chips, Rose Quartz, Aventurine, Chalcedony, Agate, Tourmaline leaves)",
+        "size": "56 × 76 cm",
+        "weight": "500g",
+        "origin": "Vietnam, Brazil, Myanmar – handcrafted"
     },
     "retailPrice": "5,900,000",
     "marketPrice": "5,500,000"
@@ -800,17 +1295,32 @@ export const allProducts: Product[] = [
     "price": "11,700,000",
     "image": "/product/Tùng hạc 80 x 140.jpg",
     "category": "Tranh đá quý phong thủy",
+    "nameEn": "PINE AND CRANES FOR LONGEVITY GEMSTONE PAINTING (80 X 140 CM)",
+    "descriptionEn": "Natural Gemstone Painting – Pine, Cranes & Peony Blossoms at Sunrise. Symbol of Blessings, Longevity, Benefactors, and Wealth. Four Auspicious Energies (Phúc – Lộc – Thọ – Quý) composition, large size.",
+    "categoryEn": "Feng Shui Gemstone Paintings",
     "benefits": [
         "Tăng thọ – tăng phúc khí, vượng quý nhân và trường thọ.",
         "Kích tài lộc – hóa sát, ổn định trạch khí, tăng năng lượng cho không gian.",
         "Cân bằng hoàn hảo giữa Mộc – Kim – Hỏa – Thổ, kéo dài may mắn.",
         "Hình tượng đa cát khí nhất, thích hợp cho phòng khách, phòng thờ."
     ],
+    "benefitsEn": [
+        "Increases longevity – boosts blessings (Phúc Khí), attracts benefactors (Qúy Nhân) and long life.",
+        "Activates wealth – neutralizes bad chi (Hóa Sát), stabilizes house energy, enhances spatial energy.",
+        "Perfect balance of Wood – Metal – Fire – Earth elements, extending good fortune.",
+        "Most auspicious imagery (Tứ Cát Khí), suitable for living room, ancestral altar room."
+    ],
     "specifications": {
         "material": "Đá quý tự nhiên (Ruby, Thạch anh, Chalcedony, Serpentine, Fluorite, Mẫu đơn...)",
         "size": "80 × 140 cm (khung gỗ cao cấp)",
         "weight": "500g",
         "origin": "Việt Nam – chế tác thủ công tại làng nghề mỹ nghệ đá quý"
+    },
+    "specificationsEn": {
+        "material": "Natural gemstones (Ruby, Quartz, Chalcedony, Serpentine, Fluorite, Peony...)",
+        "size": "80 × 140 cm (premium wooden frame)",
+        "weight": "500g",
+        "origin": "Vietnam – handcrafted at the gemstone craft village"
     },
     "retailPrice": "13,000,000",
     "marketPrice": "11,700,000"
@@ -819,21 +1329,36 @@ export const allProducts: Product[] = [
     id: 36,
     "name": "TRANH ĐÁ QUÝ PHONG CẢNH LÀNG QUÊ VIỆT NAM",
     "description": "Vietnamese Countryside Gemstone Painting (56 × 76 cm) – Cổng Làng & Cây Cổ Thụ. Biểu tượng Bảo Hộ, Bình Ổn, Tụ Lộc và Nhân Hòa Vượng Khí.",
-    "fullDescription": "TRANH ĐÁ QUÝ PHONG CẢNH LÀNG QUÊ VIỆT NAM\nKích thước: 56 × 76 cm\nTrong văn hóa Việt Nam, làng quê không chỉ là nơi ta sinh ra – mà còn là “vùng năng lượng gốc” nuôi dưỡng cả đời sống tinh thần của mỗi người.\nCổng làng, cây đa, mái ngói tím, con đường đất nhỏ… tất cả tạo nên một mạch khí truyền đời – nơi sinh khí hội tụ, hòa khí lan tỏa và tài khí được nuôi dưỡng.\nTranh đá quý phong cảnh làng quê vì thế không chỉ đẹp; nó mang theo trường năng lượng của sự đủ đầy, bình ổn và che chở.\n\n1. Cổng làng – biểu tượng của bảo hộ\nCổng làng xuất hiện trong tranh như một “lá chắn phong thủy”:\n\n• giữ năng lượng xấu ngoài nhà\n\n• giữ lại bình an trong gia đạo\n\n• tượng trưng cho sự trở về và sum họp\nTrong phong thủy, đây là điểm kết khí cực mạnh.\n\n\n2. Cây cổ thụ – tụ lộc & sinh khí\nCây cổ thụ xanh tốt là hình ảnh của:\n\n• Sự trường tồn\n\n• Gốc rễ vững bền\n\n• Phúc đức tổ tiên\nTán cây rộng → tụ khí tốt → giữ tài lộc cho gia chủ.\n\n\n3. Con đường làng – sự nghiệp hanh thông\nĐường cong mềm mại – sáng – rộng → biểu tượng cho:\n\n• tương lai thuận lợi\n\n• công danh hanh thông\n\n• kinh doanh may mắn\nTrong phong thủy, “đường sáng” luôn là dấu hiệu của vận tốt.\n\n\n4. Cuộc sống yên vui – nhân hòa vượng khí\nNgười dân sinh hoạt hòa thuận tạo nên trường năng lượng của sự hòa hợp.\n\nNhân hòa là nền tảng của:\n\n• Tài lộc\n\n• Hạnh phúc\n\n• Vận phát triển\n\nNhà có tranh làng quê → hòa khí tăng, xung đột giảm, tài vận tự đến.\n\n\n5. Vì sao tranh làng quê luôn mang vượng khí?\nBởi nó chứa đầy đủ 3 yếu tố đại cát trong phong thủy:\n• Thiên thời: không gian sáng – êm – cân bằng\n• Địa lợi: cây – đất – đường hội tụ sinh khí\n• Nhân hòa: đời sống vui vẻ – ấm áp – sung túc\nĐó chính là lý do tranh làng quê là một trong những dòng tranh chiêu tài – chiêu bình an mạnh nhất tại Ann Gem & Fengshui.\n\n\n________________________________________\nTHÔNG TIN SẢN PHẨM\n\n• Tên sản phẩm:\nTranh Đá Quý Phong Cảnh Làng Quê Việt – Cổng Làng & Cây Cổ Thụ\n\n• Tên tiếng Anh:\nVietnamese Countryside Gemstone Painting – Village Gate & Ancient Trees\n\n• Nguồn gốc nguyên liệu:\nĐá quý tự nhiên Việt Nam – Brazil – Madagascar.\n\n• Gia công & hoàn thiện:\nChế tác thủ công 100% tại xưởng hợp tác Ann Gem & Fengshui, ghép đá nhiều lớp tạo hiệu ứng nổi 3D.\n\n• Thương hiệu phân phối:\nAnn Gem & Fengshui – Recharge Your Energy, Restore Your Balance.\n\n• Kích thước: 56 × 76 cm\n\n• Chất liệu:\nThạch anh, mã não, aventurine, đá đen, đá màu tự nhiên, nền khoáng ép cao cấp.\n\n\n________________________________________\n💰 GIÁ BÁN / PRICING\n\n| Hạng mục | Giá (VNĐ) | Ghi chú |\n| :--- | :--- | :--- |\n| Giá niêm yết | 5.400.000 VND code AGFS 068 (kiểm định chung) | Đã bao gồm VAT 10%, chưa gồm vận chuyển |\n| Giá bán thị trường | 4.900.000 VND code AGFS 068 (kiểm định chung) | Bao gồm VAT, chưa có phí vận chuyển |\n\n\n________________________________________\n🌈 Ý NGHĨA PHONG THỦY – GIẢI MÃ TÁC PHẨM\n1. Đặc tính phong thủy\n\n| Chi tiết trong tranh | Phân tích phong thủy |\n| :--- | :--- |\n| Cổng làng cổ | Biểu tượng bảo hộ – gốc rễ – phong thủy trấn trạch mạnh |\n| Cây cổ thụ tán rộng | Tụ sinh khí, giữ lộc, mang lại sự trường tồn & phát triển |\n| Mái ngói tím – nhà cổ | Hòa khí, sự ấm êm của gia đình Việt |\n| Người dân sinh hoạt | Tượng trưng cho \"nhân hòa\" – yếu tố quan trọng nhất trong phong thủy |\n| Đường làng mở rộng | Công danh – sự nghiệp hanh thông, tương lai sáng rộng |\n\n2. Công dụng phong thủy của tranh\n\n• Chiêu tài – Tụ lộc (vượng Thổ – Mộc).\n\n• Ổn định gia đạo, giúp không khí gia đình hòa thuận.\n\n• Tăng dương khí, rất tốt cho sức khỏe tinh thần.\n\n• Bảo hộ phong thủy, nhất là nhà phố hoặc căn hộ cần “điểm tụ”.\n\n• Kích hoạt may mắn, giúp công việc thuận lợi.\n\n• Xua năng lượng xấu, nhờ hình tượng cổng làng & cây đại thụ.\n\n\n3. Ý nghĩa biểu tượng sâu sắc\n→ Biểu tượng gốc rễ & truyền thống\nCổng làng – cây cổ thụ tượng trưng cho tổ tiên, nơi chở che & gìn giữ.\n→ Hình ảnh sung túc – thanh bình\nNgười dân sinh hoạt, trẻ em vui chơi → biểu trưng cho hạnh phúc – ấm êm – sung túc.\n→ Phát triển & hanh thông\nĐường sáng – rộng → dự báo tương lai rộng mở.\n→ Và quan trọng nhất: HÒA KHÍ\nHòa khí là nền tảng của phong thủy. Nhà có hòa khí → tự nhiên tài lộc đến.\n\n\n4. Hợp mệnh\n\n• Hợp mạnh: Mộc – Thổ – Hỏa\n\n• Hợp tốt: Kim (do cân bằng năng lượng sinh khí)\n\n• Thủy: dùng được nếu treo hướng Đông – Đông Nam\n\n\n________________________________________\n💎 GIẢI NGHĨA CHUYÊN GIA PHONG THỦY\n1. Về năng lượng học – Tần số đá quý\n\n• Thạch anh: thanh lọc – tăng dương khí\n\n• Mã não: bình an – ổn định\n\n• Aventurine: chiêu tài – may mắn\n\n• Đá đen: trấn trạch – bảo hộ\n\n→ Bộ năng lượng này cực kỳ phù hợp với phong thủy nhà ở – văn phòng – homestay.\n\n\n2. Về phong thủy trấn trạch\nBố cục tranh thuộc dạng tam khí cát tường:\n\n• Tụ khí → cây cổ thụ\n\n• Dẫn khí → đường làng\n\n• Giữ khí → cổng làng\n\nĐây là một trong những bố cục phong thủy tốt nhất cho gia đình cần: Ổn định năng lượng, Thu hút tài lộc, Tăng sự hòa hợp trong nhà.\n\n\n3. Về ứng dụng trong không gian sống\n✔ Nên treo ở: Phòng khách, Phòng thờ, Phòng làm việc, Sảnh cơ quan, Nhà hàng – homestay phong cách truyền thống\n\n\n________________________________________\n🪶 HỒ SƠ SẢN PHẨM\n1. Product Description\nTranh đá quý phong cảnh tái hiện làng quê Việt Nam với cổng làng cổ, cây đại thụ và cuộc sống bình dị. Tác phẩm mang năng lượng vượng khí – bình an – hòa hợp, phù hợp trang trí nhà ở, văn phòng và làm quà tặng.\n2. Thành phần & cấu tạo\nThạch anh, mã não, serpentine, đá đen, đá màu tự nhiên; ghép đá thủ công nhiều lớp.\n3. Công dụng chính\n\n• Chiêu tài – giữ lộc\n\n• Bảo hộ gia đạo\n\n• Tăng hòa khí\n\n• Trang trí sang trọng\n4. USP – Điểm khác biệt\n\n• Đá thật, bền màu vĩnh viễn\n\n• Chi tiết tinh xảo\n\n• Trường khí mạnh nhờ bố cục phong thủy chuẩn\n\n• Bảo hành 5 năm – dễ dùng – hợp mọi không gian\n5. Recommended Users\n\n• Gia đình\n\n• Doanh nhân\n\n• Người lớn tuổi\n\n• Spa, homestay, café\n\n• Quà tặng tân gia – khai trương\n\n\n________________________________________\n💬 FAQ\n1. Tranh có bền không?\n→ Đá quý tự nhiên bền màu vĩnh viễn, không bay màu.\n2. Treo hướng nào tốt?\n→ Đông – Đông Nam – Trung cung.\n\n\n________________________________________\n🧭 HƯỚNG DẪN KIỂM TRA THẬT – GIẢ\n\n• Đá thật → nặng, mát\n\n• Bề mặt gồ nhẹ, không phẳng như tranh in\n\n• Ánh đá tự nhiên khi soi đèn\n\n• Màu sắc bền, không loang\n\n🏡 Nhà ấm thì vượng. Tranh làng quê giúp tăng hòa khí, giảm căng thẳng, mang lại cảm giác sum vầy. 👉 Chốt ngay để đón năng lượng mới.",
+    "fullDescription": "TRANH ĐÁ QUÝ PHONG CẢNH LÀNG QUÊ VIỆT NAM\nKích thước: 56 × 76 cm\nTrong văn hóa Việt Nam, làng quê không chỉ là nơi ta sinh ra – mà còn là “vùng năng lượng gốc” nuôi dưỡng cả đời sống tinh thần của mỗi người.\nCổng làng, cây đa, mái ngói tím, con đường đất nhỏ… tất cả tạo nên một mạch khí truyền đời – nơi sinh khí hội tụ, hòa khí lan tỏa và tài khí được nuôi dưỡng.\nTranh đá quý phong cảnh làng quê vì thế không chỉ đẹp; nó mang theo trường năng lượng của sự đủ đầy, bình ổn và che chở.\n\n1. Cổng làng – biểu tượng của bảo hộ\nCổng làng xuất hiện trong tranh như một “lá chắn phong thủy”:\n\n• giữ năng lượng xấu ngoài nhà\n\n• giữ lại bình an trong gia đạo\n\n• tượng trưng cho sự trở về và sum họp\nTrong phong thủy, đây là điểm kết khí cực mạnh.\n\n\n2. Cây cổ thụ – tụ lộc & sinh khí\nCây cổ thụ xanh tốt là hình ảnh của:\n\n• Sự trường tồn\n\n• Gốc rễ vững bền\n\n• Phúc đức tổ tiên\nTán cây rộng → tụ khí tốt → giữ tài lộc cho gia chủ.\n\n\n3. Con đường làng – sự nghiệp hanh thông\nĐường cong mềm mại – sáng – rộng → biểu tượng cho:\n\n• tương lai thuận lợi\n\n• công danh hanh thông\n\n• kinh doanh may mắn\nTrong phong thủy, “đường sáng” luôn là dấu hiệu của vận tốt.\n\n\n4. Cuộc sống yên vui – nhân hòa vượng khí\nNgười dân sinh hoạt hòa thuận tạo nên trường năng lượng của sự hòa hợp.\n\nNhân hòa là nền tảng của:\n\n• Tài lộc\n\n• Hạnh phúc\n\n• Vận phát triển\n\nNhà có tranh làng quê → hòa khí tăng, xung đột giảm, tài vận tự đến.\n\n\n5. Vì sao tranh làng quê luôn mang vượng khí?\nBởi nó chứa đầy đủ 3 yếu tố đại cát trong phong thủy:\n• Thiên thời: không gian sáng – êm – cân bằng\n• Địa lợi: cây – đất – đường hội tụ sinh khí\n• Nhân hòa: đời sống vui vẻ – ấm áp – sung túc\nĐó chính là lý do tranh làng quê là một trong những dòng tranh chiêu tài – chiêu bình an mạnh nhất tại Ann Gem & Fengshui.\n\n\n________________________________________\nTHÔNG TIN SẢN PHẨM\n\n• Tên sản phẩm:\nTranh Đá Quý Phong Cảnh Làng Quê Việt – Cổng Làng & Cây Cổ Thụ\n\n• Tên tiếng Anh:\nVietnamese Countryside Gemstone Painting – Village Gate & Ancient Trees\n\n• Nguồn gốc nguyên liệu:\nĐá quý tự nhiên Việt Nam – Brazil – Madagascar.\n\n• Gia công & hoàn thiện:\nChế tác thủ công 100% tại xưởng hợp tác Ann Gem & Fengshui, ghép đá nhiều lớp tạo hiệu ứng nổi 3D.\n\n• Thương hiệu phân phối:\nAnn Gem & Fengshui – Recharge Your Energy, Restore Your Balance.\n\n• Kích thước: 56 × 76 cm\n\n• Chất liệu:\nThạch anh, mã não, aventurine, đá đen, đá màu tự nhiên, nền khoáng ép cao cấp.\n\n\n________________________________________\n💰 GIÁ BÁN / PRICING\n\n| Hạng mục | Giá (VNĐ) | Ghi chú |\n| :--- | :--- | :--- |\n| Giá niêm yết | 5.400.000 VND code AGFS 068 (kiểm định chung) | Đã bao gồm VAT 10%, chưa gồm vận chuyển |\n| Giá bán thị trường | 4.900.000 VND code AGFS 068 (kiểm định chung) | Bao gồm VAT, chưa có phí vận chuyển |\n\n\n________________________________________\n🌈 Ý NGHĨA PHONG THỦY – GIẢI MÃ TÁC PHẨM\n1. Đặc tính phong thủy\n\n| Chi tiết trong tranh | Phân tích phong thủy |\n| :--- | :--- |\n| Cổng làng cổ | Biểu tượng bảo hộ – gốc rễ – phong thủy trấn trạch mạnh |\n| Cây cổ thụ tán rộng | Tụ sinh khí, giữ lộc, mang lại sự trường tồn & phát triển |\n| Mái ngói tím – nhà cổ | Hòa khí, sự ấm êm của gia đình Việt |\n| Người dân sinh hoạt | Tượng trưng cho \"nhân hòa\" – yếu tố quan trọng nhất trong phong thủy |\n| Đường làng mở rộng | Công danh – sự nghiệp hanh thông, tương lai sáng rộng |\n\n2. Công dụng phong thủy của tranh\n\n• Chiêu tài – Tụ lộc (vượng Thổ – Mộc).\n\n• Ổn định gia đạo, giúp không khí gia đình hòa thuận.\n\n• Tăng dương khí, rất tốt cho sức khỏe tinh thần.\n\n• Bảo hộ phong thủy, nhất là nhà phố hoặc căn hộ cần “điểm tụ”.\n\n• Kích hoạt may mắn, giúp công việc thuận lợi.\n\n• Xua năng lượng xấu, nhờ hình tượng cổng làng & cây đại thụ.\n\n\n3. Ý nghĩa biểu tượng sâu sắc\n→ Biểu tượng gốc rễ & truyền thống\nCổng làng – cây cổ thụ tượng trưng cho tổ tiên, nơi chở che & gìn giữ.\n→ Hình ảnh sung túc – thanh bình\nNgười dân sinh hoạt, trẻ em vui chơi → biểu trưng cho hạnh phúc – ấm êm – sung túc.\n→ Phát triển & hanh thông\nĐường sáng – rộng → dự báo tương lai rộng mở.\n→ Và quan trọng nhất: HÒA KHÍ\nHòa khí là nền tảng của phong thủy. Nhà có hòa khí → tự nhiên tài lộc đến.\n\n\n4. Hợp mệnh\n\n• Hợp mạnh: Mệnh Mộc – Thổ – Hỏa\n\n• Hợp tốt: Kim (do cân bằng năng lượng sinh khí)\n\n• Thủy: dùng được nếu treo hướng Đông – Đông Nam\n\n\n________________________________________\n💎 GIẢI NGHĨA CHUYÊN GIA PHONG THỦY\n1. Về năng lượng học – Tần số đá quý\n\n• Thạch anh: thanh lọc – tăng dương khí\n\n• Mã não: bình an – ổn định\n\n• Aventurine: chiêu tài – may mắn\n\n• Đá đen: trấn trạch – bảo hộ\n\n→ Bộ năng lượng này cực kỳ phù hợp với phong thủy nhà ở – văn phòng – homestay.\n\n\n2. Về phong thủy trấn trạch\nBố cục tranh thuộc dạng tam khí cát tường:\n\n• Tụ khí → cây cổ thụ\n\n• Dẫn khí → đường làng\n\n• Giữ khí → cổng làng\n\nĐây là một trong những bố cục phong thủy tốt nhất cho gia đình cần: Ổn định năng lượng, Thu hút tài lộc, Tăng sự hòa hợp trong nhà.\n\n\n3. Về ứng dụng trong không gian sống\n✔ Nên treo ở: Phòng khách, Phòng thờ, Phòng làm việc, Sảnh cơ quan, Nhà hàng – homestay phong cách truyền thống\n\n\n________________________________________\n🪶 HỒ SƠ SẢN PHẨM\n1. Product Description\nTranh đá quý phong cảnh tái hiện làng quê Việt Nam với cổng làng cổ, cây đại thụ và cuộc sống bình dị. Tác phẩm mang năng lượng vượng khí – bình an – hòa hợp, phù hợp trang trí nhà ở, văn phòng và làm quà tặng.\n2. Thành phần & cấu tạo\nThạch anh, mã não, serpentine, đá đen, đá màu tự nhiên; ghép đá thủ công nhiều lớp.\n3. Công dụng chính\n\n• Chiêu tài – giữ lộc\n\n• Bảo hộ gia đạo\n\n• Tăng hòa khí\n\n• Trang trí sang trọng\n4. USP – Điểm khác biệt\n\n• Đá thật, bền màu vĩnh viễn\n\n• Chi tiết tinh xảo\n\n• Trường khí mạnh nhờ bố cục phong thủy chuẩn\n\n• Bảo hành 5 năm – dễ dùng – hợp mọi không gian\n5. Recommended Users\n\n• Gia đình\n\n• Doanh nhân\n\n• Người lớn tuổi\n\n• Spa, homestay, café\n\n• Quà tặng tân gia – khai trương\n\n\n________________________________________\n💬 FAQ\n1. Tranh có bền không?\n→ Đá quý tự nhiên bền màu vĩnh viễn, không bay màu.\n2. Treo hướng nào tốt?\n→ Đông – Đông Nam – Trung cung.\n\n\n________________________________________\n🧭 HƯỚNG DẪN KIỂM TRA THẬT – GIẢ\n\n• Đá thật → nặng, mát\n\n• Bề mặt gồ nhẹ, không phẳng như tranh in\n\n• Ánh đá tự nhiên khi soi đèn\n\n• Màu sắc bền, không loang\n\n🏡 Nhà ấm thì vượng. Tranh làng quê giúp tăng hòa khí, giảm căng thẳng, mang lại cảm giác sum vầy. 👉 Chốt ngay để đón năng lượng mới.",
     "price": "4,900,000",
     "image": "/product/Làng quê Việt Nam 56 x76 cm.jpg",
     "category": "Tranh đá quý phong thủy",
+    "nameEn": "VIETNAMESE COUNTRYSIDE GEMSTONE PAINTING",
+    "descriptionEn": "Vietnamese Countryside Gemstone Painting (56 × 76 cm) – Village Gate & Ancient Tree. Symbol of Protection, Stability, Wealth Accumulation, and Flourishing Harmony (Nhân Hòa Vượng Khí).",
+    "categoryEn": "Feng Shui Gemstone Paintings",
     "benefits": [
         "Chiêu tài – Tụ lộc (vượng Thổ – Mộc).",
         "Ổn định gia đạo, tăng hòa khí, mang lại cảm giác sum vầy.",
         "Bảo hộ phong thủy (Tam Khí Cát Tường), xua năng lượng xấu.",
         "Kích hoạt may mắn, giúp công việc hanh thông."
     ],
+    "benefitsEn": [
+        "Attracts wealth – Accumulates prosperity (benefiting Earth – Wood elements).",
+        "Stabilizes family, increases harmony, brings a feeling of gathering/togetherness.",
+        "Feng Shui Protection (Three Auspicious Energies Composition), dispels negative energy.",
+        "Activates luck, promotes smooth career and business."
+    ],
     "specifications": {
         "material": "Đá quý tự nhiên (Thạch anh, Mã não, Aventurine, Đá đen, Đá màu tự nhiên)",
         "size": "56 × 76 cm",
         "weight": "500g",
         "origin": "Việt Nam, Brazil, Madagascar – chế tác thủ công 100%"
+    },
+    "specificationsEn": {
+        "material": "Natural gemstones (Quartz, Agate, Aventurine, Black Stone, natural colored stones)",
+        "size": "56 × 76 cm",
+        "weight": "500g",
+        "origin": "Vietnam, Brazil, Madagascar – 100% handcrafted"
     },
     "retailPrice": "5,400,000",
     "marketPrice": "4,900,000"
@@ -846,17 +1371,32 @@ export const allProducts: Product[] = [
     "price": "10,900,000",
     "image": "/product/Long phụng.jpg",
     "category": "Tranh đá quý phong thủy",
+    "nameEn": "DRAGON AND PHOENIX IN HARMONY GEMSTONE PAINTING (80 × 110 CM)",
+    "descriptionEn": "Natural Gemstone Painting – Dragon & Phoenix in Rising Sun Harmony. The supreme symbol of Power, Prosperity, Happiness, and Yin-Yang Balance. Crafted from Ruby, Tiger's Eye, and Quartz.",
+    "categoryEn": "Feng Shui Gemstone Paintings",
     "benefits": [
         "Chiêu tài – chiêu lộc – thu hút quý nhân.",
         "Cân bằng Âm – Dương, kích hoạt tình cảm và gia đạo an hòa.",
         "Tăng quyền lực sự nghiệp và hỗ trợ công danh.",
         "Trấn trạch, hóa giải sát khí, nâng tần số năng lượng không gian."
     ],
+    "benefitsEn": [
+        "Attracts wealth and blessings, draws in benefactors (Qúy Nhân).",
+        "Balances Yin-Yang (Âm-Dương), activates love and family harmony.",
+        "Increases career power and aids career advancement.",
+        "Provides house protection (Trấn Trạch), neutralizes evil chi (Sát Khí), elevates spatial energy frequency."
+    ],
     "specifications": {
         "material": "Đá quý tự nhiên (Ruby vụn, Thạch anh vàng–đen, Mắt hổ, Chalcedony, Fluorite) và mạ vàng chi tiết.",
         "size": "80 × 110 cm",
         "weight": "500g",
         "origin": "Việt Nam – chế tác thủ công 100%"
+    },
+    "specificationsEn": {
+        "material": "Natural gemstones (Ruby chips, Yellow/Black Quartz, Tiger's Eye, Chalcedony, Fluorite) and gilded details.",
+        "size": "80 × 110 cm",
+        "weight": "500g",
+        "origin": "Vietnam – 100% handcrafted"
     },
     "retailPrice": "11,900,000",
     "marketPrice": "10,900,000"
@@ -869,17 +1409,32 @@ export const allProducts: Product[] = [
     "price": "1,899,000",
     "image": "/product/Xông trầm ngọc hoàng long (3).jpg",
     "category": "Vật phẩm phong thủy",
+    "nameEn": "YELLOW ONYX INCENSE BURNER",
+    "descriptionEn": "Yellow Onyx Incense Burner – The “Imperial Wealth Chi” item, symbolizing Authority, Blessings, and Advancement. Activates the Wealth Vault (Tài Khố) using the fire energy of incense.",
+    "categoryEn": "Feng Shui Items",
     "benefits": [
         "Kích tài – hút lộc, kích hoạt cung Tài Lộc (Đông Nam).",
         "Tịnh hóa năng lượng, tạo dương khí, xua trọc khí, giữ bình an.",
         "Kích hoạt sự tự tin & quyết đoán, giúp người làm kinh doanh sáng suốt.",
         "Ổn định trường khí, giúp nhà luôn “ấm – đủ – thịnh”."
     ],
+    "benefitsEn": [
+        "Activates and attracts wealth/fortune, energizes the Wealth Sector (Southeast).",
+        "Purifies energy, creates positive Chi (Dương Khí), dispels stagnation, maintains peace.",
+        "Activates confidence and decisiveness, promotes clarity for business people.",
+        "Stabilizes the energy field, ensures the house remains “warm – complete – prosperous”."
+    ],
     "specifications": {
         "material": "Ngọc Hoàng Long Onyx tự nhiên 100%, Nắp hợp kim đồng khắc hoa văn cổ.",
         "size": "Đường kính: 11 cm, Cao: 8 cm",
         "weight": "500g",
         "origin": "Pakistan – Gia công tại Việt Nam"
+    },
+    "specificationsEn": {
+        "material": "100% natural Yellow Onyx Marble, antique copper alloy lid with carved patterns.",
+        "size": "Diameter: 11 cm, Height: 8 cm",
+        "weight": "500g",
+        "origin": "Pakistan – Processed in Vietnam"
     },
     "retailPrice": "2,399,000",
     "marketPrice": "1,899,000"
@@ -888,21 +1443,39 @@ export const allProducts: Product[] = [
     id: 39,
     "name": "XÔNG TRẦM NGỌC ONYX TRẮNG",
     "description": "White Onyx Incense Burner – Vật phẩm “Thạch Bạch Tịnh Tâm”, giữ sứ mệnh làm sạch, bảo vệ năng lượng và tăng cường bình an cho gia đạo.",
-    "fullDescription": "SẢN PHẨM: XÔNG TRẦM NGỌC ONYX TRẮNG\nTrong phong thủy cổ Á Đông, Onyx Trắng được gọi là “Thạch Bạch Tịnh Tâm” – loại đá giữ sứ mệnh làm sạch năng lượng và bảo vệ chủ nhân khỏi những ảnh hưởng vô hình từ môi trường.\nTương truyền, các thiền sư Tây Tạng dùng Onyx trắng để: Tịnh hóa không gian trước giờ thiền, Làm sạch trường năng lượng sau những ngày tiếp xúc nhiều người, Giữ tâm sáng – trí minh – khí an.\nNgày nay, khi cuộc sống quá nhiều áp lực và chấn động năng lượng, Onyx trắng trở thành lá chắn năng lượng mạnh, giúp giảm mệt mỏi, cải thiện giấc ngủ, và mang lại sự bình an bền vững cho gia đình.\n✨ Khi khói trầm đi qua lòng Onyx, trường khí sáng bừng lên, lan tỏa như “làn sương trắng” gột rửa mọi năng lượng tiêu cực. Khói bay lên – phiền lo hạ xuống. Không gian thanh tịnh – tâm cũng an yên.\nXông trầm Onyx trắng không chỉ là vật phẩm – đó là nghi thức phục hồi năng lượng. Nhà có trẻ nhỏ, người lớn tuổi, người ngủ không sâu → càng cần có.\n\n\n________________________________________\n🪷 THÔNG TIN SẢN PHẨM\n• Tên sản phẩm: Xông Trầm Ngọc Onyx Trắng\n\n• Tên tiếng Anh: White Onyx Incense Burner\n\n• Nguồn gốc đá: Pakistan – vùng khai thác Onyx tự nhiên chất lượng cao\n\n• Gia công & Hoàn thiện: Xưởng hợp tác Ann Gem & Fengshui tại Việt Nam\n\n• Thương hiệu phân phối: Ann Gem & Fengshui – Recharge Your Energy, Restore Your Balance\nKích thước:\n• Đường kính: 11 cm\n• Cao: 8 cm\nChất liệu:\n• Thân bát xông: 100% Ngọc Onyx trắng tự nhiên\n• Nắp: Hợp kim đồng khắc họa tiết Mandala – Ngũ hành\n• Hoàn thiện: Đánh bóng thủ công, tẩy tịnh năng lượng trước khi niêm phong\n\n\n________________________________________\n💰 GIÁ BÁN / PRICING\n\n| Hạng mục | Mức giá (VNĐ) | Ghi chú |\n| :--- | :--- | :--- |\n| Giá niêm yết (Retail List Price) | 2.699.000 (giá có giấy kiểm định riêng) code AGFS 078\\n2.299.000 (giá chưa có giấy kiểm định riêng) code AGFS 077 | Đã bao gồm 10% VAT, chưa bao gồm phí vận chuyển |\n| Giá bán (Market Price) | 2.299.000 (giá có giấy kiểm định riêng) code AGFS 078\\n1.799.000 (giá chưa có giấy kiểm định riêng) code AGFS 077 | Chưa bao gồm VAT & phí vận chuyển |\n\n\n________________________________________\n🌈 Ý NGHĨA PHONG THỦY\nĐặc tính đá – Ngọc Onyx Trắng\n\n| Đặc tính | Phân tích phong thủy |\n| :--- | :--- |\n| Năng lượng sạch – tinh khiết | Onyx trắng có khả năng thanh lọc năng lượng âm mạnh nhất trong nhóm Onyx |\n| Ổn định khí trường | Giữ cân bằng cảm xúc, giảm lo âu, mang lại trạng thái “tâm an – khí hòa” |\n| Hút trọc khí – xua tà khí | Đặc biệt hiệu quả tại phòng khách, phòng ngủ, phòng thiền |\n| Tăng cường dương khí khi kết hợp trầm hương | Kích hoạt trường khí sáng, giúp gia đạo bình an – công việc hanh thông |\n\nCông dụng:\n\n• Thanh tịnh không gian sống\n\n• Giảm stress – hỗ trợ ngủ ngon\n\n• Xua tan khí xấu – tà khí – năng lượng nặng\n\n• Gia tăng sự tập trung – clarity – tĩnh tâm\n\n• Làm sạch năng lượng người và vật phẩm\nÝ nghĩa biểu tượng:\nOnyx trắng = Sự tinh khiết – Bình an – Sáng trí – Khai mở vận khí mới\nHợp mệnh:\n\n• Rất hợp: Mệnh Kim – Thủy – Thổ\n\n• Hợp toàn mệnh khi dùng để thanh tẩy không gian\n\n\n________________________________________\n💎 GIẢI NGHĨA CHUYÊN GIA PHONG THỦY\n1. Về năng lượng học\nNgọc Onyx trắng mang tần số thanh tịnh giúp: Hấp thu năng lượng âm – khí trọc, Cân bằng từ trường không gian, Làm sạch năng lượng sau khi có khách lạ, mâu thuẫn, áp lực. Đặc biệt khi khói trầm đi qua lòng thạch anh, năng lượng tăng mạnh gấp 5–7 lần so với lư xông thường.\n2. Về phong thủy trấn trạch\nĐây là vật phẩm trấn an – thanh tẩy – chiêu phúc cực mạnh: Đặt phòng khách → hoá giải khí xấu, tăng khí dương; Đặt phòng ngủ → ngủ sâu – giảm ác mộng – loại bỏ cảm giác bất an; Đặt phòng làm việc → mở trí – thông tuệ – công việc thuận lợi.\n3. Ứng dụng trong không gian sống\n• Phòng khách – giữ bình an cho gia đạo\n• Phòng thiền – yoga – reiki\n• Spa – trung tâm trị liệu năng lượng\n• Văn phòng – cửa hàng – showroom\n\n\n________________________________________\n🪶 HỒ SƠ PHONG THỦY SẢN PHẨM\n1. Mô tả sản phẩm\nBát xông trầm bằng Onyx trắng tự nhiên, vân đá mềm, trong mờ, mang năng lượng sạch. Nắp đồng Mandala giúp lan tỏa khói trầm đẹp và đều, tạo hiệu ứng tịnh tâm – khai sáng.\n2. Thành phần & Đặc trưng cấu tạo\n• Ngọc Onyx trắng tự nhiên 100%\n• Nắp hợp kim đồng khắc họa tiết Mandala – Ngũ hành\n• Hoàn thiện thủ công – vân đá độc bản\n3. Công dụng chính\n• Tịnh hóa không gian\n• Giảm stress – thư giãn sâu\n• Bảo hộ năng lượng cá nhân\n• Chiêu tài – chiêu phúc\n• Làm sạch vật phẩm phong thủy\n4. USP – Điểm khác biệt\n• Đá thật 100% – vân trong – ánh sữa\n• Năng lượng mạnh gấp 3–5 lần lư xông gốm\n• Nắp Mandala đồng cao cấp – tỏa khói đẹp\n• Sản phẩm thủ công độc bản – mỗi chiếc 1 vân đá khác nhau\n• Kèm chứng thư năng lượng Ann Gem & Fengshui\n5. Đối tượng sử dụng\n• Người ở nhà phố – chung cư – khách nhiều\n• Dân văn phòng – làm việc áp lực\n• Người hay mất ngủ – suy nghĩ nhiều\n• Spa – thiền – phòng trị liệu\n• Ai cần thanh lọc năng lượng cá nhân và ngôi nhà\n\n\n________________________________________\n💬 FAQ – CÂU HỎI THƯỜNG GẶP\nQ1. Dùng bao lâu thì hết năng lượng?\n→ Onyx trắng năng lượng bền, chỉ cần tẩy tịnh 3–6 tháng.\nQ2. Dùng trầm gì là tốt nhất?\n→ Trầm miếng, trầm khoanh, nụ trầm thiên nhiên.\nQ3. Có phù hợp người yếu bóng vía không?\n→ Rất hợp. Ngọc trắng có tác dụng “trấn – tịnh – an”.\nQ4. Đá thật hay nhân tạo?\n→ Đá thật 100%, kiểm tra qua vân – độ mát – trọng lượng – tem năng lượng.\n\n\n________________________________________\n🧭 HƯỚNG DẪN KIỂM TRA THẬT – GIẢ\n\n| Bước | Kiểm tra | Đá thật | Đá giả / đá ép |\n| :--- | :--- | :--- | :--- |\n| 1️⃣ | Soi vân đá | Vân loang – đục nhẹ – tự nhiên | Vân phẳng – đều màu |\n| 2️⃣ | Cầm tay | Mát lâu | Ấm nhanh |\n| 3️⃣ | Gõ nhẹ | Âm thanh vang trong | Âm đục |\n| 4️⃣ | Quan sát nắp đồng | Khắc sâu – rõ nét | Hoạ tiết nông, không sắc |\n| 5️⃣ | Tem năng lượng | Có chứng nhận năng lượng | Không có |\n\n✨ Nhà có người lớn tuổi, trẻ nhỏ, người hay mất ngủ → phải có 1 chiếc Xông Trầm Onyx Trắng! Ngọc Onyx Trắng thuộc nhóm đá thanh tịnh mạnh nhất, có khả năng: ✔️ Hút trọc khí – xua tà – lọc sạch năng lượng trong vài phút ✔️ An thần – giúp ngủ sâu – giảm lo âu ✔️ Giữ bình an cho gia đạo, đặc biệt nhà chung cư hoặc nhà phố mặt tiền ✔️ Kết hợp khói trầm → tạo “trường khí sáng” cực mạnh, nâng tần số toàn bộ căn nhà. Không chỉ là bát xông, đây là vật phẩm phong thủy trấn gia – bảo hộ năng lượng, dùng càng lâu càng linh ứng. 💎 Xông trầm Onyx trắng – nhã, sang, an tịnh. 💎 Đá thật 100% – nắp đồng Mandala sang trọng. 💎 Đặt phòng khách – phòng ngủ – bàn làm việc đều tốt. ⚡ Số lượng đá đẹp cực hiếm, không phải lúc nào cũng có. Ai cần an yên – thanh tịnh – trấn khí cho gia đình thì “chốt ngay” một chiếc!",
+    "fullDescription": "SẢN PHẨM: XÔNG TRẦM NGỌC ONYX TRẮNG\nTrong phong thủy cổ Á Đông, Onyx Trắng được gọi là “Thạch Bạch Tịnh Tâm” – loại đá giữ sứ mệnh làm sạch năng lượng và bảo vệ chủ nhân khỏi những ảnh hưởng vô hình từ môi trường.\nTương truyền, các thiền sư Tây Tạng dùng Onyx trắng để: Tịnh hóa không gian trước giờ thiền, Làm sạch trường năng lượng sau những ngày tiếp xúc nhiều người, Giữ tâm sáng – trí minh – khí an.\nNgày nay, khi cuộc sống quá nhiều áp lực và chấn động năng lượng, Onyx trắng trở thành lá chắn năng lượng mạnh, giúp giảm mệt mỏi, cải thiện giấc ngủ, và mang lại sự bình an bền vững cho gia đình.\n✨ Khi khói trầm đi qua lòng Onyx, trường khí sáng bừng lên, lan tỏa như “làn sương trắng” gột rửa mọi năng lượng tiêu cực. Khói bay lên – phiền lo hạ xuống. Không gian thanh tịnh – tâm cũng an yên.\nXông trầm Onyx trắng không chỉ là vật phẩm – đó là nghi thức phục hồi năng lượng. Nhà có trẻ nhỏ, người lớn tuổi, người ngủ không sâu → càng cần có.\n\n\n________________________________________\n🪷 THÔNG TIN SẢN PHẨM\n• Tên sản phẩm: Xông Trầm Ngọc Onyx Trắng\n\n• Tên tiếng Anh: White Onyx Incense Burner\n\n• Nguồn gốc đá: Pakistan – vùng khai thác Onyx tự nhiên chất lượng cao\n\n• Gia công & Hoàn thiện: Xưởng hợp tác Ann Gem & Fengshui tại Việt Nam\n\n• Thương hiệu phân phối: Ann Gem & Fengshui – Recharge Your Energy, Restore Your Balance\nKích thước:\n• Đường kính: 11 cm\n• Cao: 8 cm\nChất liệu:\n• Thân bát xông: 100% Ngọc Onyx trắng tự nhiên\n• Nắp: Hợp kim đồng khắc họa tiết Mandala – Ngũ hành\n• Hoàn thiện: Đánh bóng thủ công, tẩy tịnh năng lượng trước khi niêm phong\n\n\n________________________________________\n💰 GIÁ BÁN / PRICING\n\n| Hạng mục | Mức giá (VNĐ) | Ghi chú |\n| :--- | :--- | :--- |\n| Giá niêm yết (Retail List Price) | 2.699.000 (giá có giấy kiểm định riêng) code AGFS 078\\n2.299.000 (giá chưa có giấy kiểm định riêng) code AGFS 077 | Đã bao gồm 10% VAT, chưa bao gồm phí vận chuyển |\n| Giá bán (Market Price) | 2.299.000 (giá có giấy kiểm định riêng) code AGFS 078\\n1.799.000 (giá chưa có giấy kiểm định riêng) code AGFS 077 | Chưa bao gồm VAT & phí vận chuyển |\n\n\n________________________________________\n🌈 Ý NGHĨA PHONG THỦY\nĐặc tính đá – Ngọc Onyx Trắng\n\n| Đặc tính | Phân tích phong thủy |\n| :--- | :--- |\n| Năng lượng sạch – tinh khiết | Onyx trắng có khả năng thanh lọc năng lượng âm mạnh nhất trong nhóm Onyx |\n| Ổn định khí trường | Giữ cân bằng cảm xúc, giảm lo âu, mang lại trạng thái “tâm an – khí hòa” |\n| Hút trọc khí – xua tà khí | Đặc biệt hiệu quả tại phòng khách, phòng ngủ, phòng thiền |\n| Tăng cường dương khí khi kết hợp trầm hương | Kích hoạt trường khí sáng, giúp gia đạo bình an – công việc hanh thông |\n\nCông dụng:\n\n• Thanh tịnh không gian sống\n\n• Giảm stress – hỗ trợ ngủ ngon\n\n• Xua tan khí xấu – tà khí – năng lượng nặng\n\n• Gia tăng sự tập trung – clarity – tĩnh tâm\n\n• Làm sạch năng lượng người và vật phẩm\nÝ nghĩa biểu tượng:\nOnyx trắng = Sự tinh khiết – Bình an – Sáng trí – Khai mở vận khí mới\nHợp mệnh:\n\n• Rất hợp: Mệnh Kim – Thủy – Thổ\n\n• Hợp toàn mệnh khi dùng để thanh tẩy không gian\n\n\n________________________________________\n💎 GIẢI NGHĨA CHUYÊN GIA PHONG THỦY\n1. Về năng lượng học\nNgọc Onyx trắng mang tần số thanh tịnh giúp: Hấp thu năng lượng âm – khí trọc, Cân bằng từ trường không gian, Làm sạch năng lượng sau khi có khách lạ, mâu thuẫn, áp lực. Đặc biệt khi khói trầm đi qua lòng thạch anh, năng lượng tăng mạnh gấp 5–7 lần so với lư xông thường.\n2. Về phong thủy trấn trạch\nĐây là vật phẩm trấn an – thanh tẩy – chiêu phúc cực mạnh: Đặt phòng khách → hoá giải khí xấu, tăng khí dương; Đặt phòng ngủ → ngủ sâu – giảm ác mộng – loại bỏ cảm giác bất an; Đặt phòng làm việc → mở trí – thông tuệ – công việc thuận lợi.\n3. Ứng dụng trong không gian sống\n• Phòng khách – giữ bình an cho gia đạo\n• Phòng thiền – yoga – reiki\n• Spa – trung tâm trị liệu năng lượng\n• Văn phòng – cửa hàng – showroom\n\n\n________________________________________\n🪶 HỒ SƠ PHONG THỦY SẢN PHẨM\n1. Mô tả sản phẩm\nBát xông trầm bằng Onyx trắng tự nhiên, vân đá mềm, trong mờ, mang năng lượng sạch. Nắp đồng Mandala giúp lan tỏa khói trầm đều và đẹp.\n2. Thành phần & Đặc trưng cấu tạo\n• Ngọc Onyx trắng tự nhiên 100%\n• Nắp hợp kim đồng khắc họa tiết Mandala – Ngũ hành\n• Hoàn thiện thủ công – vân đá độc bản\n3. Công dụng chính\n• Tịnh hóa không gian\n• Giảm stress – thư giãn sâu\n• Bảo hộ năng lượng cá nhân\n• Chiêu tài – chiêu phúc\n• Làm sạch vật phẩm phong thủy\n4. USP – Điểm khác biệt\n• Đá thật 100% – vân trong – ánh sữa\n• Năng lượng mạnh gấp 3–5 lần lư xông gốm\n• Nắp Mandala đồng cao cấp – tỏa khói đẹp\n• Sản phẩm thủ công độc bản – mỗi chiếc 1 vân đá khác nhau\n• Kèm chứng thư năng lượng Ann Gem & Fengshui\n5. Đối tượng sử dụng\n• Người ở nhà phố – chung cư – khách nhiều\n• Dân văn phòng – làm việc áp lực\n• Người hay mất ngủ – suy nghĩ nhiều\n• Spa – thiền – phòng trị liệu\n• Ai cần thanh lọc năng lượng cá nhân và ngôi nhà\n\n\n________________________________________\n💬 FAQ – CÂU HỎI THƯỜNG GẶP\nQ1. Dùng bao lâu thì hết năng lượng?\n→ Onyx trắng năng lượng bền, chỉ cần tẩy tịnh 3–6 tháng.\nQ2. Dùng trầm gì là tốt nhất?\n→ Trầm miếng, trầm khoanh, nụ trầm thiên nhiên.\nQ3. Có phù hợp người yếu bóng vía không?\n→ Rất hợp. Ngọc trắng có tác dụng “trấn – tịnh – an”.\nQ4. Đá thật hay nhân tạo?\n→ Đá thật 100%, kiểm tra qua vân – độ mát – trọng lượng – tem năng lượng.\n\n\n________________________________________\n🧭 HƯỚNG DẪN KIỂM TRA THẬT – GIẢ\n\n| Bước | Kiểm tra | Đá thật | Đá giả / đá ép |\n| :--- | :--- | :--- | :--- |\
+| 1️⃣ | Soi vân đá | Vân loang – đục nhẹ – tự nhiên | Vân phẳng – đều màu |\
+| 2️⃣ | Cầm tay | Mát lâu | Ấm nhanh |\
+| 3️⃣ | Gõ nhẹ | Âm thanh vang trong | Âm đục |\n| 4️⃣ | Quan sát nắp đồng | Khắc sâu – rõ nét | Hoạ tiết nông, không sắc |\n| 5️⃣ | Tem năng lượng | Có chứng nhận năng lượng | Không có |\n\n✨ Nhà có người lớn tuổi, trẻ nhỏ, người hay mất ngủ → phải có 1 chiếc Xông Trầm Onyx Trắng! Ngọc Onyx Trắng thuộc nhóm đá thanh tịnh mạnh nhất, có khả năng: ✔️ Hút trọc khí – xua tà – lọc sạch năng lượng trong vài phút ✔️ An thần – giúp ngủ sâu – giảm lo âu ✔️ Giữ bình an cho gia đạo, đặc biệt nhà chung cư hoặc nhà phố mặt tiền ✔️ Kết hợp khói trầm → tạo “trường khí sáng” cực mạnh, nâng tần số toàn bộ căn nhà. Không chỉ là bát xông, đây là vật phẩm phong thủy trấn gia – bảo hộ năng lượng, dùng càng lâu càng linh ứng. 💎 Xông trầm Onyx trắng – nhã, sang, an tịnh. 💎 Đá thật 100% – nắp đồng Mandala sang trọng. 💎 Đặt phòng khách – phòng ngủ – bàn làm việc đều tốt. ⚡ Số lượng đá đẹp cực hiếm, không phải lúc nào cũng có. Ai cần an yên – thanh tịnh – trấn khí cho gia đình thì “chốt ngay” một chiếc!",
     "price": "1,799,000",
     "image": "/product/Xông trầm ngọc onyx trắng (1).jpg",
     "category": "Vật phẩm phong thủy",
+    "nameEn": "WHITE ONYX INCENSE BURNER",
+    "descriptionEn": "White Onyx Incense Burner – The “Pure Mind White Stone” item, dedicated to purifying, protecting energy, and enhancing peace for the household.",
+    "categoryEn": "Feng Shui Items",
     "benefits": [
         "Thanh tịnh không gian sống, hút trọc khí – xua tà khí.",
         "Giảm stress – hỗ trợ ngủ ngon, loại bỏ cảm giác bất an.",
         "Gia tăng sự tập trung – tĩnh tâm, mở trí – thông tuệ.",
         "Cân bằng khí trường, giúp gia đạo bình an, công việc hanh thông."
     ],
+    "benefitsEn": [
+        "Purifies living space, absorbs stagnant/negative chi – repels evil chi.",
+        "Reduces stress – aids deep sleep, eliminates feelings of unease.",
+        "Increases focus – calmness, opens the mind – promotes wisdom.",
+        "Balances the energy field, promotes family peace, and smooth career progression."
+    ],
     "specifications": {
         "material": "Ngọc Onyx trắng tự nhiên 100%, Nắp hợp kim đồng khắc họa tiết Mandala.",
         "size": "Đường kính: 11 cm, Cao: 8 cm",
         "weight": "500g",
         "origin": "Pakistan – Gia công tại Việt Nam"
+    },
+    "specificationsEn": {
+        "material": "100% natural White Onyx Marble, copper alloy lid with Mandala carving.",
+        "size": "Diameter: 11 cm, Height: 8 cm",
+        "weight": "500g",
+        "origin": "Pakistan – Processed in Vietnam"
     },
     "retailPrice": "2,299,000",
     "marketPrice": "1,799,000"
@@ -911,21 +1484,36 @@ export const allProducts: Product[] = [
     id: 40,
     "name": "XÔNG TRẦM NGỌC ONYX XANH (11 × 8 CM)",
     "description": "Green Onyx Incense Burner – Vật phẩm “Thanh Tâm – Trấn Trạch – Chiêu Phúc”. Hút khí xấu, điều hòa khí trường và kích hoạt dương khí bằng trầm hương.",
-    "fullDescription": "XÔNG TRẦM NGỌC ONYX XANH – 11 × 8 CM\n“Có những ngôi nhà sáng sủa nhưng vận khí lại nặng, người sống trong đó dễ mệt mỏi – mất ngủ – bất an. Lý do không phải do hướng nhà… mà do khí trọc bám lại qua thời gian.”\nTrong phong thủy Á Đông, từ thời nhà Đường, người ta dùng 2 vật phẩm thanh lọc năng lượng mạnh nhất: Ngọc xanh để hút khí xấu, Trầm hương để tịnh hóa – mở lối khí lành. Cổ thư gọi sự kết hợp này là: “Thanh Tâm – Trấn Trạch – Chiêu Phúc”\nNgọc Onyx xanh mang tần số mát, năng lượng nhẹ nhưng hút cực mạnh các dạng khí nặng: Uế khí & khí trì trệ, Năng lượng xấu từ người lạ, Khí ẩm – khí lạnh – khí âm, Năng lượng tiêu cực lâu ngày tích tụ.\nKhi đặt Onyx gần trầm đang cháy, khói trầm đi qua lòng bát đá, mang theo năng lượng thanh sạch lan tỏa khắp phòng. Giống như thổi gió mới vào nhà, mở cánh cửa vận may.\nNhiều gia đình dùng đã phản hồi rằng: Nhà sáng hơn – dễ ngủ hơn – trẻ con ít quấy khóc, Người lớn bớt cáu gắt – bớt áp lực – nói chuyện thuận hòa, Cảm giác an yên và nhẹ nhàng hơn mỗi tối.\nKhông chỉ là một chiếc bát xông trầm, đây là “bộ lọc năng lượng” cho ngôi nhà. Nơi có trầm – có đá – có ánh sáng, là nơi khí lành trú ngụ. Và nơi khí lành tụ, tài lộc – bình an – hạnh phúc sẽ tự tìm đến.\n\n\n________________________________________\n🪷 THÔNG TIN SẢN PHẨM\n\n• Tên sản phẩm: Xông Trầm Ngọc Onyx Xanh\n\n• Tên tiếng Anh: Green Onyx Incense Burner\n\n• Nguồn gốc đá: Ngọc Onyx tự nhiên – Pakistan & Afghanistan\n\n• Gia công & hoàn thiện: Xưởng hợp tác Ann Gem & Fengshui tại Việt Nam\n\n• Thương hiệu phân phối: Ann Gem & Fengshui – Recharge Your Energy, Restore Your Balance\nKích thước: 11 × 8 cm\nChất liệu:\n\n• Thân bát: Ngọc Onyx xanh tự nhiên 100%\n\n• Nắp: Hợp kim đồng chạm hoa văn thủ công\n\n• Đế: Đá nguyên khối\n\n\n________________________________________\n💰 GIÁ BÁN / PRICING\n\n| Hạng mục | Mức giá (VNĐ) | Ghi chú |\n| :--- | :--- | :--- |\n| Giá niêm yết (Retail List Price) | 2.699.000 (giá có giấy kiểm định riêng) code AGFS 074\\n2.299.000 (giá chưa có giấy kiểm định riêng) code AGFS 073 | Đã bao gồm 10% VAT, chưa bao gồm phí vận chuyển |\n| Giá bán (Market Price) | 2.299.000 (giá có giấy kiểm định riêng) code AGFS 074\\n1.799.000 (giá chưa có giấy kiểm định riêng) code AGFS 073 | Chưa bao gồm VAT & phí vận chuyển |\n\n\n________________________________________\n🌈 Ý NGHĨA PHONG THỦY\n\n| Đặc tính | Phân tích phong thủy |\n| :--- | :--- |\n| Ngọc Onyx xanh | Mang năng lượng mát, giúp trấn an – cân bằng – điều hòa khí. Là loại đá hấp thụ năng lượng xấu cực mạnh. |\n| Hình bát – dạng tròn | Hình tròn tượng trưng cho viên mãn, đầy đủ, tụ khí – giữ khí. |\n| Xông trầm | Kích hoạt dương khí, thanh lọc không gian, giải uế – trừ tà – tăng may mắn. |\n\nCông dụng phong thủy:\n\n• Thanh lọc năng lượng không gian\n\n• Xua tan khí xấu, tà khí, âm khí\n\n• Giúp tinh thần an tĩnh – dễ thiền – dễ ngủ\n\n• Hút năng lượng tiêu cực từ người vào nhà\n\n• Kích hoạt dương khí – tăng tài lộc\nÝ nghĩa biểu tượng:\n“Onyx là đá hộ thân, trầm là hương tẩy uế – kết hợp lại thành vật phẩm thanh lọc mạnh bậc nhất.”\nHợp mệnh:\n\n• Hợp mạnh cho mệnh: Mộc – Thủy – Hỏa\n\n• Hợp tất cả các mệnh nếu dùng với trầm tự nhiên\n\n\n________________________________________\n💎 GIẢI NGHĨA CHUYÊN GIA PHONG THỦY\n1. Về năng lượng học\nNgọc Onyx xanh có khả năng: Hút năng lượng tiêu cực trong nhà, Hấp thu khí trọc từ môi trường hoặc con người, Điều hòa trường khí – tạo cảm giác dịu nhẹ, Giúp đầu óc minh mẫn – giảm căng thẳng.\nKhi kết hợp với khói trầm, năng lượng tăng lên gấp 3–5 lần, bởi: Trầm = dương khí mạnh, Onyx = đá hút khí xấu → Tạo thành một “trạm thanh lọc năng lượng” trong không gian.\n2. Về phong thủy trấn trạch\nĐặt xông trầm Onyx tại: Cửa chính → lọc năng lượng người ra vào, Phòng khách → tăng vượng khí – thu hút quý nhân, Phòng ngủ → giúp ngủ sâu, tịnh tâm, Phòng làm việc → tăng tập trung – thông minh – sáng suốt. Đặc biệt hữu hiệu cho người làm nghề năng lượng: spa – tarot – healing – kinh doanh dịch vụ.\n\n\n________________________________________\n🪶 HỒ SƠ PHONG THỦY SẢN PHẨM\n1. Mô tả sản phẩm\nXông Trầm Ngọc Onyx Xanh mang dáng bát tròn cổ điển, chất đá Onyx xanh mát với vân ngọc trong mờ đẹp tự nhiên. Nắp hợp kim đồng chạm hoa văn phong thủy Á Đông giúp tỏa khói trầm đều và đẹp.\n2. Thành phần & Đặc trưng cấu tạo\n\n• 100% đá Onyx xanh tự nhiên\n\n• Nắp đồng hoa văn Mandala – tỏa khói đẹp\n\n• Chế tác thủ công – từng sản phẩm độc bản\n\n• Dạng bát tròn – tụ khí – giữ khí\n3. Công dụng chính / Key Functions\n\n• Thanh lọc không gian – trừ uế\n\n• Hỗ trợ thiền – ngủ sâu\n\n• Hóa giải khí xấu – tụ vượng khí\n\n• Tăng may mắn – thu hút tài lộc\n4. USP – Điểm khác biệt\n\n• Đá Onyx xanh thật – không pha\n\n• Năng lượng mát – nhẹ – ổn định\n\n• Vân ngọc đẹp – mỗi chiếc một khác\n\n• Nắp đồng tỏa khói rất đẹp – sang trọng\n\n• Phù hợp decor – phong thủy – nghi thức tâm linh\n5. Đối tượng sử dụng\n\n• Người làm văn phòng\n\n• Người thiền – yoga – healing\n\n• Gia đình cần tăng hòa khí\n\n• Spa – salon – studio – cửa hàng\n\n• Người buôn bán cần thanh lọc năng lượng thường xuyên\n\n\n________________________________________\n💬 FAQ – CÂU HỎI THƯỜNG GẶP\nQ1. Xông trầm bằng Onyx có khác gì với gốm không?\n→ Khác hoàn toàn. Onyx hút khí xấu trong khi gốm chỉ giữ nhiệt.\nQ2. Có dùng được trầm miếng?\n→ Có, nhưng cần thêm đế gốm chịu nhiệt.\nQ3. Dùng hằng ngày có tốt không?\n→ Rất tốt. Nhà sạch khí thì gia chủ sáng vận.\nQ4. Dùng trong phòng ngủ được không?\n→ Có – đặc biệt hữu ích cho người khó ngủ, stress.\n\n\n________________________________________\n🧭 HƯỚNG DẪN KIỂM TRA THẬT – GIẢ\n\n| Kiểm tra | Đá Onyx xanh thật | Giả / bột ép / nhuộm |\n| :--- | :--- | :--- |\n| Vân đá | Vân mờ – loang – không đều | Vân thẳng – đều – nhân tạo |\n| Màu | Xanh ngọc nhạt – tự nhiên | Xanh neon – đậm bất thường |\n| Sờ | Mát tay lâu | Nóng nhanh |\n| Gõ | Âm vang trong | Âm đục |\n| Khối lượng | Nặng chắc | Nhẹ hơn đáng kể |\n\n✨ Nhà sạch khí – Vận sáng lộc ✨ Xông Trầm Ngọc Onyx Xanh – Tinh Hoa Thanh Tịnh Cho Không Gian Sống. Ngọc Onyx xanh hút trọc khí – xua tà – giữ bình an, kết hợp cùng trầm hương kích hoạt dương khí – gọi may mắn – chiêu tài lộc. Một chiếc bát xông trầm nhỏ nhưng năng lượng mạnh gấp 3–5 lần vật phẩm thông thường. 🌿 Giảm stress – lọc năng lượng – ngủ ngon sâu 🌿 Tịnh hóa không gian, tăng sinh khí, giúp gia đạo an hòa 🌿 Hút năng lượng xấu từ người lạ, khách vào nhà 🌿 Kích tài – thông tuệ – hanh thông công việc. 💚 Anh/Chị chỉ cần đặt 1 chiếc tại phòng khách – bàn làm việc – phòng ngủ, năng lượng thay đổi rõ rệt chỉ sau 5–7 phút xông. 🔥 Hàng đá thật – vân độc bản – khí mát ổn định. 🔥 Nắp đồng Mandala tỏa khói siêu đẹp – phong thủy chuẩn Á Đông. 🔥 Tem chứng nhận năng lượng Ann Gem & Fenghui. 👉 “Một chiếc bát – thanh lọc cả ngôi nhà.” Số lượng rất ít do Onyx xanh đẹp và đều vân cực kỳ hiếm.",
+    "fullDescription": "XÔNG TRẦM NGỌC ONYX XANH – 11 × 8 CM\n“Có những ngôi nhà sáng sủa nhưng vận khí lại nặng, người sống trong đó dễ mệt mỏi – mất ngủ – bất an. Lý do không phải do hướng nhà… mà do khí trọc bám lại qua thời gian.”\nTrong phong thủy Á Đông, từ thời nhà Đường, người ta dùng 2 vật phẩm thanh lọc năng lượng mạnh nhất: Ngọc xanh để hút khí xấu, Trầm hương để tịnh hóa – mở lối khí lành. Cổ thư gọi sự kết hợp này là: “Thanh Tâm – Trấn Trạch – Chiêu Phúc”\nNgọc Onyx xanh mang tần số mát, năng lượng nhẹ nhưng hút cực mạnh các dạng khí nặng: Uế khí & khí trì trệ, Năng lượng xấu từ người lạ, Khí ẩm – khí lạnh – khí âm, Năng lượng tiêu cực lâu ngày tích tụ.\nKhi đặt Onyx gần trầm đang cháy, khói trầm đi qua lòng bát đá, mang theo năng lượng thanh sạch lan tỏa khắp phòng. Giống như thổi gió mới vào nhà, mở cánh cửa vận may.\nNhiều gia đình dùng đã phản hồi rằng: Nhà sáng hơn – dễ ngủ hơn – trẻ con ít quấy khóc, Người lớn bớt cáu gắt – bớt áp lực – nói chuyện thuận hòa, Cảm giác an yên và nhẹ nhàng hơn mỗi tối.\nKhông chỉ là một chiếc bát xông trầm, đây là “bộ lọc năng lượng” cho ngôi nhà. Nơi có trầm – có đá – có ánh sáng, là nơi khí lành trú ngụ. Và nơi khí lành tụ, tài lộc – bình an – hạnh phúc sẽ tự tìm đến.\n\n\n________________________________________\n🪷 THÔNG TIN SẢN PHẨM\n\n• Tên sản phẩm: Xông Trầm Ngọc Onyx Xanh\n\n• Tên tiếng Anh: Green Onyx Incense Burner\n\n• Nguồn gốc đá: Ngọc Onyx tự nhiên – Pakistan & Afghanistan\n\n• Gia công & hoàn thiện: Xưởng hợp tác Ann Gem & Fengshui tại Việt Nam\n\n• Thương hiệu phân phối: Ann Gem & Fengshui – Recharge Your Energy, Restore Your Balance\nKích thước: 11 × 8 cm\nChất liệu:\n\n• Thân bát: Ngọc Onyx xanh tự nhiên 100%\n\n• Nắp: Hợp kim đồng chạm hoa văn thủ công\n\n• Đế: Đá nguyên khối\n\n\n________________________________________\n💰 GIÁ BÁN / PRICING\n\n| Hạng mục | Mức giá (VNĐ) | Ghi chú |\n| :--- | :--- | :--- |\n| Giá niêm yết (Retail List Price) | 2.699.000 (giá có giấy kiểm định riêng) code AGFS 074\\n2.299.000 (giá chưa có giấy kiểm định riêng) code AGFS 073 | Đã bao gồm VAT 10%, chưa bao gồm phí vận chuyển |\n| Giá bán (Market Price) | 2.299.000 (giá có giấy kiểm định riêng) code AGFS 074\\n1.799.000 (giá chưa có giấy kiểm định riêng) code AGFS 073 | Chưa bao gồm VAT & phí vận chuyển |\n\n\n________________________________________\n🌈 Ý NGHĨA PHONG THỦY\n\n| Đặc tính | Phân tích phong thủy |\n| :--- | :--- |\n| Ngọc Onyx xanh | Mang năng lượng mát, giúp trấn an – cân bằng – điều hòa khí. Là loại đá hấp thụ năng lượng xấu cực mạnh. |\n| Hình bát – dạng tròn | Hình tròn tượng trưng cho viên mãn, đầy đủ, tụ khí – giữ khí. |\n| Xông trầm | Kích hoạt dương khí, thanh lọc không gian, giải uế – trừ tà – tăng may mắn. |\n\nCông dụng phong thủy:\n\n• Thanh lọc năng lượng không gian\n\n• Xua tan khí xấu, tà khí, âm khí\n\n• Giúp tinh thần an tĩnh – dễ thiền – dễ ngủ\n\n• Hút năng lượng tiêu cực từ người vào nhà\n\n• Kích hoạt dương khí – tăng tài lộc\nÝ nghĩa biểu tượng:\n“Onyx là đá hộ thân, trầm là hương tẩy uế – kết hợp lại thành vật phẩm thanh lọc mạnh bậc nhất.”\nHợp mệnh:\n\n• Hợp mạnh cho mệnh: Mộc – Thủy – Hỏa\n\n• Hợp tất cả các mệnh nếu dùng với trầm tự nhiên\n\n\n________________________________________\n💎 GIẢI NGHĨA CHUYÊN GIA PHONG THỦY\n1. Về năng lượng học\nNgọc Onyx xanh có khả năng: Hút năng lượng tiêu cực trong nhà, Hấp thu khí trọc từ môi trường hoặc con người, Điều hòa trường khí – tạo cảm giác dịu nhẹ, Giúp đầu óc minh mẫn – giảm căng thẳng.\nKhi kết hợp với khói trầm, năng lượng tăng lên gấp 3–5 lần, bởi: Trầm = dương khí mạnh, Onyx = đá hút khí xấu → Tạo thành một “trạm thanh lọc năng lượng” trong không gian.\n2. Về phong thủy trấn trạch\nĐặt xông trầm Onyx tại: Cửa chính → lọc năng lượng người ra vào, Phòng khách → tăng vượng khí – thu hút quý nhân, Phòng ngủ → giúp ngủ sâu, tịnh tâm, Phòng làm việc → tăng tập trung – thông minh – sáng suốt. Đặc biệt hữu hiệu cho người làm nghề năng lượng: spa – tarot – healing – kinh doanh dịch vụ.\n\n\n________________________________________\n🪶 HỒ SƠ PHONG THỦY SẢN PHẨM\n1. Mô tả sản phẩm\nXông Trầm Ngọc Onyx Xanh mang dáng bát tròn cổ điển, chất đá Onyx xanh mát với vân ngọc trong mờ đẹp tự nhiên. Nắp hợp kim đồng chạm hoa văn phong thủy Á Đông giúp tỏa khói trầm đều và đẹp.\n2. Thành phần & Đặc trưng cấu tạo\n\n• 100% đá Onyx xanh tự nhiên\n\n• Nắp đồng hoa văn Mandala – tỏa khói đẹp\n\n• Chế tác thủ công – từng sản phẩm độc bản\n\n• Dạng bát tròn – tụ khí – giữ khí\n3. Công dụng chính / Key Functions\n\n• Thanh lọc không gian – trừ uế\n\n• Hỗ trợ thiền – ngủ sâu\n\n• Hóa giải khí xấu – tụ vượng khí\n\n• Tăng may mắn – thu hút tài lộc\n4. USP – Điểm khác biệt\n\n• Đá Onyx xanh thật – không pha\n\n• Năng lượng mát – nhẹ – ổn định\n\n• Vân ngọc đẹp – mỗi chiếc một khác\n\n• Nắp đồng tỏa khói rất đẹp – sang trọng\n\n• Phù hợp decor – phong thủy – nghi thức tâm linh\n5. Đối tượng sử dụng\n\n• Người làm văn phòng\n\n• Người thiền – yoga – healing\n\n• Gia đình cần tăng hòa khí\n\n• Spa – salon – studio – cửa hàng\n\n• Người buôn bán cần thanh lọc năng lượng thường xuyên\n\n\n________________________________________\n💬 FAQ – CÂU HỎI THƯỜNG GẶP\nQ1. Xông trầm bằng Onyx có khác gì với gốm không?\n→ Khác hoàn toàn. Onyx hút khí xấu trong khi gốm chỉ giữ nhiệt.\nQ2. Có dùng được trầm miếng?\n→ Có, nhưng cần thêm đế gốm chịu nhiệt.\nQ3. Dùng hằng ngày có tốt không?\n→ Rất tốt. Nhà sạch khí thì gia chủ sáng vận.\nQ4. Dùng trong phòng ngủ được không?\n→ Có – đặc biệt hữu ích cho người khó ngủ, stress.\n\n\n________________________________________\n🧭 HƯỚNG DẪN KIỂM TRA THẬT – GIẢ\n\n| Kiểm tra | Đá Onyx xanh thật | Giả / bột ép / nhuộm |\n| :--- | :--- | :--- |\n| Vân đá | Vân mờ – loang – không đều | Vân thẳng – đều – nhân tạo |\n| Màu | Xanh ngọc nhạt – tự nhiên | Xanh neon – đậm bất thường |\n| Sờ | Mát tay lâu | Nóng nhanh |\n| Gõ | Âm vang trong | Âm đục |\n| Khối lượng | Nặng chắc | Nhẹ hơn đáng kể |\n\n✨ Nhà sạch khí – Vận sáng lộc ✨ Xông Trầm Ngọc Onyx Xanh – Tinh Hoa Thanh Tịnh Cho Không Gian Sống. Ngọc Onyx xanh hút trọc khí – xua tà – giữ bình an, kết hợp cùng trầm hương kích hoạt dương khí – gọi may mắn – chiêu tài lộc. Một chiếc bát xông trầm nhỏ nhưng năng lượng mạnh gấp 3–5 lần vật phẩm thông thường. 🌿 Giảm stress – lọc năng lượng – ngủ ngon sâu 🌿 Tịnh hóa không gian, tăng sinh khí, giúp gia đạo an hòa 🌿 Hút năng lượng xấu từ người lạ, khách vào nhà 🌿 Kích tài – thông tuệ – hanh thông công việc. 💚 Anh/Chị chỉ cần đặt 1 chiếc tại phòng khách – bàn làm việc – phòng ngủ, năng lượng thay đổi rõ rệt chỉ sau 5–7 phút xông. 🔥 Hàng đá thật – vân độc bản – khí mát ổn định. 🔥 Nắp đồng Mandala tỏa khói siêu đẹp – phong thủy chuẩn Á Đông. 🔥 Tem chứng nhận năng lượng Ann Gem & Fenghui. 👉 “Một chiếc bát – thanh lọc cả ngôi nhà.” Số lượng rất ít do Onyx xanh đẹp và đều vân cực kỳ hiếm.",
     "price": "1,799,000",
     "image": "/product/Xông trầm ngọc onyx xanh (2).jpg",
     "category": "Vật phẩm phong thủy",
+    "nameEn": "GREEN ONYX INCENSE BURNER",
+    "descriptionEn": "Green Onyx Incense Burner – The “Pure Mind – House Protection – Fortune Attracting” item. Absorbs bad chi, regulates the energy field, and activates positive chi (Dương Khí) with incense.",
+    "categoryEn": "Feng Shui Items",
     "benefits": [
         "Thanh lọc năng lượng không gian, hút trọc khí – xua tà khí, âm khí.",
         "Giúp tinh thần an tĩnh – dễ thiền – dễ ngủ, giảm căng thẳng.",
         "Hóa giải khí xấu – tụ vượng khí, kích hoạt dương khí – tăng tài lộc.",
         "Điều hòa trường khí, tăng hòa khí gia đình và sự minh mẫn."
     ],
+    "benefitsEn": [
+        "Purifies spatial energy, absorbs stagnant/negative chi – repels evil chi and Yin energy.",
+        "Promotes mental tranquility – aids meditation – supports deep sleep, reduces stress.",
+        "Neutralizes bad chi – accumulates prosperity (Vượng Khí), activates positive chi – increases wealth.",
+        "Regulates the energy field, enhances family harmony and clarity of mind."
+    ],
     "specifications": {
         "material": "Ngọc Onyx xanh tự nhiên 100%, Nắp hợp kim đồng chạm hoa văn thủ công.",
         "size": "11 × 8 cm (đường kính x cao)",
         "weight": "500g",
         "origin": "Pakistan & Afghanistan – Gia công tại Việt Nam"
+    },
+    "specificationsEn": {
+        "material": "100% natural Green Onyx Marble, copper alloy lid with carved patterns.",
+        "size": "Diameter: 11 cm, Height: 8 cm",
+        "weight": "500g",
+        "origin": "Pakistan & Afghanistan – Processed in Vietnam"
     },
     "retailPrice": "2,299,000",
     "marketPrice": "1,799,000"
@@ -938,17 +1526,32 @@ export const allProducts: Product[] = [
     "price": "2,350,000",
     "image": "/product/Bạch Ngọc 8 Ly.jpg",
     "category": "Vật phẩm phong thủy",
+    "nameEn": "NATURAL WHITE JADE NECKLACE 8MM",
+    "descriptionEn": "Natural White Jade Necklace – The Jade of Heaven, symbolizing Purity, Protection, Benevolence, and Noble Spirit. Helps balance the mind and promotes deep sleep.",
+    "categoryEn": "Feng Shui Items",
     "benefits": [
         "Thanh lọc năng lượng, nuôi dưỡng bình an và từ tâm.",
         "Hóa giải căng thẳng, giúp dễ ngủ, thư giãn.",
         "Kích hoạt trực giác, cân bằng cảm xúc và tăng khả năng tập trung.",
         "Bảo hộ năng lượng, xua trừ tà khí – hóa giải trầm khí xấu."
     ],
+    "benefitsEn": [
+        "Purifies energy, nurtures peace and benevolence.",
+        "Neutralizes stress, aids deep sleep, and relaxation.",
+        "Activates intuition, balances emotions, and increases concentration.",
+        "Energy protection, repels evil chi (Tà Khí) – neutralizes stagnant/heavy chi (Trầm Khí)."
+    ],
     "specifications": {
         "material": "Bạch Ngọc tự nhiên (Natural White Jade) 100%, mài tròn thủ công.",
         "size": "8 mm (đường kính hạt), chuỗi 48-56 hạt",
         "weight": "500g",
         "origin": "Myanmar, Pakistan, Việt Nam"
+    },
+    "specificationsEn": {
+        "material": "100% natural White Jade, hand-polished round cut.",
+        "size": "8 mm (bead diameter), 48-56 beads per strand (depending on neck size)",
+        "weight": "500g",
+        "origin": "Myanmar, Pakistan, Vietnam"
     },
     "retailPrice": "2,750,000",
     "marketPrice": "2,350,000"
@@ -957,21 +1560,36 @@ export const allProducts: Product[] = [
     id: 42,
     "name": "CÂY ĐÀO NGỌC HOÀNG LONG – 18 QUẢ (NHẤT PHÁT)",
     "description": "Yellow Jade Peach Tree – Linh vật gọi Phúc Khai Tài, biểu tượng Trường Thọ, Phú Quý và sự Sung Túc. 18 quả tượng trưng cho Nhất Phát – Khởi đầu may mắn.",
-    "fullDescription": "CÂY ĐÀO NGỌC HOÀNG LONG – 18 QUẢ\nKích thước: 56 × 40 cm\n“Cây Đào – Linh Vật Gọi Phúc Khai Tài Từ Ngàn Năm”\nTừ thời Trung Hoa cổ đại, quả đào được gọi là “Tiên Đào” – loại quả mà người ta tin rằng đem lại trường thọ, phúc lành và may mắn. Trong thần thoại, Tây Vương Mẫu giữ “vườn đào tiên” 3.000 năm mới kết trái, ai ăn được một quả thì phúc đức tròn đầy – sức khỏe bền lâu.\n\nKhi viên Ngọc Hoàng Long – loại ngọc biểu tượng của phú quý – thịnh vượng – năng lượng dương mạnh mẽ – được chế tác thành từng quả đào tròn đầy, cây đào trở thành vật phẩm phong thủy hội tụ năng lượng lớn.\n\nMỗi quả đào là một điểm khí thịnh. Mỗi cành đào là một đường dẫn tài lộc. Màu vàng mật ong tượng trưng cho Thổ – Tài – Phúc – Sự sung túc.\n\nCây đào 18 quả mang hàm ý: 18 = “Nhất Phát” → khởi đầu may mắn – phát triển bền vững – tài lộc nở rộ.\n\nNgười xưa tin rằng: “Nhà nào trưng đào, nhà đó giữ được phúc – gọi được lộc – đón được may.”\n\nKhi đặt cây đào trong phòng khách, văn phòng, cửa hàng, bạn sẽ cảm nhận rõ: ✨ Không gian ấm lên, sáng lên ✨ Năng lượng nặng nề biến mất ✨ Công việc trôi chảy hơn ✨ Gia đạo hài hòa – dễ nói, dễ thông cảm ✨ Tiền bạc, cơ hội, quý nhân xuất hiện đều đặn.\n\nKhông chỉ là vật trang trí, Cây Đào Hoàng Long là một “mạch tài khí ngầm”, nuôi dưỡng sự thịnh vượng mỗi ngày, nhẹ nhàng nhưng bền bỉ.\nVà đặc biệt, với màu vàng thịnh vượng – đây là vật phẩm cực kỳ phù hợp cho: 🏡 Nhà mới 💼 Công ty mới 🏪 Cửa hàng – spa – showroom 🎁 Quà tặng khai trương – thăng chức – tri ân\n\n“Cây đào không chỉ đẹp – nó còn là lời chúc phúc tròn đầy dành cho chính gia đình bạn.”\n\n\n________________________________________\n🪷 THÔNG TIN SẢN PHẨM\n\n• Tên sản phẩm: Cây Đào Ngọc Hoàng Long – 18 Quả\n\n• Tên tiếng Anh: Yellow Jade Peach Tree – 18 Fruits\n\n• Nguồn gốc đá: Ngọc Hoàng Long (Yellow Jade) – Trung Quốc, Myanmar\n\n• Gia công & hoàn thiện: Xưởng hợp tác Ann Gem & Fengshui tại Việt Nam\n\n• Thương hiệu phân phối: Ann Gem & Fengshui – Recharge Your Energy, Restore Your Balance\nKích thước:\n\n• Cao 56 cm\n\n• Ngang 40 cm\nChất liệu:\n\n• Quả đào: Ngọc Hoàng Long tự nhiên 100%\n\n• Lá ngọc xanh Malaysia / serpentine\n\n• Thân cây: gỗ – composite phủ giả cổ hoặc gỗ thật tùy mẫu\n\n• Đế đá xanh nguyên khối + vụn đá vàng tài lộc\n\n\n________________________________________\n💰 GIÁ BÁN / PRICING\n\n| Hạng mục | Giá (VNĐ) | Ghi chú |\n| :--- | :--- | :--- |\n| Giá niêm yết | 12.600.000 VND ( kiểm định riêng) code AGFS080\\n11.900.000 VND (kiểm định chung) code AGFS079 | Đã gồm VAT 10%, chưa phí vận chuyển |\n| Giá bán thị trường | 11.700.000 VND (kiểm định riêng) code AGFS080\\n11.000.000 VND (kiểm định chung) code AGFS079 | Gồm VAT, chưa phí vận chuyển |\n\nGiá có thể điều chỉnh theo độ đẹp của đá, độ lớn quả, chất đá và thế cây.\n\n\n________________________________________\n🌈 Ý NGHĨA PHONG THỦY\n\n| Đặc tính | Phân tích phong thủy |\n| :--- | :--- |\n| Ngọc Hoàng Long (Yellow Jade) | Đá của phúc – thọ – lộc – tài. Mang năng lượng ấm, mạnh, giúp mở đường tài khí và bảo hộ gia đạo. |\n| Quả đào phong thủy | Biểu tượng trường thọ, may mắn, phúc khí, thăng hoa và hạnh phúc viên mãn. Đào 18 quả tượng trưng 18 bậc phúc lộc viên mãn. |\n| Màu vàng – hành Thổ | Tượng trưng cho sự vững vàng, tiền tài, sự sung túc và phát triển bền lâu. |\n\nCông dụng phong thủy:\n\n• Thu hút tài lộc – cơ hội – may mắn\n\n• Tăng phúc khí, mang lại bình an cho gia đình\n\n• Kích hoạt cung Tài Lộc – Quý Nhân – Gia Đạo\n\n• Tạo năng lượng yêu thương – hòa khí\n\n• Chống lại nguồn năng lượng xấu, xua tan xung đột\nÝ nghĩa biểu tượng:\n“18 quả đào – 18 chặng đường phúc lộc sung mãn. Ai trưng cây đào, người đó giữ được phúc và gọi được lộc.”\nHợp mệnh:\n\n• Hợp mạnh nhất: Thổ – Hỏa\n\n• Tương sinh: Kim – Mộc\n\n• Người mệnh Thủy vẫn dùng được nếu đặt đúng cung trọng điểm (Đông Nam – Tây Nam – Trung cung).\n\n\n________________________________________\n💎 GIẢI NGHĨA CHUYÊN GIA PHONG THỦY\n1. Về năng lượng học\nNgọc Hoàng Long mang trường năng lượng ấm (yang energy), khác với thạch anh lạnh. Năng lượng của loại đá này: Kích hoạt luân xa số 3 (Solar Plexus Chakra) – tăng sự tự tin & lạc quan, Tạo “tần số hút tài lộc” mạnh mẽ, Giúp gia chủ dễ gặp vận may, quý nhân, cơ hội tốt. 18 quả đào – mỗi quả tượng trưng một điểm khí lành, giúp năng lượng tỏa đều khắp không gian.\n2. Về phong thủy trấn trạch\nCây Đào Ngọc Hoàng Long phù hợp với:\n\n• Đông Nam (Tài Lộc) → Gọi tài – tụ lộc\n\n• Tây Nam (Gia Đạo – Tình Duyên) → Gia đình hòa thuận\n\n• Chính Đông (Sức khỏe) → Tăng trường thọ – an lành\n\n• Trung Cung → Cân bằng năng lượng toàn nhà\n\nĐặc biệt hợp cho nhà mới, văn phòng mới, spa, cửa hàng.\n3. Về ứng dụng trong không gian sống\n\n• Phòng khách → tăng vượng khí – chiêu tài – giữ phúc\n\n• Phòng ngủ → tốt cho gia đạo, hòa hợp vợ chồng\n\n• Văn phòng → tăng may mắn – thu hút cơ hội\n\n• Shop – spa → tượng trưng tiền tài nở hoa – khách vào như nước\n\n\n________________________________________\n🪶 HỒ SƠ PHONG THỦY SẢN PHẨM\n1. Mô tả sản phẩm / Product Description\nCây Đào Ngọc Hoàng Long 18 quả là dòng sản phẩm cao cấp, kết từ ngọc Hoàng Long tự nhiên có sắc vàng óng rực. Thế cây uốn mềm mại, cành xòe rộng – tượng trưng cho sự phát triển bền vững. Đế đá xanh sang trọng, tạo thế vững chãi – tụ khí – sinh tài.\n2. Thành phần & Đặc trưng cấu tạo\n\n• Quả đào: Ngọc Hoàng Long tự nhiên – không nhuộm\n\n• Lá ngọc serpentine xanh\n\n• Thân gỗ phong thủy / composite đặc\n\n• Đế đá xanh nguyên khối\n\n• Không có sản phẩm đại trà – mỗi cây một thế độc bản\n4. Công dụng chính / Key Functions\n\n• Thu hút tài lộc – may mắn\n\n• Bổ trợ sức khỏe – trường thọ\n\n• Hóa giải xung đột – tăng hòa khí\n\n• Tăng năng lượng sống – giảm mệt mỏi\n\n• Mang ý nghĩa phong thủy mạnh mẽ khi tặng quà\n5. USP – Điểm khác biệt\n\n• Đá thật – màu tự nhiên – không nhuộm\n\n• Thế cây vượng tài – quả to – bóng – đẹp\n\n• Năng lượng ấm, phù hợp nhà hiện đại\n\n• Đem lại cảm giác sang trọng & phong thủy mạnh\n\n• Tặng kèm chứng thư Ann Gem & Fengshui\n6. Đối tượng sử dụng\n\n• Gia đình muốn tăng vượng khí\n\n• Chủ doanh nghiệp – spa – cửa hàng\n\n• Người kinh doanh muốn tăng tài lộc\n\n• Làm quà tặng tân gia – khai trương – tri ân\n\n\n________________________________________\n💬 FAQ – CÂU HỎI THƯỜNG GẶP\nQ1. Đào 18 quả có ý nghĩa gì?\n→ 18 = Nhất Phát → cả cuộc đời phát triển – phát tài – phát lộc.\nQ2. Cây đào hợp ai?\n→ Người kinh doanh, người cần tăng tài lộc, gia chủ muốn tăng hòa khí.\nQ3. Có phải tẩy năng lượng định kỳ không?\n→ 2–3 tháng/lần bằng trầm – ánh nến – ánh trăng.\nQ4. Làm quà tặng được không?\n→ Rất phù hợp: tân gia – khai trương – thành lập công ty.\n\n\n________________________________________\n🧭 HƯỚNG DẪN KIỂM TRA THẬT – GIẢ\n\n| Kiểm tra | Đá Hoàng Long thật | Giả – nhuộm – bột ép |\n| :--- | :--- | :--- |\n| Màu sắc | Vàng mật ong, đậm nhạt tự nhiên | Vàng neon, đồng nhất |\n| Vân đá | Có vân mây – ánh mịn | Ít vân, bề mặt bóng lạ |\n| Sờ | Mát tay – nặng chắc | Nhẹ, nóng nhanh |\n| Soi đèn | Ánh vàng sang – không chói | Ánh phẳng, màu ngả cam |\n| Gõ | Âm vang – chắc | Âm đục |\n\nCây Đào Ngọc Hoàng Long – Biểu tượng của PHÚC – LỘC – THỌ – TÀI. 18 quả đào = “Nhất Phát” → trưng đâu tài khí phát đến đó. ✔ Thu hút tài lộc ✔ Tăng may mắn ✔ Gia đạo hòa thuận ✔ Sức khỏe – trường thọ. 🔥 Đá Hoàng Long thật 100% 🔥 Tẩy tịnh – niêm ấn năng lượng 🔥 Hàng độc bản – KHÔNG sản xuất đại trà. 👉 Comment “ĐÀO18” để giữ mẫu đẹp nhất – số lượng cực hạn.",
+    "fullDescription": "CÂY ĐÀO NGỌC HOÀNG LONG – 18 QUẢ\nKích thước: 56 × 40 cm\n“Cây Đào – Linh Vật Gọi Phúc Khai Tài Từ Ngàn Năm”\nTừ thời Trung Hoa cổ đại, quả đào được gọi là “Tiên Đào” – loại quả mà người ta tin rằng đem lại trường thọ, phúc lành và may mắn. Trong thần thoại, Tây Vương Mẫu giữ “vườn đào tiên” 3.000 năm mới kết trái, ai ăn được một quả thì phúc đức tròn đầy – sức khỏe bền lâu.\n\nKhi viên Ngọc Hoàng Long – loại ngọc biểu tượng của phú quý – thịnh vượng – năng lượng dương mạnh mẽ – được chế tác thành từng quả đào tròn đầy, cây đào trở thành vật phẩm phong thủy hội tụ năng lượng lớn.\n\nMỗi quả đào là một điểm khí thịnh. Mỗi cành đào là một đường dẫn tài lộc. Màu vàng mật ong tượng trưng cho Thổ – Tài – Phúc – Sự sung túc.\n\nCây đào 18 quả mang hàm ý: 18 = “Nhất Phát” → khởi đầu may mắn – phát triển bền vững – tài lộc nở rộ.\n\nNgười xưa tin rằng: “Nhà nào trưng đào, nhà đó giữ được phúc – gọi được lộc – đón được may.”\n\nKhi đặt cây đào trong phòng khách, văn phòng, cửa hàng, bạn sẽ cảm nhận rõ: ✨ Không gian ấm lên, sáng lên ✨ Năng lượng nặng nề biến mất ✨ Công việc trôi chảy hơn ✨ Gia đạo hài hòa – dễ nói, dễ thông cảm ✨ Tiền bạc, cơ hội, quý nhân xuất hiện đều đặn.\n\nKhông chỉ là vật trang trí, Cây Đào Hoàng Long là một “mạch tài khí ngầm”, nuôi dưỡng sự thịnh vượng mỗi ngày, nhẹ nhàng nhưng bền bỉ.\nVà đặc biệt, với màu vàng thịnh vượng – đây là vật phẩm cực kỳ phù hợp cho: 🏡 Nhà mới 💼 Công ty mới 🏪 Cửa hàng – spa – showroom 🎁 Quà tặng khai trương – thăng chức – tri ân\n\n“Cây đào không chỉ đẹp – nó còn là lời chúc phúc tròn đầy dành cho chính gia đình bạn.”\n\n\n________________________________________\n🪷 THÔNG TIN SẢN PHẨM\n\n• Tên sản phẩm: Cây Đào Ngọc Hoàng Long – 18 Quả\n\n• Tên tiếng Anh: Yellow Jade Peach Tree – 18 Fruits\n\n• Nguồn gốc đá: Ngọc Hoàng Long (Yellow Jade) – Trung Quốc, Myanmar\n\n• Gia công & hoàn thiện: Xưởng hợp tác Ann Gem & Fengshui tại Việt Nam\n\n• Thương hiệu phân phối: Ann Gem & Fengshui – Recharge Your Energy, Restore Your Balance\nKích thước:\n\n• Cao 56 cm\n\n• Ngang 40 cm\nChất liệu:\n\n• Quả đào: Ngọc Hoàng Long tự nhiên 100%\n\n• Lá ngọc xanh Malaysia / serpentine\n\n• Thân cây: gỗ – composite phủ giả cổ hoặc gỗ thật tùy mẫu\n\n• Đế đá xanh nguyên khối + vụn đá vàng tài lộc\n\n\n________________________________________\n💰 GIÁ BÁN / PRICING\n\n| Hạng mục | Giá (VNĐ) | Ghi chú |\n| :--- | :--- | :--- |\n| Giá niêm yết | 12.600.000 VND ( kiểm định riêng) code AGFS080\\n11.900.000 VND (kiểm định chung) code AGFS079 | Đã gồm VAT 10%, chưa phí vận chuyển |\n| Giá bán thị trường | 11.700.000 VND (kiểm định riêng) code AGFS080\\n11.000.000 VND (kiểm định chung) code AGFS079 | Gồm VAT, chưa phí vận chuyển |\n\nGiá có thể điều chỉnh theo độ đẹp của đá, độ lớn quả, chất đá và thế cây.\n\n\n________________________________________\n🌈 Ý NGHĨA PHONG THỦY\n\n| Đặc tính | Phân tích phong thủy |\n| :--- | :--- |\n| Ngọc Hoàng Long (Yellow Jade) | Đá của phúc – thọ – lộc – tài. Mang năng lượng ấm, mạnh, giúp mở đường tài khí và bảo hộ gia đạo. |\n| Quả đào phong thủy | Biểu tượng trường thọ, may mắn, phúc khí, thăng hoa và hạnh phúc viên mãn. Đào 18 quả tượng trưng 18 bậc phúc lộc viên mãn. |\n| Màu vàng – hành Thổ | Tượng trưng cho sự vững vàng, tiền tài, sự sung túc và phát triển bền lâu. |\n\nCông dụng phong thủy:\n\n• Thu hút tài lộc – cơ hội – may mắn\n\n• Tăng phúc khí, mang lại bình an cho gia đình\n\n• Kích hoạt cung Tài Lộc – Quý Nhân – Gia Đạo\n\n• Tạo năng lượng yêu thương – hòa khí\n\n• Chống lại nguồn năng lượng xấu, xua tan xung đột\nÝ nghĩa biểu tượng:\n“18 quả đào – 18 chặng đường phúc lộc sung mãn. Ai trưng cây đào, người đó giữ được phúc và gọi được lộc.”\nHợp mệnh:\n\n• Hợp mạnh nhất: Thổ – Hỏa\n\n• Tương sinh: Kim – Mộc\n\n• Người mệnh Thủy vẫn dùng được nếu đặt đúng cung trọng điểm (Đông Nam – Tây Nam – Trung cung).\n\n\n________________________________________\n💎 GIẢI NGHĨA CHUYÊN GIA PHONG THỦY\n1. Về năng lượng học\nNgọc Hoàng Long mang trường năng lượng ấm (yang energy), khác với thạch anh lạnh. Năng lượng của loại đá này: Kích hoạt luân xa số 3 (Solar Plexus Chakra) – tăng sự tự tin & lạc quan, Tạo “tần số hút tài lộc” mạnh mẽ, Giúp gia chủ dễ gặp vận may, quý nhân, cơ hội tốt. 18 quả đào – mỗi quả tượng trưng một điểm khí lành, giúp năng lượng tỏa đều khắp không gian.\n2. Về phong thủy trấn trạch\nCây Đào Ngọc Hoàng Long phù hợp với:\n\n• Đông Nam (Tài Lộc) → Gọi tài – tụ lộc\n\n• Tây Nam (Gia Đạo – Tình Duyên) → Gia đình hòa thuận\n\n• Chính Đông (Sức khỏe) → Tăng trường thọ – an lành\n\n• Trung Cung → Cân bằng năng lượng toàn nhà\n\nĐặc biệt hợp cho nhà mới, văn phòng mới, spa, cửa hàng.\n3. Về ứng dụng trong không gian sống\n\n• Phòng khách → tăng vượng khí – chiêu tài – giữ phúc\n\n• Phòng ngủ → tốt cho gia đạo, hòa hợp vợ chồng\n\n• Văn phòng → tăng may mắn – thu hút cơ hội\n\n• Shop – spa → tượng trưng tiền tài nở hoa – khách vào như nước\n\n\n________________________________________\n🪶 HỒ SƠ PHONG THỦY SẢN PHẨM\n1. Mô tả sản phẩm / Product Description\nCây Đào Ngọc Hoàng Long 18 quả là dòng sản phẩm cao cấp, kết từ ngọc Hoàng Long tự nhiên có sắc vàng óng rực. Thế cây uốn mềm mại, cành xòe rộng – tượng trưng cho sự phát triển bền vững. Đế đá xanh sang trọng, tạo thế vững chãi – tụ khí – sinh tài.\n2. Thành phần & Đặc trưng cấu tạo\n\n• Quả đào: Ngọc Hoàng Long tự nhiên – không nhuộm\n\n• Lá ngọc serpentine xanh\n\n• Thân cây: gỗ – composite phủ giả cổ hoặc gỗ thật tùy mẫu\n\n• Đế đá xanh nguyên khối\n\n• Không có sản phẩm đại trà – mỗi cây một thế độc bản\n4. Công dụng chính / Key Functions\n\n• Thu hút tài lộc – may mắn\n\n• Bổ trợ sức khỏe – trường thọ\n\n• Hóa giải xung đột – tăng hòa khí\n\n• Tăng năng lượng sống – giảm mệt mỏi\n\n• Mang ý nghĩa phong thủy mạnh mẽ khi tặng quà\n5. USP – Điểm khác biệt\n\n• Đá thật – màu tự nhiên – không nhuộm\n\n• Thế cây vượng tài – quả to – bóng – đẹp\n\n• Năng lượng ấm, phù hợp nhà hiện đại\n\n• Đem lại cảm giác sang trọng & phong thủy mạnh\n\n• Tặng kèm chứng thư Ann Gem & Fengshui\n6. Đối tượng sử dụng\n\n• Gia đình muốn tăng vượng khí\n\n• Chủ doanh nghiệp – spa – cửa hàng\n\n• Người kinh doanh muốn tăng tài lộc\n\n• Làm quà tặng tân gia – khai trương – tri ân\n\n\n________________________________________\n💬 FAQ – CÂU HỎI THƯỜNG GẶP\nQ1. Đào 18 quả có ý nghĩa gì?\n→ 18 = Nhất Phát → cả cuộc đời phát triển – phát tài – phát lộc.\nQ2. Cây đào hợp ai?\n→ Người kinh doanh, người cần tăng tài lộc, gia chủ muốn tăng hòa khí.\nQ3. Có phải tẩy năng lượng định kỳ không?\n→ 2–3 tháng/lần bằng trầm – ánh nến – ánh trăng.\nQ4. Làm quà tặng được không?\n→ Rất phù hợp: tân gia – khai trương – thành lập công ty.\n\n\n________________________________________\n🧭 HƯỚNG DẪN KIỂM TRA THẬT – GIẢ\n\n| Kiểm tra | Đá Hoàng Long thật | Giả – nhuộm – bột ép |\n| :--- | :--- | :--- |\n| Màu sắc | Vàng mật ong, đậm nhạt tự nhiên | Vàng neon, đồng nhất |\n| Vân đá | Có vân mây – ánh mịn | Ít vân, bề mặt bóng lạ |\n| Sờ | Mát tay – nặng chắc | Nhẹ, nóng nhanh |\n| Soi đèn | Ánh vàng sang – không chói | Ánh phẳng, màu ngả cam |\n| Gõ | Âm vang – chắc | Âm đục |\n\nCây Đào Ngọc Hoàng Long – Biểu tượng của PHÚC – LỘC – THỌ – TÀI. 18 quả đào = “Nhất Phát” → trưng đâu tài khí phát đến đó. ✔ Thu hút tài lộc ✔ Tăng may mắn ✔ Gia đạo hòa thuận ✔ Sức khỏe – trường thọ. 🔥 Đá Hoàng Long thật 100% 🔥 Tẩy tịnh – niêm ấn năng lượng 🔥 Hàng độc bản – KHÔNG sản xuất đại trà. 👉 Comment “ĐÀO18” để giữ mẫu đẹp nhất – số lượng cực hạn.",
     "price": "11,000,000",
     "image": "/product/Cây đào ngọc hoàng long 18 quả (2).jpg",
     "category": "Vật phẩm phong thủy",
+    "nameEn": "YELLOW ONYX PEACH TREE – 18 FRUITS",
+    "descriptionEn": "Yellow Jade Peach Tree – A Spirit Animal that Calls for Blessings and Wealth, symbolizing Longevity, Prosperity, and Abundance. 18 fruits symbolize 'Nhất Phát' (Number 1 Prosperity) – a fortunate beginning.",
+    "categoryEn": "Feng Shui Items",
     "benefits": [
         "Thu hút tài lộc – cơ hội – may mắn (18 quả = Nhất Phát).",
         "Tăng phúc khí, bổ trợ sức khỏe – trường thọ.",
         "Kích hoạt cung Tài Lộc – Quý Nhân – Gia Đạo.",
         "Tạo năng lượng yêu thương – hòa khí, chống lại năng lượng xấu."
     ],
+    "benefitsEn": [
+        "Attracts wealth – opportunities – luck (18 fruits = Number 1 Prosperity).",
+        "Increases blessings (Phúc Khí), supports health – longevity.",
+        "Activates the Wealth – Benefactor – Family Harmony sectors.",
+        "Creates energy of love – harmony, wards off negative energy."
+    ],
     "specifications": {
         "material": "Ngọc Hoàng Long tự nhiên 100% (Quả đào), Lá ngọc serpentine, Đế đá xanh nguyên khối.",
         "size": "Cao 56 cm, Ngang 40 cm",
         "weight": "500g",
-        "origin": "Trung Quốc, Myanmar – Gia công tại Việt Nam"
+        "origin": "China, Myanmar – Processed in Vietnam"
+    },
+    "specificationsEn": {
+        "material": "100% natural Yellow Onyx Marble (Peach fruits), Serpentine Jade leaves, Solid green stone base.",
+        "size": "Height 56 cm, Width 40 cm",
+        "weight": "500g",
+        "origin": "China, Myanmar – Processed in Vietnam"
     },
     "retailPrice": "11,900,000",
     "marketPrice": "11,000,000"
@@ -980,21 +1598,36 @@ export const allProducts: Product[] = [
     id: 43,
     "name": "CÂY NHO TÀI LỘC THẠCH ANH HỒNG",
     "description": "Rose Quartz Grapevine Prosperity Tree – Biểu tượng Thịnh Vượng, Hạnh Phúc, Sum Vầy và Hòa Hợp. Thạch anh hồng giúp chữa lành cảm xúc và tăng duyên lành.",
-    "fullDescription": "SẢN PHẨM: CÂY NHO TÀI LỘC THẠCH ANH HỒNG\n“Cây Nho – Hiện Hữu của Thịnh Vượng & Hạnh Phúc”\nỞ những vùng đất cổ xưa của Á Đông, cây nho không chỉ là loài cây của mùa vụ, mà là biểu tượng của phúc – lộc – thọ – tấn. Người xưa tin rằng: “Nho sai quả thì nhà cửa ấm. Nho trĩu cành thì tài lộc đến.”\nBởi mỗi chùm nho là hình ảnh của sự sum vầy, của những điều tốt đẹp cùng tụ hội, kết nối, nuôi dưỡng và sinh sôi.\n\nKhi viên thạch anh hồng – viên đá của trái tim, của yêu thương và hòa hợp – được chế tác thành từng chùm nho tròn đầy, năng lượng của vật phẩm trở nên vô cùng mạnh mẽ:\n✨ Hóa giải nguồn năng lượng xấu trong nhà\n✨Tăng cường hòa khí gia đình\n✨Kéo tài lộc – thu hút quý nhân\n✨Mở rộng năng lượng yêu thương và chữa lành\n\nDáng cây với thân vươn lên, tán lá xòe rộng mang ý nghĩa: “Mọi điều bạn chăm sóc hôm nay sẽ đơm trái ngọt trong tương lai.”\n\nVới người kinh doanh – cây nho tượng trưng cho khách vào đều – lợi nhuận tăng – tiền về dồn dập.\nVới gia đình – cây nho là biểu tượng của sum họp, êm ấm, thuận hòa.\nVới người độc thân – thạch anh hồng giúp mở rộng trái tim và tăng duyên lành.\n\nĐược chế tác tỉ mỉ trong từng chi tiết, tẩy tịnh bằng trầm – niêm ấn năng lượng theo nghi thức của Ann Gem & Fengshui, mỗi cây nho không chỉ là một vật phẩm phong thủy… mà còn là một trường năng lượng sống, đồng hành cùng bạn mỗi ngày.\n\n\n________________________________________\n🪷 THÔNG TIN SẢN PHẨM\n\n• Tên sản phẩm: Cây Nho Tài Lộc Thạch Anh Hồng\n\n• Tên tiếng Anh: Rose Quartz Grapevine Prosperity Tree\n\n• Nguồn gốc: Thạch anh hồng tự nhiên – Brazil, Madagascar\n\n• Gia công & hoàn thiện: Xưởng hợp tác Ann Gem & Fengshui tại Việt Nam\n\n• Thương hiệu phân phối: Ann Gem & Fengshui – Recharge Your Energy, Restore Your Balance\nKích thước: Cao 32 cm × Ngang 25 cm\nChất liệu:\n\n• Quả nho: Thạch anh hồng tự nhiên 100%\n\n• Lá cây: Ngọc Malaysia hoặc serpentine (ngọc giả đồng thau màu xanh)\n\n• Thân cây: Đồng uốn thủ công\n\n• Đế: Gỗ phong thủy cao cấp\n\n\n________________________________________\n💰 GIÁ BÁN / PRICING\n\n| Hạng mục | Giá (VNĐ) | Ghi chú |\n| :--- | :--- | :--- |\n| Giá niêm yết | 6.300.000 VND (kiểm định riêng) code AGFS 082\\n5.700.000 VND (kiểm định chung) code AGFS 081 | Đã gồm VAT 10%, chưa phí vận chuyển |\n| Giá bán thị trường | 5.700.000 VND (kiểm định riêng) code AGFS 082\\n5.200.000 VND (kiểm định chung) code AGFS 081 | Gồm VAT, chưa phí vận chuyển |\n\n\n________________________________________\n🌈 Ý NGHĨA PHONG THỦY\n\n| Đặc tính | Phân tích phong thủy |\n| :--- | :--- |\n| Thạch anh hồng | Biểu tượng tình yêu – hòa hợp – hạnh phúc. Tác động mạnh lên luân xa tim, giúp chữa lành cảm xúc. |\n| Dáng nho tài lộc | Quả chùm mang ý nghĩa sum vầy – thịnh vượng – phúc khí nối dài. Nho gắn liền với sự no đủ và sinh sôi nảy nở. |\n| Lá xanh – quả hồng | Tạo thế sinh trưởng – vượng khí – tăng năng lượng dương trong nhà. |\n\nCông dụng phong thủy:\n\n• Kích hoạt tài lộc – tình duyên – hòa khí gia đạo.\n\n• Tạo năng lượng sinh sôi, giúp thu hút cơ hội và quý nhân.\n\n• Cân bằng cảm xúc, hỗ trợ ngủ ngon và thiền định.\nÝ nghĩa biểu tượng: “Nho hồng – Quả tròn đầy – Phúc tròn đầy.”\nHợp mệnh:\n\n• Hợp nhất: Hỏa – Thổ\n\n• Tương sinh: Kim – Mộc\n\n• Toàn mệnh nếu đặt đúng cung phong thủy.\n\n\n________________________________________\n💎 GIẢI NGHĨA CHUYÊN GIA PHONG THỦY\n1. Về năng lượng học\nThạch anh hồng phát trường năng lượng êm dịu, giúp ổn định cảm xúc. Khi kết thành quả tròn dạng nho, năng lượng được khuếch tán đều, tạo thành “trường khí hòa hợp”. Đặt trong nhà giúp giảm năng lượng xấu (stress, bất hòa), tăng từ trường yêu thương và bình an.\n2. Về phong thủy trấn trạch\nNho là biểu tượng của phúc – lộc – thọ, thường dùng để: ✔ Thu hút tài lộc ✔ Tăng sự hòa thuận trong gia đình ✔ Hóa giải xung đột và tạo không khí an vui. Thích hợp đặt tại: Đông Nam (cung Tài Lộc), Tây Nam (cung Hôn Nhân – Gia Đạo), Trung cung (tăng hòa khí).\n\n\n________________________________________\n🪶 HỒ SƠ PHONG THỦY SẢN PHẨM\n1. Mô tả sản phẩm / Product Description\nCây Nho Tài Lộc Thạch Anh Hồng được kết từ quả thạch anh tự nhiên, có độ trong và ánh hồng dịu đặc trưng. Thân đồng uốn thủ công tạo thế vươn lên – mang ý nghĩa sinh trưởng. Đế gỗ nâu sẫm tăng vượng khí và cân bằng âm dương cho vật phẩm.\n2. Thành phần & Đặc trưng cấu tạo\n\n• Quả nho: Thạch anh hồng tự nhiên 100% – không nhuộm màu.\n\n• Lá cây: Ngọc Malaysia hoặc serpentine – vân tự nhiên.\n\n• Thân cây: Đồng uốn thủ công.\n\n• Đế: Gỗ phong thủy cao cấp.\n\n• Tem năng lượng\n3. Công dụng chính / Key Functions\n\n• Thu hút tài lộc – thịnh vượng.\n\n• Tăng hòa khí – hạnh phúc gia đình.\n\n• Tạo năng lượng thư giãn – giảm stress.\n\n• Là vật phẩm trưng bày sang trọng – may mắn.\n4. Điểm khác biệt / USP\n\n• Sử dụng thạch anh hồng thật 100%.\n\n• Kết thủ công – mỗi cây độc bản.\n\n• Hiệu ứng ánh sáng đẹp, trưng bày sang trọng.\n\n• Tẩy tịnh – niêm ấn năng lượng trước khi giao khách.\n\n• Phù hợp mọi không gian từ hiện đại đến Á Đông.\n5. Đối tượng sử dụng\n\n• Gia đình – cặp đôi – người độc thân muốn tăng duyên.\n\n• Người kinh doanh – chủ shop – chủ spa.\n\n• Văn phòng cần tăng vượng khí và hòa khí.\n\n• Quà tặng tân gia – khai trương – cưới hỏi – tri ân.\n\n\n________________________________________\n💬 FAQ – CÂU HỎI THƯỜNG GẶP\nQ1. Cây nho để ở đâu tốt nhất?\n→ Đông Nam (Tài Lộc), Tây Nam (Gia Đạo), hoặc phòng khách.\nQ2. Cây có bền không?\n→ Rất bền, vì thân đồng và đế gỗ chắc chắn.\nQ3. Có hợp làm quà tặng không?\n→ Rất phù hợp cho tân gia – khai trương – sinh nhật – doanh nghiệp.\nQ4. Thạch anh hồng có đổi màu không?\n→ Không đổi màu, nhưng tránh để dưới nắng gắt quá lâu.\n\n\n________________________________________\n🧭 HƯỚNG DẪN KIỂM TRA THẬT – GIẢ\n\n| Kiểm tra | Đá thật | Đá giả / nhuộm |\n| :--- | :--- | :--- |\n| Quan sát ánh sáng | Có vân mây – hồng dịu | Hồng neon – đều bất thường |\n| Sờ | Mát tay, nặng | Nhẹ, nóng nhanh |\n| Gõ nhẹ | Âm trong | Âm đục |\n| Soi đèn | Ánh trắng hồng | Ánh phẳng – không vân |\n| Tem năng lượng | Ann Gem & Fengshui | Không tem hoặc tem in phẳng |\n\nCây Nho Tài Lộc Thạch Anh Hồng – Bí mật của sự giàu có & hạnh phúc tròn đầy. ● Hút tài lộc – chiêu quý nhân ● Tăng hòa hợp gia đình ● Mở duyên – tăng tình cảm ● Giảm stress – an tâm ngủ ngon. 🔥 Hàng làm thủ công – đá thật 100% – có chứng thư năng lượng. 🔥Chỉ còn vài cây – không sản xuất đại trà. 👉 Ai giữ “nho thạch anh” trong nhà người đó GIỮ TÀI – GIỮ PHÚC – GIỮ HẠNH PHÚC. 💬 Comment “NHO” để kiểm tra tồn kho & nhận giá tốt nhất hôm nay.",
+    "fullDescription": "SẢN PHẨM: CÂY NHO TÀI LỘC THẠCH ANH HỒNG\n“Cây Nho – Hiện Hữu của Thịnh Vượng & Hạnh Phúc”\nỞ những vùng đất cổ xưa của Á Đông, cây nho không chỉ là loài cây của mùa vụ, mà là biểu tượng của phúc – lộc – thọ – tấn. Người xưa tin rằng: “Nho sai quả thì nhà cửa ấm. Nho trĩu cành thì tài lộc đến.”\nBởi mỗi chùm nho là hình ảnh của sự sum vầy, của những điều tốt đẹp cùng tụ hội, kết nối, nuôi dưỡng và sinh sôi.\n\nKhi viên thạch anh hồng – viên đá của trái tim, của yêu thương và hòa hợp – được chế tác thành từng chùm nho tròn đầy, năng lượng của vật phẩm trở nên vô cùng mạnh mẽ:\n✨ Hóa giải nguồn năng lượng xấu trong nhà\n✨Tăng cường hòa khí gia đình\n✨Kéo tài lộc – thu hút quý nhân\n✨Mở rộng năng lượng yêu thương và chữa lành\n\nDáng cây với thân vươn lên, tán lá xòe rộng mang ý nghĩa: “Mọi điều bạn chăm sóc hôm nay sẽ đơm trái ngọt trong tương lai.”\n\nVới người kinh doanh – cây nho tượng trưng cho khách vào đều – lợi nhuận tăng – tiền về dồn dập.\nVới gia đình – cây nho là biểu tượng của sum họp, êm ấm, thuận hòa.\nVới người độc thân – thạch anh hồng giúp mở rộng trái tim và tăng duyên lành.\n\nĐược chế tác tỉ mỉ trong từng chi tiết, tẩy tịnh bằng trầm – niêm ấn năng lượng theo nghi thức của Ann Gem & Fengshui, mỗi cây nho không chỉ là một vật phẩm phong thủy… mà còn là một trường năng lượng sống, đồng hành cùng bạn mỗi ngày.\n\n\n________________________________________\n🪷 THÔNG TIN SẢN PHẨM\n\n• Tên sản phẩm: Cây Nho Tài Lộc Thạch Anh Hồng\n\n• Tên tiếng Anh: Rose Quartz Grapevine Prosperity Tree\n\n• Nguồn gốc: Thạch anh hồng tự nhiên – Brazil, Madagascar\n\n• Gia công & hoàn thiện: Xưởng hợp tác Ann Gem & Fengshui tại Việt Nam\n\n• Thương hiệu phân phối: Ann Gem & Fengshui – Recharge Your Energy, Restore Your Balance\nKích thước: Cao 32 cm × Ngang 25 cm\nChất liệu:\n\n• Quả nho: Thạch anh hồng tự nhiên 100%\n\n• Lá cây: Ngọc Malaysia / serpentine (ngọc giả đồng thau màu xanh)\n\n• Thân cây: Đồng uốn thủ công\n\n• Đế: Gỗ phong thủy cao cấp\n\n\n________________________________________\n💰 GIÁ BÁN / PRICING\n\n| Hạng mục | Giá (VNĐ) | Ghi chú |\n| :--- | :--- | :--- |\n| Giá niêm yết | 6.300.000 VND (kiểm định riêng) code AGFS 082\\n5.700.000 VND (kiểm định chung) code AGFS 081 | Đã gồm VAT 10%, chưa phí vận chuyển |\n| Giá bán thị trường | 5.700.000 VND (kiểm định riêng) code AGFS 082\\n5.200.000 VND (kiểm định chung) code AGFS 081 | Gồm VAT, chưa phí vận chuyển |\n\n\n________________________________________\n🌈 Ý NGHĨA PHONG THỦY\n\n| Đặc tính | Phân tích phong thủy |\n| :--- | :--- |\n| Thạch anh hồng | Biểu tượng tình yêu – hòa hợp – hạnh phúc. Tác động mạnh lên luân xa tim, giúp chữa lành cảm xúc. |\n| Dáng nho tài lộc | Quả chùm mang ý nghĩa sum vầy – thịnh vượng – phúc khí nối dài. Nho gắn liền với sự no đủ và sinh sôi nảy nở. |\n| Lá xanh – quả hồng | Tạo thế sinh trưởng – vượng khí – tăng năng lượng dương trong nhà. |\n\nCông dụng phong thủy:\n\n• Kích hoạt tài lộc – tình duyên – hòa khí gia đạo.\n\n• Tạo năng lượng sinh sôi, giúp thu hút cơ hội và quý nhân.\n\n• Cân bằng cảm xúc, hỗ trợ ngủ ngon và thiền định.\nÝ nghĩa biểu tượng: “Nho hồng – Quả tròn đầy – Phúc tròn đầy.”\nHợp mệnh:\n\n• Hợp nhất: Hỏa – Thổ\n\n• Tương sinh: Kim – Mộc\n\n• Toàn mệnh nếu đặt đúng cung phong thủy.\n\n\n________________________________________\n💎 GIẢI NGHĨA CHUYÊN GIA PHONG THỦY\n1. Về năng lượng học\nThạch anh hồng phát trường năng lượng êm dịu, giúp ổn định cảm xúc. Khi kết thành quả tròn dạng nho, năng lượng được khuếch tán đều, tạo thành “trường khí hòa hợp”. Đặt trong nhà giúp giảm năng lượng xấu (stress, bất hòa), tăng từ trường yêu thương và bình an.\n2. Về phong thủy trấn trạch\nNho là biểu tượng của phúc – lộc – thọ, thường dùng để: ✔ Thu hút tài lộc ✔ Tăng sự hòa thuận trong gia đình ✔ Hóa giải xung đột và tạo không khí an vui. Thích hợp đặt tại: Đông Nam (cung Tài Lộc), Tây Nam (cung Hôn Nhân – Gia Đạo), Trung cung (tăng hòa khí).\n\n\n________________________________________\n🪶 HỒ SƠ PHONG THỦY SẢN PHẨM\n1. Mô tả sản phẩm / Product Description\nCây Nho Tài Lộc Thạch Anh Hồng được kết từ quả thạch anh tự nhiên, có độ trong và ánh hồng dịu đặc trưng. Thân đồng uốn thủ công tạo thế vươn lên – mang ý nghĩa sinh trưởng. Đế gỗ nâu sẫm tăng vượng khí và cân bằng âm dương cho vật phẩm.\n2. Thành phần & Đặc trưng cấu tạo\n\n• Quả nho: Thạch anh hồng tự nhiên 100% – không nhuộm màu.\n\n• Lá cây: Ngọc Malaysia hoặc serpentine – vân tự nhiên.\n\n• Thân cây: Đồng uốn thủ công.\n\n• Đế: Gỗ phong thủy cao cấp.\n\n• Tem năng lượng\n3. Công dụng chính / Key Functions\n\n• Thu hút tài lộc – thịnh vượng.\n\n• Tăng hòa khí – hạnh phúc gia đình.\n\n• Tạo năng lượng thư giãn – giảm stress.\n\n• Là vật phẩm trưng bày sang trọng – may mắn.\n4. Điểm khác biệt / USP\n\n• Sử dụng thạch anh hồng thật 100%.\n\n• Kết thủ công – mỗi cây độc bản.\n\n• Hiệu ứng ánh sáng đẹp, trưng bày sang trọng.\n\n• Tẩy tịnh – niêm ấn năng lượng trước khi giao khách.\n\n• Phù hợp mọi không gian từ hiện đại đến Á Đông.\n5. Đối tượng sử dụng\n\n• Gia đình – cặp đôi – người độc thân muốn tăng duyên.\n\n• Người kinh doanh – chủ shop – chủ spa.\n\n• Văn phòng cần tăng vượng khí và hòa khí.\n\n• Quà tặng tân gia – khai trương – cưới hỏi – tri ân.\n\n\n________________________________________\n💬 FAQ – CÂU HỎI THƯỜNG GẶP\nQ1. Cây nho để ở đâu tốt nhất?\n→ Đông Nam (Tài Lộc), Tây Nam (Gia Đạo), hoặc phòng khách.\nQ2. Cây có bền không?\n→ Rất bền, vì thân đồng và đế gỗ chắc chắn.\nQ3. Có hợp làm quà tặng không?\n→ Rất phù hợp cho tân gia – khai trương – sinh nhật – doanh nghiệp.\nQ4. Thạch anh hồng có đổi màu không?\n→ Không đổi màu, nhưng tránh để dưới nắng gắt quá lâu.\n\n\n________________________________________\n🧭 HƯỚNG DẪN KIỂM TRA THẬT – GIẢ\n\n| Kiểm tra | Đá thật | Đá giả / nhuộm |\n| :--- | :--- | :--- |\n| Quan sát ánh sáng | Có vân mây – hồng dịu | Hồng neon – đều bất thường |\n| Sờ | Mát tay, nặng | Nhẹ, nóng nhanh |\n| Gõ nhẹ | Âm trong | Âm đục |\n| Soi đèn | Ánh trắng hồng | Ánh phẳng – không vân |\n| Tem năng lượng | Ann Gem & Fengshui | Không tem hoặc tem in phẳng |\n\nCây Nho Tài Lộc Thạch Anh Hồng – Bí mật của sự giàu có & hạnh phúc tròn đầy. ● Hút tài lộc – chiêu quý nhân ● Tăng hòa hợp gia đình ● Mở duyên – tăng tình cảm ● Giảm stress – an tâm ngủ ngon. 🔥 Hàng làm thủ công – đá thật 100% – có chứng thư năng lượng. 🔥Chỉ còn vài cây – không sản xuất đại trà. 👉 Ai giữ “nho thạch anh” trong nhà người đó GIỮ TÀI – GIỮ PHÚC – GIỮ HẠNH PHÚC. 💬 Comment “NHO” để kiểm tra tồn kho & nhận giá tốt nhất hôm nay.",
     "price": "5,200,000",
     "image": "/product/908f584c5822d77c8e33.jpg",
     "category": "Vật phẩm phong thủy",
+    "nameEn": "ROSE QUARTZ GRAPEVINE PROSPERITY TREE",
+    "descriptionEn": "Rose Quartz Grapevine Prosperity Tree – Symbol of Prosperity, Happiness, Gathering, and Harmony. Rose Quartz helps heal emotions and increases good relationships.",
+    "categoryEn": "Feng Shui Items",
     "benefits": [
         "Kích hoạt tài lộc – tình duyên – hòa khí gia đạo.",
         "Hóa giải năng lượng xấu, tăng cường hòa khí gia đình và sự sum vầy.",
         "Mở rộng năng lượng yêu thương và chữa lành (Thạch anh hồng).",
         "Tạo năng lượng sinh sôi, giúp thu hút cơ hội và quý nhân."
     ],
+    "benefitsEn": [
+        "Activates wealth – love – family harmony.",
+        "Neutralizes negative energy, enhances family harmony and togetherness.",
+        "Expands the energy of love and healing (Rose Quartz).",
+        "Creates fertile energy, helps attract opportunities and benefactors (Qúy Nhân)."
+    ],
     "specifications": {
         "material": "Thạch anh hồng tự nhiên 100% (Quả nho), Lá ngọc serpentine/Malaysia, Thân đồng uốn thủ công, Đế gỗ phong thủy.",
         "size": "Cao 32 cm × Ngang 25 cm",
         "weight": "500g",
         "origin": "Brazil, Madagascar – Gia công tại Việt Nam"
+    },
+    "specificationsEn": {
+        "material": "100% natural Rose Quartz (Grape fruits), Serpentine/Malaysia Jade leaves, Hand-bent copper trunk, Premium Feng Shui wooden base.",
+        "size": "Height 32 cm × Width 25 cm",
+        "weight": "500g",
+        "origin": "Brazil, Madagascar – Processed in Vietnam"
     },
     "retailPrice": "5,700,000",
     "marketPrice": "5,200,000"
@@ -1007,17 +1640,32 @@ export const allProducts: Product[] = [
     "price": "5,200,000",
     "image": "/product/Clip về cây tài lộc thạch anh tím.jpg",
     "category": "Vật phẩm phong thủy",
+    "nameEn": "AMETHYST PROSPERITY TREE",
+    "descriptionEn": "Amethyst Prosperity Tree – Symbol of Prosperity (Vượng Khí), Wisdom, and Protection. High-frequency Amethyst opens the intellect, reduces stress, and attracts wealth (in the abundant grape cluster shape).",
+    "categoryEn": "Feng Shui Items",
     "benefits": [
         "Chiêu tài – hút lộc – kích hoạt may mắn (dáng nho sung túc).",
         "Tăng sự tập trung – minh mẫn – sáng tạo (tần số cao).",
         "Giảm căng thẳng – cân bằng cảm xúc, hỗ trợ ngủ ngon.",
         "Thu hút quý nhân, hỗ trợ sự nghiệp thăng tiến và bảo hộ tinh thần."
     ],
+    "benefitsEn": [
+        "Attracts wealth – fortune – activates luck (abundant grape cluster shape).",
+        "Increases concentration – clarity – creativity (high frequency).",
+        "Reduces stress – balances emotions, supports deep sleep.",
+        "Attracts benefactors (Qúy Nhân), supports career advancement, and provides spiritual protection."
+    ],
     "specifications": {
         "material": "Thạch anh tím tự nhiên (Quả nho), Đá serpentine (lá), Thân đồng, Đế composite/đá thanh tẩy.",
         "size": "39 × 30 cm",
         "weight": "500g",
-        "origin": "Brazil, Madagascar, Việt Nam – chế tác thủ công"
+        "origin": "Brazil, Madagascar, Vietnam – handcrafted"
+    },
+    "specificationsEn": {
+        "material": "Natural Amethyst (Grape fruits), Serpentine stone (leaves), Copper wire trunk, Composite/cleansing stone base.",
+        "size": "39 × 30 cm",
+        "weight": "500g",
+        "origin": "Brazil, Madagascar, Vietnam – handcrafted"
     },
     "retailPrice": "5,700,000",
     "marketPrice": "5,200,000"
@@ -1026,21 +1674,36 @@ export const allProducts: Product[] = [
     id: 45,
     "name": "CÂY NHO TÀI LỘC THẠCH ANH XANH",
     "description": "Green Aventurine Grapevine Prosperity Tree (39 × 30 cm) – Biểu tượng Thịnh Vượng, Vận May và Cơ Hội Mới. Thạch anh xanh Aventurine giúp mở đường tài lộc và tăng trưởng.",
-    "fullDescription": "CÂY NHO TÀI LỘC THẠCH ANH XANH – 39 × 30 cm\n“Khi Cây Nho Mang Màu Xanh Của Vận May Trổ Quả”\nTừ thời Hy Lạp cổ đại đến Á Đông, chùm nho luôn được xem là biểu tượng của sự phồn thịnh, ấm no và sinh sôi. Người xưa tin rằng: “Nhà nào có nho, nhà đó thịnh.” Bởi mỗi trái nho là một “hạt tài lộc” – nhỏ nhưng đầy năng lượng sống.\n\nKhi nghệ nhân kết từng viên thạch anh xanh Aventurine thành chùm nho, họ không chỉ tạo ra một tác phẩm trang trí… Họ tạo ra một dòng chảy năng lượng may mắn.\n\nThạch anh xanh là viên đá của: 🌿 Sự thịnh vượng 🌿 Vận may 🌿 Cơ hội mới 🌿 Sự khởi đầu tràn đầy hy vọng.\n\nĐặt thạch anh xanh trong dạng “cây nho trĩu quả”, năng lượng được nhân lên gấp nhiều lần: Mỗi quả nho là một điểm tụ tài, Mỗi cành nho là một đường dẫn vận may, Mỗi chiếc lá xanh là một tín hiệu sinh sôi. Trong phong thủy, người ta gọi nó là: “Cây mở đường – cây chiêu cơ hội – cây gọi lộc đến nhà.”\n\nKhi bạn đặt cây nho này trong nhà, đặc biệt tại: 🌟 Đông Nam – cung tài lộc 🌟 Chính Bắc – cung sự nghiệp 🌟 Phòng khách – trung tâm vượng khí, bạn đang “mời” vào không gian của mình một dòng khí mới – dòng khí của cơ hội, tiền tài và may mắn liên tục trổ quả.\n\nVà rồi, bạn bắt đầu cảm nhận: ✨ Việc cũ bớt bế tắc ✨ Cơ hội mới đến bất ngờ ✨ Công việc suôn sẻ hơn ✨ Tâm trí sáng hơn ✨ Tiền tài bắt đầu tụ lại.\n\n\n________________________________________\n🪷 THÔNG TIN SẢN PHẨM\n\n• Tên sản phẩm: Cây Nho Tài Lộc Thạch Anh Xanh\n\n• Tên tiếng Anh: Green Aventurine Grapevine Prosperity Tree\n\n• Nguồn gốc đá: Thạch anh xanh Aventurine – Ấn Độ, Brazil\n\n• Gia công & hoàn thiện: Xưởng hợp tác Ann Gem & Fengshui tại Việt Nam\n\n• Thương hiệu phân phối: Ann Gem & Fengshui – Recharge Your Energy, Restore Your Balance\nKích thước: Cao 39 cm × Ngang 30 cm\nChất liệu:\n\n• Quả nho: Thạch anh xanh Aventurine 100%\n\n• Lá đá: Ngọc Malaysia / serpentine\n\n• Thân cây: Đồng uốn thủ công\n\n• Đế: Đá xanh tự nhiên nguyên khối\n\n\n________________________________________\n💰 GIÁ BÁN / PRICING\n\n| Hạng mục | Giá (VNĐ) | Ghi chú |\n| :--- | :--- | :--- |\n| Giá niêm yết | 6.300.000 VND (kiểm định riêng) code AGFS 084\\n5.700.000 VND (kiểm định riêng) code AGFS 083 | Đã gồm VAT 10%, chưa phí vận chuyển |\n| Giá bán thị trường | 5.700.000 VND (kiểm định riêng) code AGFS 084\\n5.200.000 VND (kiểm định riêng) code AGFS 083 | Gồm VAT, chưa phí vận chuyển |\n\n\n________________________________________\n🌈 Ý NGHĨA PHONG THỦY\n\n| Đặc tính | Phân tích phong thủy |\n| :--- | :--- |\n| Thạch anh xanh Aventurine | Đá chủ về may mắn, cơ hội, tài lộc. Mang năng lượng của sự mở rộng và phát triển. |\n| Dáng nho tài lộc | Chùm nho tượng trưng cho sự sum vầy, no đủ, phúc đức, sự sinh sôi nảy nở và tiền tài tích lũy. |\n| Màu xanh ngọc | Thuộc hành Mộc – tượng trưng cho sinh khí, sức khỏe, sự trẻ hóa, tăng trưởng tài lộc & cơ hội. |\n\nCông dụng phong thủy:\n\n• Kích hoạt tài lộc – thăng tiến – cơ hội mới\n\n• Tăng may mắn, đặc biệt trong kinh doanh và đầu tư\n\n• Mang lại năng lượng tươi mới – nhẹ nhàng – an hòa\n\n• Cân bằng cảm xúc, giúp ổn định tâm trí\nÝ nghĩa biểu tượng: “Nho xanh – Vượng tài – Vượng khí – Vượng cơ hội.”\nHợp mệnh: Hợp nhất: Mệnh Mộc – Hỏa. Tương sinh: Mệnh Thủy – Thổ. Hợp mọi mệnh nếu đặt đúng vị trí phong thủy.\n\n\n________________________________________\n💎 GIẢI NGHĨA CHUYÊN GIA PHONG THỦY\n1. Về năng lượng học\nThạch anh xanh có tần số năng lượng được mệnh danh là “Tần số của Cơ Hội”: mở lối suy nghĩ, tăng sự linh hoạt, thu hút vận may, giảm stress và lo âu. Khi kết thành dạng “chùm nho”, năng lượng được nhân đôi vì mỗi trái tượng trưng cho một điểm khí lành tụ lại.\n2. Về phong thủy trấn trạch\nCây nho tài lộc thường đặt tại: Đông Nam (Cung Tài Lộc – Thịnh Vượng), Chính Bắc (Sự nghiệp – cơ hội), Chính Đông (Sức khỏe – năng lượng sống), Phòng khách (Kích hoạt vượng khí toàn gia). Cây nho còn có công dụng hóa giải góc khuyết, góc nhọn, năng lượng bế tắc trong nhà.\n\n\n________________________________________\n🪶 HỒ SƠ PHONG THỦY SẢN PHẨM\n1. Mô tả sản phẩm / Product Description\nCây nho tài lộc thạch anh xanh Aventurine được chế tác thủ công bởi nghệ nhân Ann Gem & Fengshui. Từ những quả đá xanh mịn – trong – tươi, tới thân đồng uốn theo thế sinh tài, cây mang vẻ đẹp tươi mát, sang trọng và vượng khí rõ rệt.\n2. Thành phần & Đặc trưng cấu tạo\n\n• Quả nho: Thạch anh xanh Aventurine tự nhiên\n\n• Lá đá: Malaysia jade / serpentine\n\n• Thân cây: Đồng uốn thủ công\n\n• Đế: Đá xanh tự nhiên nguyên khối\n\n• Tẩy tịnh – niêm ấn năng lượng trước khi giao\n3. Công dụng chính / Key Functions\n\n• Thu hút tài lộc – chiêu quý nhân\n\n• Tăng may mắn – mở đường sự nghiệp\n\n• Cân bằng cảm xúc – giảm căng thẳng\n\n• Dùng làm vật phẩm trang trí phong thủy cao cấp\n4. USP – Điểm khác biệt\n\n• Đá tự nhiên 100% – năng lượng mạnh\n\n• Kết thủ công – không sản xuất đại trà\n\n• Đế đá xanh độc bản – giá trị thẩm mỹ cao\n\n• Ánh xanh Aventurine tươi mát – hiếm trong vật phẩm phong thủy\n\n• Tặng kèm chứng thư năng lượng Ann Gem & Fengshui\n5. Đối tượng sử dụng\n\n• Người kinh doanh – chủ shop – doanh nhân\n\n• Người gặp bế tắc – muốn đổi vận – kích hoạt may mắn\n\n• Gia đình cần tăng hòa khí – tài lộc\n\n• Người thích trang trí phong thủy – wellness living\n\n\n________________________________________\n💬 FAQ – CÂU HỎI THƯỜNG GẶP\nQ1. Đặt ở đâu tốt nhất?\n→ Đông Nam (Tài Lộc), Bắc (Sự Nghiệp), phòng khách.\nQ2. Là đá thật hay nhân tạo?\n→ Thạch anh xanh Aventurine tự nhiên 100%.\nQ3. Có hợp làm quà tặng không?\n→ Rất hợp: khai trương, tân gia, sinh nhật, doanh nghiệp.\nQ4. Có phải tẩy năng lượng định kỳ không?\n→ Có. Mỗi 2–3 tháng bằng trầm – ánh nến – ánh trăng.\n\n\n________________________________________\n🧭 HƯỚNG DẪN KIỂM TRA THẬT – GIẢ\n\n| Kiểm tra | Đá thật | Đá giả / nhuộm |\n| :--- | :--- | :--- |\n| Quan sát màu | Xanh đậm nhạt tự nhiên, không đều màu | Xanh neon – đều bất thường |\n| Sờ | Mát tay, nặng | Nhẹ, nóng nhanh |\n| Gõ nhẹ | Âm trong, chắc | Âm đục |\n| Soi đèn | Có vân mây, ánh xanh | Màu phẳng, không vân |\n| Tem năng lượng | Có tem chứng thực | Không tem hoặc tem in mờ |\n\nBạn đang tìm món quà tặng thật sự có giá trị? Đây là Cây Nho Tài Lộc Thạch Anh Xanh – món quà mang ý nghĩa PHONG THỦY – TÀI LỘC – MAY MẮN. Ai nhận cũng thích. Ai trưng cũng vượng. 💚 Thạch anh xanh: đá của may mắn & cơ hội 💚 Chùm nho: phúc – lộc – thịnh – vượng 💚 Đặt đâu sáng lộc đó. 👉 Gửi liền ảnh thật + báo giá ưu đãi trong ngày.",
+    "fullDescription": "CÂY NHO TÀI LỘC THẠCH ANH XANH – 39 × 30 cm\n“Khi Cây Nho Mang Màu Xanh Của Vận May Trổ Quả”\nTừ thời Hy Lạp cổ đại đến Á Đông, chùm nho luôn được xem là biểu tượng của sự phồn thịnh, ấm no và sinh sôi. Người xưa tin rằng: “Nhà nào có nho, nhà đó thịnh.” Bởi mỗi trái nho là một “hạt tài lộc” – nhỏ nhưng đầy năng lượng sống.\n\nKhi nghệ nhân kết từng viên thạch anh xanh Aventurine thành chùm nho, họ không chỉ tạo ra một tác phẩm trang trí… Họ tạo ra một dòng chảy năng lượng may mắn.\n\nThạch anh xanh là viên đá của: 🌿 Sự thịnh vượng 🌿 Vận may 🌿 Cơ hội mới 🌿 Sự khởi đầu tràn đầy hy vọng.\n\nĐặt thạch anh xanh trong dạng “cây nho trĩu quả”, năng lượng được nhân lên gấp nhiều lần: Mỗi quả nho là một điểm tụ tài, Mỗi cành nho là một đường dẫn vận may, Mỗi chiếc lá xanh là một tín hiệu sinh sôi. Trong phong thủy, người ta gọi nó là: “Cây mở đường – cây chiêu cơ hội – cây gọi lộc đến nhà.”\n\nKhi bạn đặt cây nho này trong nhà, đặc biệt tại: 🌟 Đông Nam – cung tài lộc 🌟 Chính Bắc – cung sự nghiệp 🌟 Phòng khách – trung tâm vượng khí, bạn đang “mời” vào không gian của mình một dòng khí mới – dòng khí của cơ hội, tiền tài và may mắn liên tục trổ quả.\n\nVà rồi, bạn bắt đầu cảm nhận: ✨ Việc cũ bớt bế tắc ✨ Cơ hội mới đến bất ngờ ✨ Công việc suôn sẻ hơn ✨ Tâm trí sáng hơn ✨ Tiền tài bắt đầu tụ lại.\n\n\n________________________________________\n🪷 THÔNG TIN SẢN PHẨM\n\n• Tên sản phẩm: Cây Nho Tài Lộc Thạch Anh Xanh\n\n• Tên tiếng Anh: Green Aventurine Grapevine Prosperity Tree\n\n• Nguồn gốc đá: Thạch anh xanh Aventurine – Ấn Độ, Brazil\n\n• Gia công & hoàn thiện: Xưởng hợp tác Ann Gem & Fengshui tại Việt Nam\n\n• Thương hiệu phân phối: Ann Gem & Fengshui – Recharge Your Energy, Restore Your Balance\nKích thước: Cao 39 cm × Ngang 30 cm\nChất liệu:\n\n• Quả nho: Thạch anh xanh Aventurine 100%\n\n• Lá đá: Ngọc Malaysia / serpentine\n\n• Thân cây: Đồng uốn thủ công\n\n• Đế: Đá xanh tự nhiên nguyên khối\n\n\n________________________________________\n💰 GIÁ BÁN / PRICING\n\n| Hạng mục | Giá (VNĐ) | Ghi chú |\n| :--- | :--- | :--- |\n| Giá niêm yết | 6.300.000 VND (kiểm định riêng) code AGFS 084\\n5.700.000 VND (kiểm định riêng) code AGFS 083 | Đã gồm VAT 10%, chưa phí vận chuyển |\n| Giá bán thị trường | 5.700.000 VND (kiểm định riêng) code AGFS 084\\n5.200.000 VND (kiểm định riêng) code AGFS 083 | Gồm VAT, chưa phí vận chuyển |\n\n\n________________________________________\n🌈 Ý NGHĨA PHONG THỦY\n\n| Đặc tính | Phân tích phong thủy |\n| :--- | :--- |\n| Thạch anh xanh Aventurine | Đá chủ về may mắn, cơ hội, tài lộc. Mang năng lượng của sự mở rộng và phát triển. |\n| Dáng nho tài lộc | Chùm nho tượng trưng cho sự sum vầy, no đủ, phúc đức, sự sinh sôi nảy nở và tiền tài tích lũy. |\n| Màu xanh ngọc | Thuộc hành Mộc – tượng trưng cho sinh khí, sức khỏe, sự trẻ hóa, tăng trưởng tài lộc & cơ hội. |\n\nCông dụng phong thủy:\n\n• Kích hoạt tài lộc – thăng tiến – cơ hội mới\n\n• Tăng may mắn, đặc biệt trong kinh doanh và đầu tư\n\n• Mang lại năng lượng tươi mới – nhẹ nhàng – an hòa\n\n• Cân bằng cảm xúc, giúp ổn định tâm trí\nÝ nghĩa biểu tượng: “Nho xanh – Vượng tài – Vượng khí – Vượng cơ hội.”\nHợp mệnh: Hợp nhất: Mệnh Mộc – Hỏa. Tương sinh: Mệnh Thủy – Thổ. Hợp mọi mệnh nếu đặt đúng vị trí phong thủy.\n\n\n________________________________________\n💎 GIẢI NGHĨA CHUYÊN GIA PHONG THỦY\n1. Về năng lượng học\nThạch anh xanh có tần số năng lượng được mệnh danh là “Tần số của Cơ Hội”: mở lối suy nghĩ, tăng sự linh hoạt, thu hút vận may, giảm stress và lo âu. Khi kết thành dạng “chùm nho”, năng lượng được nhân đôi vì mỗi trái tượng trưng cho một điểm khí lành tụ lại.\n2. Về phong thủy trấn trạch\nCây nho tài lộc thường đặt tại: Đông Nam (Cung Tài Lộc – Thịnh Vượng), Chính Bắc (Sự nghiệp – cơ hội), Chính Đông (Sức khỏe – năng lượng sống), Phòng khách (Kích hoạt vượng khí toàn gia). Cây nho còn có công dụng hóa giải góc khuyết, góc nhọn, năng lượng bế tắc trong nhà.\n\n\n________________________________________\n🪶 HỒ SƠ PHONG THỦY SẢN PHẨM\n1. Mô tả sản phẩm / Product Description\nCây nho tài lộc thạch anh xanh Aventurine được chế tác thủ công bởi nghệ nhân Ann Gem & Fengshui. Từ những quả đá xanh mịn – trong – tươi, tới thân đồng uốn theo thế sinh tài, cây mang vẻ đẹp tươi mát, sang trọng và vượng khí rõ rệt.\n2. Thành phần & Đặc trưng cấu tạo\n\n• Quả nho: Thạch anh xanh Aventurine tự nhiên\n\n• Lá đá: Ngọc Malaysia / serpentine\n\n• Thân cây: Đồng uốn thủ công\n\n• Đế: Đá xanh tự nhiên nguyên khối\n\n• Tẩy tịnh – niêm ấn năng lượng trước khi giao\n3. Công dụng chính / Key Functions\n\n• Thu hút tài lộc – chiêu quý nhân\n\n• Tăng may mắn – mở đường sự nghiệp\n\n• Cân bằng cảm xúc – giảm căng thẳng\n\n• Dùng làm vật phẩm trang trí phong thủy cao cấp\n4. USP – Điểm khác biệt\n\n• Đá tự nhiên 100% – năng lượng mạnh\n\n• Kết thủ công – không sản xuất đại trà\n\n• Đế đá xanh độc bản – giá trị thẩm mỹ cao\n\n• Ánh xanh Aventurine tươi mát – hiếm trong vật phẩm phong thủy\n\n• Tặng kèm chứng thư năng lượng Ann Gem & Fengshui\n5. Đối tượng sử dụng\n\n• Người kinh doanh – chủ shop – doanh nhân\n\n• Người gặp bế tắc – muốn đổi vận – kích hoạt may mắn\n\n• Gia đình cần tăng hòa khí – tài lộc\n\n• Người thích trang trí phong thủy – wellness living\n\n\n________________________________________\n💬 FAQ – CÂU HỎI THƯỜNG GẶP\nQ1. Đặt ở đâu tốt nhất?\n→ Đông Nam (Tài Lộc), Bắc (Sự Nghiệp), phòng khách.\nQ2. Là đá thật hay nhân tạo?\n→ Thạch anh xanh Aventurine tự nhiên 100%.\nQ3. Có hợp làm quà tặng không?\n→ Rất hợp: khai trương, tân gia, sinh nhật, doanh nghiệp.\nQ4. Có phải tẩy năng lượng định kỳ không?\n→ Có. Mỗi 2–3 tháng bằng trầm – ánh nến – ánh trăng.\n\n\n________________________________________\n🧭 HƯỚNG DẪN KIỂM TRA THẬT – GIẢ\n\n| Kiểm tra | Đá thật | Đá giả / nhuộm |\n| :--- | :--- | :--- |\n| Quan sát màu | Xanh đậm nhạt tự nhiên, không đều màu | Xanh neon – đều bất thường |\n| Sờ | Mát tay, nặng | Nhẹ, nóng nhanh |\n| Gõ nhẹ | Âm trong, chắc | Âm đục |\n| Soi đèn | Có vân mây, ánh xanh | Màu phẳng, không vân |\n| Tem năng lượng | Có tem chứng thực | Không tem hoặc tem in mờ |\n\nBạn đang tìm món quà tặng thật sự có giá trị? Đây là Cây Nho Tài Lộc Thạch Anh Xanh – món quà mang ý nghĩa PHONG THỦY – TÀI LỘC – MAY MẮN. Ai nhận cũng thích. Ai trưng cũng vượng. 💚 Thạch anh xanh: đá của may mắn & cơ hội 💚 Chùm nho: phúc – lộc – thịnh – vượng 💚 Đặt đâu sáng lộc đó. 👉 Gửi liền ảnh thật + báo giá ưu đãi trong ngày.",
     "price": "5,200,000",
     "image": "/product/8b48dece1ca093fecab1.jpg",
     "category": "Vật phẩm phong thủy",
+    "nameEn": "GREEN AVENTURINE GRAPEVINE PROSPERITY TREE",
+    "descriptionEn": "Green Aventurine Grapevine Prosperity Tree (39 × 30 cm) – Symbol of Prosperity, Luck, and New Opportunities. Green Aventurine helps pave the way for wealth and growth.",
+    "categoryEn": "Feng Shui Items",
     "benefits": [
         "Kích hoạt tài lộc – thăng tiến – cơ hội mới (Cây mở đường).",
         "Tăng may mắn, đặc biệt trong kinh doanh và đầu tư.",
         "Mang lại năng lượng tươi mới, an hòa, cân bằng cảm xúc.",
         "Sum vầy, no đủ, phúc đức và tiền tài tích lũy (dáng nho trĩu quả)."
     ],
+    "benefitsEn": [
+        "Activates wealth – advancement – new opportunities (The path-opening tree).",
+        "Increases luck, especially in business and investment.",
+        "Brings fresh, peaceful energy, balances emotions.",
+        "Gathering, abundance, blessings, and wealth accumulation (abundant grape cluster shape)."
+    ],
     "specifications": {
         "material": "Thạch anh xanh Aventurine tự nhiên 100% (Quả nho), Lá đá serpentine/Malaysia, Thân đồng uốn thủ công, Đế đá xanh nguyên khối.",
         "size": "Cao 39 cm × Ngang 30 cm",
         "weight": "500g",
-        "origin": "Ấn Độ, Brazil – Gia công tại Việt Nam"
+        "origin": "India, Brazil – Processed in Vietnam"
+    },
+    "specificationsEn": {
+        "material": "100% natural Green Aventurine Quartz (Grape fruits), Serpentine/Malaysia Jade leaves, Hand-bent copper trunk, Solid green stone base.",
+        "size": "Height 39 cm × Width 30 cm",
+        "weight": "500g",
+        "origin": "India, Brazil – Processed in Vietnam"
     },
     "retailPrice": "5,700,000",
     "marketPrice": "5,200,000"
@@ -1053,17 +1716,32 @@ export const allProducts: Product[] = [
     "price": "11,700,000",
     "image": "/product/Hoa đào phú quý.jpg",
     "category": "Tranh đá quý phong thủy",
+    "nameEn": "PROSPEROUS PEACH BLOSSOM GEMSTONE PAINTING (80 × 140 CM)",
+    "descriptionEn": "Prosperous Peach Blossom Gemstone Painting – Fortune-changing spiritual flower, the strongest Yang Chi symbol, Attracting Wealth, Activating Love Luck (Đào Hoa), and Prosperity. Large size, 3D raised gemstones.",
+    "categoryEn": "Feng Shui Gemstone Paintings",
     "benefits": [
         "Chiêu tài – chiêu lộc – mở vận quý nhân (Dương Khí mạnh).",
         "Kích hoạt đào hoa (cát lợi) – tăng nhân duyên – hòa thuận.",
         "Ổn định trường khí, làm ấm không gian, xua bế tắc – khí xấu (Linh hoa trấn trạch).",
         "Mang lại sự hưng thịnh, phồn vinh, may mắn và khởi đầu mới."
     ],
+    "benefitsEn": [
+        "Attracts wealth – fortune – opens up benefactor luck (Strong Yang Chi).",
+        "Activates auspicious love luck (Đào Hoa) – increases good relationships – harmony.",
+        "Stabilizes the energy field, warms the space, dispels stagnation – bad chi (Spiritual flower for house protection).",
+        "Brings flourishing prosperity, vitality, luck, and new beginnings."
+    ],
     "specifications": {
         "material": "Đá quý tự nhiên (Thạch anh hồng/trắng, Aventurine, Mã não, Serpentine...)",
         "size": "80 × 140 cm (khổ lớn)",
         "weight": "500g",
-        "origin": "Việt Nam, Brazil, Ấn Độ – chế tác thủ công"
+        "origin": "Việt Nam, Brazil, India – handcrafted"
+    },
+    "specificationsEn": {
+        "material": "Natural gemstones (Rose/White Quartz, Aventurine, Agate, Serpentine...)",
+        "size": "80 × 140 cm (large format)",
+        "weight": "500g",
+        "origin": "Vietnam, Brazil, India – handcrafted"
     },
     "retailPrice": "13,000,000",
     "marketPrice": "11,700,000"
@@ -1076,17 +1754,32 @@ export const allProducts: Product[] = [
     "price": "1,850,000",
     "image": "/product/Hũ đựng trà ngọc Hoàng long (2).jpg",
     "category": "Vật phẩm phong thủy",
+    "nameEn": "YELLOW ONYX TEA CANISTER",
+    "descriptionEn": "Yellow Onyx Tea Canister – “Small Wealth Vault – Great Prosperity Chi”. A storage item (Tàng Khí) for maintaining fortune, made from Yellow Onyx (strong Earth element) to attract wealth, maintain harmony, and preserve tea aroma.",
+    "categoryEn": "Feng Shui Items",
     "benefits": [
         "Tụ tài – giữ lộc, kích hoạt Tài Khố (Hành Thổ vượng).",
         "Giữ trà thơm – khô, bảo toàn “khí vị” của trà (Hút ẩm tự nhiên).",
         "Tăng năng lượng ấm – an hòa, hỗ trợ gia đạo ấm hòa – công việc thuận lợi.",
         "Tăng sự tự tin & sáng suốt (Hoàng khí)."
     ],
+    "benefitsEn": [
+        "Accumulates and preserves wealth, activates the Wealth Vault (strong Earth element).",
+        "Keeps tea fresh – dry, preserves the 'spirit/aroma' of the tea (Natural moisture absorption).",
+        "Increases warm – peaceful energy, supports family harmony and smooth career progression.",
+        "Boosts confidence and clarity (Imperial Chi)."
+    ],
     "specifications": {
         "material": "Ngọc Hoàng Long Onyx tự nhiên 100%, Nắp hợp kim đồng/vàng kim phủ bảo vệ.",
         "size": "Cao: 15 cm, Đường kính: 10 cm",
         "weight": "500g",
         "origin": "Pakistan – Gia công tại Việt Nam"
+    },
+    "specificationsEn": {
+        "material": "100% natural Yellow Onyx Marble, copper/gold alloy lid with protective coating.",
+        "size": "Height: 15 cm, Diameter: 10 cm",
+        "weight": "500g",
+        "origin": "Pakistan – Processed in Vietnam"
     },
     "retailPrice": "2,350,000",
     "marketPrice": "1,850,000"
@@ -1099,17 +1792,32 @@ export const allProducts: Product[] = [
     "price": "1,850,000",
     "image": "/product/Hũ đựng trà ngọc onyx xanh huyết (3).jpg",
     "category": "Vật phẩm phong thủy",
+    "nameEn": "GREEN-BLOOD ONYX TEA CANISTER",
+    "descriptionEn": "Green-Blood Onyx Tea Canister – Wood-Fire Harmony Treasure. Symbol of “Green nurtures fortune – Red activates fortune – White preserves fortune”. Increases wealth chi, maintains harmony, and preserves tea flavor.",
+    "categoryEn": "Feng Shui Items",
     "benefits": [
         "Tăng tài khí, Giữ lộc – giữ của, ổn định tài khí gia đình.",
         "Bảo toàn năng lượng trà – giữ hương, giữ khí, tránh ẩm.",
         "Hỗ trợ tinh thần (Tăng sáng trí, tự tin, quyết đoán), giảm stress.",
         "Tăng sinh khí & hòa khí cho bếp và không gian sống."
     ],
+    "benefitsEn": [
+        "Increases wealth chi, preserves fortune – wealth, stabilizes family wealth chi.",
+        "Preserves tea energy – maintains aroma, chi, and prevents moisture.",
+        "Spiritual support (Increases clarity, confidence, decisiveness), reduces stress.",
+        "Increases vital energy (Sinh Khí) and harmony for the kitchen and living space."
+    ],
     "specifications": {
         "material": "Ngọc Onyx Xanh Huyết tự nhiên 100% (vân xanh sữa pha đỏ nâu), Nắp hợp kim vàng kim khắc hoa văn cổ.",
         "size": "Cao: 15 cm, Đường kính: 10 cm",
         "weight": "500g",
         "origin": "Pakistan, Afghanistan – Gia công tại Việt Nam"
+    },
+    "specificationsEn": {
+        "material": "100% natural Green-Blood Onyx Marble (milky green/reddish brown veins), gold alloy lid with antique carving.",
+        "size": "Height: 15 cm, Diameter: 10 cm",
+        "weight": "500g",
+        "origin": "Pakistan, Afghanistan – Processed in Vietnam"
     },
     "retailPrice": "2,350,000",
     "marketPrice": "1,850,000"
@@ -1122,17 +1830,32 @@ export const allProducts: Product[] = [
     "price": "10,500,000",
     "image": "/product/Phong Cảnh Hữu Tình – Dòng Suối Tài Lộc.jpg",
     "category": "Tranh đá quý phong thủy",
+    "nameEn": "PREMIUM NATURAL GEMSTONE LANDSCAPE PAINTING – FORTUNE STREAM EDITION",
+    "descriptionEn": "Premium Natural Gemstone Landscape Painting (80×110 cm) – Symbol of Wealth Flowing into the House, Flourishing Prosperity Chi, and Bright Future. Three-Chi Prosperity (Tam Khí Vượng) composition.",
+    "categoryEn": "Feng Shui Gemstone Paintings",
     "benefits": [
         "Kích hoạt cung Tài Lộc – Quý Nhân – Sự Nghiệp (Dòng suối chảy vào nhà).",
         "Trấn trạch – chiêu tài – khai vận mạnh nhất (Bố cục Thủy sinh Mộc sinh Hỏa).",
         "Tăng sinh khí – thanh lọc năng lượng, giảm stress.",
         "Giúp công việc hanh thông – kinh doanh thuận lợi, tương lai rộng mở."
     ],
+    "benefitsEn": [
+        "Activates Wealth – Benefactor – Career sectors (Stream flowing into the house).",
+        "Most powerful for house protection – wealth attraction – fortune opening (Water generates Wood, Wood generates Fire composition).",
+        "Increases vital energy (Sinh Khí) – purifies energy, reduces stress.",
+        "Promotes smooth career progression – favorable business, broadens the future."
+    ],
     "specifications": {
         "material": "Đá quý tự nhiên (Ruby vụn, Thạch anh, Aventurine, Mã não, Onyx Marble, Hoàng Long) – Kỹ thuật 3D nổi.",
         "size": "80 × 110 cm",
         "weight": "500g",
         "origin": "Việt Nam, Brazil, Madagascar – chế tác thủ công"
+    },
+    "specificationsEn": {
+        "material": "Natural gemstones (Ruby chips, Quartz, Aventurine, Agate, Onyx Marble, Yellow Onyx) – 3D raised technique.",
+        "size": "80 × 110 cm",
+        "weight": "500g",
+        "origin": "Vietnam, Brazil, Madagascar – handcrafted"
     },
     "retailPrice": "11,200,000",
     "marketPrice": "10,500,000"
@@ -1145,17 +1868,32 @@ export const allProducts: Product[] = [
     "price": "7,850,000",
     "image": "/product/Phong cảnh ruộng bậc thang mùa vàng 80 x110 cm.jpg",
     "category": "Tranh đá quý phong thủy",
+    "nameEn": "GOLDEN TERRACED FIELDS GEMSTONE LANDSCAPE PAINTING",
+    "descriptionEn": "Golden Terraced Fields Gemstone Landscape Painting (80 × 110 cm) – Symbol of Accumulated Wealth, Prosperity, and Solid Support (Mountain-backed terrain).",
+    "categoryEn": "Feng Shui Gemstone Paintings",
     "benefits": [
         "Chiêu tài – hút lộc, gia tăng may mắn tài chính (Tài lộc tích lũy).",
         "Tăng cường năng lượng Thổ, tạo cảm giác an yên, vững chãi, ổn định.",
         "Hỗ trợ kinh doanh, đầu tư, mở rộng công việc (Khí dương hưng thịnh).",
         "Cân bằng trường khí, đem lại sự hòa thuận trong gia đình (Địa thế tựa sơn)."
     ],
+    "benefitsEn": [
+        "Attracts and accumulates wealth/fortune, increases financial luck (Accumulated Wealth).",
+        "Enhances Earth element energy, creates a feeling of peace, stability, and solidity.",
+        "Supports business, investment, and career expansion (Flourishing Yang Chi).",
+        "Balances the energy field, promotes family harmony (Mountain-backed posture)."
+    ],
     "specifications": {
         "material": "Đá quý tự nhiên (Thạch anh, Mã não, Aventurine, Obsidian, Garnet, Ruby nhỏ...)",
         "size": "80 × 110 cm (khổ lớn)",
         "weight": "500g",
-        "origin": "Việt Nam & quốc tế – Chế tác thủ công 100%"
+        "origin": "Vietnam & international – 100% handcrafted"
+    },
+    "specificationsEn": {
+        "material": "Natural gemstones (Quartz, Agate, Aventurine, Obsidian, Garnet, small artistic Ruby...)",
+        "size": "80 × 110 cm (large format)",
+        "weight": "500g",
+        "origin": "Vietnam & international – 100% handcrafted"
     },
     "retailPrice": "9,000,000",
     "marketPrice": "7,850,000"
@@ -1168,17 +1906,32 @@ export const allProducts: Product[] = [
     "price": "12,419,000",
     "image": "/product/Ruby đỏ (4).jpg",
     "category": "Đá quý hộ thân",
+    "nameEn": "NATURAL RUBY – THE LUCKY RED GEM",
+    "descriptionEn": "Natural Ruby – The Stone of Passion & Prosperity. Powerful Fire Chi treasure (30–40 MHz), symbolizing Fame, Power, Love, and Energy Protection. Size 15x12 mm.",
+    "categoryEn": "Protective Gemstones",
     "benefits": [
         "Kích hoạt Hỏa khí, tăng Danh Vọng, quyền lực và thành công sự nghiệp.",
         "Tăng sinh lực, dũng khí, tự tin và niềm đam mê sống.",
         "Cân bằng cảm xúc, thu hút mối quan hệ tốt (kích hoạt luân xa tim).",
         "Bảo hộ năng lượng, trấn trạch, xua trừ tà khí."
     ],
+    "benefitsEn": [
+        "Activates Fire Chi, increases Fame/Reputation, power, and career success.",
+        "Increases vitality, courage, confidence, and passion for life.",
+        "Balances emotions, attracts good relationships (activates the Heart Chakra).",
+        "Energy protection, house protection (Trấn Trạch), repels evil chi."
+    ],
     "specifications": {
         "material": "Ruby tự nhiên 100% (Nhóm Corundum), cắt cabochon.",
         "size": "15 × 12 mm",
         "weight": "500g",
-        "origin": "Myanmar, Mozambique, Việt Nam (Yên Bái – Lục Yên)"
+        "origin": "Myanmar, Mozambique, Vietnam (Yen Bai – Luc Yen)"
+    },
+    "specificationsEn": {
+        "material": "100% natural Ruby (Corundum group), cabochon cut.",
+        "size": "15 × 12 mm",
+        "weight": "500g",
+        "origin": "Myanmar, Mozambique, Vietnam (Yen Bai – Luc Yen)"
     },
     "retailPrice": "14,599,000",
     "marketPrice": "12,419,000"

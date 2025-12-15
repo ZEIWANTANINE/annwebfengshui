@@ -8,9 +8,17 @@ import { useI18n } from "@/app/i18n/context";
 
 const ITEMS_PER_PAGE = 9;
 
+const getLocalizedField = (product: any, field: string, language: 'en' | 'vi') => {
+  if (language === 'en') {
+    const enField = field + 'En';
+    return product[enField] || product[field];
+  }
+  return product[field];
+};
+
 export default function ProductsPage() {
   const [currentPage, setCurrentPage] = useState(1);
-  const { t } = useI18n();
+  const { t, language } = useI18n();
   
   const totalPages = Math.ceil(allProducts.length / ITEMS_PER_PAGE);
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
@@ -42,23 +50,23 @@ export default function ProductsPage() {
               key={product.id}
               className="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 group"
             >
-              <div className="relative h-64 w-full overflow-hidden">
+              <div className="relative h-96 w-full overflow-hidden">
                 <Image
                   src={product.image}
-                  alt={product.name}
+                  alt={getLocalizedField(product, 'name', language)}
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-110"
                 />
                 <div className="absolute top-4 right-4 bg-ann-gold text-ann-dark px-3 py-1 rounded-full text-sm font-semibold">
-                  {product.category}
+                  {getLocalizedField(product, 'category', language)}
                 </div>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-serif font-bold text-ann-dark mb-2">
-                  {product.name}
+                  {getLocalizedField(product, 'name', language)}
                 </h3>
                 <p className="text-ann-stone text-sm mb-4 line-clamp-2">
-                  {product.description}
+                  {getLocalizedField(product, 'description', language)}
                 </p>
                 <div className="flex items-center justify-between">
                   <div className="flex flex-col">

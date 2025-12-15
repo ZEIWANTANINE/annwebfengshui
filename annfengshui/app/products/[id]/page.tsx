@@ -7,11 +7,19 @@ import { getProductById, allProducts } from "@/app/data/products";
 import { useEffect, useState } from "react";
 import { useI18n } from "@/app/i18n/context";
 
+const getLocalizedField = (product: any, field: string, language: 'en' | 'vi') => {
+  if (language === 'en') {
+    const enField = field + 'En';
+    return product[enField] || product[field];
+  }
+  return product[field];
+};
+
 export default function ProductDetailPage() {
   const params = useParams();
   const id = params?.id as string;
   const [product, setProduct] = useState(getProductById(parseInt(id || "0")));
-  const { t } = useI18n();
+  const { t, language } = useI18n();
 
   useEffect(() => {
     if (id) {
@@ -96,7 +104,7 @@ export default function ProductDetailPage() {
               <div className="relative h-[600px] w-full rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
                 <Image
                   src={product.image}
-                  alt={product.name}
+                  alt={getLocalizedField(product, 'name', language)}
                   fill
                   className="object-cover"
                   priority
@@ -130,15 +138,15 @@ export default function ProductDetailPage() {
                 <span>/</span>
                 <Link href="/products" className="hover:text-ann-gold transition-colors">{t.productDetail.products}</Link>
                 <span>/</span>
-                <span className="text-ann-dark font-medium">{product.name}</span>
+                <span className="text-ann-dark font-medium">{getLocalizedField(product, 'name', language)}</span>
               </div>
 
               <div>
                 <h1 className="text-5xl md:text-6xl font-serif font-bold text-ann-dark mb-4 leading-tight">
-                  {product.name}
+                  {getLocalizedField(product, 'name', language)}
                 </h1>
                 <p className="text-xl text-ann-stone leading-relaxed mb-6">
-                  {product.description}
+                  {getLocalizedField(product, 'description', language)}
                 </p>
               </div>
 
@@ -260,7 +268,7 @@ export default function ProductDetailPage() {
       </section>
 
       {/* Full Description Section */}
-      {product.fullDescription && (
+      {(getLocalizedField(product, 'fullDescription', language)) && (
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
@@ -272,7 +280,7 @@ export default function ProductDetailPage() {
               </div>
               <div className="bg-ann-ivory rounded-2xl p-8 md:p-12 shadow-lg">
                 <p className="text-lg text-ann-stone leading-relaxed whitespace-pre-line">
-                  {product.fullDescription}
+                  {getLocalizedField(product, 'fullDescription', language)}
                 </p>
               </div>
             </div>
@@ -295,7 +303,7 @@ export default function ProductDetailPage() {
                 <div className="w-24 h-1 bg-gradient-to-r from-ann-gold to-ann-green mx-auto rounded-full mt-4"></div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {product.benefits.map((benefit, index) => (
+                {(getLocalizedField(product, 'benefits', language) || product.benefits).map((benefit, index) => (
                   <div
                     key={index}
                     className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-ann-stone/10 hover:border-ann-gold/50 group"
@@ -391,7 +399,7 @@ export default function ProductDetailPage() {
               </div>
               <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 border border-ann-stone/10">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  {product.specifications.material && (
+                  {(getLocalizedField(product, 'specifications', language) || product.specifications).material && (
                     <div className="flex items-start gap-4 p-4 bg-ann-ivory rounded-lg">
                       <div className="flex-shrink-0 w-12 h-12 bg-ann-gold rounded-lg flex items-center justify-center">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -401,12 +409,12 @@ export default function ProductDetailPage() {
                       <div>
                         <p className="text-sm text-ann-stone mb-1">{t.productDetail.material}</p>
                         <p className="text-lg font-bold text-ann-dark">
-                          {product.specifications.material}
+                          {(getLocalizedField(product, 'specifications', language) || product.specifications).material}
                         </p>
                       </div>
                     </div>
                   )}
-                  {product.specifications.size && (
+                  {(getLocalizedField(product, 'specifications', language) || product.specifications).size && (
                     <div className="flex items-start gap-4 p-4 bg-ann-ivory rounded-lg">
                       <div className="flex-shrink-0 w-12 h-12 bg-ann-green rounded-lg flex items-center justify-center">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -416,12 +424,12 @@ export default function ProductDetailPage() {
                       <div>
                         <p className="text-sm text-ann-stone mb-1">{t.productDetail.size}</p>
                         <p className="text-lg font-bold text-ann-dark">
-                          {product.specifications.size}
+                          {(getLocalizedField(product, 'specifications', language) || product.specifications).size}
                         </p>
                       </div>
                     </div>
                   )}
-                  {product.specifications.weight && (
+                  {(getLocalizedField(product, 'specifications', language) || product.specifications).weight && (
                     <div className="flex items-start gap-4 p-4 bg-ann-ivory rounded-lg">
                       <div className="flex-shrink-0 w-12 h-12 bg-ann-gold rounded-lg flex items-center justify-center">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -431,12 +439,12 @@ export default function ProductDetailPage() {
                       <div>
                         <p className="text-sm text-ann-stone mb-1">{t.productDetail.weight}</p>
                         <p className="text-lg font-bold text-ann-dark">
-                          {product.specifications.weight}
+                          {(getLocalizedField(product, 'specifications', language) || product.specifications).weight}
                         </p>
                       </div>
                     </div>
                   )}
-                  {product.specifications.origin && (
+                  {(getLocalizedField(product, 'specifications', language) || product.specifications).origin && (
                     <div className="flex items-start gap-4 p-4 bg-ann-ivory rounded-lg">
                       <div className="flex-shrink-0 w-12 h-12 bg-ann-green rounded-lg flex items-center justify-center">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -446,7 +454,7 @@ export default function ProductDetailPage() {
                       <div>
                         <p className="text-sm text-ann-stone mb-1">{t.productDetail.origin}</p>
                         <p className="text-lg font-bold text-ann-dark">
-                          {product.specifications.origin}
+                          {(getLocalizedField(product, 'specifications', language) || product.specifications).origin}
                         </p>
                       </div>
                     </div>
@@ -545,7 +553,7 @@ export default function ProductDetailPage() {
               {t.productDetail.finalCta}
             </h2>
             <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-              {t.productDetail.finalCtaDesc.replace('{productName}', product.name)}
+              {t.productDetail.finalCtaDesc.replace('{productName}', getLocalizedField(product, 'name', language))}
             </p>
             
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-8 border border-white/20">
@@ -620,12 +628,12 @@ export default function ProductDetailPage() {
                   <div className="relative h-64 w-full overflow-hidden">
                     <Image
                       src={relatedProduct.image}
-                      alt={relatedProduct.name}
+                      alt={getLocalizedField(relatedProduct, 'name', language)}
                       fill
                       className="object-cover transition-transform duration-300 group-hover:scale-110"
                     />
                     <div className="absolute top-4 right-4 bg-gradient-to-r from-ann-gold to-ann-gold/90 text-ann-dark px-3 py-1.5 rounded-full text-xs font-bold shadow-lg">
-                      {relatedProduct.category}
+                      {getLocalizedField(relatedProduct, 'category', language)}
                     </div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                       <span className="text-white font-semibold">Xem chi tiết →</span>
@@ -633,10 +641,10 @@ export default function ProductDetailPage() {
                   </div>
                   <div className="p-6">
                     <h3 className="text-xl font-serif font-bold text-ann-dark mb-2 group-hover:text-ann-gold transition-colors">
-                      {relatedProduct.name}
+                      {getLocalizedField(relatedProduct, 'name', language)}
                     </h3>
                     <p className="text-ann-stone text-sm mb-4 line-clamp-2">
-                      {relatedProduct.description}
+                      {getLocalizedField(relatedProduct, 'description', language)}
                     </p>
                     <div className="flex items-center justify-between pt-4 border-t border-ann-stone/10">
                       <span className="text-2xl font-bold text-ann-gold">

@@ -30,21 +30,21 @@ const CraftAndAuthenticity = () => {
             transition={{ duration: 0.5 }}
             className="absolute top-0 left-10 w-1/3"
           >
-            <Image src="/hero1.png" alt="Craftsmanship 1" width={400} height={400} className="rounded-lg shadow-2xl object-cover" />
+            <Image src="/product/Thạch anh Hồng.jpg" alt="Craftsmanship 1" width={400} height={400} className="rounded-lg shadow-2xl object-cover" />
           </motion.div>
           <motion.div
             variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0 } }}
             transition={{ duration: 0.5 }}
             className="absolute bottom-0 left-1/3 w-1/2 z-10"
           >
-            <Image src="/hero2.webp" alt="Craftsmanship 2" width={500} height={500} className="rounded-lg shadow-2xl object-cover" />
+            <Image src="/product/Thạch anh Vàng.jpg" alt="Craftsmanship 2" width={500} height={500} className="rounded-lg shadow-2xl object-cover" />
           </motion.div>
           <motion.div
             variants={{ hidden: { opacity: 0, x: 50 }, visible: { opacity: 1, x: 0 } }}
             transition={{ duration: 0.5 }}
             className="absolute top-10 right-0 w-1/3"
           >
-            <Image src="/hero3.jpg" alt="Craftsmanship 3" width={400} height={400} className="rounded-lg shadow-2xl object-cover" />
+            <Image src="/product/Thạch anh xanh.jpg" alt="Craftsmanship 3" width={400} height={400} className="rounded-lg shadow-2xl object-cover" />
           </motion.div>
         </motion.div>
       </div>
