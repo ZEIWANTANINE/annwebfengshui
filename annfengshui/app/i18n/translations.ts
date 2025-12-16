@@ -110,6 +110,7 @@ export interface Translations {
     review2Author: string;
     review3: string;
     review3Author: string;
+    ratingLabel: string;
   };
   
   // CTA
@@ -311,6 +312,7 @@ export const translations: Record<Language, Translations> = {
       review2Author: 'Nguyễn Minh, Đà Nẵng',
       review3: 'Dịch vụ tư vấn rất chuyên nghiệp, tôi đã tìm được vật phẩm hợp mệnh.',
       review3Author: 'Lê An, TP.HCM',
+      ratingLabel: 'Đánh giá'
     },
     cta: {
       title: 'Bắt đầu hành trình cân bằng của bạn.',
@@ -542,6 +544,7 @@ export const translations: Record<Language, Translations> = {
       review2Author: 'Nguyen Minh, Da Nang',
       review3: 'Very professional consultation service, I found the item that matches my element.',
       review3Author: 'Le An, Ho Chi Minh City',
+      ratingLabel: 'Rating'
     },
     cta: {
       title: 'Begin Your Balance Journey.',

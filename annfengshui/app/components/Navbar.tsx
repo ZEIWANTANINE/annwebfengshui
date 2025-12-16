@@ -1,6 +1,7 @@
 "use client";
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import clsx from 'clsx';
 import { useI18n } from '@/app/i18n/context';
@@ -52,8 +53,15 @@ const Navbar = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
-              <Link href="/" className={clsx("text-2xl font-serif font-bold transition-colors", scrolled || isOpen ? "text-ann-dark" : "text-white")}>
-                Ann Gem & Fengshui
+              <Link href="/product/Ann Gem and Fengshui logo (1)" className={clsx("flex items-center gap-3 transition-colors", scrolled || isOpen ? "text-ann-dark" : "text-white")}>
+                <Image
+                  src="/product/Ann Gem and Fengshui logo (1).jpg"
+                  alt="Ann Gem & Fengshui logo"
+                  width={48}
+                  height={48}
+                  className="rounded-full object-cover"
+                />
+                <span className={clsx("text-2xl font-serif font-bold transition-colors hidden sm:inline", scrolled || isOpen ? "text-ann-dark" : "text-white")}>Ann Gem & Fengshui</span>
               </Link>
             </div>
             <div className="hidden md:block">

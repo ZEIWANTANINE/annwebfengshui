@@ -42,7 +42,7 @@ const ProductGallery = () => {
 
   return (
     <section id="products" className="py-20 bg-ann-ivory">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full md:w-3/4 mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-serif font-bold text-ann-dark">{t.products.title}</h2>
           <p className="text-lg text-ann-stone mt-4 max-w-2xl mx-auto">{t.products.subtitle}</p>

@@ -10,7 +10,7 @@ import SocialProof from "@/app/components/SocialProof";
 
 export default function Home() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col w-screen min-h-screen overflow-x-hidden">
       {/* 1. Hero Section: Captures attention with a strong visual and message. */}
       <Hero />
 
@@ -33,9 +33,7 @@ export default function Home() {
       </MotionWrap>
 
       {/* 6. Energy Finder: Engages users with an interactive discovery tool. */}
-      <MotionWrap>
-        <EnergyFinder />
-      </MotionWrap>
+      
 
       {/* 7. Social Proof: Reinforces purchase decisions with testimonials. */}
       <MotionWrap>
