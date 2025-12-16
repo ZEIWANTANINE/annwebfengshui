@@ -133,7 +133,7 @@ export default function ProductDetailPage() {
             {/* Product Info */}
             <div className="space-y-6 sticky top-24">
               {/* Breadcrumb */}
-              <div className="flex items-center gap-2 text-sm text-ann-stone mb-4">
+              <div className="flex items-center gap-2 text-sm text-black mb-4">
                 <Link href="/" className="hover:text-ann-gold transition-colors">{t.productDetail.home}</Link>
                 <span>/</span>
                 <Link href="/products" className="hover:text-ann-gold transition-colors">{t.productDetail.products}</Link>
@@ -142,10 +142,12 @@ export default function ProductDetailPage() {
               </div>
 
               <div>
-                <h1 className="text-5xl md:text-6xl font-serif font-bold text-ann-dark mb-4 leading-tight">
-                  {getLocalizedField(product, 'name', language)}
+                <h1 className="text-4xl md:text-6xl font-sans font-bold text-slate-900 mb-6 leading-tight tracking-tight">
+                  <span className="block antialiased">
+                    {getLocalizedField(product, 'name', language)}
+                  </span>
                 </h1>
-                <p className="text-xl text-ann-stone leading-relaxed mb-6">
+                <p className="text-xl text-black leading-relaxed mb-6">
                   {getLocalizedField(product, 'description', language)}
                 </p>
               </div>
@@ -230,14 +232,14 @@ export default function ProductDetailPage() {
               <div className="inline-block mb-4">
                 <span className="text-6xl">☯️</span>
               </div>
-              <h2 className="text-4xl font-serif font-bold text-ann-dark mb-4">
+              <h2 className="text-4xl font-serif font-bold text-black mb-4">
                 {fengShuiInfo.title}
               </h2>
               <div className="w-24 h-1 bg-gradient-to-r from-ann-gold to-ann-green mx-auto rounded-full"></div>
             </div>
             
             <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 mb-8 border border-ann-stone/10">
-              <p className="text-lg text-ann-stone leading-relaxed mb-8 text-center">
+              <p className="text-lg text-black leading-relaxed mb-8 text-center">
                 {fengShuiInfo?.description || ''}
               </p>
               
@@ -253,13 +255,13 @@ export default function ProductDetailPage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-12">
-                <h2 className="text-4xl font-serif font-bold text-ann-dark mb-4">
+                <h2 className="text-4xl font-serif font-bold text-black mb-4">
                   {t.productDetail.aboutProduct}
                 </h2>
                 <div className="w-24 h-1 bg-gradient-to-r from-ann-gold to-ann-green mx-auto rounded-full"></div>
               </div>
               <div className="bg-ann-ivory rounded-2xl p-8 md:p-12 shadow-lg">
-                <p className="text-lg text-ann-stone leading-relaxed whitespace-pre-line">
+                <p className="text-lg text-black leading-relaxed whitespace-pre-line">
                   {getLocalizedField(product, 'fullDescription', language)}
                 </p>
               </div>
@@ -277,7 +279,7 @@ export default function ProductDetailPage() {
                 <h2 className="text-4xl font-serif font-bold text-ann-dark mb-4">
                   {t.productDetail.benefits}
                 </h2>
-                <p className="text-lg text-ann-stone max-w-2xl mx-auto">
+                <p className="text-lg text-black max-w-2xl mx-auto">
                   {t.productDetail.benefitsSubtitle}
                 </p>
                 <div className="w-24 h-1 bg-gradient-to-r from-ann-gold to-ann-green mx-auto rounded-full mt-4"></div>
@@ -305,7 +307,7 @@ export default function ProductDetailPage() {
                         </svg>
                       </div>
                       <div>
-                        <p className="text-ann-dark font-semibold text-lg leading-relaxed">{benefit}</p>
+                        <p className="text-black font-semibold text-lg leading-relaxed">{benefit}</p>
                       </div>
                     </div>
                   </div>
@@ -335,10 +337,10 @@ export default function ProductDetailPage() {
                   </div>
                   <h3 className="text-xl font-serif font-bold text-ann-dark">{t.productDetail.usage}</h3>
                 </div>
-                <ul className="space-y-2 text-ann-stone">
+                <ul className="space-y-2 text-black">
                   {t.productDetail.usageItems.map((item, index) => (
                     <li key={index} className="flex items-start gap-2">
-                      <span className="text-ann-gold mt-1">•</span>
+                      <span className="text-black mt-1">•</span>
                       <span>{item}</span>
                     </li>
                   ))}
@@ -352,10 +354,10 @@ export default function ProductDetailPage() {
                   </div>
                   <h3 className="text-xl font-serif font-bold text-ann-dark">{t.productDetail.care}</h3>
                 </div>
-                <ul className="space-y-2 text-ann-stone">
+                <ul className="space-y-2 text-black">
                   {t.productDetail.careItems.map((item, index) => (
                     <li key={index} className="flex items-start gap-2">
-                      <span className="text-ann-green mt-1">•</span>
+                      <span className="text-black mt-1">•</span>
                       <span>{item}</span>
                     </li>
                   ))}
@@ -387,8 +389,8 @@ export default function ProductDetailPage() {
                         </svg>
                       </div>
                       <div>
-                        <p className="text-sm text-ann-stone mb-1">{t.productDetail.material}</p>
-                        <p className="text-lg font-bold text-ann-dark">
+                        <p className="text-sm text-black mb-1">{t.productDetail.material}</p>
+                        <p className="text-lg font-bold text-black">
                           {(getLocalizedField(product, 'specifications', language) || product.specifications).material}
                         </p>
                       </div>
@@ -432,8 +434,8 @@ export default function ProductDetailPage() {
                         </svg>
                       </div>
                       <div>
-                        <p className="text-sm text-ann-stone mb-1">{t.productDetail.origin}</p>
-                        <p className="text-lg font-bold text-ann-dark">
+                        <p className="text-sm text-black mb-1">{t.productDetail.origin}</p>
+                        <p className="text-lg font-bold text-black">
                           {(getLocalizedField(product, 'specifications', language) || product.specifications).origin}
                         </p>
                       </div>
@@ -459,18 +461,18 @@ export default function ProductDetailPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-gradient-to-br from-ann-gold/10 to-ann-gold/5 rounded-xl p-6 text-center border border-ann-gold/20">
                 <div className="text-4xl mb-4">✅</div>
-                <h3 className="font-bold text-ann-dark mb-2">{t.productDetail.guaranteeItems.natural}</h3>
-                <p className="text-sm text-ann-stone">{t.productDetail.guaranteeItems.naturalDesc}</p>
+                <h3 className="font-bold text-black mb-2">{t.productDetail.guaranteeItems.natural}</h3>
+                <p className="text-sm text-black">{t.productDetail.guaranteeItems.naturalDesc}</p>
               </div>
               <div className="bg-gradient-to-br from-ann-green/10 to-ann-green/5 rounded-xl p-6 text-center border border-ann-green/20">
                 <div className="text-4xl mb-4">🛡️</div>
-                <h3 className="font-bold text-ann-dark mb-2">{t.productDetail.guaranteeItems.warranty}</h3>
-                <p className="text-sm text-ann-stone">{t.productDetail.guaranteeItems.warrantyDesc}</p>
+                <h3 className="font-bold text-black mb-2">{t.productDetail.guaranteeItems.warranty}</h3>
+                <p className="text-sm text-black">{t.productDetail.guaranteeItems.warrantyDesc}</p>
               </div>
               <div className="bg-gradient-to-br from-ann-gold/10 to-ann-green/10 rounded-xl p-6 text-center border border-ann-gold/20">
                 <div className="text-4xl mb-4">🚚</div>
-                <h3 className="font-bold text-ann-dark mb-2">{t.productDetail.guaranteeItems.shipping}</h3>
-                <p className="text-sm text-ann-stone">{t.productDetail.guaranteeItems.shippingDesc}</p>
+                <h3 className="font-bold text-black mb-2">{t.productDetail.guaranteeItems.shipping}</h3>
+                <p className="text-sm text-black">{t.productDetail.guaranteeItems.shippingDesc}</p>
               </div>
             </div>
           </div>
@@ -497,21 +499,21 @@ export default function ProductDetailPage() {
                   <span className="text-3xl font-bold text-white">1</span>
                 </div>
                 <h3 className="text-xl font-bold text-ann-dark mb-2">{t.productDetail.step1}</h3>
-                <p className="text-ann-stone">{t.productDetail.step1Desc}</p>
+                <p className="text-black">{t.productDetail.step1Desc}</p>
               </div>
               <div className="text-center">
                 <div className="w-20 h-20 bg-gradient-to-br from-ann-green to-ann-green/80 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                   <span className="text-3xl font-bold text-white">2</span>
                 </div>
-                <h3 className="text-xl font-bold text-ann-dark mb-2">{t.productDetail.step2}</h3>
-                <p className="text-ann-stone">{t.productDetail.step2Desc}</p>
+                <h3 className="text-xl font-bold text-black mb-2">{t.productDetail.step2}</h3>
+                <p className="text-black">{t.productDetail.step2Desc}</p>
               </div>
               <div className="text-center">
                 <div className="w-20 h-20 bg-gradient-to-br from-ann-gold to-ann-green rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                   <span className="text-3xl font-bold text-white">3</span>
                 </div>
-                <h3 className="text-xl font-bold text-ann-dark mb-2">{t.productDetail.step3}</h3>
-                <p className="text-ann-stone">{t.productDetail.step3Desc}</p>
+                <h3 className="text-xl font-bold text-black mb-2">{t.productDetail.step3}</h3>
+                <p className="text-black">{t.productDetail.step3Desc}</p>
               </div>
             </div>
           </div>
@@ -532,7 +534,7 @@ export default function ProductDetailPage() {
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">
               {t.productDetail.finalCta}
             </h2>
-            <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+            <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto ">
               {t.productDetail.finalCtaDesc.replace('{productName}', getLocalizedField(product, 'name', language))}
             </p>
             
@@ -590,10 +592,10 @@ export default function ProductDetailPage() {
         <section className="py-16 bg-gradient-to-b from-ann-ivory to-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-4xl font-serif font-bold text-ann-dark mb-4">
+              <h2 className="text-4xl font-serif font-bold text-black mb-4">
                 {t.productDetail.relatedProducts}
               </h2>
-              <p className="text-lg text-ann-stone max-w-2xl mx-auto">
+              <p className="text-lg text-black max-w-2xl mx-auto">
                 {t.productDetail.relatedProductsSubtitle}
               </p>
               <div className="w-24 h-1 bg-gradient-to-r from-ann-gold to-ann-green mx-auto rounded-full mt-4"></div>
@@ -612,7 +614,7 @@ export default function ProductDetailPage() {
                       fill
                       className="object-cover transition-transform duration-300 group-hover:scale-110"
                     />
-                    <div className="absolute top-4 right-4 bg-gradient-to-r from-ann-gold to-ann-gold/90 text-ann-dark px-3 py-1.5 rounded-full text-xs font-bold shadow-lg">
+                    <div className="absolute top-4 right-4 bg-gradient-to-r from-ann-gold to-ann-gold/90 text-black px-3 py-1.5 rounded-full text-xs font-bold shadow-lg">
                       {getLocalizedField(relatedProduct, 'category', language)}
                     </div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
