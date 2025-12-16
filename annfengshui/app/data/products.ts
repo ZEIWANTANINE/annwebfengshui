@@ -625,11 +625,23 @@ export const allProducts: Product[] =
       "Tăng cường sức khỏe tim mạch, hỗ trợ ngủ sâu",
       "Giúp người đeo toát ra năng lượng thân thiện và tự tin"
     ],
+    "benefitsEn": [
+      "Activates love energy, helps relationships harmonious",
+      "Soothes emotions, reduces stress, increases sense of peace",
+      "Strengthens cardiovascular health, supports deep sleep",
+      "Helps wearer radiate friendly and confident energy"
+    ],
     "specifications": {
       "material": "100% Thạch anh hồng tự nhiên (Rose Quartz)",
       "size": "8mm (phù hợp cổ tay 14–17cm)",
       "weight": "500g",
       "origin": "Madagascar, Nam Phi – gia công tại Việt Nam"
+    },
+    "specificationsEn": {
+      "material": "100% natural rose quartz",
+      "size": "8mm (fits wrist 14–17cm)",
+      "weight": "500g",
+      "origin": "Madagascar, South Africa – processed in Vietnam"
     },
     "retailPrice": "1,399,000",
     "marketPrice": "999,000"
@@ -691,11 +703,23 @@ export const allProducts: Product[] =
       "Thanh lọc trường năng lượng quanh cơ thể",
       "Thu hút năng lượng bình an và quý nhân phù trợ"
     ],
+    "benefitsEn": [
+        "Helps mind clear, increases concentration",
+        "Supports deep sleep, reduces stress and anxiety",
+        "Purifies energy field around body",
+        "Attracts peace energy and noble people support"
+    ],
     "specifications": {
       "material": "100% Thạch anh tím tự nhiên (Amethyst Quartz), có kiểm định",
       "size": "8mm (phù hợp cổ tay 14–17cm)",
       "weight": "500g",
       "origin": "Brazil – Gia công tại Việt Nam"
+    },
+    "specificationsEn": {
+        "material": "100% natural amethyst quartz, with certification",
+        "size": "8mm (fits wrist 14–17cm)",
+        "weight": "500g",
+        "origin": "Brazil – Processed in Vietnam"
     },
     "retailPrice": "1,750,000",
     "marketPrice": "1,370,000"
@@ -718,11 +742,23 @@ export const allProducts: Product[] =
       "Bảo vệ khỏi năng lượng xấu, đặc biệt khi di chuyển hoặc làm việc nơi đông người",
       "Hỗ trợ người làm nghề đối diện nhiều áp lực hoặc thị phi"
     ],
+    "benefitsEn": [
+        "Calms spirit, helps deep sleep, reduces anxiety",
+        "Supports meditation, enhances intuition",
+        "Protects from negative energy, especially when traveling or working in crowded places",
+        "Supports people in professions facing much pressure or criticism"
+    ],
     "specifications": {
       "material": "100% Thạch anh đen tự nhiên (Morion Quartz)",
       "size": "8mm (chuẩn cổ tay nữ hoặc cổ tay nhỏ nam)",
       "weight": "500g",
       "origin": "Mỏ Brazil – Gia công tại Việt Nam"
+    },
+    "specificationsEn": {
+        "material": "100% natural black quartz (Morion Quartz)",
+        "size": "8mm (standard female wrist or small male wrist)",
+        "weight": "500g",
+        "origin": "Brazil mines – Processed in Vietnam"
     },
     "retailPrice": "1,499,000",
     "marketPrice": "1,099,000"
@@ -745,11 +781,23 @@ export const allProducts: Product[] =
       "Hỗ trợ giấc ngủ, làm dịu hệ thần kinh",
       "Hóa giải xung đột trong giao tiếp, tăng sự an hòa"
     ],
+    "benefitsEn": [
+        "Purifies personal and living space energy fields",
+        "Reduces stress, increases concentration and clarity of thought",
+        "Supports sleep, soothes the nervous system",
+        "Resolves communication conflicts, promotes harmony"
+    ],
     "specifications": {
       "material": "100% Thạch anh trắng tự nhiên, không xử lý",
       "size": "8mm (phù hợp cổ tay 14–17cm)",
       "weight": "500g",
       "origin": "Brazil – Gia công và hoàn thiện tại Việt Nam"
+    },
+    "specificationsEn": {
+        "material": "100% natural white quartz, untreated",
+        "size": "8mm (fits 14–17cm wrist)",
+        "weight": "500g",
+        "origin": "Brazil – Processed and finished in Vietnam"
     },
     "retailPrice": "1,499,000",
     "marketPrice": "1,099,000"
@@ -850,11 +898,22 @@ export const allProducts: Product[] =
       "Hóa giải khí xấu, thu hút tài khí, an thần định tâm.",
       "Dùng như phụ kiện phong thủy, vật phẩm trấn an, quà tặng cao cấp."
     ],
+    "benefitsEn": [
+        "Keeps tea dry, absorbs moisture naturally, preserves flavor.",
+        "Diffuses positive energy when burning incense, purifies the air.",
+        "Neutralizes negative chi, attracts wealth, calms the mind and spirit.",
+        "Used as a Feng Shui accessory, calming item, high-end gift."
+    ],
     "specifications": {
       "material": "100% ngọc Onyx xanh tự nhiên, nắp hợp kim đồng",
       "size": "Hũ trà: 15,5 cm × 9 cm / Xông trầm: 9 cm × 12 cm",
       "weight": "500g",
       "origin": "Balochistan – Pakistan, gia công tại Việt Nam"
+    },
+    "specificationsEn": {
+        "material": "100% natural Green Onyx marble, copper alloy lid",
+        "size": "Tea Jar: 15.5 cm × 9 cm / Incense Burner: 9 cm × 12 cm",
+        "origin": "Balochistan – Pakistan, processed in Vietnam"
     },
     "retailPrice": "4,299,000",
     "marketPrice": "2,999,000"
@@ -876,11 +935,21 @@ export const allProducts: Product[] =
       "Củng cố nền tảng sự nghiệp – tăng cường quý nhân phù trợ.",
       "Bảo hộ gia trạch, giúp gia đạo yên ổn, trường thọ."
     ],
+    "benefitsEn": [
+        "Attracts wealth, promotes career advancement, neutralizes negative chi (Sha Qi) and misfortunes.",
+        "Strengthens career foundation – enhances the support of benefactors.",
+        "Protects the household, promotes family harmony and longevity."
+    ],
     "specifications": {
       "material": "Ngọc Hoàng Long tự nhiên, kiểm định bởi VDG",
       "size": "16 × 11 × 10 cm",
       "weight": "500g",
       "origin": "Pakistan, Myanmar, Việt Nam"
+    },
+    "specificationsEn": {
+        "material": "Natural Yellow Onyx Marble, certified by VDG",
+        "size": "16 × 11 × 10 cm",
+        "origin": "Pakistan, Myanmar, Vietnam"
     },
     "retailPrice": "6,199,000",
     "marketPrice": "4,299,000"
@@ -902,11 +971,22 @@ export const allProducts: Product[] =
       "Tạo “điểm neo năng lượng” nhỏ gọn, mạnh mẽ",
       "Phù hợp cả decor & quà tặng tinh tế"
     ],
+    "benefitsEn": [
+        "Purifies energy; maintains peace; attracts wealth – love – restoration (depending on the stone type)",
+        "Creates a compact, powerful “energy anchor point”",
+        "Suitable for both decor and sophisticated gifts"
+    ],
     "specifications": {
-      "material": "100% Thạch anh tự nhiên (Hồng, Tím, Vàng, Xanh), lọ thủy tinh dày, nắp gỗ",
-      "size": "Size S (30ml) đến Size L (150ml)",
-      "weight": "120g – 400g (tùy size)",
-      "origin": "Brazil, Madagascar, Việt Nam"
+        "material": "100% Thạch anh tự nhiên (Hồng, Tím, Vàng, Xanh), lọ thủy tinh dày, nắp gỗ",
+        "size": "Size S (30ml) đến Size L (150ml)",
+        "weight": "120g – 400g (tùy size)",
+        "origin": "Brazil, Madagascar, Việt Nam"
+    },
+    "specificationsEn": {
+        "material": "100% natural quartz (Rose, Amethyst, Citrine, Aventurine), thick glass jar, wooden lid",
+        "size": "Size S (30ml) to Size L (150ml)",
+        "weight": "120g – 400g (depending on size)",
+        "origin": "Brazil, Madagascar, Vietnam"
     },
     "retailPrice": "215,000 – 499,000",
     "marketPrice": "150,000 – 350,000"
@@ -929,11 +1009,23 @@ export const allProducts: Product[] =
       "Thu hút vận quý nhân – khai tuệ (trí tuệ)",
       "Ổn định cảm xúc, giảm stress, giúp giấc ngủ sâu"
     ],
+    "benefitsEn": [
+        "Increases alertness, concentration, and clarity of thought",
+        "Extremely powerful personal protection, avoids gossip/disputes – resolves conflicts",
+        "Attracts benefactors – opens wisdom (intuition)",
+        "Stabilizes emotions, reduces stress, aids deep sleep"
+    ],
     "specifications": {
-      "material": "Saphir đen ánh sao tự nhiên (Natural Star Sapphire), độ cứng 9/10 Mohs",
-      "size": "15.36 × 12 × 5.62 mm",
-      "weight": "500g",
-      "origin": "Sri Lanka, Madagascar, Thái Lan"
+        "material": "Saphir đen ánh sao tự nhiên (Natural Star Sapphire), độ cứng 9/10 Mohs",
+        "size": "15.36 × 12 × 5.62 mm",
+        "weight": "500g",
+        "origin": "Sri Lanka, Madagascar, Thái Lan"
+    },
+    "specificationsEn": {
+        "material": "Natural Black Star Sapphire, Mohs hardness 9/10",
+        "size": "15.36 × 12 × 5.62 mm",
+        "weight": "500g",
+        "origin": "Sri Lanka, Madagascar, Thailand"
     },
     "retailPrice": "12,599,000",
     "marketPrice": "10,099,000"
@@ -956,11 +1048,23 @@ export const allProducts: Product[] =
       "Tăng duyên lành – cải thiện vận tình cảm",
       "Bảo hộ năng lượng, tránh thị phi & tiểu nhân"
     ],
+    "benefitsEn": [
+        "Attracts luck and new opportunities",
+        "Supports health, helps stabilize the spirit",
+        "Increases harmonious relationships – improves emotional fortune",
+        "Protects energy, avoids gossip and petty people"
+    ],
     "specifications": {
-      "material": "Ngọc Bích tự nhiên (Natural Nephrite Jade), Dây & viền hợp kim titanium",
-      "size": "Hạt Ngọc Bích: 8–10 mm tùy mẫu, Nhẫn: dạng nới linh hoạt",
-      "weight": "500g",
-      "origin": "Canada, Nga, Việt Nam"
+        "material": "Ngọc Bích tự nhiên (Natural Nephrite Jade), Dây & viền hợp kim titanium",
+        "size": "Hạt Ngọc Bích: 8–10 mm tùy mẫu, Nhẫn: dạng nới linh hoạt",
+        "weight": "500g",
+        "origin": "Canada, Nga, Việt Nam"
+    },
+    "specificationsEn": {
+        "material": "Natural Nephrite Jade, Titanium alloy chain & settings",
+        "size": "Jade bead: 8–10 mm (varies), Ring: flexible adjustable size",
+        "weight": "500g",
+        "origin": "Canada, Russia, Vietnam"
     },
     "retailPrice": "5,700,000",
     "marketPrice": "4,850,000"
@@ -983,11 +1087,23 @@ export const allProducts: Product[] =
       "Giúp gia chủ “ra biển lớn” – mở rộng thị trường – tăng cơ hội đầu tư",
       "Trấn trạch, cân bằng năng lượng Thủy – Hỏa – Thổ"
     ],
+    "benefitsEn": [
+        "Attracts wealth – prosperity – benefactors (Qúy Nhân)",
+        "Brings favorable conditions in business and career",
+        "Helps the owner “sail to the big sea” – expands market – increases investment opportunities",
+        "Protects the house (Trấn Trạch), balances Water – Fire – Earth energy"
+    ],
     "specifications": {
       "material": "Đá quý tự nhiên (Aventurine, Thạch anh hồng, Mã não, Obsidian, Serpentine)",
       "size": "80 × 110 cm (khổ lớn)",
       "weight": "500g",
       "origin": "Việt Nam, Brazil, Ấn Độ – chế tác thủ công 100% tại Xưởng Ann Gem & Fengshui"
+    },
+    "specificationsEn": {
+        "material": "Natural gemstones (Aventurine, Rose Quartz, Agate, Obsidian, Serpentine)",
+        "size": "80 × 110 cm (large format)",
+        "weight": "500g",
+        "origin": "Vietnam, Brazil, India – 100% handcrafted at Ann Gem & Fengshui Workshop"
     },
     "retailPrice": "9,000,000",
     "marketPrice": "7,850,000"
@@ -1010,11 +1126,23 @@ export const allProducts: Product[] =
       "Thu hút quý nhân phù trợ, tăng uy tín",
       "Hóa giải thị phi, giúp không gian ổn định – hài hòa"
     ],
+    "benefitsEn": [
+        "Strong house protection (Trấn Trạch), creates safeguard for the family",
+        "Increases willpower – inner strength, leadership bravery, and decision-making ability",
+        "Attracts benefactors (Qúy Nhân), boosts reputation/prestige",
+        "Neutralizes gossip (Thị Phi), promotes stable and harmonious space"
+    ],
     "specifications": {
       "material": "Đá quý tự nhiên (Thạch anh, Mã não, Đá đen, Aventurine, Serpentine)",
       "size": "80 × 110 cm (khổ lớn)",
       "weight": "500g",
       "origin": "Việt Nam, Brazil, Madagascar – chế tác thủ công 100%"
+    },
+    "specificationsEn": {
+        "material": "Natural gemstones (Quartz, Agate, Black Stone, Aventurine, Serpentine)",
+        "size": "80 × 110 cm (large format)",
+        "weight": "500g",
+        "origin": "Vietnam, Brazil, Madagascar – 100% handcrafted"
     },
     "retailPrice": "11,129,000",
     "marketPrice": "10,350,000"
@@ -1037,11 +1165,23 @@ export const allProducts: Product[] =
       "Thu hút quý nhân, nhân hòa, sự tôn trọng",
       "Nuôi dưỡng đức – nhân – nghĩa, phù hợp gia đình coi trọng truyền thống"
     ],
+    "benefitsEn": [
+        "Calms the spirit – creates a feeling of peace and harmony",
+        "Increases wisdom – clarity – and decisiveness in decisions",
+        "Attracts benefactors, human harmony, and respect",
+        "Cultivates morality – benevolence – integrity, suitable for traditional families"
+    ],
     "specifications": {
-      "material": "Đá quý tự nhiên (Thạch anh, Mã não, Đá đen, Aventurine, Serpentine)",
-      "size": "80 × 110 cm (khổ lớn)",
-      "weight": "500g",
-      "origin": "Việt Nam, Brazil, Madagascar – chế tác thủ công 100%"
+        "material": "Đá quý tự nhiên (Thạch anh, Mã não, Đá đen, Aventurine, Serpentine)",
+        "size": "80 × 110 cm (khổ lớn)",
+        "weight": "500g",
+        "origin": "Việt Nam, Brazil, Madagascar – chế tác thủ công 100%"
+    },
+    "specificationsEn": {
+        "material": "Natural gemstones (Quartz, Agate, Black Stone, Aventurine, Serpentine)",
+        "size": "80 × 110 cm (large format)",
+        "weight": "500g",
+        "origin": "Vietnam, Brazil, Madagascar – 100% handcrafted"
     },
     "retailPrice": "11,129,000",
     "marketPrice": "10,350,000"
@@ -1064,11 +1204,23 @@ export const allProducts: Product[] =
       "Tăng năng lượng tích cực, hỗ trợ tinh thần tích cực, tăng cảm hứng sống.",
       "Tạo điểm nhấn nội thất sang trọng, rực rỡ."
     ],
+    "benefitsEn": [
+        "Attracts wealth and blessings, draws in good fortune and flourishing new opportunities.",
+        "Neutralizes negative energy, increases vital energy (Sinh Khí) and harmony for the household.",
+        "Boosts positive energy, supports positive mindset, increases life inspiration.",
+        "Creates a luxurious, vibrant interior highlight."
+    ],
     "specifications": {
       "material": "Đá quý tự nhiên 100% (Thạch anh, Aventurine, Ruby thô, Mã não, Tourmaline vụn...)",
       "size": "80 × 110 cm (khổ lớn)",
       "weight": "500g",
       "origin": "Chế tác thủ công tại Việt Nam"
+    },
+    "specificationsEn": {
+        "material": "100% natural gemstones (Quartz, Aventurine, rough Ruby, Agate, Tourmaline chips...)",
+        "size": "80 × 110 cm (large format)",
+        "weight": "500g",
+        "origin": "Handcrafted in Vietnam"
     },
     "retailPrice": "11,200,000",
     "marketPrice": "10,500,000"
@@ -1091,11 +1243,23 @@ export const allProducts: Product[] =
       "Hóa giải năng lượng xấu, giúp không gian tươi mới – thông khí – sáng vận",
       "Giúp gia đình thuận hòa, công việc hanh thông"
     ],
+    "benefitsEn": [
+        "Attracts wealth – luck – benefactors (Qúy Nhân)",
+        "Activates prosperity energy for the living room – lobby – office",
+        "Neutralizes negative energy, revitalizes the space – promotes chi flow – brightens fortune",
+        "Promotes family harmony and smooth career progression"
+    ],
     "specifications": {
       "material": "Đá quý tự nhiên (Ruby, Thạch anh, Aventurine, Mã não, Hoàng Long, Onyx Marble)",
       "size": "60 × 80 cm (khung cao cấp)",
       "weight": "500g",
       "origin": "Việt Nam (thủ công, nghệ nhân 15-20 năm kinh nghiệm)"
+    },
+    "specificationsEn": {
+        "material": "Natural gemstones (Ruby, Quartz, Aventurine, Agate, Yellow Onyx Marble)",
+        "size": "60 × 80 cm (premium frame)",
+        "weight": "500g",
+        "origin": "Vietnam (handcrafted by artisans with 15-20 years of experience)"
     },
     "retailPrice": "6,400,000",
     "marketPrice": "5,900,000"
@@ -1118,11 +1282,23 @@ export const allProducts: Product[] =
       "Cân bằng phong thủy, Mở vận tài – duyên – sức khỏe.",
       "Trấn trạch nhẹ, mang tính tụ khí – dưỡng khí rất cao."
     ],
+    "benefitsEn": [
+        "Attracts good energy, activates the Wealth – Love – Health sectors.",
+        "Creates a fresh feeling, nurtures the spirit and positive emotions.",
+        "Balances Feng Shui, unlocks fortune for wealth – relationships – health.",
+        "Provides gentle house protection (Trấn Trạch), highly promotes energy accumulation and nurturing (Tụ Khí – Dưỡng Khí)."
+    ],
     "specifications": {
-      "material": "Đá quý tự nhiên (Ruby vụn, Thạch anh hồng, Aventurine, Canxedon, Mã não, Tourmaline lá)",
-      "size": "56 × 76 cm",
-      "weight": "500g",
-      "origin": "Việt Nam, Brazil, Myanmar – chế tác thủ công"
+        "material": "Đá quý tự nhiên (Ruby vụn, Thạch anh hồng, Aventurine, Canxedon, Mã não, Tourmaline lá)",
+        "size": "56 × 76 cm",
+        "weight": "500g",
+        "origin": "Việt Nam, Brazil, Myanmar – chế tác thủ công"
+    },
+    "specificationsEn": {
+        "material": "Natural gemstones (Ruby chips, Rose Quartz, Aventurine, Chalcedony, Agate, Tourmaline leaves)",
+        "size": "56 × 76 cm",
+        "weight": "500g",
+        "origin": "Vietnam, Brazil, Myanmar – handcrafted"
     },
     "retailPrice": "5,900,000",
     "marketPrice": "5,500,000"
@@ -1145,11 +1321,23 @@ export const allProducts: Product[] =
       "Cân bằng hoàn hảo giữa Mộc – Kim – Hỏa – Thổ, kéo dài may mắn.",
       "Hình tượng đa cát khí nhất, thích hợp cho phòng khách, phòng thờ."
     ],
+    "benefitsEn": [
+        "Increases longevity – boosts blessings (Phúc Khí), attracts benefactors (Qúy Nhân) and long life.",
+        "Activates wealth – neutralizes bad chi (Hóa Sát), stabilizes house energy, enhances spatial energy.",
+        "Perfect balance of Wood – Metal – Fire – Earth elements, extending good fortune.",
+        "Most auspicious imagery (Tứ Cát Khí), suitable for living room, ancestral altar room."
+    ],
     "specifications": {
-      "material": "Đá quý tự nhiên (Ruby, Thạch anh, Chalcedony, Serpentine, Fluorite, Mẫu đơn...)",
-      "size": "80 × 140 cm (khung gỗ cao cấp)",
-      "weight": "500g",
-      "origin": "Việt Nam – chế tác thủ công tại làng nghề mỹ nghệ đá quý"
+        "material": "Đá quý tự nhiên (Ruby, Thạch anh, Chalcedony, Serpentine, Fluorite, Mẫu đơn...)",
+        "size": "80 × 140 cm (khung gỗ cao cấp)",
+        "weight": "500g",
+        "origin": "Việt Nam – chế tác thủ công tại làng nghề mỹ nghệ đá quý"
+    },
+    "specificationsEn": {
+        "material": "Natural gemstones (Ruby, Quartz, Chalcedony, Serpentine, Fluorite, Peony...)",
+        "size": "80 × 140 cm (premium wooden frame)",
+        "weight": "500g",
+        "origin": "Vietnam – handcrafted at the gemstone craft village"
     },
     "retailPrice": "13,000,000",
     "marketPrice": "11,700,000"
@@ -1172,11 +1360,23 @@ export const allProducts: Product[] =
       "Bảo hộ phong thủy (Tam Khí Cát Tường), xua năng lượng xấu.",
       "Kích hoạt may mắn, giúp công việc hanh thông."
     ],
+    "benefitsEn": [
+        "Attracts wealth – Accumulates prosperity (benefiting Earth – Wood elements).",
+        "Stabilizes family, increases harmony, brings a feeling of gathering/togetherness.",
+        "Feng Shui Protection (Three Auspicious Energies Composition), dispels negative energy.",
+        "Activates luck, promotes smooth career and business."
+    ],
     "specifications": {
-      "material": "Đá quý tự nhiên (Thạch anh, Mã não, Aventurine, Đá đen, Đá màu tự nhiên)",
-      "size": "56 × 76 cm",
-      "weight": "500g",
-      "origin": "Việt Nam, Brazil, Madagascar – chế tác thủ công 100%"
+        "material": "Đá quý tự nhiên (Thạch anh, Mã não, Aventurine, Đá đen, Đá màu tự nhiên)",
+        "size": "56 × 76 cm",
+        "weight": "500g",
+        "origin": "Việt Nam, Brazil, Madagascar – chế tác thủ công 100%"
+    },
+    "specificationsEn": {
+        "material": "Natural gemstones (Quartz, Agate, Aventurine, Black Stone, natural colored stones)",
+        "size": "56 × 76 cm",
+        "weight": "500g",
+        "origin": "Vietnam, Brazil, Madagascar – 100% handcrafted"
     },
     "retailPrice": "5,400,000",
     "marketPrice": "4,900,000"
@@ -1199,11 +1399,23 @@ export const allProducts: Product[] =
       "Tăng quyền lực sự nghiệp và hỗ trợ công danh.",
       "Trấn trạch, hóa giải sát khí, nâng tần số năng lượng không gian."
     ],
+    "benefitsEn": [
+        "Attracts wealth and blessings, draws in benefactors (Qúy Nhân).",
+        "Balances Yin-Yang (Âm-Dương), activates love and family harmony.",
+        "Increases career power and aids career advancement.",
+        "Provides house protection (Trấn Trạch), neutralizes evil chi (Sát Khí), elevates spatial energy frequency."
+    ],
     "specifications": {
-      "material": "Đá quý tự nhiên (Ruby vụn, Thạch anh vàng–đen, Mắt hổ, Chalcedony, Fluorite) và mạ vàng chi tiết.",
-      "size": "80 × 110 cm",
-      "weight": "500g",
-      "origin": "Việt Nam – chế tác thủ công 100%"
+        "material": "Đá quý tự nhiên (Ruby vụn, Thạch anh vàng–đen, Mắt hổ, Chalcedony, Fluorite) và mạ vàng chi tiết.",
+        "size": "80 × 110 cm",
+        "weight": "500g",
+        "origin": "Việt Nam – chế tác thủ công 100%"
+    },
+    "specificationsEn": {
+        "material": "Natural gemstones (Ruby chips, Yellow/Black Quartz, Tiger's Eye, Chalcedony, Fluorite) and gilded details.",
+        "size": "80 × 110 cm",
+        "weight": "500g",
+        "origin": "Vietnam – 100% handcrafted"
     },
     "retailPrice": "11,900,000",
     "marketPrice": "10,900,000"
@@ -1226,11 +1438,23 @@ export const allProducts: Product[] =
       "Kích hoạt sự tự tin & quyết đoán, giúp người làm kinh doanh sáng suốt.",
       "Ổn định trường khí, giúp nhà luôn “ấm – đủ – thịnh”."
     ],
+    "benefitsEn": [
+        "Activates and attracts wealth/fortune, energizes the Wealth Sector (Southeast).",
+        "Purifies energy, creates positive Chi (Dương Khí), dispels stagnation, maintains peace.",
+        "Activates confidence and decisiveness, promotes clarity for business people.",
+        "Stabilizes the energy field, ensures the house remains “warm – complete – prosperous”."
+    ],
     "specifications": {
-      "material": "Ngọc Hoàng Long Onyx tự nhiên 100%, Nắp hợp kim đồng khắc hoa văn cổ.",
-      "size": "Đường kính: 11 cm, Cao: 8 cm",
-      "weight": "500g",
-      "origin": "Pakistan – Gia công tại Việt Nam"
+        "material": "Ngọc Hoàng Long Onyx tự nhiên 100%, Nắp hợp kim đồng khắc hoa văn cổ.",
+        "size": "Đường kính: 11 cm, Cao: 8 cm",
+        "weight": "500g",
+        "origin": "Pakistan – Gia công tại Việt Nam"
+    },
+    "specificationsEn": {
+        "material": "100% natural Yellow Onyx Marble, antique copper alloy lid with carved patterns.",
+        "size": "Diameter: 11 cm, Height: 8 cm",
+        "weight": "500g",
+        "origin": "Pakistan – Processed in Vietnam"
     },
     "retailPrice": "2,399,000",
     "marketPrice": "1,899,000"
@@ -1253,11 +1477,23 @@ export const allProducts: Product[] =
       "Gia tăng sự tập trung – tĩnh tâm, mở trí – thông tuệ.",
       "Cân bằng khí trường, giúp gia đạo bình an, công việc hanh thông."
     ],
+    "benefitsEn": [
+        "Purifies living space, absorbs stagnant/negative chi – repels evil chi.",
+        "Reduces stress – aids deep sleep, eliminates feelings of unease.",
+        "Increases focus – calmness, opens the mind – promotes wisdom.",
+        "Balances the energy field, promotes family peace, and smooth career progression."
+    ],
     "specifications": {
-      "material": "Ngọc Onyx trắng tự nhiên 100%, Nắp hợp kim đồng khắc họa tiết Mandala.",
-      "size": "Đường kính: 11 cm, Cao: 8 cm",
-      "weight": "500g",
-      "origin": "Pakistan – Gia công tại Việt Nam"
+        "material": "Ngọc Onyx trắng tự nhiên 100%, Nắp hợp kim đồng khắc họa tiết Mandala.",
+        "size": "Đường kính: 11 cm, Cao: 8 cm",
+        "weight": "500g",
+        "origin": "Pakistan – Gia công tại Việt Nam"
+    },
+    "specificationsEn": {
+        "material": "100% natural White Onyx Marble, copper alloy lid with Mandala carving.",
+        "size": "Diameter: 11 cm, Height: 8 cm",
+        "weight": "500g",
+        "origin": "Pakistan – Processed in Vietnam"
     },
     "retailPrice": "2,299,000",
     "marketPrice": "1,799,000"
@@ -1280,11 +1516,23 @@ export const allProducts: Product[] =
       "Hóa giải khí xấu – tụ vượng khí, kích hoạt dương khí – tăng tài lộc.",
       "Điều hòa trường khí, tăng hòa khí gia đình và sự minh mẫn."
     ],
+    "benefitsEn": [
+        "Purifies spatial energy, absorbs stagnant/negative chi – repels evil chi and Yin energy.",
+        "Promotes mental tranquility – aids meditation – supports deep sleep, reduces stress.",
+        "Neutralizes bad chi – accumulates prosperity (Vượng Khí), activates positive chi – increases wealth.",
+        "Regulates the energy field, enhances family harmony and clarity of mind."
+    ],
     "specifications": {
-      "material": "Ngọc Onyx xanh tự nhiên 100%, Nắp hợp kim đồng chạm hoa văn thủ công.",
-      "size": "11 × 8 cm (đường kính x cao)",
-      "weight": "500g",
-      "origin": "Pakistan & Afghanistan – Gia công tại Việt Nam"
+        "material": "Ngọc Onyx xanh tự nhiên 100%, Nắp hợp kim đồng chạm hoa văn thủ công.",
+        "size": "11 × 8 cm (đường kính x cao)",
+        "weight": "500g",
+        "origin": "Pakistan & Afghanistan – Gia công tại Việt Nam"
+    },
+    "specificationsEn": {
+        "material": "100% natural Green Onyx Marble, copper alloy lid with carved patterns.",
+        "size": "Diameter: 11 cm, Height: 8 cm",
+        "weight": "500g",
+        "origin": "Pakistan & Afghanistan – Processed in Vietnam"
     },
     "retailPrice": "2,299,000",
     "marketPrice": "1,799,000"
@@ -1307,11 +1555,23 @@ export const allProducts: Product[] =
       "Kích hoạt trực giác, cân bằng cảm xúc và tăng khả năng tập trung.",
       "Bảo hộ năng lượng, xua trừ tà khí – hóa giải trầm khí xấu."
     ],
+    "benefitsEn": [
+        "Purifies energy, nurtures peace and benevolence.",
+        "Neutralizes stress, aids deep sleep, and relaxation.",
+        "Activates intuition, balances emotions, and increases concentration.",
+        "Energy protection, repels evil chi (Tà Khí) – neutralizes stagnant/heavy chi (Trầm Khí)."
+    ],
     "specifications": {
-      "material": "Bạch Ngọc tự nhiên (Natural White Jade) 100%, mài tròn thủ công.",
-      "size": "8 mm (đường kính hạt), chuỗi 48-56 hạt",
-      "weight": "500g",
-      "origin": "Myanmar, Pakistan, Việt Nam"
+        "material": "Bạch Ngọc tự nhiên (Natural White Jade) 100%, mài tròn thủ công.",
+        "size": "8 mm (đường kính hạt), chuỗi 48-56 hạt",
+        "weight": "500g",
+        "origin": "Myanmar, Pakistan, Việt Nam"
+    },
+    "specificationsEn": {
+        "material": "100% natural White Jade, hand-polished round cut.",
+        "size": "8 mm (bead diameter), 48-56 beads per strand (depending on neck size)",
+        "weight": "500g",
+        "origin": "Myanmar, Pakistan, Vietnam"
     },
     "retailPrice": "2,750,000",
     "marketPrice": "2,350,000"
@@ -1334,11 +1594,23 @@ export const allProducts: Product[] =
       "Kích hoạt cung Tài Lộc – Quý Nhân – Gia Đạo.",
       "Tạo năng lượng yêu thương – hòa khí, chống lại năng lượng xấu."
     ],
+    "benefitsEn": [
+        "Attracts wealth – opportunities – luck (18 fruits = Number 1 Prosperity).",
+        "Increases blessings (Phúc Khí), supports health – longevity.",
+        "Activates the Wealth – Benefactor – Family Harmony sectors.",
+        "Creates energy of love – harmony, wards off negative energy."
+    ],
     "specifications": {
-      "material": "Ngọc Hoàng Long tự nhiên 100% (Quả đào), Lá ngọc serpentine, Đế đá xanh nguyên khối.",
-      "size": "Cao 56 cm, Ngang 40 cm",
-      "weight": "500g",
-      "origin": "China, Myanmar – Gia công tại Việt Nam"
+        "material": "Ngọc Hoàng Long tự nhiên 100% (Quả đào), Lá ngọc serpentine, Đế đá xanh nguyên khối.",
+        "size": "Cao 56 cm, Ngang 40 cm",
+        "weight": "500g",
+        "origin": "China, Myanmar – Processed in Vietnam"
+    },
+    "specificationsEn": {
+        "material": "100% natural Yellow Onyx Marble (Peach fruits), Serpentine Jade leaves, Solid green stone base.",
+        "size": "Height 56 cm, Width 40 cm",
+        "weight": "500g",
+        "origin": "China, Myanmar – Processed in Vietnam"
     },
     "retailPrice": "11,900,000",
     "marketPrice": "11,000,000"
@@ -1361,11 +1633,23 @@ export const allProducts: Product[] =
       "Mở rộng năng lượng yêu thương và chữa lành (Thạch anh hồng).",
       "Tạo năng lượng sinh sôi, giúp thu hút cơ hội và quý nhân."
     ],
+    "benefitsEn": [
+        "Activates wealth – love – family harmony.",
+        "Neutralizes negative energy, enhances family harmony and togetherness.",
+        "Expands the energy of love and healing (Rose Quartz).",
+        "Creates fertile energy, helps attract opportunities and benefactors (Qúy Nhân)."
+    ],
     "specifications": {
-      "material": "Thạch anh hồng tự nhiên 100% (Quả nho), Lá ngọc serpentine/Malaysia, Thân đồng uốn thủ công, Đế gỗ phong thủy.",
-      "size": "Cao 32 cm × Ngang 25 cm",
-      "weight": "500g",
-      "origin": "Brazil, Madagascar – Gia công tại Việt Nam"
+        "material": "Thạch anh hồng tự nhiên 100% (Quả nho), Lá ngọc serpentine/Malaysia, Thân đồng uốn thủ công, Đế gỗ phong thủy.",
+        "size": "Cao 32 cm × Ngang 25 cm",
+        "weight": "500g",
+        "origin": "Brazil, Madagascar – Gia công tại Việt Nam"
+    },
+    "specificationsEn": {
+        "material": "100% natural Rose Quartz (Grape fruits), Serpentine/Malaysia Jade leaves, Hand-bent copper trunk, Premium Feng Shui wooden base.",
+        "size": "Height 32 cm × Width 25 cm",
+        "weight": "500g",
+        "origin": "Brazil, Madagascar – Processed in Vietnam"
     },
     "retailPrice": "6,300,000",
     "marketPrice": "5,200,000"
@@ -1388,11 +1672,23 @@ export const allProducts: Product[] =
       "Giảm căng thẳng – cân bằng cảm xúc, hỗ trợ ngủ ngon.",
       "Thu hút quý nhân, hỗ trợ sự nghiệp thăng tiến và bảo hộ tinh thần."
     ],
+    "benefitsEn": [
+        "Attracts wealth – fortune – activates luck (abundant grape cluster shape).",
+        "Increases concentration – clarity – creativity (high frequency).",
+        "Reduces stress – balances emotions, supports deep sleep.",
+        "Attracts benefactors (Qúy Nhân), supports career advancement, and provides spiritual protection."
+    ],
     "specifications": {
-      "material": "Thạch anh tím tự nhiên (Quả nho), Đá serpentine (lá), Thân đồng, Đế composite/đá thanh tẩy.",
-      "size": "39 × 30 cm",
-      "weight": "500g",
-      "origin": "Brazil, Madagascar, Vietnam – handcrafted"
+        "material": "Thạch anh tím tự nhiên (Quả nho), Đá serpentine (lá), Thân đồng, Đế composite/đá thanh tẩy.",
+        "size": "39 × 30 cm",
+        "weight": "500g",
+        "origin": "Brazil, Madagascar, Vietnam – handcrafted"
+    },
+    "specificationsEn": {
+        "material": "Natural Amethyst (Grape fruits), Serpentine stone (leaves), Copper wire trunk, Composite/cleansing stone base.",
+        "size": "39 × 30 cm",
+        "weight": "500g",
+        "origin": "Brazil, Madagascar, Vietnam – handcrafted"
     },
     "retailPrice": "5,700,000",
     "marketPrice": "5,200,000"
@@ -1415,11 +1711,23 @@ export const allProducts: Product[] =
       "Mang lại năng lượng tươi mới, an hòa, cân bằng cảm xúc.",
       "Sum vầy, no đủ, phúc đức và tiền tài tích lũy (dáng nho trĩu quả)."
     ],
+    "benefitsEn": [
+        "Activates wealth – advancement – new opportunities (The path-opening tree).",
+        "Increases luck, especially in business and investment.",
+        "Brings fresh, peaceful energy, balances emotions.",
+        "Gathering, abundance, blessings, and wealth accumulation (abundant grape cluster shape)."
+    ],
     "specifications": {
-      "material": "Thạch anh xanh Aventurine tự nhiên 100% (Quả nho), Lá đá serpentine/Malaysia, Thân đồng uốn thủ công, Đế đá xanh nguyên khối.",
-      "size": "Cao 39 cm × Ngang 30 cm",
-      "weight": "500g",
-      "origin": "India, Brazil – Gia công tại Việt Nam"
+        "material": "Thạch anh xanh Aventurine tự nhiên 100% (Quả nho), Lá đá serpentine/Malaysia, Thân đồng uốn thủ công, Đế đá xanh nguyên khối.",
+        "size": "Cao 39 cm × Ngang 30 cm",
+        "weight": "500g",
+        "origin": "India, Brazil – Processed in Vietnam"
+    },
+    "specificationsEn": {
+        "material": "100% natural Green Aventurine Quartz (Grape fruits), Serpentine/Malaysia Jade leaves, Hand-bent copper trunk, Solid green stone base.",
+        "size": "Height 39 cm × Width 30 cm",
+        "weight": "500g",
+        "origin": "India, Brazil – Processed in Vietnam"
     },
     "retailPrice": "5,700,000",
     "marketPrice": "5,200,000"
@@ -1442,11 +1750,23 @@ export const allProducts: Product[] =
       "Ổn định trường khí, làm ấm không gian, xua bế tắc – khí xấu (Linh hoa trấn trạch).",
       "Mang lại sự hưng thịnh, phồn vinh, may mắn và khởi đầu mới."
     ],
+    "benefitsEn": [
+        "Attracts wealth – fortune – opens up benefactor luck (Strong Yang Chi).",
+        "Activates auspicious love luck (Đào Hoa) – increases good relationships – harmony.",
+        "Stabilizes the energy field, warms the space, dispels stagnation – bad chi (Spiritual flower for house protection).",
+        "Brings flourishing prosperity, vitality, luck, and new beginnings."
+    ],
     "specifications": {
-      "material": "Đá quý tự nhiên (Thạch anh hồng/trắng, Aventurine, Mã não, Serpentine...)",
-      "size": "80 × 140 cm (khổ lớn)",
-      "weight": "500g",
-      "origin": "Việt Nam, Brazil, India – chế tác thủ công 100%"
+        "material": "Đá quý tự nhiên (Thạch anh hồng/trắng, Aventurine, Mã não, Serpentine...)",
+        "size": "80 × 140 cm (khổ lớn)",
+        "weight": "500g",
+        "origin": "Việt Nam, Brazil, India – handcrafted"
+    },
+    "specificationsEn": {
+        "material": "Natural gemstones (Rose/White Quartz, Aventurine, Agate, Serpentine...)",
+        "size": "80 × 140 cm (large format)",
+        "weight": "500g",
+        "origin": "Vietnam, Brazil, India – handcrafted"
     },
     "retailPrice": "13,000,000",
     "marketPrice": "11,700,000"
@@ -1469,11 +1789,23 @@ export const allProducts: Product[] =
       "Tăng năng lượng ấm – an hòa, hỗ trợ gia đạo ấm hòa – công việc thuận lợi.",
       "Tăng sự tự tin & sáng suốt (Hoàng khí)."
     ],
+    "benefitsEn": [
+        "Accumulates and preserves wealth, activates the Wealth Vault (strong Earth element).",
+        "Keeps tea fresh – dry, preserves the 'spirit/aroma' of the tea (Natural moisture absorption).",
+        "Increases warm – peaceful energy, supports family harmony and smooth career progression.",
+        "Boosts confidence and clarity (Imperial Chi)."
+    ],
     "specifications": {
-      "material": "Ngọc Hoàng Long Onyx tự nhiên 100%, Nắp hợp kim đồng/vàng kim phủ bảo vệ.",
-      "size": "Cao: 15 cm, Đường kính: 10 cm",
-      "weight": "500g",
-      "origin": "Pakistan – Gia công tại Việt Nam"
+        "material": "Ngọc Hoàng Long Onyx tự nhiên 100%, Nắp hợp kim đồng/vàng kim phủ bảo vệ.",
+        "size": "Cao: 15 cm, Đường kính: 10 cm",
+        "weight": "500g",
+        "origin": "Pakistan – Gia công tại Việt Nam"
+    },
+    "specificationsEn": {
+        "material": "100% natural Yellow Onyx Marble, copper/gold alloy lid with protective coating.",
+        "size": "Height: 15 cm, Diameter: 10 cm",
+        "weight": "500g",
+        "origin": "Pakistan – Processed in Vietnam"
     },
     "retailPrice": "2,850,000",
     "marketPrice": "1,850,000"
@@ -1496,11 +1828,23 @@ export const allProducts: Product[] =
       "Hỗ trợ tinh thần (Tăng sáng trí, tự tin, quyết đoán), giảm stress.",
       "Tăng sinh khí & hòa khí cho bếp và không gian sống."
     ],
+    "benefitsEn": [
+        "Increases wealth chi, preserves fortune – wealth, stabilizes family wealth chi.",
+        "Preserves tea energy – maintains aroma, chi, and prevents moisture.",
+        "Spiritual support (Increases clarity, confidence, decisiveness), reduces stress.",
+        "Increases vital energy (Sinh Khí) and harmony for the kitchen and living space."
+    ],
     "specifications": {
-      "material": "Ngọc Onyx Xanh Huyết tự nhiên 100% (vân xanh sữa pha đỏ nâu), Nắp hợp kim vàng kim khắc hoa văn cổ.",
-      "size": "Cao: 15 cm, Đường kính: 10 cm",
-      "weight": "500g",
-      "origin": "Pakistan, Afghanistan – Gia công tại Việt Nam"
+        "material": "Ngọc Onyx Xanh Huyết tự nhiên 100% (vân xanh sữa pha đỏ nâu), Nắp hợp kim vàng kim khắc hoa văn cổ.",
+        "size": "Cao: 15 cm, Đường kính: 10 cm",
+        "weight": "500g",
+        "origin": "Pakistan, Afghanistan – Gia công tại Việt Nam"
+    },
+    "specificationsEn": {
+        "material": "100% natural Green-Blood Onyx Marble (milky green/reddish brown veins), gold alloy lid with antique carving.",
+        "size": "Height: 15 cm, Diameter: 10 cm",
+        "weight": "500g",
+        "origin": "Pakistan, Afghanistan – Processed in Vietnam"
     },
     "retailPrice": "2,350,000",
     "marketPrice": "1,850,000"
@@ -1523,11 +1867,23 @@ export const allProducts: Product[] =
       "Tăng sinh khí – thanh lọc năng lượng, giảm stress.",
       "Giúp công việc hanh thông – kinh doanh thuận lợi, tương lai rộng mở."
     ],
+    "benefitsEn": [
+        "Activates Wealth – Benefactor – Career sectors (Stream flowing into the house).",
+        "Most powerful for house protection – wealth attraction – fortune opening (Water generates Wood, Wood generates Fire composition).",
+        "Increases vital energy (Sinh Khí) – purifies energy, reduces stress.",
+        "Promotes smooth career progression – favorable business, broadens the future."
+    ],
     "specifications": {
-      "material": "Đá quý tự nhiên (Ruby vụn, Thạch anh, Aventurine, Mã não, Onyx Marble, Hoàng Long) – Kỹ thuật 3D nổi.",
-      "size": "80 × 110 cm",
-      "weight": "500g",
-      "origin": "Việt Nam, Brazil, Madagascar – chế tác thủ công"
+        "material": "Đá quý tự nhiên (Ruby vụn, Thạch anh, Aventurine, Mã não, Onyx Marble, Hoàng Long) – Kỹ thuật 3D nổi.",
+        "size": "80 × 110 cm",
+        "weight": "500g",
+        "origin": "Việt Nam, Brazil, Madagascar – chế tác thủ công"
+    },
+    "specificationsEn": {
+        "material": "Natural gemstones (Ruby chips, Quartz, Aventurine, Agate, Onyx Marble, Yellow Onyx) – 3D raised technique.",
+        "size": "80 × 110 cm",
+        "weight": "500g",
+        "origin": "Vietnam, Brazil, Madagascar – handcrafted"
     },
     "retailPrice": "11,200,000",
     "marketPrice": "10,500,000"
@@ -1550,11 +1906,23 @@ export const allProducts: Product[] =
       "Hỗ trợ kinh doanh, đầu tư, mở rộng công việc (Khí dương hưng thịnh).",
       "Cân bằng trường khí, đem lại sự hòa thuận trong gia đình (Địa thế tựa sơn)."
     ],
+    "benefitsEn": [
+        "Attracts and accumulates wealth/fortune, increases financial luck (Accumulated Wealth).",
+        "Enhances Earth element energy, creates a feeling of peace, stability, and solidity.",
+        "Supports business, investment, and career expansion (Flourishing Yang Chi).",
+        "Balances the energy field, promotes family harmony (Mountain-backed posture)."
+    ],
     "specifications": {
-      "material": "Đá quý tự nhiên (Thạch anh, Mã não, Aventurine, Obsidian, Garnet, Ruby nhỏ...)",
-      "size": "80 × 110 cm (khổ lớn)",
-      "weight": "500g",
-      "origin": "Vietnam & international – 100% handcrafted"
+        "material": "Đá quý tự nhiên (Thạch anh, Mã não, Aventurine, Obsidian, Garnet, Ruby nhỏ...)",
+        "size": "80 × 110 cm (khổ lớn)",
+        "weight": "500g",
+        "origin": "Vietnam & international – 100% handcrafted"
+    },
+    "specificationsEn": {
+        "material": "Natural gemstones (Quartz, Agate, Aventurine, Obsidian, Garnet, small artistic Ruby...)",
+        "size": "80 × 110 cm (large format)",
+        "weight": "500g",
+        "origin": "Vietnam & international – 100% handcrafted"
     },
     "retailPrice": "9,000,000",
     "marketPrice": "7,850,000"
@@ -1577,11 +1945,23 @@ export const allProducts: Product[] =
       "Cân bằng cảm xúc, thu hút mối quan hệ tốt (kích hoạt luân xa tim).",
       "Bảo hộ năng lượng, trấn trạch, xua trừ tà khí."
     ],
+    "benefitsEn": [
+        "Activates Fire Chi, increases Fame/Reputation, power, and career success.",
+        "Increases vitality, courage, confidence, and passion for life.",
+        "Balances emotions, attracts good relationships (activates the Heart Chakra).",
+        "Energy protection, house protection (Trấn Trạch), repels evil chi."
+    ],
     "specifications": {
-      "material": "Ruby tự nhiên 100% (Nhóm Corundum), cắt cabochon.",
-      "size": "15 × 12 mm",
-      "weight": "500g",
-      "origin": "Myanmar, Mozambique, Vietnam (Yen Bai – Luc Yen)"
+        "material": "Ruby tự nhiên 100% (Nhóm Corundum), cắt cabochon.",
+        "size": "15 × 12 mm",
+        "weight": "500g",
+        "origin": "Myanmar, Mozambique, Vietnam (Yen Bai – Luc Yen)"
+    },
+    "specificationsEn": {
+        "material": "100% natural Ruby (Corundum group), cabochon cut.",
+        "size": "15 × 12 mm",
+        "weight": "500g",
+        "origin": "Myanmar, Mozambique, Vietnam (Yen Bai – Luc Yen)"
     },
     "retailPrice": "14,599,000",
     "marketPrice": "12,419,000"
