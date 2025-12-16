@@ -23,11 +23,10 @@ const BrandStory = () => {
   <div className="w-[90vw] max-w-[1400px]">
     <div className="aspect-video rounded-xl overflow-hidden shadow-lg">
       <video
-        className="w-full h-full object-cover"
+        className="w-full object-cover"
         controls
-        poster="/product/Long quy ngọc hoàng Long tự nhiên (2).jpg"
       >
-        <source src="/product/Clip về Long quy.mp4" type="video/mp4" />
+        <source src="/product/7333124976286.mp4" type="video/mp4" />
         Trình duyệt của bạn không hỗ trợ thẻ video.
       </video>
     </div>
