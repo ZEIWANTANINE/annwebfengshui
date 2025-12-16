@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 import clsx from 'clsx';
 import { useI18n } from '@/app/i18n/context';
 import LanguageSwitcher from './LanguageSwitcher';
+import { usePathname } from 'next/navigation';
 
 const NavLink = ({ href, scrolled, children, onClick }: { href: string; scrolled: boolean; children: React.ReactNode; onClick?: () => void }) => (
   <Link
@@ -25,13 +26,20 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { t } = useI18n();
 
+  const pathname = usePathname();
+
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 10);
+      // Keep header in "scrolled" state when on product pages so it remains
+      // visible over light backgrounds even when scrolled to the top.
+      setScrolled(window.scrollY > 10 || (pathname?.startsWith?.('/products') ?? false));
     };
+
     window.addEventListener('scroll', handleScroll);
+    // Run once to initialize state from current scroll + pathname
+    handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [pathname]);
 
   return (
     <>
