@@ -66,7 +66,7 @@ const Navbar = () => {
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-1">
-                <NavLink href="#story" scrolled={scrolled}>{t.nav.ourStory}</NavLink>
+                <NavLink href="/shop-story" scrolled={scrolled}>{t.nav.ourStory}</NavLink>
                 <NavLink href="/products" scrolled={scrolled}>{t.nav.products}</NavLink>
                 <NavLink href="#finder" scrolled={scrolled}>{t.nav.energyFinder}</NavLink>
                 <NavLink href="#contact" scrolled={scrolled}>{t.nav.contact}</NavLink>
@@ -106,7 +106,7 @@ const Navbar = () => {
         {/* Mobile menu, show/hide based on menu state. */}
         <div className={clsx("md:hidden", { 'block': isOpen, 'hidden': !isOpen })} id="mobile-menu">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <NavLink href="#story" scrolled={true} onClick={() => setIsOpen(false)}>{t.nav.ourStory}</NavLink>
+            <NavLink href="/shop-story" scrolled={true} onClick={() => setIsOpen(false)}>{t.nav.ourStory}</NavLink>
             <NavLink href="/products" scrolled={true} onClick={() => setIsOpen(false)}>{t.nav.products}</NavLink>
             <NavLink href="#finder" scrolled={true} onClick={() => setIsOpen(false)}>{t.nav.energyFinder}</NavLink>
             <NavLink href="#contact" scrolled={true} onClick={() => setIsOpen(false)}>{t.nav.contact}</NavLink>

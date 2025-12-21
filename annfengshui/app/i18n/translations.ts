@@ -4,6 +4,7 @@ export interface Translations {
   // Navbar
   nav: {
     ourStory: string;
+    shopStory: string;
     products: string;
     energyFinder: string;
     contact: string;
@@ -216,12 +217,85 @@ export interface Translations {
     relatedProductsSubtitle: string;
     viewAllProducts: string;
   };
+
+  // Gemstone Distinction
+  gemstoneDistinction: {
+    title: string;
+    subtitle: string;
+    section1: {
+      title: string;
+      precious: {
+        title: string;
+        description: string;
+        big4: string;
+        big4List: string[];
+        features: string;
+        featuresList: string[];
+        note: string;
+      };
+      semiPrecious: {
+        title: string;
+        description: string;
+        examples: string;
+        examplesList: string[];
+        features: string;
+        featuresList: string[];
+        note: string;
+      };
+    };
+    section2: {
+      title: string;
+      table: {
+        criteria: string;
+        precious: string;
+        semiPrecious: string;
+        rows: {
+          frequency: { criteria: string; precious: string; semiPrecious: string; };
+          impact: { criteria: string; precious: string; semiPrecious: string; };
+          suitable: { criteria: string; precious: string; semiPrecious: string; };
+          purpose: { criteria: string; precious: string; semiPrecious: string; };
+        };
+      };
+      note: string;
+    };
+    section3: {
+      title: string;
+      precious: {
+        title: string;
+        list: string[];
+      };
+      semiPrecious: {
+        title: string;
+        list: string[];
+      };
+    };
+    section4: {
+      title: string;
+      warning: string;
+      inFengshui: string;
+      principle: string;
+      example: string;
+      comparison: string;
+    };
+    section5: {
+      title: string;
+      precious: {
+        title: string;
+        list: string[];
+      };
+      semiPrecious: {
+        title: string;
+        list: string[];
+      };
+    };
+  };
 }
 
 export const translations: Record<Language, Translations> = {
   vi: {
     nav: {
       ourStory: 'Câu chuyện',
+      shopStory: 'Về Shop',
       products: 'Sản phẩm',
       energyFinder: 'Tìm năng lượng',
       contact: 'Liên hệ',
@@ -450,10 +524,81 @@ export const translations: Record<Language, Translations> = {
       relatedProductsSubtitle: 'Khám phá thêm các sản phẩm cùng danh mục để tìm được vật phẩm phong thủy phù hợp nhất với bạn',
       viewAllProducts: 'Xem tất cả sản phẩm →',
     },
+    gemstoneDistinction: {
+      title: 'Phân biệt ĐÁ QUÝ và ĐÁ BÁN QUÝ',
+      subtitle: 'Theo 3 lớp giá trị cốt lõi: khoa học – thương mại – phong thuỷ năng lượng',
+      section1: {
+        title: 'I. PHÂN BIỆT THEO KHOA HỌC – TIÊU CHUẨN QUỐC TẾ',
+        precious: {
+          title: 'ĐÁ QUÝ (Precious Gemstones)',
+          description: 'Là những loại đá rất hiếm, có độ cứng – độ bền – độ trong – độ tán sắc ánh sáng vượt trội, được công nhận rộng rãi trên thị trường quốc tế.',
+          big4: '4 loại đá quý kinh điển (Big 4):',
+          big4List: ['Kim cương (Diamond)', 'Ruby (Hồng ngọc)', 'Sapphire (Lam ngọc – bao gồm nhiều màu)', 'Emerald (Lục bảo)'],
+          features: 'Đặc điểm nổi bật:',
+          featuresList: ['Độ cứng rất cao (Kim cương: 10 Mohs)', 'Hiếm trong tự nhiên', 'Giá trị tăng theo thời gian', 'Được đấu giá quốc tế (Christie\'s, Sotheby\'s)', 'Bắt buộc có chứng thư giám định quốc tế (GIA, IGI, GRS…)'],
+          note: '💰 Đá quý = tài sản tích luỹ + đầu tư + truyền đời',
+        },
+        semiPrecious: {
+          title: 'ĐÁ BÁN QUÝ (Semi-Precious Stones)',
+          description: 'Là các loại đá phổ biến hơn, đa dạng màu sắc, giá mềm hơn, ứng dụng rộng trong phong thuỷ – trang sức – trị liệu năng lượng.',
+          examples: 'Ví dụ phổ biến:',
+          examplesList: ['Thạch anh (Quartz)', 'Ngọc bích (Jadeite / Nephrite)', 'Aquamarine', 'Tourmaline', 'Garnet', 'Peridot', 'Topaz', 'Moonstone', 'Labradorite', 'Citrine'],
+          features: 'Đặc điểm:',
+          featuresList: ['Độ cứng trung bình – cao (6–8 Mohs)', 'Nguồn cung nhiều hơn', 'Giá trị phong thuỷ – năng lượng mạnh', 'Phù hợp sử dụng hàng ngày'],
+          note: '🌿 Đá bán quý = ứng dụng phong thuỷ + cân bằng năng lượng + hỗ trợ vận mệnh',
+        },
+      },
+      section2: {
+        title: 'II. PHÂN BIỆT THEO GIÁ TRỊ PHONG THUỶ – NĂNG LƯỢNG',
+        table: {
+          criteria: 'Tiêu chí',
+          precious: 'Đá Quý',
+          semiPrecious: 'Đá Bán Quý',
+          rows: {
+            frequency: { criteria: 'Tần số năng lượng', precious: 'Rất cao – ổn định', semiPrecious: 'Cao – linh hoạt' },
+            impact: { criteria: 'Tác động', precious: 'Mạnh, sâu, lâu dài', semiPrecious: 'Dịu, đều, dễ thích nghi' },
+            suitable: { criteria: 'Phù hợp', precious: 'Người làm lãnh đạo, đầu tư, quyền lực', semiPrecious: 'Đại đa số người dùng' },
+            purpose: { criteria: 'Mục đích', precious: 'Trấn mệnh – giữ vận – tích tài', semiPrecious: 'Chiêu tài – hoá giải – cân bằng' },
+          },
+        },
+        note: 'Kinh nghiệm thực tế 30 năm: Người không có nền năng lượng mạnh, nếu dùng đá quý lớn (ruby, kim cương) không đúng mệnh dễ thấy "nặng vía", mất ngủ, áp lực tinh thần.',
+      },
+      section3: {
+        title: 'III. PHÂN BIỆT THEO GIÁ TRỊ KINH DOANH – THỊ TRƯỜNG',
+        precious: {
+          title: 'Đá Quý',
+          list: ['Giá tính theo carat', 'Biến động theo thị trường quốc tế', 'Mua – bán cần chuyên môn cao', 'Rủi ro hàng xử lý, tổng hợp, nhân tạo'],
+        },
+        semiPrecious: {
+          title: 'Đá Bán Quý',
+          list: ['Giá tính theo kg – chuỗi – sản phẩm', 'Dễ ứng dụng bán lẻ', 'Thị trường phong thuỷ & wellness rất lớn', 'Ít rủi ro tài chính hơn'],
+        },
+      },
+      section4: {
+        title: 'IV. HIỂU ĐÚNG MỘT ĐIỀU RẤT QUAN TRỌNG',
+        warning: '❌ Đá quý KHÔNG đồng nghĩa phong thuỷ tốt hơn đá bán quý',
+        inFengshui: 'Trong phong thuỷ:',
+        principle: '• ĐÚNG MỆNH – ĐÚNG MỤC ĐÍCH – ĐÚNG TẦN SỐ quan trọng hơn giá trị tiền bạc.',
+        example: 'Ví dụ: Một viên thạch anh tím tự nhiên, tinh khiết, đúng mệnh',
+        comparison: '👉 Có thể hỗ trợ tốt hơn một viên ruby nhỏ nhưng lệch mệnh.',
+      },
+      section5: {
+        title: 'V. LỜI KHUYÊN TỪ NGƯỜI TRONG NGHỀ',
+        precious: {
+          title: 'Đá quý: dùng khi',
+          list: ['Có kiến thức chuyên môn', 'Có chuyên gia dẫn dắt', 'Mục tiêu tích sản – truyền đời'],
+        },
+        semiPrecious: {
+          title: 'Đá bán quý: dùng khi',
+          list: ['Muốn cải thiện tài lộc – sức khoẻ – tinh thần', 'Ứng dụng phong thuỷ lâu dài', 'An toàn – hiệu quả – dễ kết hợp'],
+        },
+      },
+    },
   },
   en: {
     nav: {
       ourStory: 'Our Story',
+      shopStory: 'About Shop',
       products: 'Products',
       energyFinder: 'Energy Finder',
       contact: 'Contact',
@@ -681,6 +826,76 @@ export const translations: Record<Language, Translations> = {
       relatedProducts: 'Related Products',
       relatedProductsSubtitle: 'Explore more products in the same category to find the feng shui item that best suits you',
       viewAllProducts: 'View All Products →',
+    },
+    gemstoneDistinction: {
+      title: 'Distinguishing PRECIOUS and SEMI-PRECIOUS GEMSTONES',
+      subtitle: 'Based on 3 core value layers: science – commerce – feng shui energy',
+      section1: {
+        title: 'I. DISTINGUISHING BY SCIENCE – INTERNATIONAL STANDARDS',
+        precious: {
+          title: 'PRECIOUS GEMSTONES',
+          description: 'These are extremely rare stones with superior hardness, durability, clarity, and light dispersion, widely recognized in the international market.',
+          big4: '4 classic precious stones (Big 4):',
+          big4List: ['Diamond', 'Ruby', 'Sapphire (including various colors)', 'Emerald'],
+          features: 'Outstanding features:',
+          featuresList: ['Very high hardness (Diamond: 10 Mohs)', 'Rare in nature', 'Value increases over time', 'Internationally auctioned (Christie\'s, Sotheby\'s)', 'Mandatory international certification (GIA, IGI, GRS…)'],
+          note: '💰 Precious stones = accumulated assets + investment + inheritance',
+        },
+        semiPrecious: {
+          title: 'SEMI-PRECIOUS STONES',
+          description: 'These are more common stones, diverse in colors, cheaper, widely used in feng shui, jewelry, and energy therapy.',
+          examples: 'Common examples:',
+          examplesList: ['Quartz', 'Jadeite / Nephrite', 'Aquamarine', 'Tourmaline', 'Garnet', 'Peridot', 'Topaz', 'Moonstone', 'Labradorite', 'Citrine'],
+          features: 'Features:',
+          featuresList: ['Medium to high hardness (6–8 Mohs)', 'More abundant supply', 'Strong feng shui and energy value', 'Suitable for daily use'],
+          note: '🌿 Semi-precious stones = feng shui applications + energy balance + destiny support',
+        },
+      },
+      section2: {
+        title: 'II. DISTINGUISHING BY FENG SHUI VALUE – ENERGY',
+        table: {
+          criteria: 'Criteria',
+          precious: 'Precious Stones',
+          semiPrecious: 'Semi-Precious Stones',
+          rows: {
+            frequency: { criteria: 'Energy frequency', precious: 'Very high – stable', semiPrecious: 'High – flexible' },
+            impact: { criteria: 'Impact', precious: 'Strong, deep, long-lasting', semiPrecious: 'Gentle, even, adaptable' },
+            suitable: { criteria: 'Suitable for', precious: 'Leaders, investors, powerful people', semiPrecious: 'Most users' },
+            purpose: { criteria: 'Purpose', precious: 'Stabilize destiny – maintain fortune – accumulate wealth', semiPrecious: 'Attract wealth – neutralize – balance' },
+          },
+        },
+        note: '30 years of practical experience: People without strong energy foundation, if using large precious stones (ruby, diamond) incorrectly according to their destiny, may experience "heavy energy", insomnia, mental pressure.',
+      },
+      section3: {
+        title: 'III. DISTINGUISHING BY BUSINESS VALUE – MARKET',
+        precious: {
+          title: 'Precious Stones',
+          list: ['Price calculated by carat', 'Fluctuates with international market', 'High expertise required for buying/selling', 'Risk of treated, synthetic, artificial products'],
+        },
+        semiPrecious: {
+          title: 'Semi-Precious Stones',
+          list: ['Price calculated by kg – strand – product', 'Easy retail application', 'Very large feng shui & wellness market', 'Less financial risk'],
+        },
+      },
+      section4: {
+        title: 'IV. UNDERSTAND ONE VERY IMPORTANT THING',
+        warning: '❌ Precious stones do NOT mean better feng shui than semi-precious stones',
+        inFengshui: 'In feng shui:',
+        principle: '• CORRECT DESTINY – CORRECT PURPOSE – CORRECT FREQUENCY is more important than monetary value.',
+        example: 'Example: A natural, pure amethyst stone, correct destiny',
+        comparison: '👉 Can support better than a small ruby but wrong destiny.',
+      },
+      section5: {
+        title: 'V. ADVICE FROM PROFESSIONALS',
+        precious: {
+          title: 'Precious stones: use when',
+          list: ['Have professional knowledge', 'Have expert guidance', 'Goal of wealth accumulation – inheritance'],
+        },
+        semiPrecious: {
+          title: 'Semi-precious stones: use when',
+          list: ['Want to improve wealth – health – spirit', 'Long-term feng shui application', 'Safe – effective – easy to combine'],
+        },
+      },
     },
   },
 };

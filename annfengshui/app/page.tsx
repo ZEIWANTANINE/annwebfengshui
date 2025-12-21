@@ -3,6 +3,7 @@ import BrandStory from "@/app/components/BrandStory";
 import CTA from "@/app/components/CTA";
 import CraftAndAuthenticity from "@/app/components/CraftAndAuthenticity";
 import EnergyFinder from "@/app/components/EnergyFinder";
+import GemstoneDistinction from "@/app/components/GemstoneDistinction";
 import Hero from "@/app/components/Hero";
 import MotionWrap from "@/app/components/MotionWrap";
 import ProductGallery from "@/app/components/ProductGallery";
@@ -21,6 +22,11 @@ export default function Home() {
 
       {/* 3. Craft & Authenticity: Establishes trust and highlights product quality. */}
       <CraftAndAuthenticity />
+
+      {/* 3.5. Gemstone Distinction: Educates users on precious vs semi-precious stones. */}
+      <MotionWrap>
+        <GemstoneDistinction />
+      </MotionWrap>
 
       {/* 4. Product Gallery: Showcases the products now that context is established. */}
       <MotionWrap>
